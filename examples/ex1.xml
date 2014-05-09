@@ -1,15 +1,31 @@
-<tabcode>
-	<metadata>
-	<!-- This would come from ECOLM d/b and be better done another way, I'm sure. Linked data?	-->
-			<EMO_book_ID>xxx</EMO_book_ID>
-			<book_title>Florilegium</book_title>
-			<book_author>Adrian Denss</book_author>
-			<book_date>1594</book_date>		
-			<EMO_item_ID>xxx</EMO_item_ID>
-			<item_seq_number>1</item_seq_number>
-			<item_title>O quam gloriosum</item_title>
-			<item_composer>Victoria</item_composer>
-	</metadata>
+<?xml version="1.0" encoding="utf-8" ?>
+
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="2013">
+  <meiHead>
+    <titleStmt>
+      <title>O quam gloriosum</title>
+      <!-- <identifier type="emo-item-id">xxx</identifier> -->
+      <!-- item sequence number -->
+      <respStmt>
+        <persName role="composer">Victoria</persName>
+      </respStmt>
+    </titleStmt>
+    <sourceDesc>
+      <source n="1" xml:id="emo-xxx">
+        <identifier type="emo-book-id">xxx</identifier>
+        <titleStmt>
+          <title>Florilegium</title>
+          <respStmt>
+            <persName>Adrian Denss</persName>
+          </respStmt>
+        </titleStmt>
+        <pubStmt>
+          <date>1594</date>
+        </pubStmt>
+      </source>
+    </sourceDesc>
+  </meiHead>
+  <music>
 	<rules>
 		<notation>french</notation>
 		<image_src>ex1_orig.png</image_src>
@@ -180,4 +196,5 @@
 			<note id="xxx" symbol="d" staffline="3" />
 	</tabword>
 	<barline id="xxx" symbol="|" />
-</tabcode>
+  </music>
+</mei>
