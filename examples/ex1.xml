@@ -26,175 +26,192 @@
     </sourceDesc>
   </meiHead>
   <music>
-	<rules>
-		<notation>french</notation>
-		<image_src>ex1_orig.png</image_src>
-	</rules>
+    <facsimile>
+      <surface>
+        <graphic target="ex1_orig.png" />
+      </surface>
+    </facsimile>
+    <body>
+      <mdiv n="">
+        <parts>
+          <part n="">
+            <scoreDef>
+	      <tabType>french</tabType>
+            </scoreDef>
+            <section n="">
+              <staff n="">
+                <staffDef>
+                  <meterSig sym="C" />
+                </staffDef>
+                <layer n="">
 
-<!-- This is not really part of TabCode - not sure it's needed?-->
-	<dec_initial_letter id="xxx" letter="O" />
+                  <!-- This is not really part of TabCode - not sure it's needed?-->
+                  <dec_initial_letter id="xxx" letter="O" />
 
-	<tabword>
-		<metre id="xxx" symbol="C/" />
-	</tabword>
-	<tabword>
-		<rhythmsign id="xxx" symbol="H" />
-		<note id="xxx" symbol="a" staffline="1" />
-		<note id="xxx" symbol="a" staffline="2" />
-		<note id="xxx" symbol="c" staffline="4" />
+	          <chord xml:id="">
+		    <rhythmSign id="xxx" symbol="H" />
+		    <note id="xxx" symbol="a" staffline="1" />
+		    <note id="xxx" symbol="a" staffline="2" />
+		    <note id="xxx" symbol="c" staffline="4" />
 
-<!-- Text can be attached to tabwords in TabCode, but is this the best way to do it?-->
-	<text id="xxx" size="small" pos="below_staff" string="Quam gloriosum. à 4." />
-	
-	</tabword>
-	<tabword>
-		<rhythmsign id="xxx" symbol="S." />
-		<note id="xxx" symbol="a" staffline="1" />
-		<note id="xxx" symbol="a" staffline="2" />
-		<note id="xxx" symbol="c" staffline="4" />
-	</tabword>
-	<tabword>
-		<rhythmsign id="xxx" symbol="T" />
-		<note id="xxx" symbol="a" staffline="3" />
-	</tabword>
-	<tabword>
-		<note id="xxx" symbol="c" staffline="3" />
-	</tabword>
-	<tabword>
-		<note id="xxx" symbol="a" staffline="3" />
-	</tabword>
-	<tabword>
-		<note id="xxx" symbol="c" staffline="3" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="d" staffline="3" />
-	</tabword>
-	<tabword>
-			<rhythmsign id="xxx" symbol="S" />
-			<note id="xxx" symbol="a" staffline="2" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="d" staffline="2" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="c" staffline="2" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="a" staffline="2" />
-	</tabword>
-	<barline id="xxx" symbol="|" />
-	<tabword>
-			<rhythmsign id="xxx" symbol="E" />
-			<note id="xxx" symbol="a" staffline="1" />
-			<note id="xxx" symbol="c" staffline="2" />
-			<note id="xxx" symbol="d" staffline="3" />
-			<note id="xxx" symbol="a" staffline="5" />
-	</tabword>
-	<tabword>
-			<rhythmsign id="xxx" symbol="S" />
-			<note id="xxx" symbol="c" staffline="3" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="a" staffline="3" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="c" staffline="4" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="a" staffline="4" />
-	</tabword>
-	<tabword>
-			<rhythmsign id="xxx" symbol="T" />
-			<note id="xxx" symbol="c" staffline="4" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="a" staffline="4" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="e" staffline="5" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="c" staffline="5" />
-	</tabword>
-	<tabword>
-			<rhythmsign id="xxx" symbol="S" />
-			<note id="xxx" symbol="a" staffline="1" />
-			<note id="xxx" symbol="c" staffline="2" />
-			<note id="xxx" symbol="d" staffline="3" />
-			<note id="xxx" symbol="a" staffline="5" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="d" staffline="2" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="c" staffline="2" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="a" staffline="2" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="c" staffline="2" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="d" staffline="1" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="c" staffline="1" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="a" staffline="1" />
-	</tabword>
-	<barline id="xxx" symbol="|" />
-	<tabword>
-			<rhythmsign id="xxx" symbol="E." />
-			<note id="xxx" symbol="c" staffline="1" />
-			<note id="xxx" symbol="d" staffline="2" />
-			<note id="xxx" symbol="d" staffline="3" />
-			<note id="xxx" symbol="a" staffline="4" />
-	</tabword>
-	<tabword>
-			<rhythmsign id="xxx" symbol="S" />
-			<note id="xxx" symbol="a" staffline="1" />
-	</tabword>
-	<system_break id="xxx" new_sys_num="2" />
-	<tabword>
-			<note id="xxx" symbol="c" staffline="1" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="a" staffline="1" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="c" staffline="1" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="d" staffline="1" />
-	</tabword>
-	<tabword>
-			<rhythmsign id="xxx" symbol="E" />
-			<note id="xxx" symbol="c" staffline="1" />
-			<note id="xxx" symbol="d" staffline="2" />
-			<note id="xxx" symbol="d" staffline="3" />
-			<note id="xxx" symbol="a" staffline="4" />
-	</tabword>
-	<tabword>
-			<rhythmsign id="xxx" symbol="S" />
-			<note id="xxx" symbol="a" staffline="3" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="c" staffline="3" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="d" staffline="3" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="a" staffline="3" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="c" staffline="3" />
-	</tabword>
-	<tabword>
-			<note id="xxx" symbol="d" staffline="3" />
-	</tabword>
-	<barline id="xxx" symbol="|" />
+                    <!-- Text can be attached to tabwords in TabCode, but is this the best way to do it?-->
+	            <text id="xxx" size="small" pos="below_staff" string="Quam gloriosum. à 4." />
+	          </chord>
+	          <chord xml:id="">
+		    <rhythmSign id="xxx" symbol="S." dots="1" />
+		    <note id="xxx" symbol="a" staffline="1" />
+		    <note id="xxx" symbol="a" staffline="2" />
+		    <note id="xxx" symbol="c" staffline="4" />
+	          </chord>
+	          <chord xml:id="">
+		    <rhythmSign id="xxx" symbol="T" />
+		    <note id="xxx" symbol="a" staffline="3" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="c" staffline="3" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="a" staffline="3" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="c" staffline="3" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="d" staffline="3" />
+	          </chord>
+	          <chord xml:id="">
+		    <rhythmSign id="xxx" symbol="S" />
+		    <note id="xxx" symbol="a" staffline="2" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="d" staffline="2" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="c" staffline="2" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="a" staffline="2" />
+	          </chord>
+	          <barLine xml:id="xxx" symbol="|" />
+	          <chord xml:id="">
+		    <rhythmSign id="xxx" symbol="E" />
+		    <note id="xxx" symbol="a" staffline="1" />
+		    <note id="xxx" symbol="c" staffline="2" />
+		    <note id="xxx" symbol="d" staffline="3" />
+		    <note id="xxx" symbol="a" staffline="5" />
+	          </chord>
+	          <chord xml:id="">
+		    <rhythmSign id="xxx" symbol="S" />
+		    <note id="xxx" symbol="c" staffline="3" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="a" staffline="3" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="c" staffline="4" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="a" staffline="4" />
+	          </chord>
+	          <chord xml:id="">
+		    <rhythmSign id="xxx" symbol="T" />
+		    <note id="xxx" symbol="c" staffline="4" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="a" staffline="4" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="e" staffline="5" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="c" staffline="5" />
+	          </chord>
+	          <chord xml:id="">
+		    <rhythmSign id="xxx" symbol="S" />
+		    <note id="xxx" symbol="a" staffline="1" />
+		    <note id="xxx" symbol="c" staffline="2" />
+		    <note id="xxx" symbol="d" staffline="3" />
+		    <note id="xxx" symbol="a" staffline="5" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="d" staffline="2" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="c" staffline="2" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="a" staffline="2" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="c" staffline="2" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="d" staffline="1" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="c" staffline="1" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="a" staffline="1" />
+	          </chord>
+	          <barLine xml:id="xxx" symbol="|" />
+	          <chord xml:id="">
+		    <rhythmSign id="xxx" symbol="E." dots="1" />
+		    <note id="xxx" symbol="c" staffline="1" />
+		    <note id="xxx" symbol="d" staffline="2" />
+		    <note id="xxx" symbol="d" staffline="3" />
+		    <note id="xxx" symbol="a" staffline="4" />
+	          </chord>
+	          <chord xml:id="">
+		    <rhythmSign id="xxx" symbol="S" />
+		    <note id="xxx" symbol="a" staffline="1" />
+	          </chord>
+	          <system_break id="xxx" new_sys_num="2" />
+	          <chord xml:id="">
+		    <note id="xxx" symbol="c" staffline="1" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="a" staffline="1" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="c" staffline="1" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="d" staffline="1" />
+	          </chord>
+	          <chord xml:id="">
+		    <rhythmSign id="xxx" symbol="E" />
+		    <note id="xxx" symbol="c" staffline="1" />
+		    <note id="xxx" symbol="d" staffline="2" />
+		    <note id="xxx" symbol="d" staffline="3" />
+		    <note id="xxx" symbol="a" staffline="4" />
+	          </chord>
+	          <chord xml:id="">
+		    <rhythmSign id="xxx" symbol="S" />
+		    <note id="xxx" symbol="a" staffline="3" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="c" staffline="3" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="d" staffline="3" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="a" staffline="3" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="c" staffline="3" />
+	          </chord>
+	          <chord xml:id="">
+		    <note id="xxx" symbol="d" staffline="3" />
+	          </chord>
+	          <barLine xml:id="xxx" symbol="|" />
+                </layer>
+              </staff>
+            </section>
+          </part>
+        </parts>
+      </mdiv>
+    </body>
   </music>
 </mei>
