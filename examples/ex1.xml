@@ -1,0 +1,183 @@
+<tabcode>
+	<metadata>
+	<!-- This would come from ECOLM d/b and be better done another way, I'm sure. Linked data?	-->
+			<EMO_book_ID>xxx</EMO_book_ID>
+			<book_title>Florilegium</book_title>
+			<book_author>Adrian Denss</book_author>
+			<book_date>1594</book_date>		
+			<EMO_item_ID>xxx</EMO_item_ID>
+			<item_seq_number>1</item_seq_number>
+			<item_title>O quam gloriosum</item_title>
+			<item_composer>Victoria</item_composer>
+	</metadata>
+	<rules>
+		<notation>french</notation>
+		<image_src>ex1_orig.png</image_src>
+	</rules>
+
+<!-- This is not really part of TabCode - not sure it's needed?-->
+	<dec_initial_letter id="xxx" letter="O" />
+
+	<tabword>
+		<metre id="xxx" symbol="C/" />
+	</tabword>
+	<tabword>
+		<rhythmsign id="xxx" symbol="H" />
+		<note id="xxx" symbol="a" staffline="1" />
+		<note id="xxx" symbol="a" staffline="2" />
+		<note id="xxx" symbol="c" staffline="4" />
+
+<!-- Text can be attached to tabwords in TabCode, but is this the best way to do it?-->
+	<text id="xxx" size="small" pos="below_staff" string="Quam gloriosum. à 4." />
+	
+	</tabword>
+	<tabword>
+		<rhythmsign id="xxx" symbol="S." />
+		<note id="xxx" symbol="a" staffline="1" />
+		<note id="xxx" symbol="a" staffline="2" />
+		<note id="xxx" symbol="c" staffline="4" />
+	</tabword>
+	<tabword>
+		<rhythmsign id="xxx" symbol="T" />
+		<note id="xxx" symbol="a" staffline="3" />
+	</tabword>
+	<tabword>
+		<note id="xxx" symbol="c" staffline="3" />
+	</tabword>
+	<tabword>
+		<note id="xxx" symbol="a" staffline="3" />
+	</tabword>
+	<tabword>
+		<note id="xxx" symbol="c" staffline="3" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="d" staffline="3" />
+	</tabword>
+	<tabword>
+			<rhythmsign id="xxx" symbol="S" />
+			<note id="xxx" symbol="a" staffline="2" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="d" staffline="2" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="c" staffline="2" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="a" staffline="2" />
+	</tabword>
+	<barline id="xxx" symbol="|" />
+	<tabword>
+			<rhythmsign id="xxx" symbol="E" />
+			<note id="xxx" symbol="a" staffline="1" />
+			<note id="xxx" symbol="c" staffline="2" />
+			<note id="xxx" symbol="d" staffline="3" />
+			<note id="xxx" symbol="a" staffline="5" />
+	</tabword>
+	<tabword>
+			<rhythmsign id="xxx" symbol="S" />
+			<note id="xxx" symbol="c" staffline="3" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="a" staffline="3" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="c" staffline="4" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="a" staffline="4" />
+	</tabword>
+	<tabword>
+			<rhythmsign id="xxx" symbol="T" />
+			<note id="xxx" symbol="c" staffline="4" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="a" staffline="4" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="e" staffline="5" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="c" staffline="5" />
+	</tabword>
+	<tabword>
+			<rhythmsign id="xxx" symbol="S" />
+			<note id="xxx" symbol="a" staffline="1" />
+			<note id="xxx" symbol="c" staffline="2" />
+			<note id="xxx" symbol="d" staffline="3" />
+			<note id="xxx" symbol="a" staffline="5" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="d" staffline="2" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="c" staffline="2" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="a" staffline="2" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="c" staffline="2" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="d" staffline="1" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="c" staffline="1" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="a" staffline="1" />
+	</tabword>
+	<barline id="xxx" symbol="|" />
+	<tabword>
+			<rhythmsign id="xxx" symbol="E." />
+			<note id="xxx" symbol="c" staffline="1" />
+			<note id="xxx" symbol="d" staffline="2" />
+			<note id="xxx" symbol="d" staffline="3" />
+			<note id="xxx" symbol="a" staffline="4" />
+	</tabword>
+	<tabword>
+			<rhythmsign id="xxx" symbol="S" />
+			<note id="xxx" symbol="a" staffline="1" />
+	</tabword>
+	<system_break id="xxx" new_sys_num="2" />
+	<tabword>
+			<note id="xxx" symbol="c" staffline="1" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="a" staffline="1" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="c" staffline="1" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="d" staffline="1" />
+	</tabword>
+	<tabword>
+			<rhythmsign id="xxx" symbol="E" />
+			<note id="xxx" symbol="c" staffline="1" />
+			<note id="xxx" symbol="d" staffline="2" />
+			<note id="xxx" symbol="d" staffline="3" />
+			<note id="xxx" symbol="a" staffline="4" />
+	</tabword>
+	<tabword>
+			<rhythmsign id="xxx" symbol="S" />
+			<note id="xxx" symbol="a" staffline="3" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="c" staffline="3" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="d" staffline="3" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="a" staffline="3" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="c" staffline="3" />
+	</tabword>
+	<tabword>
+			<note id="xxx" symbol="d" staffline="3" />
+	</tabword>
+	<barline id="xxx" symbol="|" />
+</tabcode>
