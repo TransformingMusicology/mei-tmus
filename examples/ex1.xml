@@ -50,160 +50,160 @@
 
 	          <chord xml:id="">
 		    <rhythmSign id="xxx" symbol="H" />
-		    <note id="xxx" symbol="a" staffline="1" />
-		    <note id="xxx" symbol="a" staffline="2" />
-		    <note id="xxx" symbol="c" staffline="4" />
+		    <note id="xxx" symbol="a" course="1" />
+		    <note id="xxx" symbol="a" course="2" />
+		    <note id="xxx" symbol="c" course="4" />
 
                     <!-- Text can be attached to tabwords in TabCode, but is this the best way to do it?-->
 	            <text id="xxx" size="small" pos="below_staff" string="Quam gloriosum. à 4." />
 	          </chord>
 	          <chord xml:id="">
 		    <rhythmSign id="xxx" symbol="S." dots="1" />
-		    <note id="xxx" symbol="a" staffline="1" />
-		    <note id="xxx" symbol="a" staffline="2" />
-		    <note id="xxx" symbol="c" staffline="4" />
+		    <note id="xxx" symbol="a" course="1" />
+		    <note id="xxx" symbol="a" course="2" />
+		    <note id="xxx" symbol="c" course="4" />
 	          </chord>
 	          <chord xml:id="">
 		    <rhythmSign id="xxx" symbol="T" />
-		    <note id="xxx" symbol="a" staffline="3" />
+		    <note id="xxx" symbol="a" course="3" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="c" staffline="3" />
+		    <note id="xxx" symbol="c" course="3" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="a" staffline="3" />
+		    <note id="xxx" symbol="a" course="3" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="c" staffline="3" />
+		    <note id="xxx" symbol="c" course="3" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="d" staffline="3" />
+		    <note id="xxx" symbol="d" course="3" />
 	          </chord>
 	          <chord xml:id="">
 		    <rhythmSign id="xxx" symbol="S" />
-		    <note id="xxx" symbol="a" staffline="2" />
+		    <note id="xxx" symbol="a" course="2" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="d" staffline="2" />
+		    <note id="xxx" symbol="d" course="2" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="c" staffline="2" />
+		    <note id="xxx" symbol="c" course="2" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="a" staffline="2" />
+		    <note id="xxx" symbol="a" course="2" />
 	          </chord>
 	          <barLine xml:id="xxx" symbol="|" />
 	          <chord xml:id="">
 		    <rhythmSign id="xxx" symbol="E" />
-		    <note id="xxx" symbol="a" staffline="1" />
-		    <note id="xxx" symbol="c" staffline="2" />
-		    <note id="xxx" symbol="d" staffline="3" />
-		    <note id="xxx" symbol="a" staffline="5" />
+		    <note id="xxx" symbol="a" course="1" />
+		    <note id="xxx" symbol="c" course="2" />
+		    <note id="xxx" symbol="d" course="3" />
+		    <note id="xxx" symbol="a" course="5" />
 	          </chord>
 	          <chord xml:id="">
 		    <rhythmSign id="xxx" symbol="S" />
-		    <note id="xxx" symbol="c" staffline="3" />
+		    <note id="xxx" symbol="c" course="3" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="a" staffline="3" />
+		    <note id="xxx" symbol="a" course="3" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="c" staffline="4" />
+		    <note id="xxx" symbol="c" course="4" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="a" staffline="4" />
+		    <note id="xxx" symbol="a" course="4" />
 	          </chord>
 	          <chord xml:id="">
 		    <rhythmSign id="xxx" symbol="T" />
-		    <note id="xxx" symbol="c" staffline="4" />
+		    <note id="xxx" symbol="c" course="4" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="a" staffline="4" />
+		    <note id="xxx" symbol="a" course="4" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="e" staffline="5" />
+		    <note id="xxx" symbol="e" course="5" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="c" staffline="5" />
+		    <note id="xxx" symbol="c" course="5" />
 	          </chord>
 	          <chord xml:id="">
 		    <rhythmSign id="xxx" symbol="S" />
-		    <note id="xxx" symbol="a" staffline="1" />
-		    <note id="xxx" symbol="c" staffline="2" />
-		    <note id="xxx" symbol="d" staffline="3" />
-		    <note id="xxx" symbol="a" staffline="5" />
+		    <note id="xxx" symbol="a" course="1" />
+		    <note id="xxx" symbol="c" course="2" />
+		    <note id="xxx" symbol="d" course="3" />
+		    <note id="xxx" symbol="a" course="5" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="d" staffline="2" />
+		    <note id="xxx" symbol="d" course="2" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="c" staffline="2" />
+		    <note id="xxx" symbol="c" course="2" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="a" staffline="2" />
+		    <note id="xxx" symbol="a" course="2" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="c" staffline="2" />
+		    <note id="xxx" symbol="c" course="2" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="d" staffline="1" />
+		    <note id="xxx" symbol="d" course="1" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="c" staffline="1" />
+		    <note id="xxx" symbol="c" course="1" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="a" staffline="1" />
+		    <note id="xxx" symbol="a" course="1" />
 	          </chord>
 	          <barLine xml:id="xxx" symbol="|" />
 	          <chord xml:id="">
 		    <rhythmSign id="xxx" symbol="E." dots="1" />
-		    <note id="xxx" symbol="c" staffline="1" />
-		    <note id="xxx" symbol="d" staffline="2" />
-		    <note id="xxx" symbol="d" staffline="3" />
-		    <note id="xxx" symbol="a" staffline="4" />
+		    <note id="xxx" symbol="c" course="1" />
+		    <note id="xxx" symbol="d" course="2" />
+		    <note id="xxx" symbol="d" course="3" />
+		    <note id="xxx" symbol="a" course="4" />
 	          </chord>
 	          <chord xml:id="">
 		    <rhythmSign id="xxx" symbol="S" />
-		    <note id="xxx" symbol="a" staffline="1" />
+		    <note id="xxx" symbol="a" course="1" />
 	          </chord>
 	          <system_break id="xxx" new_sys_num="2" />
 	          <chord xml:id="">
-		    <note id="xxx" symbol="c" staffline="1" />
+		    <note id="xxx" symbol="c" course="1" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="a" staffline="1" />
+		    <note id="xxx" symbol="a" course="1" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="c" staffline="1" />
+		    <note id="xxx" symbol="c" course="1" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="d" staffline="1" />
+		    <note id="xxx" symbol="d" course="1" />
 	          </chord>
 	          <chord xml:id="">
 		    <rhythmSign id="xxx" symbol="E" />
-		    <note id="xxx" symbol="c" staffline="1" />
-		    <note id="xxx" symbol="d" staffline="2" />
-		    <note id="xxx" symbol="d" staffline="3" />
-		    <note id="xxx" symbol="a" staffline="4" />
+		    <note id="xxx" symbol="c" course="1" />
+		    <note id="xxx" symbol="d" course="2" />
+		    <note id="xxx" symbol="d" course="3" />
+		    <note id="xxx" symbol="a" course="4" />
 	          </chord>
 	          <chord xml:id="">
 		    <rhythmSign id="xxx" symbol="S" />
-		    <note id="xxx" symbol="a" staffline="3" />
+		    <note id="xxx" symbol="a" course="3" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="c" staffline="3" />
+		    <note id="xxx" symbol="c" course="3" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="d" staffline="3" />
+		    <note id="xxx" symbol="d" course="3" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="a" staffline="3" />
+		    <note id="xxx" symbol="a" course="3" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="c" staffline="3" />
+		    <note id="xxx" symbol="c" course="3" />
 	          </chord>
 	          <chord xml:id="">
-		    <note id="xxx" symbol="d" staffline="3" />
+		    <note id="xxx" symbol="d" course="3" />
 	          </chord>
 	          <barLine xml:id="xxx" symbol="|" />
                 </layer>
