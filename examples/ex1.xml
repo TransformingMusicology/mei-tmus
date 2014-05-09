@@ -41,7 +41,7 @@
             <section n="">
               <staff n="">
                 <staffDef>
-                  <meterSig sym="C" />
+                  <mensur sign="C" />
                 </staffDef>
                 <layer n="">
 
