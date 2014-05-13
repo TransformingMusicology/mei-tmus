@@ -123,16 +123,15 @@
                   <note id="xxx" symbol="a" course="2"/>
                   <note id="xxx" symbol="a" course="3"/>
                   <note id="x11" symbol="a" course="5"/>
-                  <ensembleLine startid="x11"/>
+                  <fingering target="x11" playingHand="right" playingFinger="1"/>
                 </chord>
                 <chord>
                   <rhythmSign id="xxx" symbol="Q"/>
                   <note id="x12" symbol="a" course="1"/>
-                  <fingering target="x10" playingHand="right" playingFinger="2"/>
+                  <fingering target="x12" playingHand="right" playingFinger="2"/>
                   <separee startid="x12" endid="x13"/>
                   <note id="x13" symbol="a" course="2"/>
-                  <fingering target="x10" playingHand="right" playingFinger="1"/>
-                  <ensembleLine startid="x13"/>
+                  <fingering target="x13" playingHand="right" playingFinger="1"/>
                 </chord>
 	              <barLine xml:id="xxx" symbol="|" />
               </staff>
