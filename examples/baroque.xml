@@ -18,7 +18,7 @@
         <title>Allemande / de Mr. le Moyne / transposée du / théorbe.</title>
       </titleStmt>
       <respStmt>
-        <persName role="composer" authURI="">Mr. le Moyne</persName>
+        <persName role="composer" authURI="">Étienne le Moyne</persName>
       </respStmt>
       <perfMedium>
         <instrumentation>
@@ -66,11 +66,12 @@
             <section n="">
               <staff n="">
                 <staffDef>
-                  <instrument instID="lute"/>
+                  <instrument decls="lute"/>
 	                <tabType>french</tabType>
                   <mensur sign="C" slashcount="1"/>
                 </staffDef>
-                <chord xml:id="">
+                <barre startid="cx1" fret="c"/>
+                <chord xml:id="cx1">
                   <rhythmSign id="xxx" symbol="E"/>
                   <note id="xxx" symbol="c" course="1"/>
                 </chord>
@@ -89,7 +90,7 @@
                   <note id="xx3" symbol="c" course="2"/>
                   <fingering target="xx3" playingHand="left" playingFinger="1" symbol="dot"/>
                   <ensembleLine startid="xx3" endid="xx4"/>
-                  <note id="xx4" symbol="d" course="6"/>
+                  <note id="xx4" symbol="4" fret="0" course="10"/>
                 </chord>
                 <chord>
                   <note id="xx5" symbol="e" course="1"/>
@@ -102,6 +103,38 @@
                   <note id="xx7" symbol="d" course="2"/>
                   <fingering target="xx3" playingHand="left" playingFinger="1" symbol="dot"/>
                 </chord>
+	              <barLine xml:id="xxx" symbol="|" />
+                <chord>
+                  <rhythmSign id="xxx" symbol="Q" dots="1"/>
+                  <note id="xx8" symbol="c" course="2"/>
+                  <abzug startid="xx8"/>
+                  <ensembleLine startid="xx8" endid="xx9"/>
+                  <note id="xx9" symbol="d" course="6"/>
+                </chord>
+                <connectingLine startid="xx9" endid="x11"/>
+                <chord>
+                  <rhythmSign id="xxx" symbol="E"/>
+                  <note id="x10" symbol="d" course="3"/>
+                  <fingering target="x10" playingHand="left" playingFinger="1" symbol="dot"/>
+                </chord>
+                <chord>
+                  <rhythmSign id="xxx" symbol="Q"/>
+                  <note id="xxx" symbol="a" course="1"/>
+                  <note id="xxx" symbol="a" course="2"/>
+                  <note id="xxx" symbol="a" course="3"/>
+                  <note id="x11" symbol="a" course="5"/>
+                  <ensembleLine startid="x11"/>
+                </chord>
+                <chord>
+                  <rhythmSign id="xxx" symbol="Q"/>
+                  <note id="x12" symbol="a" course="1"/>
+                  <fingering target="x10" playingHand="right" playingFinger="2"/>
+                  <separee startid="x12" endid="x13"/>
+                  <note id="x13" symbol="a" course="2"/>
+                  <fingering target="x10" playingHand="right" playingFinger="1"/>
+                  <ensembleLine startid="x13"/>
+                </chord>
+	              <barLine xml:id="xxx" symbol="|" />
               </staff>
             </section>
           </part>
