@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>MEI for Lute Tablature</title>
+        <author>David Lewis</author>
+        <author>Richard Lewis</author>
+        <author>Tim Crawford</author>
+      </titleStmt>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <schemaSpec ident="lutetab" start="mei meiHead meiCorpus music" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+        <moduleRef key="MEI" />
+        <moduleRef key="MEI.shared" />
+        <moduleRef key="instruments" />
+
+        <elementSpec ident="tabChord" mode="add">
+          <gloss>tablature chord</gloss>
+          <desc>Simultaneously played tablature notes, all sharing a rhythm sign.</desc>
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="model.eventLike" />
+            <memberOf key="model.measurePart" />
+            <memberOf key="model.staffPart" />
+          </classes>
+        </elementSpec>
+
+        <classSpec ident="model.tabchordPart" type="model">
+          <desc>Groups elements that may appear in a &lt;tabChord&gt;</desc>
+        </classSpec>
+
+        <elementSpec ident="tabNote" mode="add">
+          <gloss>tablature note</gloss>
+          <desc>A indication of the string and fret position within a tablature chord.</desc>
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="model.tabchordPart" />
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="rhythmSign" mode="add">
+          <gloss>tablature rhythm sign</gloss>
+          <desc>The durational sign associated with a tablature chord.</desc>
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="model.tabchordPart" />
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="abzug" mode="add">
+
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="model.tabchordPart" />
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="barre" mode="add">
+
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="model.tabchordPart" />
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="ensembleLine" mode="add">
+
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="model.tabchordPart" />
+          </classes>
+        </elementSpec>
+
+        <elementSpec ident="connectingLine" mode="add">
+
+        </elementSpec>
+
+        <elementSpec ident="separee" mode="add">
+
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="model.tabchordPart" />
+          </classes>
+        </elementSpec>
+
+        <!-- Or maybe create an instrdescPart model? -->
+        <elementSpec ident="instrDesc" mode="change">
+
+        </elementSpec>
+
+        <elementSpec ident="courseCount" mode="add">
+
+        </elementSpec>
+
+        <!-- Or maybe create an instrconfigPart model? -->
+        <elementSpec ident="instrConfig" mode="change">
+
+        </elementSpec>
+
+        <elementSpec ident="courseTuning" mode="add">
+
+        </elementSpec>
+
+        <elementSpec ident="course" mode="add">
+
+        </elementSpec>
+
+        <elementSpec ident="string" mode="add">
+
+        </elementSpec>
+
+        <elementSpec ident="bassTuning" mode="add">
+
+        </elementSpec>
+      </schemaSpec>
+    </body>
+  </text>
+</TEI>
