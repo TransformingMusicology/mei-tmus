@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>MEI Instrument Details</title>
+        <author>David Lewis</author>
+        <author>Richard Lewis</author>
+        <author>Tim Crawford</author>
+      </titleStmt>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <schemaSpec ident="instruments" start="mei meiHead meiCorpus music" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+        <moduleRef key="MEI" />
+        <moduleRef key="MEI.header" />
+        <moduleRef key="MEI.shared" />
+        <moduleRef key="MEI.edittrans" />
+        <moduleRef key="MEI.cmn" />
+
+        <elementSpec ident="instrVoice" mode="change">
+          <desc>An &lt;instrVoice&gt; may contain a simple text description of the instrument, or it may contain an &lt;instrDesc&gt; and an &lt;instrConfig&gt;.</desc>
+          <content>
+            <rng:zeroOrMore>
+              <rng:choice>
+                <rng:text />
+                <rng:ref name="instrVoice" />
+                <rng:ref name="instrDesc" />
+                <rng:ref name="instrConfig" />
+              </rng:choice>
+            </rng:zeroOrMore>
+          </content>
+        </elementSpec>
+
+        <elementSpec ident="instrDesc" mode="add">
+          <gloss>description of an instrument</gloss>
+          <desc>A detailed and structured description of an instrument.</desc>
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="att.authorized" />
+            <memberOf key="att.bibl" />
+            <memberOf key="att.pointing" />
+          </classes>
+        </elementSpec>
+
+        <classSpec ident="att.instrdesc" mode="add">
+          <classes>
+            <memberOf key="att.typed" />
+          </classes>
+          <attList>
+            <attDef ident="family" usage="opt">
+              <desc>The instrument family of this instrument</desc>
+              <datatype>
+                <rng:text />
+              </datatype>
+            </attDef>
+          </attList>
+        </classSpec>
+
+        <elementSpec ident="instrName" mode="add">
+          <gloss>instrument name</gloss>
+          <desc>The name of an instrument</desc>
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="att.instrdesc" />
+            <memberOf key="model.editLike" />
+            <memberOf key="model.editorialLike" />
+          </classes>
+          <content>
+            <rng:text />
+          </content>
+        </elementSpec>
+
+        <elementSpec ident="instrConfig" mode="add">
+          <gloss>instrument configuration</gloss>
+          <desc>Specifies how an instrument is required to be configured by this score.</desc>
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="model.editLike" />
+            <memberOf key="model.editorialLike" />
+          </classes>
+          <content>
+            <rng:text />
+          </content>
+        </elementSpec>
+
+        <classSpec ident="att.fingering" type="atts" mode="add">
+          <desc>Attributes to describe instrument fingering.</desc>
+          <attList>
+            <attDef ident="playingHand" usage="opt">
+              <desc>The hand (left, right, or both) prescribed by the fingering marking.</desc>
+              <valList type="closed">
+                <valItem ident="left">
+                  <desc>Left hand</desc>
+                </valItem>
+                <valItem ident="right">
+                  <desc>Right hand</desc>
+                </valItem>
+                <valItem ident="both">
+                  <desc>Both left and right hands</desc>
+                </valItem>
+              </valList>
+            </attDef>
+            <attDef ident="playingFinger" usage="opt">
+              <desc>The finger prescribed by the fingering marking.</desc>
+              <datatype>
+                <!-- This macro contains the right information, but is
+                     unfortunately specific in its name -->
+                <rng:ref name="data.FINGER.FRET" />
+              </datatype>
+            </attDef>
+            <attDef ident="symbol" usage="opt">
+              <desc>The symbol employed in the fingering marking.</desc>
+              <datatype>
+                <rng:text />
+              </datatype>
+            </attDef>
+          </attList>
+        </classSpec>
+
+        <elementSpec ident="fingering" mode="add">
+          <gloss>instrument fingering</gloss>
+          <desc>Indicates an instrument fingering marking.</desc>
+          <classes>
+            <memberOf key="att.fingering" />
+            <memberOf key="att.common" />
+            <memberOf key="att.authorized" />
+            <memberOf key="att.edit" />
+            <memberOf key="att.pointing" />
+            <memberOf key="model.measurePart" />
+            <memberOf key="model.staffPart" />
+            <memberOf key="model.editorialLike" />
+          </classes>
+        </elementSpec>
+      </schemaSpec>
+    </body>
+  </text>
+</TEI>
