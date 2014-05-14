@@ -24,10 +24,11 @@
         <instrumentation>
           <instrVoice solo="true" xml:id="lute">
             <instrDesc>
+              <name>lute</name><!-- allow label and label.abbr -->
+              <type>baroque</type>
               <courseCount>11</courseCount>
             </instrDesc>
-            <tuningSystem>
-              <name>baroque</name>
+            <instrConfig>
               <courseTuning>
                 <course n="1" pname="d" oct="5">
                   <string pname="d" oct="5"/>
@@ -44,8 +45,8 @@
                 <course n="10" pname="b" accid="b" oct="3" />
                 <course n="11" pname="a" oct="3" />
               </courseTuning>
-              <keyVariant pname="d" mode="minor"/>
-            </tuningSystem>
+              <bassTuning pname="c" mode="major"/>
+            </instrConfig>
           </instrVoice>
         </instrumentation>
       </perfMedium>
@@ -71,68 +72,68 @@
                   <mensur sign="C" slashcount="1"/>
                 </staffDef>
                 <barre startid="cx1" fret="c"/>
-                <chord xml:id="cx1">
+                <tabChord xml:id="cx1">
                   <rhythmSign id="xxx" symbol="E"/>
-                  <note id="xxx" symbol="c" course="1"/>
-                </chord>
+                  <tabNote id="xxx" symbol="c" course="1"/>
+                </tabChord>
 	              <barLine xml:id="xxx" symbol="|" />
-                <chord xml:id="">
+                <tabChord xml:id="">
                   <rhythmSign id="xxx" symbol="H"/>
-                  <note id="xxx" symbol="c" course="1"/>
-                  <note id="xxx" symbol="c" course="2"/>
-                  <note id="xx1" symbol="d" course="3"/>
+                  <tabNote id="xxx" symbol="c" course="1"/>
+                  <tabNote id="xxx" symbol="c" course="2"/>
+                  <tabNote id="xx1" symbol="d" course="3"/>
                   <ensembleLine startid="xx1" endid="xx2"/>
-                  <note id="xx2" symbol="d" course="6"/>
-                </chord>
-                <chord xml:id="">
+                  <tabNote id="xx2" symbol="d" course="6"/>
+                </tabChord>
+                <tabChord xml:id="">
                   <rhythmSign id="xxx" symbol="E"/>
-                  <note id="xxx" symbol="c" course="1"/>
-                  <note id="xx3" symbol="c" course="2"/>
+                  <tabNote id="xxx" symbol="c" course="1"/>
+                  <tabNote id="xx3" symbol="c" course="2"/>
                   <fingering target="xx3" playingHand="left" playingFinger="1" symbol="dot"/>
                   <ensembleLine startid="xx3" endid="xx4"/>
-                  <note id="xx4" symbol="4" fret="0" course="10"/>
-                </chord>
-                <chord>
-                  <note id="xx5" symbol="e" course="1"/>
-                </chord>
+                  <tabNote id="xx4" symbol="4" fret="0" course="10"/>
+                </tabChord>
+                <tabChord>
+                  <tabNote id="xx5" symbol="e" course="1"/>
+                </tabChord>
                 <abzug startid="xx5" endid="xx6"/>
-                <chord>
-                  <note id="xx6" symbol="c" course="1"/>
-                </chord>
-                <chord>
-                  <note id="xx7" symbol="d" course="2"/>
+                <tabChord>
+                  <tabNote id="xx6" symbol="c" course="1"/>
+                </tabChord>
+                <tabChord>
+                  <tabNote id="xx7" symbol="d" course="2"/>
                   <fingering target="xx3" playingHand="left" playingFinger="1" symbol="dot"/>
-                </chord>
+                </tabChord>
 	              <barLine xml:id="xxx" symbol="|" />
-                <chord>
+                <tabChord>
                   <rhythmSign id="xxx" symbol="Q" dots="1"/>
-                  <note id="xx8" symbol="c" course="2"/>
+                  <tabNote id="xx8" symbol="c" course="2"/>
                   <abzug startid="xx8"/>
                   <ensembleLine startid="xx8" endid="xx9"/>
-                  <note id="xx9" symbol="d" course="6"/>
-                </chord>
+                  <tabNote id="xx9" symbol="d" course="6"/>
+                </tabChord>
                 <connectingLine startid="xx9" endid="x11"/>
-                <chord>
+                <tabChord>
                   <rhythmSign id="xxx" symbol="E"/>
-                  <note id="x10" symbol="d" course="3"/>
+                  <tabNote id="x10" symbol="d" course="3"/>
                   <fingering target="x10" playingHand="left" playingFinger="1" symbol="dot"/>
-                </chord>
-                <chord>
+                </tabChord>
+                <tabChord>
                   <rhythmSign id="xxx" symbol="Q"/>
-                  <note id="xxx" symbol="a" course="1"/>
-                  <note id="xxx" symbol="a" course="2"/>
-                  <note id="xxx" symbol="a" course="3"/>
-                  <note id="x11" symbol="a" course="5"/>
+                  <tabNote id="xxx" symbol="a" course="1"/>
+                  <tabNote id="xxx" symbol="a" course="2"/>
+                  <tabNote id="xxx" symbol="a" course="3"/>
+                  <tabNote id="x11" symbol="a" course="5"/>
                   <fingering target="x11" playingHand="right" playingFinger="1"/>
-                </chord>
-                <chord>
+                </tabChord>
+                <tabChord>
                   <rhythmSign id="xxx" symbol="Q"/>
-                  <note id="x12" symbol="a" course="1"/>
+                  <tabNote id="x12" symbol="a" course="1"/>
                   <fingering target="x12" playingHand="right" playingFinger="2"/>
                   <separee startid="x12" endid="x13"/>
-                  <note id="x13" symbol="a" course="2"/>
+                  <tabNote id="x13" symbol="a" course="2"/>
                   <fingering target="x13" playingHand="right" playingFinger="1"/>
-                </chord>
+                </tabChord>
 	              <barLine xml:id="xxx" symbol="|" />
               </staff>
             </section>
