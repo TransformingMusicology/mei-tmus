@@ -13,12 +13,14 @@
   </teiHeader>
   <text>
     <body>
-      <schemaSpec ident="lutetab" start="mei meiHead meiCorpus music" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-        <moduleRef key="MEI" />
-        <moduleRef key="MEI.shared" />
-        <moduleRef key="instruments" />
+      <schemaSpec ident="lutetab" start="mei meiHead meiCorpus music" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" ns="http://www.music-encoding.org/ns/mei">
+        <specGrp xml:id="lutetab">
 
-        <elementSpec ident="tabChord" mode="add">
+        <moduleSpec ident="MEI.lutetab">
+          <desc>Marking up of lute tablatures.</desc>
+        </moduleSpec>
+
+        <elementSpec ident="tabChord" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>tablature chord</gloss>
           <desc>Simultaneously played tablature notes, all sharing a rhythm sign.</desc>
           <classes>
@@ -27,95 +29,224 @@
             <memberOf key="model.measurePart" />
             <memberOf key="model.staffPart" />
           </classes>
+          <content>
+            <rng:zeroOrMore>
+              <rng:ref name="model.tabchordPart" />
+            </rng:zeroOrMore>
+          </content>
         </elementSpec>
 
-        <classSpec ident="model.tabchordPart" type="model">
+        <classSpec ident="model.tabchordPart" module="MEI.lutetab" type="model">
           <desc>Groups elements that may appear in a &lt;tabChord&gt;</desc>
         </classSpec>
 
-        <elementSpec ident="tabNote" mode="add">
+        <elementSpec ident="tabNote" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>tablature note</gloss>
           <desc>A indication of the string and fret position within a tablature chord.</desc>
           <classes>
             <memberOf key="att.common" />
             <memberOf key="model.tabchordPart" />
           </classes>
+          <attList>
+            <attDef ident="course" usage="req">
+              <desc>The course on which the note is played.</desc>
+              <datatype>
+                <rng:data type="integer" />
+              </datatype>
+            </attDef>
+            <attDef ident="fret" usage="opt">
+              <desc>The fret on which the note is played.</desc>
+              <datatype>
+                <rng:data type="integer" />
+              </datatype>
+            </attDef>
+            <attDef ident="symbol" usage="opt">
+              <desc>The logical symbol which describes the note.</desc>
+            </attDef>
+          </attList>
+          <content>
+            <rng:text />
+          </content>
         </elementSpec>
 
-        <elementSpec ident="rhythmSign" mode="add">
+        <macroSpec ident="data.DURATION.lutetab" module="MEI.lutetab" type="dt">
+          <desc>The duration symbols used to encode logical duration of &lt;tabChord&gt; &lt;rhythmSign&gt;s.</desc>
+          <content>
+            <rng:choice>
+              <rng:value>H</rng:value>
+              <a:documentation>H</a:documentation>
+              <rng:value>Q</rng:value>
+              <a:documentation>Q</a:documentation>
+              <rng:value>Q.</rng:value>
+              <a:documentation>Q.</a:documentation>
+              <rng:value>E</rng:value>
+              <a:documentation>E.</a:documentation>
+              <rng:value>S</rng:value>
+              <a:documentation>S</a:documentation>
+            </rng:choice>
+          </content>
+        </macroSpec>
+
+        <elementSpec ident="rhythmSign" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>tablature rhythm sign</gloss>
           <desc>The durational sign associated with a tablature chord.</desc>
           <classes>
             <memberOf key="att.common" />
             <memberOf key="model.tabchordPart" />
           </classes>
+          <attList>
+            <attDef ident="symbol" usage="req">
+              <desc>The duration symbol.</desc>
+              <datatype>
+                <rng:ref name="data.DURATION.lutetab" />
+              </datatype>
+            </attDef>
+            <attDef ident="dots" usage="opt">
+              <desc>The number of dots on the rhythm sign.</desc>
+              <datatype>
+                <rng:data type="integer" />
+              </datatype>
+            </attDef>
+          </attList>
         </elementSpec>
 
-        <elementSpec ident="abzug" mode="add">
+        <elementSpec ident="fingering" module="MEI.instruments" mode="change" ns="http://www.music-encoding.org/ns/mei">
+          <classes mode="change">
+            <memberOf mode="add" key="model.tabchordPart" />
+          </classes>
+        </elementSpec>
 
+        <elementSpec ident="abzug" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+          <gloss>abzug marking</gloss>
+          <desc>abzug marking</desc>
           <classes>
             <memberOf key="att.common" />
+            <memberOf key="att.startendid" />
             <memberOf key="model.tabchordPart" />
           </classes>
         </elementSpec>
 
-        <elementSpec ident="barre" mode="add">
-
+        <elementSpec ident="tabBarre" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+          <gloss>barré marking</gloss>
+          <desc>barré marking</desc>
           <classes>
             <memberOf key="att.common" />
+            <memberOf key="att.startid" />
+            <memberOf key="att.fretlocation" />
             <memberOf key="model.tabchordPart" />
+            <memberOf key="model.measurePart" />
+            <memberOf key="model.staffPart" />
           </classes>
         </elementSpec>
 
-        <elementSpec ident="ensembleLine" mode="add">
-
+        <elementSpec ident="ensembleLine" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+          <gloss>ensemble line</gloss>
+          <desc>Indicates that two &lt;tabNote&gt;s are to be played simultaneously.</desc>
           <classes>
             <memberOf key="att.common" />
+            <memberOf key="att.startendid" />
             <memberOf key="model.tabchordPart" />
           </classes>
+          <content>
+            <rng:empty />
+          </content>
         </elementSpec>
 
-        <elementSpec ident="connectingLine" mode="add">
-
-        </elementSpec>
-
-        <elementSpec ident="separee" mode="add">
-
+        <elementSpec ident="connectingLine" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+          <gloss>connecting line</gloss>
+          <desc>connecting line</desc>
           <classes>
             <memberOf key="att.common" />
+            <memberOf key="att.startendid" />
+            <memberOf key="model.measurePart" />
+            <memberOf key="model.staffPart" />
+          </classes>
+          <content>
+            <rng:empty />
+          </content>
+        </elementSpec>
+
+        <elementSpec ident="separee" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+          <gloss>separeé marking</gloss>
+          <desc>Indicates that two &lt;tabNote&gt;s in a single &lt;tabChord&gt; should be played sequentially (rather than simultaneously).</desc>
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="att.startendid" />
             <memberOf key="model.tabchordPart" />
           </classes>
+          <content>
+            <rng:empty />
+          </content>
         </elementSpec>
 
-        <!-- Or maybe create an instrdescPart model? -->
-        <elementSpec ident="instrDesc" mode="change">
-
+        <elementSpec ident="courseCount" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+          <gloss>number of courses</gloss>
+          <desc>The number of courses on a lute.</desc>
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="model.instrdescPart" />
+          </classes>
+          <content>
+            <rng:text />
+          </content>
         </elementSpec>
 
-        <elementSpec ident="courseCount" mode="add">
-
+        <elementSpec ident="courseTuning" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+          <gloss>tuning of courses</gloss>
+          <desc>Chile &lt;course&gt; elements should be used to indicate the tuning of each course on a lute.</desc>
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="model.instrconfigPart" />
+          </classes>
+          <content>
+            <rng:oneOrMore>
+              <rng:ref name="course" />
+            </rng:oneOrMore>
+            <rng:zeroOrMore>
+              <rng:ref name="bassTuning" />
+            </rng:zeroOrMore>
+          </content>
         </elementSpec>
 
-        <!-- Or maybe create an instrconfigPart model? -->
-        <elementSpec ident="instrConfig" mode="change">
-
+        <elementSpec ident="course" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+          <gloss>course tuning information</gloss>
+          <desc>Describes the tuning of a course on a lute.</desc>
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="att.pitched" />
+          </classes>
+          <content>
+            <rng:zeroOrMore>
+              <rng:ref name="string" />
+            </rng:zeroOrMore>
+          </content>
         </elementSpec>
 
-        <elementSpec ident="courseTuning" mode="add">
-
+        <elementSpec ident="string" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+          <gloss>a string of a course</gloss>
+          <desc>Describes the tuning of a single string of a course on a lute.</desc>
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="att.pitched" />
+          </classes>
+          <content>
+            <rng:empty />
+          </content>
         </elementSpec>
 
-        <elementSpec ident="course" mode="add">
-
+        <elementSpec ident="bassTuning" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+          <gloss>bass course tuning</gloss>
+          <desc>Describes the tuning of the bass course of a lute.</desc>
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="att.keySig.log" />
+          </classes>
+          <content>
+            <rng:empty />
+          </content>
         </elementSpec>
 
-        <elementSpec ident="string" mode="add">
-
-        </elementSpec>
-
-        <elementSpec ident="bassTuning" mode="add">
-
-        </elementSpec>
+        </specGrp>
       </schemaSpec>
     </body>
   </text>

@@ -13,12 +13,8 @@
   </teiHeader>
   <text>
     <body>
-      <schemaSpec ident="instruments" start="mei meiHead meiCorpus music" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-        <moduleRef key="MEI" />
-        <moduleRef key="MEI.header" />
-        <moduleRef key="MEI.shared" />
-        <moduleRef key="MEI.edittrans" />
-        <moduleRef key="MEI.cmn" />
+      <schemaSpec ident="instruments" start="mei meiHead meiCorpus music" xmlns:rng="http://relaxng.org/ns/structure/1.0" ns="http://www.music-encoding.org/ns/mei">
+        <specGrp xml:id="instruments">
 
         <moduleSpec ident="MEI.instruments">
           <desc>Provides details of instruments and playing techniques.</desc>
@@ -28,9 +24,9 @@
           <desc>Groups elements that may be be part of a structured instrument definition.</desc>
         </classSpec>
 
-        <elementSpec ident="instrVoice" module="MEI.header" mode="change">
-          <classes>
-            <memberOf key="model.instrvoicePart" />
+        <elementSpec ident="instrVoice" module="TEI.header" mode="change" ns="http://www.music-encoding.org/ns/mei">
+          <classes mode="change">
+            <memberOf mode="add" key="model.instrvoicePart" />
           </classes>
           <content>
             <rng:zeroOrMore>
@@ -46,7 +42,7 @@
           <desc>Groups elements that may be part of a structured description of an instrument.</desc>
         </classSpec>
 
-        <elementSpec ident="instrDesc" module="MEI.instruments" mode="add">
+        <elementSpec ident="instrDesc" module="MEI.instruments" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>description of an instrument</gloss>
           <desc>A detailed and structured description of an instrument.</desc>
           <classes>
@@ -66,7 +62,7 @@
           </content>
         </elementSpec>
 
-        <classSpec ident="att.instrdesc" type="atts" mode="add">
+        <classSpec ident="att.instrdesc" module="MEI.instruments" type="atts" mode="add">
           <classes>
             <memberOf key="att.typed" />
           </classes>
@@ -80,7 +76,7 @@
           </attList>
         </classSpec>
 
-        <elementSpec ident="instrName" module="MEI.instruments" mode="add">
+        <elementSpec ident="instrName" module="MEI.instruments" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>instrument name</gloss>
           <desc>The name of an instrument</desc>
           <classes>
@@ -89,7 +85,6 @@
             <memberOf key="model.instrdescPart" />
             <memberOf key="model.editLike" />
             <memberOf key="model.editorialLike" />
-            <memberOf key="model.instrvoicePart" />
           </classes>
           <content>
             <rng:text />
@@ -100,13 +95,14 @@
           <desc>Groups elements that may be part of a structured instrument configuration.</desc>
         </classSpec>
 
-        <elementSpec ident="instrConfig" module="MEI.instruments" mode="add">
+        <elementSpec ident="instrConfig" module="MEI.instruments" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>instrument configuration</gloss>
           <desc>Specifies how an instrument is required to be configured by this score.</desc>
           <classes>
             <memberOf key="att.common" />
             <memberOf key="model.editLike" />
             <memberOf key="model.editorialLike" />
+            <memberOf key="model.instrvoicePart" />
           </classes>
           <content>
             <rng:zeroOrMore>
@@ -118,7 +114,7 @@
           </content>
         </elementSpec>
 
-        <classSpec ident="att.fingering" type="atts" mode="add">
+        <classSpec ident="att.fingering" module="MEI.instruments" type="atts" mode="add">
           <desc>Attributes to describe instrument fingering.</desc>
           <attList>
             <attDef ident="playingHand" usage="opt">
@@ -152,7 +148,7 @@
           </attList>
         </classSpec>
 
-        <elementSpec ident="fingering" module="MEI.instruments" mode="add">
+        <elementSpec ident="fingering" module="MEI.instruments" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>instrument fingering</gloss>
           <desc>Indicates an instrument fingering marking.</desc>
           <classes>
@@ -166,6 +162,8 @@
             <memberOf key="model.editorialLike" />
           </classes>
         </elementSpec>
+
+        </specGrp>
       </schemaSpec>
     </body>
   </text>
