@@ -193,7 +193,7 @@
 
         <elementSpec ident="courseTuning" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>tuning of courses</gloss>
-          <desc>Chile &lt;course&gt; elements should be used to indicate the tuning of each course on a lute.</desc>
+          <desc>Child &lt;course&gt; elements should be used to indicate the tuning of each course on a lute.</desc>
           <classes>
             <memberOf key="att.common" />
             <memberOf key="model.instrconfigPart" />
