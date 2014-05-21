@@ -1,4 +1,4 @@
-# MEI Customisations for Transforming Musicology
+## MEI Customisations for Transforming Musicology
 
 Contains customisations of [MEI](http://music-encoding.org/home) used
 in the
@@ -7,12 +7,16 @@ project.
 
 Currently these comprise just:
 
-=instruments=
-    Allows describing `<instrVoice>` instruments in more detail. Adds some playing technique marking elements.
-=lutetab=
-    Allows marking up of lute tablatures.
+`instruments`
 
-## Using Roma with the ODDs
+Allows describing `<instrVoice>` instruments in more detail. Adds some
+playing technique marking elements.
+
+`lutetab`
+
+Allows marking up of lute tablatures.
+
+### Using Roma with the ODDs
 
 The customisations are contained in two ODD files (plus one container
 ODD file that pulls in all of MEI plus the two new modules). In order
