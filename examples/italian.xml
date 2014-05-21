@@ -2,39 +2,50 @@
 
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="2013">
   <meiHead>
-    <sourceDesc>
-      <source n="1">
-        <titleStmt>
-          <title>Primo Libro d'Intavolatura de balli</title>
-          <respStmt>
-            <persName>Giovanni Maria Radino</persName>
-          </respStmt>
-        </titleStmt>
-        <pubStmt>
-          <date>1592</date>
-        </pubStmt>
-      </source>
-    </sourceDesc>
-    <workDesc>
+    <fileDesc>
       <titleStmt>
-        <title>Gagliarda Prima</title>
+        <title>Exceprt from: Gagliarda Prima</title>
       </titleStmt>
-      <perfMedium>
-        <instrumentation>
-          <instrVoice code="lute" xml:id="instr-a6fc9c84-daa3-11e3-a44c-0021ccd2abe3" solo="true">
-            <intrsDesc>
-              <name>Lute</name>
-              <label></label>
-            </intrsDesc>
-            <tuningSystem>
-              <name>italian</name>
-              <courseTuning>
-
-              </courseTuning>
-            </tuningSystem>
-          </instrVoice>
-        </instrumentation>
-      </perfMedium>
+      <pubStmt>
+        <respStmt>
+          <persName>Richard Lewis</persName>
+          <resp>Encoding</resp>
+        </respStmt>
+      </pubStmt>
+      <sourceDesc>
+        <source n="1">
+          <titleStmt>
+            <title>Primo Libro d'Intavolatura de balli</title>
+          </titleStmt>
+          <pubStmt>
+            <date>1592</date>
+            <respStmt>
+              <persName>Giovanni Maria Radino</persName>
+            </respStmt>
+          </pubStmt>
+        </source>
+      </sourceDesc>
+    </fileDesc>
+    <workDesc>
+      <work>
+        <titleStmt>
+          <title>Gagliarda Prima</title>
+        </titleStmt>
+        <perfMedium>
+          <instrumentation>
+            <instrVoice code="lute" xml:id="instr-a6fc9c84-daa3-11e3-a44c-0021ccd2abe3" solo="true">
+              <instrDesc>
+                <instrName>Lute</instrName>
+              </instrDesc>
+              <instrConfig label="italian">
+                <courseTuning>
+                
+                </courseTuning>
+              </instrConfig>
+            </instrVoice>
+          </instrumentation>
+        </perfMedium>
+      </work>
     </workDesc>
   </meiHead>
   <music>
