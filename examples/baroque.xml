@@ -76,7 +76,7 @@
                   <rhythmSign id="xxx" symbol="E"/>
                   <tabNote id="xxx" symbol="c" course="1"/>
                 </tabChord>
-	              <barLine xml:id="xxx" symbol="|" />
+	              <barLine xml:id="xxx" rend="|" />
                 <tabChord xml:id="">
                   <rhythmSign id="xxx" symbol="H"/>
                   <tabNote id="xxx" symbol="c" course="1"/>
@@ -104,7 +104,7 @@
                   <tabNote id="xx7" symbol="d" course="2"/>
                   <fingering target="xx3" playingHand="left" playingFinger="1" symbol="dot"/>
                 </tabChord>
-	              <barLine xml:id="xxx" symbol="|" />
+	              <barLine xml:id="xxx" rend="|" />
                 <tabChord>
                   <rhythmSign id="xxx" symbol="Q" dots="1"/>
                   <tabNote id="xx8" symbol="c" course="2"/>
@@ -134,7 +134,7 @@
                   <tabNote id="x13" symbol="a" course="2"/>
                   <fingering target="x13" playingHand="right" playingFinger="1"/>
                 </tabChord>
-	              <barLine xml:id="xxx" symbol="|" />
+	              <barLine xml:id="xxx" rend="|" />
               </staff>
             </section>
           </part>

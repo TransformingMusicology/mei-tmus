@@ -63,7 +63,7 @@
                     <tabNote xml:id="tn-5bcdb84c-daa3-11e3-ba4e-0021ccd2abe3" course="3">4</tabNote>
                     <tabNote xml:id="tn-5c00ebfe-daa3-11e3-970e-0021ccd2abe3" course="4">0</tabNote>
                   </tabChord>
-                  <barLine xml:id="bl-45f80d0a-daa9-11e3-a7de-0021ccd2abe3" symbol="|" />
+                  <barLine xml:id="bl-45f80d0a-daa9-11e3-a7de-0021ccd2abe3" rend="single" />
                   <tabChord xml:id="c-85ba1bc8-daa3-11e3-b923-0021ccd2abe3">
                     <rhythmSign xml:id="rs-9c08d1bc-daa3-11e3-8498-0021ccd2abe3" symbol="Q." dots="1" />
                     <tabNote xml:id="tn-5c3cdb3c-daa3-11e3-8e6d-0021ccd2abe3" course="1">2</tabNote>
@@ -85,7 +85,7 @@
                     <tabNote xml:id="tn-5e9b9c7e-daa3-11e3-b12d-0021ccd2abe3" course="3">0</tabNote>
                     <tabNote xml:id="tn-5eb79424-daa3-11e3-b26d-0021ccd2abe3" course="4">0</tabNote>
                   </tabChord>
-                  <barLine xml:id="bl-4990f710-daa9-11e3-badd-0021ccd2abe3" symbol="|" />
+                  <barLine xml:id="bl-4990f710-daa9-11e3-badd-0021ccd2abe3" rend="single" />
                   <tabChord xml:id="c-86ccea7c-daa3-11e3-ba24-0021ccd2abe3">
                     <tabNote xml:id="tn-5ed75872-daa3-11e3-9ac2-0021ccd2abe3" course="1">7</tabNote>
                     <tabNote xml:id="tn-5eff2050-daa3-11e3-9367-0021ccd2abe3" course="2">0</tabNote>
@@ -109,7 +109,7 @@
                     <tabNote xml:id="tn-6072b8ac-daa3-11e3-89df-0021ccd2abe3" course="1">3</tabNote>
                     <tabNote xml:id="tn-609c9be0-daa3-11e3-97a1-0021ccd2abe3" course="5">4</tabNote>
                   </tabChord>
-                  <barLine xml:id="bl-4d0342c2-daa9-11e3-ba57-0021ccd2abe3" symbol="|" />
+                  <barLine xml:id="bl-4d0342c2-daa9-11e3-ba57-0021ccd2abe3" rend="single" />
                   <tabChord xml:id="c-87e0c5c8-daa3-11e3-8cfb-0021ccd2abe3">
                     <rhythmSign xml:id="rs-9d735694-daa3-11e3-a04e-0021ccd2abe3" symbol="Q." dots="1" />
                     <tabNote xml:id="tn-60c2ebb0-daa3-11e3-910b-0021ccd2abe3" course="1">2</tabNote>
