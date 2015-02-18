@@ -59,13 +59,13 @@
       </surface>
     </facsimile>
     <body>
-      <mdiv n="">
+      <mdiv n="1">
         <parts>
-          <part n="">
+          <part n="1">
             <scoreDef>
             </scoreDef>
-            <section n="">
-              <staff n="">
+            <section n="1">
+              <staff n="1">
                 <staffDef>
                   <instrument decls="lute"/>
 	                <tabType>french</tabType>
