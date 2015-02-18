@@ -54,16 +54,29 @@
                 <rng:data type="integer" />
               </datatype>
             </attDef>
-            <attDef ident="fret" usage="opt">
+            <attDef ident="fret" usage="req">
               <desc>The fret on which the note is played.</desc>
               <datatype>
                 <rng:data type="integer" />
               </datatype>
             </attDef>
-            <attDef ident="symbol" usage="opt">
-              <desc>The logical symbol which describes the note.</desc>
-            </attDef>
           </attList>
+          <content>
+            <rng:ref name="model.tabGlyphLike" />
+          </content>
+        </elementSpec>
+
+        <classSpec ident="model.tabGlyphLike" module="MEI.lutetab" type="model">
+          <desc>Groups elements that may used as symbols (or glyphs) for &lt;tabNote&gt;s</desc>
+        </classSpec>
+
+        <elementSpec ident="tabGlyph" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+          <gloss>tablature note glyph</gloss>
+          <desc>Encodes the actual symbol found in the tablature source for a particular note. These are often simple numerals or letters, but may also (in German tablature) be characters such as ꝯ or ꝫ or letters with a bar such as ā.</desc>
+          <classes>
+            <memberOf key="att.facsimile" />
+            <memberOf key="model.tabGlyphLike" />
+          </classes>
           <content>
             <rng:text />
           </content>
