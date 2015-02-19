@@ -73,12 +73,12 @@
                 </staffDef>
                 <barre startid="cx1" fret="c"/>
                 <tabChord xml:id="cx1">
-                  <rhythmSign id="xxx" symbol="E"/>
+                  <rhythmSign id="xxx" tabcode="E"/>
                   <tabNote id="xxx" course="1" fret="2"><tabGlyph>c</tabGlyph></tabNote>
                 </tabChord>
 	              <barLine xml:id="xxx" rend="|" />
                 <tabChord xml:id="">
-                  <rhythmSign id="xxx" symbol="H"/>
+                  <rhythmSign id="xxx" tabcode="H"/>
                   <tabNote id="xxx" course="1" fret="2"><tabGlyph>c</tabGlyph></tabNote>
                   <tabNote id="xxx" course="2" fret="2"><tabGlyph>c</tabGlyph></tabNote>
                   <tabNote id="xx1" course="3" fret="3"><tabGlyph>d</tabGlyph></tabNote>
@@ -86,7 +86,7 @@
                   <tabNote id="xx2" course="6" fret="3"><tabGlyph>d</tabGlyph></tabNote>
                 </tabChord>
                 <tabChord xml:id="">
-                  <rhythmSign id="xxx" symbol="E"/>
+                  <rhythmSign id="xxx" tabcode="E"/>
                   <tabNote id="xxx" course="1" fret="2"><tabGlyph>c</tabGlyph></tabNote>
                   <tabNote id="xx3" course="2" fret="2"><tabGlyph>c</tabGlyph></tabNote>
                   <fingering target="xx3" playingHand="left" playingFinger="1" symbol="dot"/>
@@ -106,7 +106,7 @@
                 </tabChord>
 	              <barLine xml:id="xxx" rend="|" />
                 <tabChord>
-                  <rhythmSign id="xxx" symbol="Q" dots="1"/>
+                  <rhythmSign id="xxx" tabcode="Q" dots="1"/>
                   <tabNote id="xx8" course="2" fret="2"><tabGlyph>c</tabGlyph></tabNote>
                   <abzug startid="xx8"/>
                   <ensembleLine startid="xx8" endid="xx9"/>
@@ -114,12 +114,12 @@
                 </tabChord>
                 <connectingLine startid="xx9" endid="x11"/>
                 <tabChord>
-                  <rhythmSign id="xxx" symbol="E"/>
+                  <rhythmSign id="xxx" tabcode="E"/>
                   <tabNote id="x10" course="3" fret="3"><tabGlyph>d</tabGlyph></tabNote>
                   <fingering target="x10" playingHand="left" playingFinger="1" symbol="dot"/>
                 </tabChord>
                 <tabChord>
-                  <rhythmSign id="xxx" symbol="Q"/>
+                  <rhythmSign id="xxx" tabcode="Q"/>
                   <tabNote id="xxx" course="1" fret="0"><tabGlyph>a</tabGlyph></tabNote>
                   <tabNote id="xxx" course="2" fret="0"><tabGlyph>a</tabGlyph></tabNote>
                   <tabNote id="xxx" course="3" fret="0"><tabGlyph>a</tabGlyph></tabNote>
@@ -127,7 +127,7 @@
                   <fingering target="x11" playingHand="right" playingFinger="1"/>
                 </tabChord>
                 <tabChord>
-                  <rhythmSign id="xxx" symbol="Q"/>
+                  <rhythmSign id="xxx" tabcode="Q"/>
                   <tabNote id="x12" course="1" fret="0"><tabGlyph>a</tabGlyph></tabNote>
                   <fingering target="x12" playingHand="right" playingFinger="2"/>
                   <separee startid="x12" endid="x13"/>

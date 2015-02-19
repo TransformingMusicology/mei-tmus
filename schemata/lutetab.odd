@@ -20,11 +20,18 @@
           <desc>Marking up of lute tablatures.</desc>
         </moduleSpec>
 
+        <classSpec mode="change" ident="att.duration.additive" module="MEI.shared" type="atts" ns="http://www.music-encoding.org/ns/mei">
+          <attList>
+            <attDef mode="change" ident="dur" usage="req" />
+          </attList>
+        </classSpec>
+
         <elementSpec ident="tabChord" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>tablature chord</gloss>
-          <desc>Simultaneously played tablature notes, all sharing a rhythm sign.</desc>
+          <desc>Simultaneously played tablature notes, all sharing a (possibly implied) rhythm sign, but requiring an explicit duration attribute.</desc>
           <classes>
             <memberOf key="att.common" />
+            <memberOf key="att.duration.additive" />
             <memberOf key="model.eventLike" />
             <memberOf key="model.measurePart" />
             <memberOf key="model.staffPart" />
@@ -82,36 +89,67 @@
           </content>
         </elementSpec>
 
-        <macroSpec ident="data.DURATION.lutetab" module="MEI.lutetab" type="dt">
-          <desc>The duration symbols used to encode logical duration of &lt;tabChord&gt; &lt;rhythmSign&gt;s.</desc>
+        <macroSpec ident="data.DURATION.tabcode" module="MEI.lutetab" type="dt">
+          <desc>The duration symbols used to encode logical duration of &lt;tabChord&gt; &lt;rhythmSign&gt;s in Tabcode. This is included for backwards compatibility with Tabcode.</desc>
           <content>
             <rng:choice>
+              <rng:value>F</rng:value>
+              <a:documentation>Fermata</a:documentation>
+              <rng:value>B</rng:value>
+              <a:documentation>Breve</a:documentation>
+              <rng:value>W</rng:value>
+              <a:documentation>Semibreve (whole note)</a:documentation>
               <rng:value>H</rng:value>
-              <a:documentation>H</a:documentation>
+              <a:documentation>Minim (half note)</a:documentation>
+              <rng:value>H.</rng:value>
+              <a:documentation>Dotted minim (half note)</a:documentation>
               <rng:value>Q</rng:value>
-              <a:documentation>Q</a:documentation>
+              <a:documentation>Crotchet (quarter note)</a:documentation>
               <rng:value>Q.</rng:value>
-              <a:documentation>Q.</a:documentation>
+              <a:documentation>Dotted crotchet (quarter note)</a:documentation>
               <rng:value>E</rng:value>
-              <a:documentation>E.</a:documentation>
+              <a:documentation>Quaver (eight note)</a:documentation>
+              <rng:value>E.</rng:value>
+              <a:documentation>Dotted quaver (eight note)</a:documentation>
               <rng:value>S</rng:value>
-              <a:documentation>S</a:documentation>
+              <a:documentation>Semiquaver (sixteenth note)</a:documentation>
+              <rng:value>S.</rng:value>
+              <a:documentation>Dotted semiquaver (sixteenth note)</a:documentation>
+              <rng:value>T</rng:value>
+              <a:documentation>Demisemiquaver (thirtysecond note)</a:documentation>
+              <rng:value>T.</rng:value>
+              <a:documentation>Dotted demisemiquaver (thirtysecond note)</a:documentation>
+              <rng:value>Y</rng:value>
+              <a:documentation>Hemidemisemiquaver (sixtyfourth note)</a:documentation>
+              <rng:value>Y.</rng:value>
+              <a:documentation>Dotted hemidemisemiquaver (sixtyfourth note)</a:documentation>
+              <rng:value>Z</rng:value>
+              <a:documentation>Semihemidemisemiquaver (one hundred and twentyeighth note)</a:documentation>
+              <rng:value>Z.</rng:value>
+              <a:documentation>Dotted semihemidemisemiquaver (one hundred and twentyeighth note)</a:documentation>
             </rng:choice>
           </content>
         </macroSpec>
 
         <elementSpec ident="rhythmSign" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>tablature rhythm sign</gloss>
-          <desc>The durational sign associated with a tablature chord.</desc>
+          <desc>The durational sign associated with a tablature chord. The intended use of &lt;rhythmSign&gt; is to encode the rhythmic sign found in the source (if any) while the actual duration of the associated tablature chord is encoded using the &lt;tabChord&gt;'s @dur attribute.</desc>
           <classes>
             <memberOf key="att.common" />
+            <memberOf key="att.facsimile" />
             <memberOf key="model.tabchordPart" />
           </classes>
           <attList>
-            <attDef ident="symbol" usage="req">
-              <desc>The duration symbol.</desc>
+            <attDef ident="tabcode" usage="opt">
+              <desc>The Tabcode duration symbol.</desc>
               <datatype>
-                <rng:ref name="data.DURATION.lutetab" />
+                <rng:ref name="data.DURATION.tabcode" />
+              </datatype>
+            </attDef>
+            <attDef ident="dur" usage="opt">
+              <desc>The logical duration implied by this rhythm sign.</desc>
+              <datatype>
+                <rng:ref name="data.DURATION.additive" />
               </datatype>
             </attDef>
             <attDef ident="dots" usage="opt">
@@ -121,6 +159,9 @@
               </datatype>
             </attDef>
           </attList>
+          <content>
+            <rng:text />
+          </content>
         </elementSpec>
 
         <elementSpec ident="fingering" module="MEI.instruments" mode="change" ns="http://www.music-encoding.org/ns/mei">
