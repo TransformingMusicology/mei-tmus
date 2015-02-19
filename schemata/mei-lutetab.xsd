@@ -3,9 +3,9 @@
   <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2004/10/xml.xsd"/>
   <!--
-    Schema generated from ODD source 2014-05-16T16:09:32Z. 
-    Edition: 2013 Release
-    Edition Location: http://www.tei-c.org/Vault/P5//
+    Schema generated from ODD source 2015-02-19T12:50:06Z. .
+    TEI Edition: 2013 Release
+    TEI Edition Location: http://www.tei-c.org/Vault/P5//
     
   -->
   <!---->
@@ -3129,31 +3129,91 @@
       <xs:minLength value="1"/>
     </xs:restriction>
   </xs:simpleType>
-  <xs:simpleType name="data.DURATION.lutetab">
+  <xs:simpleType name="data.DURATION.tabcode">
     <xs:restriction base="xs:token">
+      <xs:enumeration value="F">
+        <xs:annotation>
+          <xs:documentation>Fermata</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="B">
+        <xs:annotation>
+          <xs:documentation>Breve</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="W">
+        <xs:annotation>
+          <xs:documentation>Semibreve (whole note)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="H">
         <xs:annotation>
-          <xs:documentation>H</xs:documentation>
+          <xs:documentation>Minim (half note)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="H.">
+        <xs:annotation>
+          <xs:documentation>Dotted minim (half note)</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Q">
         <xs:annotation>
-          <xs:documentation>Q</xs:documentation>
+          <xs:documentation>Crotchet (quarter note)</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="Q.">
         <xs:annotation>
-          <xs:documentation>Q.</xs:documentation>
+          <xs:documentation>Dotted crotchet (quarter note)</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="E">
         <xs:annotation>
-          <xs:documentation>E.</xs:documentation>
+          <xs:documentation>Quaver (eight note)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E.">
+        <xs:annotation>
+          <xs:documentation>Dotted quaver (eight note)</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="S">
         <xs:annotation>
-          <xs:documentation>S</xs:documentation>
+          <xs:documentation>Semiquaver (sixteenth note)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="S.">
+        <xs:annotation>
+          <xs:documentation>Dotted semiquaver (sixteenth note)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="T">
+        <xs:annotation>
+          <xs:documentation>Demisemiquaver (thirtysecond note)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="T.">
+        <xs:annotation>
+          <xs:documentation>Dotted demisemiquaver (thirtysecond note)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y">
+        <xs:annotation>
+          <xs:documentation>Hemidemisemiquaver (sixtyfourth note)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y.">
+        <xs:annotation>
+          <xs:documentation>Dotted hemidemisemiquaver (sixtyfourth note)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Z">
+        <xs:annotation>
+          <xs:documentation>Semihemidemisemiquaver (one hundred and twentyeighth note)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Z.">
+        <xs:annotation>
+          <xs:documentation>Dotted semihemidemisemiquaver (one hundred and twentyeighth note)</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
@@ -3859,7 +3919,7 @@
     <xs:attributeGroup ref="mei:att.duration.additive.attribute.dur"/>
   </xs:attributeGroup>
   <xs:attributeGroup name="att.duration.additive.attribute.dur">
-    <xs:attribute name="dur" type="mei:data.DURATION.additive">
+    <xs:attribute name="dur" use="required" type="mei:data.DURATION.additive">
       <xs:annotation>
         <xs:documentation>records duration using ident dotted, relative durational values provided by the data.DURATION datatype. When the duration is "irrational", as is sometimes the case with tuplets, multiple space-separated values that add up to the total duration may be used. When dotted values are present, the dots attribute must be ignored.</xs:documentation>
       </xs:annotation>
@@ -6402,7 +6462,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <xs:element ref="mei:expan"/>
       <xs:element ref="mei:instrName"/>
       <xs:element ref="mei:instrConfig"/>
-      <xs:element ref="mei:fingering"/>
     </xs:choice>
   </xs:group>
   <xs:group name="model.editorialLike_alternation">
@@ -6411,7 +6470,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <xs:element ref="mei:expan"/>
       <xs:element ref="mei:instrName"/>
       <xs:element ref="mei:instrConfig"/>
-      <xs:element ref="mei:fingering"/>
     </xs:choice>
   </xs:group>
   <xs:group name="model.editorialLike_sequence">
@@ -6420,7 +6478,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <xs:element ref="mei:expan"/>
       <xs:element ref="mei:instrName"/>
       <xs:element ref="mei:instrConfig"/>
-      <xs:element ref="mei:fingering"/>
     </xs:sequence>
   </xs:group>
   <xs:group name="model.editorialLike_sequenceOptional">
@@ -6429,7 +6486,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <xs:element minOccurs="0" ref="mei:expan"/>
       <xs:element minOccurs="0" ref="mei:instrName"/>
       <xs:element minOccurs="0" ref="mei:instrConfig"/>
-      <xs:element minOccurs="0" ref="mei:fingering"/>
     </xs:sequence>
   </xs:group>
   <xs:group name="model.editorialLike_sequenceOptionalRepeatable">
@@ -6438,7 +6494,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <xs:element minOccurs="0" maxOccurs="unbounded" ref="mei:expan"/>
       <xs:element minOccurs="0" maxOccurs="unbounded" ref="mei:instrName"/>
       <xs:element minOccurs="0" maxOccurs="unbounded" ref="mei:instrConfig"/>
-      <xs:element minOccurs="0" maxOccurs="unbounded" ref="mei:fingering"/>
     </xs:sequence>
   </xs:group>
   <xs:group name="model.editorialLike_sequenceRepeatable">
@@ -6447,7 +6502,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <xs:element maxOccurs="unbounded" ref="mei:expan"/>
       <xs:element maxOccurs="unbounded" ref="mei:instrName"/>
       <xs:element maxOccurs="unbounded" ref="mei:instrConfig"/>
-      <xs:element maxOccurs="unbounded" ref="mei:fingering"/>
     </xs:sequence>
   </xs:group>
   <xs:group name="model.endingLike">
@@ -6886,31 +6940,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <xs:element ref="mei:p"/>
     </xs:sequence>
   </xs:group>
-  <xs:group name="model.pLike_alternation">
-    <xs:sequence>
-      <xs:element ref="mei:p"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.pLike_sequence">
-    <xs:sequence>
-      <xs:element ref="mei:p"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.pLike_sequenceOptional">
-    <xs:sequence>
-      <xs:element minOccurs="0" ref="mei:p"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.pLike_sequenceOptionalRepeatable">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" ref="mei:p"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.pLike_sequenceRepeatable">
-    <xs:sequence>
-      <xs:element maxOccurs="unbounded" ref="mei:p"/>
-    </xs:sequence>
-  </xs:group>
   <xs:group name="model.rendLike">
     <xs:choice>
       <xs:element ref="mei:rend"/>
@@ -7138,7 +7167,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <xs:group ref="mei:model.layerLike"/>
       <xs:group ref="mei:model.staffPart.mensuralAndNeumes"/>
       <xs:group ref="mei:model.ossiaLike"/>
-      <xs:element ref="mei:fingering"/>
       <xs:element ref="mei:tabChord"/>
       <xs:element ref="mei:tabBarre"/>
       <xs:element ref="mei:connectingLine"/>
@@ -11675,7 +11703,6 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</xs:docu
       <xs:group ref="mei:model.ossiaLike"/>
       <xs:group ref="mei:model.lyricsLike"/>
       <xs:group ref="mei:model.midiLike"/>
-      <xs:element ref="mei:fingering"/>
       <xs:element ref="mei:tabChord"/>
       <xs:element ref="mei:tabBarre"/>
       <xs:element ref="mei:connectingLine"/>
@@ -13865,31 +13892,6 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</xs:docu
       <xs:element ref="mei:table"/>
     </xs:sequence>
   </xs:group>
-  <xs:group name="model.tableLike_alternation">
-    <xs:sequence>
-      <xs:element ref="mei:table"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.tableLike_sequence">
-    <xs:sequence>
-      <xs:element ref="mei:table"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.tableLike_sequenceOptional">
-    <xs:sequence>
-      <xs:element minOccurs="0" ref="mei:table"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.tableLike_sequenceOptionalRepeatable">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" ref="mei:table"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.tableLike_sequenceRepeatable">
-    <xs:sequence>
-      <xs:element maxOccurs="unbounded" ref="mei:table"/>
-    </xs:sequence>
-  </xs:group>
   <xs:element name="fig">
     <xs:annotation>
       <xs:documentation>(figure) – groups elements representing or containing graphic information such as an illustration or figure. </xs:documentation>
@@ -15617,72 +15619,12 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</xs:docu
       <xs:element ref="mei:lg"/>
     </xs:sequence>
   </xs:group>
-  <xs:group name="model.lgLike_alternation">
-    <xs:sequence>
-      <xs:element ref="mei:lg"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.lgLike_sequence">
-    <xs:sequence>
-      <xs:element ref="mei:lg"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.lgLike_sequenceOptional">
-    <xs:sequence>
-      <xs:element minOccurs="0" ref="mei:lg"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.lgLike_sequenceOptionalRepeatable">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" ref="mei:lg"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.lgLike_sequenceRepeatable">
-    <xs:sequence>
-      <xs:element maxOccurs="unbounded" ref="mei:lg"/>
-    </xs:sequence>
-  </xs:group>
   <xs:group name="model.listLike">
     <xs:choice>
       <xs:element ref="mei:biblList"/>
       <xs:element ref="mei:castList"/>
       <xs:element ref="mei:list"/>
     </xs:choice>
-  </xs:group>
-  <xs:group name="model.listLike_alternation">
-    <xs:choice>
-      <xs:element ref="mei:biblList"/>
-      <xs:element ref="mei:castList"/>
-      <xs:element ref="mei:list"/>
-    </xs:choice>
-  </xs:group>
-  <xs:group name="model.listLike_sequence">
-    <xs:sequence>
-      <xs:element ref="mei:biblList"/>
-      <xs:element ref="mei:castList"/>
-      <xs:element ref="mei:list"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.listLike_sequenceOptional">
-    <xs:sequence>
-      <xs:element minOccurs="0" ref="mei:biblList"/>
-      <xs:element minOccurs="0" ref="mei:castList"/>
-      <xs:element minOccurs="0" ref="mei:list"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.listLike_sequenceOptionalRepeatable">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" ref="mei:biblList"/>
-      <xs:element minOccurs="0" maxOccurs="unbounded" ref="mei:castList"/>
-      <xs:element minOccurs="0" maxOccurs="unbounded" ref="mei:list"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.listLike_sequenceRepeatable">
-    <xs:sequence>
-      <xs:element maxOccurs="unbounded" ref="mei:biblList"/>
-      <xs:element maxOccurs="unbounded" ref="mei:castList"/>
-      <xs:element maxOccurs="unbounded" ref="mei:list"/>
-    </xs:sequence>
   </xs:group>
   <xs:group name="model.lLike">
     <xs:sequence>
@@ -15692,31 +15634,6 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</xs:docu
   <xs:group name="model.quoteLike">
     <xs:sequence>
       <xs:element ref="mei:quote"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.quoteLike_alternation">
-    <xs:sequence>
-      <xs:element ref="mei:quote"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.quoteLike_sequence">
-    <xs:sequence>
-      <xs:element ref="mei:quote"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.quoteLike_sequenceOptional">
-    <xs:sequence>
-      <xs:element minOccurs="0" ref="mei:quote"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.quoteLike_sequenceOptionalRepeatable">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" ref="mei:quote"/>
-    </xs:sequence>
-  </xs:group>
-  <xs:group name="model.quoteLike_sequenceRepeatable">
-    <xs:sequence>
-      <xs:element maxOccurs="unbounded" ref="mei:quote"/>
     </xs:sequence>
   </xs:group>
   <xs:element name="back">
@@ -16074,70 +15991,20 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</xs:docu
       <xs:attributeGroup ref="mei:att.common.attributes"/>
     </xs:complexType>
   </xs:element>
-  <xs:attributeGroup name="att.fingering.attributes">
-    <xs:attributeGroup ref="mei:att.fingering.attribute.playingHand"/>
-    <xs:attributeGroup ref="mei:att.fingering.attribute.playingFinger"/>
-    <xs:attributeGroup ref="mei:att.fingering.attribute.symbol"/>
-  </xs:attributeGroup>
-  <xs:attributeGroup name="att.fingering.attribute.playingHand">
-    <xs:attribute name="playingHand">
-      <xs:annotation>
-        <xs:documentation>The hand (left, right, or both) prescribed by the fingering marking.</xs:documentation>
-      </xs:annotation>
-      <xs:simpleType>
-        <xs:restriction base="xs:token">
-          <xs:enumeration value="left">
-            <xs:annotation>
-              <xs:documentation>Left hand</xs:documentation>
-            </xs:annotation>
-          </xs:enumeration>
-          <xs:enumeration value="right">
-            <xs:annotation>
-              <xs:documentation>Right hand</xs:documentation>
-            </xs:annotation>
-          </xs:enumeration>
-          <xs:enumeration value="both">
-            <xs:annotation>
-              <xs:documentation>Both left and right hands</xs:documentation>
-            </xs:annotation>
-          </xs:enumeration>
-        </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
-  </xs:attributeGroup>
-  <xs:attributeGroup name="att.fingering.attribute.playingFinger">
-    <xs:attribute name="playingFinger" type="mei:data.FINGER.FRET">
-      <xs:annotation>
-        <xs:documentation>The finger prescribed by the fingering marking.</xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
-  </xs:attributeGroup>
-  <xs:attributeGroup name="att.fingering.attribute.symbol">
-    <xs:attribute name="symbol">
-      <xs:annotation>
-        <xs:documentation>The symbol employed in the fingering marking.</xs:documentation>
-      </xs:annotation>
-    </xs:attribute>
-  </xs:attributeGroup>
   <xs:element name="fingering">
     <xs:annotation>
       <xs:documentation>(instrument fingering) Indicates an instrument fingering marking.</xs:documentation>
     </xs:annotation>
-    <xs:complexType>
-      <xs:attributeGroup ref="mei:att.fingering.attributes"/>
-      <xs:attributeGroup ref="mei:att.common.attributes"/>
-      <xs:attributeGroup ref="mei:att.authorized.attributes"/>
-      <xs:attributeGroup ref="mei:att.edit.attributes"/>
-      <xs:attributeGroup ref="mei:att.pointing.attributes"/>
-    </xs:complexType>
+    <xs:complexType/>
   </xs:element>
   <xs:element name="tabChord">
     <xs:annotation>
-      <xs:documentation>(tablature chord) Simultaneously played tablature notes, all sharing a rhythm sign.</xs:documentation>
+      <xs:documentation>(tablature chord) Simultaneously played tablature notes, all sharing a (possibly implied) rhythm sign, but requiring an explicit duration attribute.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:group minOccurs="0" maxOccurs="unbounded" ref="mei:model.tabchordPart"/>
       <xs:attributeGroup ref="mei:att.common.attributes"/>
+      <xs:attributeGroup ref="mei:att.duration.additive.attributes"/>
     </xs:complexType>
   </xs:element>
   <xs:group name="model.tabchordPart">
@@ -16155,34 +16022,57 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</xs:docu
     <xs:annotation>
       <xs:documentation>(tablature note) A indication of the string and fret position within a tablature chord.</xs:documentation>
     </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="mei:model.tabGlyphLike">
+          <xs:attributeGroup ref="mei:att.common.attributes"/>
+          <xs:attribute name="course" use="required" type="xs:integer">
+            <xs:annotation>
+              <xs:documentation>The course on which the note is played.</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+          <xs:attribute name="fret" use="required" type="xs:integer">
+            <xs:annotation>
+              <xs:documentation>The fret on which the note is played.</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="model.tabGlyphLike">
+    <xs:complexContent>
+      <xs:extension base="mei:tabGlyph"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="tabGlyph">
+    <xs:sequence>
+      <xs:element ref="mei:tabGlyph"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tabGlyph">
+    <xs:annotation>
+      <xs:documentation>(tablature note glyph) Encodes the actual symbol found in the tablature source for a particular note. These are often simple numerals or letters, but may also (in German tablature) be characters such as ꝯ or ꝫ or letters with a bar such as ā.</xs:documentation>
+    </xs:annotation>
     <xs:complexType mixed="true">
-      <xs:attributeGroup ref="mei:att.common.attributes"/>
-      <xs:attribute name="course" use="required" type="xs:integer">
-        <xs:annotation>
-          <xs:documentation>The course on which the note is played.</xs:documentation>
-        </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="fret" type="xs:integer">
-        <xs:annotation>
-          <xs:documentation>The fret on which the note is played.</xs:documentation>
-        </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="symbol">
-        <xs:annotation>
-          <xs:documentation>The logical symbol which describes the note.</xs:documentation>
-        </xs:annotation>
-      </xs:attribute>
+      <xs:attributeGroup ref="mei:att.facsimile.attributes"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="rhythmSign">
     <xs:annotation>
-      <xs:documentation>(tablature rhythm sign) The durational sign associated with a tablature chord.</xs:documentation>
+      <xs:documentation>(tablature rhythm sign) The durational sign associated with a tablature chord. The intended use of &lt;rhythmSign&gt; is to encode the rhythmic sign found in the source (if any) while the actual duration of the associated tablature chord is encoded using the &lt;tabChord&gt;'s @dur attribute.</xs:documentation>
     </xs:annotation>
-    <xs:complexType>
+    <xs:complexType mixed="true">
       <xs:attributeGroup ref="mei:att.common.attributes"/>
-      <xs:attribute name="symbol" use="required" type="mei:data.DURATION.lutetab">
+      <xs:attributeGroup ref="mei:att.facsimile.attributes"/>
+      <xs:attribute name="tabcode" type="mei:data.DURATION.tabcode">
         <xs:annotation>
-          <xs:documentation>The duration symbol.</xs:documentation>
+          <xs:documentation>The Tabcode duration symbol.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="dur" type="mei:data.DURATION.additive">
+        <xs:annotation>
+          <xs:documentation>The logical duration implied by this rhythm sign.</xs:documentation>
         </xs:annotation>
       </xs:attribute>
       <xs:attribute name="dots" type="xs:integer">
@@ -16248,7 +16138,7 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</xs:docu
   </xs:element>
   <xs:element name="courseTuning">
     <xs:annotation>
-      <xs:documentation>(tuning of courses) Chile &lt;course&gt; elements should be used to indicate the tuning of each course on a lute.</xs:documentation>
+      <xs:documentation>(tuning of courses) Child &lt;course&gt; elements should be used to indicate the tuning of each course on a lute.</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>

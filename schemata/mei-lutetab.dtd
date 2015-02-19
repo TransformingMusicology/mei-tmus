@@ -1,8 +1,8 @@
 
 <!--
-DTD generated from ODD source 2014-05-16T16:09:38Z. 
-Edition: 2013 Release
-Edition Location: http://www.tei-c.org/Vault/P5//
+DTD generated from ODD source 2015-02-19T12:50:12Z. .
+TEI Edition: 2013 Release
+TEI Edition Location: http://www.tei-c.org/Vault/P5//
 
 -->
 
@@ -208,11 +208,11 @@ Edition Location: http://www.tei-c.org/Vault/P5//
 
 <!ENTITY % data.ORNAMS.cmn ' CDATA' >
 
-<!ENTITY % data.DURATION.lutetab '(H|Q|Q.|E|S)' >
+<!ENTITY % data.DURATION.tabcode '(F|B|W|H|H.|Q|Q.|E|E.|S|S.|T|T.|Y|Y.|Z|Z.)' >
 
 <!-- end datatypes -->
 
-<!--predeclared classes -->
+<!-- predeclared classes -->
 
 <!ENTITY % model.addressLike "address"> 
 <!ENTITY % model.addressLike_sequence "address"> 
@@ -254,11 +254,11 @@ Edition Location: http://www.tei-c.org/Vault/P5//
 <!ENTITY % model.editionLike_sequenceOptional "edition?"> 
 <!ENTITY % model.editionLike_sequenceOptionalRepeatable "edition*"> 
 <!ENTITY % model.editionLike_sequenceRepeatable "edition+"> 
-<!ENTITY % model.editorialLike "abbr |expan |instrName |instrConfig |fingering"> 
-<!ENTITY % model.editorialLike_sequence "abbr, expan, instrName, instrConfig, fingering"> 
-<!ENTITY % model.editorialLike_sequenceOptional "abbr?, expan?, instrName?, instrConfig?, fingering?"> 
-<!ENTITY % model.editorialLike_sequenceOptionalRepeatable "abbr*, expan*, instrName*, instrConfig*, fingering*"> 
-<!ENTITY % model.editorialLike_sequenceRepeatable "abbr+, expan+, instrName+, instrConfig+, fingering+"> 
+<!ENTITY % model.editorialLike "abbr |expan |instrName |instrConfig"> 
+<!ENTITY % model.editorialLike_sequence "abbr, expan, instrName, instrConfig"> 
+<!ENTITY % model.editorialLike_sequenceOptional "abbr?, expan?, instrName?, instrConfig?"> 
+<!ENTITY % model.editorialLike_sequenceOptionalRepeatable "abbr*, expan*, instrName*, instrConfig*"> 
+<!ENTITY % model.editorialLike_sequenceRepeatable "abbr+, expan+, instrName+, instrConfig+"> 
 <!ENTITY % model.endingLike "ending"> 
 <!ENTITY % model.endingLike_sequence "ending"> 
 <!ENTITY % model.endingLike_sequenceOptional "ending?"> 
@@ -339,11 +339,6 @@ Edition Location: http://www.tei-c.org/Vault/P5//
 <!ENTITY % model.measurementLike_sequenceOptional "%model.numLike;?"> 
 <!ENTITY % model.measurementLike_sequenceOptionalRepeatable "%model.numLike;*"> 
 <!ENTITY % model.measurementLike_sequenceRepeatable "%model.numLike;+"> 
-<!ENTITY % model.metaLike.score "pgFoot |pgFoot2 |pgHead |pgHead2"> 
-<!ENTITY % model.metaLike.score_sequence "pgFoot, pgFoot2, pgHead, pgHead2"> 
-<!ENTITY % model.metaLike.score_sequenceOptional "pgFoot?, pgFoot2?, pgHead?, pgHead2?"> 
-<!ENTITY % model.metaLike.score_sequenceOptionalRepeatable "pgFoot*, pgFoot2*, pgHead*, pgHead2*"> 
-<!ENTITY % model.metaLike.score_sequenceRepeatable "pgFoot+, pgFoot2+, pgHead+, pgHead2+"> 
 <!ENTITY % model.meterSigLike "meterSig |meterSigGrp"> 
 <!ENTITY % model.meterSigLike_sequence "meterSig, meterSigGrp"> 
 <!ENTITY % model.meterSigLike_sequenceOptional "meterSig?, meterSigGrp?"> 
@@ -434,6 +429,11 @@ Edition Location: http://www.tei-c.org/Vault/P5//
 <!ENTITY % model.scorePart_sequenceOptional "%model.endingLike;?, %model.scoreDefLike;?, %model.sectionLike;?, %model.staffDefLike;?"> 
 <!ENTITY % model.scorePart_sequenceOptionalRepeatable "%model.endingLike;*, %model.scoreDefLike;*, %model.sectionLike;*, %model.staffDefLike;*"> 
 <!ENTITY % model.scorePart_sequenceRepeatable "%model.endingLike;+, %model.scoreDefLike;+, %model.sectionLike;+, %model.staffDefLike;+"> 
+<!ENTITY % model.scorePart.mensuralAndNeumes ""> 
+<!ENTITY % model.scorePart.mensuralAndNeumes_sequence ""> 
+<!ENTITY % model.scorePart.mensuralAndNeumes_sequenceOptional ""> 
+<!ENTITY % model.scorePart.mensuralAndNeumes_sequenceOptionalRepeatable ""> 
+<!ENTITY % model.scorePart.mensuralAndNeumes_sequenceRepeatable ""> 
 <!ENTITY % model.sectionLike "section"> 
 <!ENTITY % model.sectionLike_sequence "section"> 
 <!ENTITY % model.sectionLike_sequenceOptional "section?"> 
@@ -469,21 +469,16 @@ Edition Location: http://www.tei-c.org/Vault/P5//
 <!ENTITY % model.staffLike_sequenceOptional "staff?"> 
 <!ENTITY % model.staffLike_sequenceOptionalRepeatable "staff*"> 
 <!ENTITY % model.staffLike_sequenceRepeatable "staff+"> 
-<!ENTITY % model.staffPart "%model.layerLike; |%model.staffPart.mensuralAndNeumes; |%model.ossiaLike; |fingering |tabChord |tabBarre |connectingLine"> 
-<!ENTITY % model.staffPart_sequence "%model.layerLike;, %model.staffPart.mensuralAndNeumes;, %model.ossiaLike;, fingering, tabChord, tabBarre, connectingLine"> 
-<!ENTITY % model.staffPart_sequenceOptional "%model.layerLike;?, %model.staffPart.mensuralAndNeumes;?, %model.ossiaLike;?, fingering?, tabChord?, tabBarre?, connectingLine?"> 
-<!ENTITY % model.staffPart_sequenceOptionalRepeatable "%model.layerLike;*, %model.staffPart.mensuralAndNeumes;*, %model.ossiaLike;*, fingering*, tabChord*, tabBarre*, connectingLine*"> 
-<!ENTITY % model.staffPart_sequenceRepeatable "%model.layerLike;+, %model.staffPart.mensuralAndNeumes;+, %model.ossiaLike;+, fingering+, tabChord+, tabBarre+, connectingLine+"> 
+<!ENTITY % model.staffPart "%model.layerLike; |%model.staffPart.mensuralAndNeumes; |%model.ossiaLike; |tabChord |tabBarre |connectingLine"> 
+<!ENTITY % model.staffPart_sequence "%model.layerLike;, %model.staffPart.mensuralAndNeumes;, %model.ossiaLike;, tabChord, tabBarre, connectingLine"> 
+<!ENTITY % model.staffPart_sequenceOptional "%model.layerLike;?, %model.staffPart.mensuralAndNeumes;?, %model.ossiaLike;?, tabChord?, tabBarre?, connectingLine?"> 
+<!ENTITY % model.staffPart_sequenceOptionalRepeatable "%model.layerLike;*, %model.staffPart.mensuralAndNeumes;*, %model.ossiaLike;*, tabChord*, tabBarre*, connectingLine*"> 
+<!ENTITY % model.staffPart_sequenceRepeatable "%model.layerLike;+, %model.staffPart.mensuralAndNeumes;+, %model.ossiaLike;+, tabChord+, tabBarre+, connectingLine+"> 
 <!ENTITY % model.staffPart.mensuralAndNeumes "%model.scoreDefLike; |%model.staffDefLike;"> 
 <!ENTITY % model.staffPart.mensuralAndNeumes_sequence "%model.scoreDefLike;, %model.staffDefLike;"> 
 <!ENTITY % model.staffPart.mensuralAndNeumes_sequenceOptional "%model.scoreDefLike;?, %model.staffDefLike;?"> 
 <!ENTITY % model.staffPart.mensuralAndNeumes_sequenceOptionalRepeatable "%model.scoreDefLike;*, %model.staffDefLike;*"> 
 <!ENTITY % model.staffPart.mensuralAndNeumes_sequenceRepeatable "%model.scoreDefLike;+, %model.staffDefLike;+"> 
-<!ENTITY % model.substPart "add |corr |damage |del |orig |reg |restore |sic |supplied"> 
-<!ENTITY % model.substPart_sequence "add, corr, damage, del, orig, reg, restore, sic, supplied"> 
-<!ENTITY % model.substPart_sequenceOptional "add?, corr?, damage?, del?, orig?, reg?, restore?, sic?, supplied?"> 
-<!ENTITY % model.substPart_sequenceOptionalRepeatable "add*, corr*, damage*, del*, orig*, reg*, restore*, sic*, supplied*"> 
-<!ENTITY % model.substPart_sequenceRepeatable "add+, corr+, damage+, del+, orig+, reg+, restore+, sic+, supplied+"> 
 <!ENTITY % model.textcomponentLike "%model.pLike; |%model.tableLike; |%model.lgLike; |%model.listLike; |%model.quoteLike;"> 
 <!ENTITY % model.textcomponentLike_sequence "%model.pLike;, %model.tableLike;, %model.lgLike;, %model.listLike;, %model.quoteLike;"> 
 <!ENTITY % model.textcomponentLike_sequenceOptional "%model.pLike;?, %model.tableLike;?, %model.lgLike;?, %model.listLike;?, %model.quoteLike;?"> 
@@ -539,11 +534,6 @@ Edition Location: http://www.tei-c.org/Vault/P5//
 <!ENTITY % model.pubStmtPart_sequenceOptional "%model.addressLike;?, %model.dateLike;?, %model.identifierLike;?, distributor?, publisher?, pubPlace?, respStmt?, availability?"> 
 <!ENTITY % model.pubStmtPart_sequenceOptionalRepeatable "%model.addressLike;*, %model.dateLike;*, %model.identifierLike;*, distributor*, publisher*, pubPlace*, respStmt*, availability*"> 
 <!ENTITY % model.pubStmtPart_sequenceRepeatable "%model.addressLike;+, %model.dateLike;+, %model.identifierLike;+, distributor+, publisher+, pubPlace+, respStmt+, availability+"> 
-<!ENTITY % model.startLike.header "meiHead"> 
-<!ENTITY % model.startLike.header_sequence "meiHead"> 
-<!ENTITY % model.startLike.header_sequenceOptional "meiHead?"> 
-<!ENTITY % model.startLike.header_sequenceOptionalRepeatable "meiHead*"> 
-<!ENTITY % model.startLike.header_sequenceRepeatable "meiHead+"> 
 <!ENTITY % model.workIdent "%model.incipLike; |tempo |key |mensuration |meter"> 
 <!ENTITY % model.workIdent_sequence "%model.incipLike;, tempo, key, mensuration, meter"> 
 <!ENTITY % model.workIdent_sequenceOptional "%model.incipLike;?, tempo?, key?, mensuration?, meter?"> 
@@ -579,11 +569,11 @@ Edition Location: http://www.tei-c.org/Vault/P5//
 <!ENTITY % model.measureLike_sequenceOptional "measure?"> 
 <!ENTITY % model.measureLike_sequenceOptionalRepeatable "measure*"> 
 <!ENTITY % model.measureLike_sequenceRepeatable "measure+"> 
-<!ENTITY % model.measurePart "%model.controleventLike; |%model.staffLike; |%model.ossiaLike; |%model.lyricsLike; |%model.midiLike; |fingering |tabChord |tabBarre |connectingLine"> 
-<!ENTITY % model.measurePart_sequence "%model.controleventLike;, %model.staffLike;, %model.ossiaLike;, %model.lyricsLike;, %model.midiLike;, fingering, tabChord, tabBarre, connectingLine"> 
-<!ENTITY % model.measurePart_sequenceOptional "%model.controleventLike;?, %model.staffLike;?, %model.ossiaLike;?, %model.lyricsLike;?, %model.midiLike;?, fingering?, tabChord?, tabBarre?, connectingLine?"> 
-<!ENTITY % model.measurePart_sequenceOptionalRepeatable "%model.controleventLike;*, %model.staffLike;*, %model.ossiaLike;*, %model.lyricsLike;*, %model.midiLike;*, fingering*, tabChord*, tabBarre*, connectingLine*"> 
-<!ENTITY % model.measurePart_sequenceRepeatable "%model.controleventLike;+, %model.staffLike;+, %model.ossiaLike;+, %model.lyricsLike;+, %model.midiLike;+, fingering+, tabChord+, tabBarre+, connectingLine+"> 
+<!ENTITY % model.measurePart "%model.controleventLike; |%model.staffLike; |%model.ossiaLike; |%model.lyricsLike; |%model.midiLike; |tabChord |tabBarre |connectingLine"> 
+<!ENTITY % model.measurePart_sequence "%model.controleventLike;, %model.staffLike;, %model.ossiaLike;, %model.lyricsLike;, %model.midiLike;, tabChord, tabBarre, connectingLine"> 
+<!ENTITY % model.measurePart_sequenceOptional "%model.controleventLike;?, %model.staffLike;?, %model.ossiaLike;?, %model.lyricsLike;?, %model.midiLike;?, tabChord?, tabBarre?, connectingLine?"> 
+<!ENTITY % model.measurePart_sequenceOptionalRepeatable "%model.controleventLike;*, %model.staffLike;*, %model.ossiaLike;*, %model.lyricsLike;*, %model.midiLike;*, tabChord*, tabBarre*, connectingLine*"> 
+<!ENTITY % model.measurePart_sequenceRepeatable "%model.controleventLike;+, %model.staffLike;+, %model.ossiaLike;+, %model.lyricsLike;+, %model.midiLike;+, tabChord+, tabBarre+, connectingLine+"> 
 <!ENTITY % model.ossiaLike "ossia"> 
 <!ENTITY % model.ossiaLike_sequence "ossia"> 
 <!ENTITY % model.ossiaLike_sequenceOptional "ossia?"> 
@@ -604,11 +594,21 @@ Edition Location: http://www.tei-c.org/Vault/P5//
 <!ENTITY % model.layerPart.mensural_sequenceOptional "%model.controleventLike;?, %model.noteModifierLike;?, %model.lyricsLike;?"> 
 <!ENTITY % model.layerPart.mensural_sequenceOptionalRepeatable "%model.controleventLike;*, %model.noteModifierLike;*, %model.lyricsLike;*"> 
 <!ENTITY % model.layerPart.mensural_sequenceRepeatable "%model.controleventLike;+, %model.noteModifierLike;+, %model.lyricsLike;+"> 
+<!ENTITY % model.sectionPart.mensural ""> 
+<!ENTITY % model.sectionPart.mensural_sequence ""> 
+<!ENTITY % model.sectionPart.mensural_sequenceOptional ""> 
+<!ENTITY % model.sectionPart.mensural_sequenceOptionalRepeatable ""> 
+<!ENTITY % model.sectionPart.mensural_sequenceRepeatable ""> 
 <!ENTITY % model.staffDefPart.mensural "mensur |proport"> 
 <!ENTITY % model.staffDefPart.mensural_sequence "mensur, proport"> 
 <!ENTITY % model.staffDefPart.mensural_sequenceOptional "mensur?, proport?"> 
 <!ENTITY % model.staffDefPart.mensural_sequenceOptionalRepeatable "mensur*, proport*"> 
 <!ENTITY % model.staffDefPart.mensural_sequenceRepeatable "mensur+, proport+"> 
+<!ENTITY % model.staffPart.mensural ""> 
+<!ENTITY % model.staffPart.mensural_sequence ""> 
+<!ENTITY % model.staffPart.mensural_sequenceOptional ""> 
+<!ENTITY % model.staffPart.mensural_sequenceOptionalRepeatable ""> 
+<!ENTITY % model.staffPart.mensural_sequenceRepeatable ""> 
 <!ENTITY % model.eventLike.neumes "ineume |uneume"> 
 <!ENTITY % model.eventLike.neumes_sequence "ineume, uneume"> 
 <!ENTITY % model.eventLike.neumes_sequenceOptional "ineume?, uneume?"> 
@@ -619,6 +619,16 @@ Edition Location: http://www.tei-c.org/Vault/P5//
 <!ENTITY % model.layerPart.neumes_sequenceOptional "%model.eventLike.neumes;?, %model.syllableLike;?"> 
 <!ENTITY % model.layerPart.neumes_sequenceOptionalRepeatable "%model.eventLike.neumes;*, %model.syllableLike;*"> 
 <!ENTITY % model.layerPart.neumes_sequenceRepeatable "%model.eventLike.neumes;+, %model.syllableLike;+"> 
+<!ENTITY % model.sectionPart.neumes ""> 
+<!ENTITY % model.sectionPart.neumes_sequence ""> 
+<!ENTITY % model.sectionPart.neumes_sequenceOptional ""> 
+<!ENTITY % model.sectionPart.neumes_sequenceOptionalRepeatable ""> 
+<!ENTITY % model.sectionPart.neumes_sequenceRepeatable ""> 
+<!ENTITY % model.staffPart.neumes ""> 
+<!ENTITY % model.staffPart.neumes_sequence ""> 
+<!ENTITY % model.staffPart.neumes_sequenceOptional ""> 
+<!ENTITY % model.staffPart.neumes_sequenceOptionalRepeatable ""> 
+<!ENTITY % model.staffPart.neumes_sequenceRepeatable ""> 
 <!ENTITY % model.syllableLike "syllable"> 
 <!ENTITY % model.syllableLike_sequence "syllable"> 
 <!ENTITY % model.syllableLike_sequenceOptional "syllable?"> 
@@ -634,11 +644,6 @@ Edition Location: http://www.tei-c.org/Vault/P5//
 <!ENTITY % model.ornamentLike.cmn_sequenceOptional "mordent?, trill?, turn?"> 
 <!ENTITY % model.ornamentLike.cmn_sequenceOptionalRepeatable "mordent*, trill*, turn*"> 
 <!ENTITY % model.ornamentLike.cmn_sequenceRepeatable "mordent+, trill+, turn+"> 
-<!ENTITY % model.startLike.corpus "meiCorpus"> 
-<!ENTITY % model.startLike.corpus_sequence "meiCorpus"> 
-<!ENTITY % model.startLike.corpus_sequenceOptional "meiCorpus?"> 
-<!ENTITY % model.startLike.corpus_sequenceOptionalRepeatable "meiCorpus*"> 
-<!ENTITY % model.startLike.corpus_sequenceRepeatable "meiCorpus+"> 
 <!ENTITY % model.appLike "app"> 
 <!ENTITY % model.appLike_sequence "app"> 
 <!ENTITY % model.appLike_sequenceOptional "app?"> 
@@ -819,11 +824,6 @@ Edition Location: http://www.tei-c.org/Vault/P5//
 <!ENTITY % model.quoteLike_sequenceOptional "quote?"> 
 <!ENTITY % model.quoteLike_sequenceOptionalRepeatable "quote*"> 
 <!ENTITY % model.quoteLike_sequenceRepeatable "quote+"> 
-<!ENTITY % model.rdgPart.text "%model.textcomponentLike; |%model.textphraseLike.limited;"> 
-<!ENTITY % model.rdgPart.text_sequence "%model.textcomponentLike;, %model.textphraseLike.limited;"> 
-<!ENTITY % model.rdgPart.text_sequenceOptional "%model.textcomponentLike;?, %model.textphraseLike.limited;?"> 
-<!ENTITY % model.rdgPart.text_sequenceOptionalRepeatable "%model.textcomponentLike;*, %model.textphraseLike.limited;*"> 
-<!ENTITY % model.rdgPart.text_sequenceRepeatable "%model.textcomponentLike;+, %model.textphraseLike.limited;+"> 
 <!ENTITY % model.graphicprimitiveLike "anchoredText |curve |line |symbol"> 
 <!ENTITY % model.graphicprimitiveLike_sequence "anchoredText, curve, line, symbol"> 
 <!ENTITY % model.graphicprimitiveLike_sequenceOptional "anchoredText?, curve?, line?, symbol?"> 
@@ -854,7 +854,12 @@ Edition Location: http://www.tei-c.org/Vault/P5//
 <!ENTITY % model.tabchordPart_sequenceOptional "fingering?, tabNote?, rhythmSign?, abzug?, tabBarre?, ensembleLine?, separee?"> 
 <!ENTITY % model.tabchordPart_sequenceOptionalRepeatable "fingering*, tabNote*, rhythmSign*, abzug*, tabBarre*, ensembleLine*, separee*"> 
 <!ENTITY % model.tabchordPart_sequenceRepeatable "fingering+, tabNote+, rhythmSign+, abzug+, tabBarre+, ensembleLine+, separee+"> 
-<!--end of predeclared classes -->
+<!ENTITY % model.tabGlyphLike "tabGlyph"> 
+<!ENTITY % model.tabGlyphLike_sequence "tabGlyph"> 
+<!ENTITY % model.tabGlyphLike_sequenceOptional "tabGlyph?"> 
+<!ENTITY % model.tabGlyphLike_sequenceOptionalRepeatable "tabGlyph*"> 
+<!ENTITY % model.tabGlyphLike_sequenceRepeatable "tabGlyph+"> 
+<!-- end of predeclared classes -->
 <!ENTITY % att.accid.anl.attributes '%att.common.anl.attributes;'> <!ENTITY % att.accid.ges.attributes ''> 
 <!ENTITY % att.accid.log.attribute.func '
 func (caution|edit) #IMPLIED'>
@@ -1069,7 +1074,7 @@ form (aug|div) #IMPLIED'>
 <!ENTITY % att.dot.log.attributes '%att.controlevent.attributes;
  %att.dot.log.attribute.form;'> <!ENTITY % att.dot.vis.attributes '%att.color.attributes;%att.staffloc.attributes;%att.visualoffset.ho.attributes;%att.visualoffset.vo.attributes;%att.xy.attributes;%att.dot.vis.mensural.attributes;'> 
 <!ENTITY % att.duration.additive.attribute.dur '
-dur %data.DURATION.additive;  #IMPLIED'>
+dur %data.DURATION.additive;  #REQUIRED'>
 <!ENTITY % att.duration.additive.attributes '
  %att.duration.additive.attribute.dur;'> 
 <!ENTITY % att.duration.default.attribute.dur.default '
@@ -1820,11 +1825,11 @@ y2 CDATA #IMPLIED'>
 <!ENTITY % model.editionLike_sequenceOptional "edition?"> 
 <!ENTITY % model.editionLike_sequenceOptionalRepeatable "edition*"> 
 <!ENTITY % model.editionLike_sequenceRepeatable "edition+"> 
-<!ENTITY % model.editorialLike "abbr |expan |instrName |instrConfig |fingering"> 
-<!ENTITY % model.editorialLike_sequence "abbr, expan, instrName, instrConfig, fingering"> 
-<!ENTITY % model.editorialLike_sequenceOptional "abbr?, expan?, instrName?, instrConfig?, fingering?"> 
-<!ENTITY % model.editorialLike_sequenceOptionalRepeatable "abbr*, expan*, instrName*, instrConfig*, fingering*"> 
-<!ENTITY % model.editorialLike_sequenceRepeatable "abbr+, expan+, instrName+, instrConfig+, fingering+"> 
+<!ENTITY % model.editorialLike "abbr |expan |instrName |instrConfig"> 
+<!ENTITY % model.editorialLike_sequence "abbr, expan, instrName, instrConfig"> 
+<!ENTITY % model.editorialLike_sequenceOptional "abbr?, expan?, instrName?, instrConfig?"> 
+<!ENTITY % model.editorialLike_sequenceOptionalRepeatable "abbr*, expan*, instrName*, instrConfig*"> 
+<!ENTITY % model.editorialLike_sequenceRepeatable "abbr+, expan+, instrName+, instrConfig+"> 
 <!ENTITY % model.endingLike "ending"> 
 <!ENTITY % model.endingLike_sequence "ending"> 
 <!ENTITY % model.endingLike_sequenceOptional "ending?"> 
@@ -1905,11 +1910,6 @@ y2 CDATA #IMPLIED'>
 <!ENTITY % model.measurementLike_sequenceOptional "%model.numLike;?"> 
 <!ENTITY % model.measurementLike_sequenceOptionalRepeatable "%model.numLike;*"> 
 <!ENTITY % model.measurementLike_sequenceRepeatable "%model.numLike;+"> 
-<!ENTITY % model.metaLike.score "pgFoot |pgFoot2 |pgHead |pgHead2"> 
-<!ENTITY % model.metaLike.score_sequence "pgFoot, pgFoot2, pgHead, pgHead2"> 
-<!ENTITY % model.metaLike.score_sequenceOptional "pgFoot?, pgFoot2?, pgHead?, pgHead2?"> 
-<!ENTITY % model.metaLike.score_sequenceOptionalRepeatable "pgFoot*, pgFoot2*, pgHead*, pgHead2*"> 
-<!ENTITY % model.metaLike.score_sequenceRepeatable "pgFoot+, pgFoot2+, pgHead+, pgHead2+"> 
 <!ENTITY % model.meterSigLike "meterSig |meterSigGrp"> 
 <!ENTITY % model.meterSigLike_sequence "meterSig, meterSigGrp"> 
 <!ENTITY % model.meterSigLike_sequenceOptional "meterSig?, meterSigGrp?"> 
@@ -2000,6 +2000,11 @@ y2 CDATA #IMPLIED'>
 <!ENTITY % model.scorePart_sequenceOptional "%model.endingLike;?, %model.scoreDefLike;?, %model.sectionLike;?, %model.staffDefLike;?"> 
 <!ENTITY % model.scorePart_sequenceOptionalRepeatable "%model.endingLike;*, %model.scoreDefLike;*, %model.sectionLike;*, %model.staffDefLike;*"> 
 <!ENTITY % model.scorePart_sequenceRepeatable "%model.endingLike;+, %model.scoreDefLike;+, %model.sectionLike;+, %model.staffDefLike;+"> 
+<!ENTITY % model.scorePart.mensuralAndNeumes ""> 
+<!ENTITY % model.scorePart.mensuralAndNeumes_sequence ""> 
+<!ENTITY % model.scorePart.mensuralAndNeumes_sequenceOptional ""> 
+<!ENTITY % model.scorePart.mensuralAndNeumes_sequenceOptionalRepeatable ""> 
+<!ENTITY % model.scorePart.mensuralAndNeumes_sequenceRepeatable ""> 
 <!ENTITY % model.sectionLike "section"> 
 <!ENTITY % model.sectionLike_sequence "section"> 
 <!ENTITY % model.sectionLike_sequenceOptional "section?"> 
@@ -2035,21 +2040,16 @@ y2 CDATA #IMPLIED'>
 <!ENTITY % model.staffLike_sequenceOptional "staff?"> 
 <!ENTITY % model.staffLike_sequenceOptionalRepeatable "staff*"> 
 <!ENTITY % model.staffLike_sequenceRepeatable "staff+"> 
-<!ENTITY % model.staffPart "%model.layerLike; |%model.staffPart.mensuralAndNeumes; |%model.ossiaLike; |fingering |tabChord |tabBarre |connectingLine"> 
-<!ENTITY % model.staffPart_sequence "%model.layerLike;, %model.staffPart.mensuralAndNeumes;, %model.ossiaLike;, fingering, tabChord, tabBarre, connectingLine"> 
-<!ENTITY % model.staffPart_sequenceOptional "%model.layerLike;?, %model.staffPart.mensuralAndNeumes;?, %model.ossiaLike;?, fingering?, tabChord?, tabBarre?, connectingLine?"> 
-<!ENTITY % model.staffPart_sequenceOptionalRepeatable "%model.layerLike;*, %model.staffPart.mensuralAndNeumes;*, %model.ossiaLike;*, fingering*, tabChord*, tabBarre*, connectingLine*"> 
-<!ENTITY % model.staffPart_sequenceRepeatable "%model.layerLike;+, %model.staffPart.mensuralAndNeumes;+, %model.ossiaLike;+, fingering+, tabChord+, tabBarre+, connectingLine+"> 
+<!ENTITY % model.staffPart "%model.layerLike; |%model.staffPart.mensuralAndNeumes; |%model.ossiaLike; |tabChord |tabBarre |connectingLine"> 
+<!ENTITY % model.staffPart_sequence "%model.layerLike;, %model.staffPart.mensuralAndNeumes;, %model.ossiaLike;, tabChord, tabBarre, connectingLine"> 
+<!ENTITY % model.staffPart_sequenceOptional "%model.layerLike;?, %model.staffPart.mensuralAndNeumes;?, %model.ossiaLike;?, tabChord?, tabBarre?, connectingLine?"> 
+<!ENTITY % model.staffPart_sequenceOptionalRepeatable "%model.layerLike;*, %model.staffPart.mensuralAndNeumes;*, %model.ossiaLike;*, tabChord*, tabBarre*, connectingLine*"> 
+<!ENTITY % model.staffPart_sequenceRepeatable "%model.layerLike;+, %model.staffPart.mensuralAndNeumes;+, %model.ossiaLike;+, tabChord+, tabBarre+, connectingLine+"> 
 <!ENTITY % model.staffPart.mensuralAndNeumes "%model.scoreDefLike; |%model.staffDefLike;"> 
 <!ENTITY % model.staffPart.mensuralAndNeumes_sequence "%model.scoreDefLike;, %model.staffDefLike;"> 
 <!ENTITY % model.staffPart.mensuralAndNeumes_sequenceOptional "%model.scoreDefLike;?, %model.staffDefLike;?"> 
 <!ENTITY % model.staffPart.mensuralAndNeumes_sequenceOptionalRepeatable "%model.scoreDefLike;*, %model.staffDefLike;*"> 
 <!ENTITY % model.staffPart.mensuralAndNeumes_sequenceRepeatable "%model.scoreDefLike;+, %model.staffDefLike;+"> 
-<!ENTITY % model.substPart "add |corr |damage |del |orig |reg |restore |sic |supplied"> 
-<!ENTITY % model.substPart_sequence "add, corr, damage, del, orig, reg, restore, sic, supplied"> 
-<!ENTITY % model.substPart_sequenceOptional "add?, corr?, damage?, del?, orig?, reg?, restore?, sic?, supplied?"> 
-<!ENTITY % model.substPart_sequenceOptionalRepeatable "add*, corr*, damage*, del*, orig*, reg*, restore*, sic*, supplied*"> 
-<!ENTITY % model.substPart_sequenceRepeatable "add+, corr+, damage+, del+, orig+, reg+, restore+, sic+, supplied+"> 
 <!ENTITY % model.textcomponentLike "%model.pLike; |%model.tableLike; |%model.lgLike; |%model.listLike; |%model.quoteLike;"> 
 <!ENTITY % model.textcomponentLike_sequence "%model.pLike;, %model.tableLike;, %model.lgLike;, %model.listLike;, %model.quoteLike;"> 
 <!ENTITY % model.textcomponentLike_sequenceOptional "%model.pLike;?, %model.tableLike;?, %model.lgLike;?, %model.listLike;?, %model.quoteLike;?"> 
@@ -2109,11 +2109,6 @@ method (silent|tags) #IMPLIED'>
 <!ENTITY % model.pubStmtPart_sequenceOptional "%model.addressLike;?, %model.dateLike;?, %model.identifierLike;?, distributor?, publisher?, pubPlace?, respStmt?, availability?"> 
 <!ENTITY % model.pubStmtPart_sequenceOptionalRepeatable "%model.addressLike;*, %model.dateLike;*, %model.identifierLike;*, distributor*, publisher*, pubPlace*, respStmt*, availability*"> 
 <!ENTITY % model.pubStmtPart_sequenceRepeatable "%model.addressLike;+, %model.dateLike;+, %model.identifierLike;+, distributor+, publisher+, pubPlace+, respStmt+, availability+"> 
-<!ENTITY % model.startLike.header "meiHead"> 
-<!ENTITY % model.startLike.header_sequence "meiHead"> 
-<!ENTITY % model.startLike.header_sequenceOptional "meiHead?"> 
-<!ENTITY % model.startLike.header_sequenceOptionalRepeatable "meiHead*"> 
-<!ENTITY % model.startLike.header_sequenceRepeatable "meiHead+"> 
 <!ENTITY % model.workIdent "%model.incipLike; |tempo |key |mensuration |meter"> 
 <!ENTITY % model.workIdent_sequence "%model.incipLike;, tempo, key, mensuration, meter"> 
 <!ENTITY % model.workIdent_sequenceOptional "%model.incipLike;?, tempo?, key?, mensuration?, meter?"> 
@@ -2349,11 +2344,11 @@ num.format (count|ratio) #IMPLIED'>
 <!ENTITY % model.measureLike_sequenceOptional "measure?"> 
 <!ENTITY % model.measureLike_sequenceOptionalRepeatable "measure*"> 
 <!ENTITY % model.measureLike_sequenceRepeatable "measure+"> 
-<!ENTITY % model.measurePart "%model.controleventLike; |%model.staffLike; |%model.ossiaLike; |%model.lyricsLike; |%model.midiLike; |fingering |tabChord |tabBarre |connectingLine"> 
-<!ENTITY % model.measurePart_sequence "%model.controleventLike;, %model.staffLike;, %model.ossiaLike;, %model.lyricsLike;, %model.midiLike;, fingering, tabChord, tabBarre, connectingLine"> 
-<!ENTITY % model.measurePart_sequenceOptional "%model.controleventLike;?, %model.staffLike;?, %model.ossiaLike;?, %model.lyricsLike;?, %model.midiLike;?, fingering?, tabChord?, tabBarre?, connectingLine?"> 
-<!ENTITY % model.measurePart_sequenceOptionalRepeatable "%model.controleventLike;*, %model.staffLike;*, %model.ossiaLike;*, %model.lyricsLike;*, %model.midiLike;*, fingering*, tabChord*, tabBarre*, connectingLine*"> 
-<!ENTITY % model.measurePart_sequenceRepeatable "%model.controleventLike;+, %model.staffLike;+, %model.ossiaLike;+, %model.lyricsLike;+, %model.midiLike;+, fingering+, tabChord+, tabBarre+, connectingLine+"> 
+<!ENTITY % model.measurePart "%model.controleventLike; |%model.staffLike; |%model.ossiaLike; |%model.lyricsLike; |%model.midiLike; |tabChord |tabBarre |connectingLine"> 
+<!ENTITY % model.measurePart_sequence "%model.controleventLike;, %model.staffLike;, %model.ossiaLike;, %model.lyricsLike;, %model.midiLike;, tabChord, tabBarre, connectingLine"> 
+<!ENTITY % model.measurePart_sequenceOptional "%model.controleventLike;?, %model.staffLike;?, %model.ossiaLike;?, %model.lyricsLike;?, %model.midiLike;?, tabChord?, tabBarre?, connectingLine?"> 
+<!ENTITY % model.measurePart_sequenceOptionalRepeatable "%model.controleventLike;*, %model.staffLike;*, %model.ossiaLike;*, %model.lyricsLike;*, %model.midiLike;*, tabChord*, tabBarre*, connectingLine*"> 
+<!ENTITY % model.measurePart_sequenceRepeatable "%model.controleventLike;+, %model.staffLike;+, %model.ossiaLike;+, %model.lyricsLike;+, %model.midiLike;+, tabChord+, tabBarre+, connectingLine+"> 
 <!ENTITY % model.ossiaLike "ossia"> 
 <!ENTITY % model.ossiaLike_sequence "ossia"> 
 <!ENTITY % model.ossiaLike_sequenceOptional "ossia?"> 
@@ -2450,11 +2445,21 @@ spaces CDATA #IMPLIED'>
 <!ENTITY % model.layerPart.mensural_sequenceOptional "%model.controleventLike;?, %model.noteModifierLike;?, %model.lyricsLike;?"> 
 <!ENTITY % model.layerPart.mensural_sequenceOptionalRepeatable "%model.controleventLike;*, %model.noteModifierLike;*, %model.lyricsLike;*"> 
 <!ENTITY % model.layerPart.mensural_sequenceRepeatable "%model.controleventLike;+, %model.noteModifierLike;+, %model.lyricsLike;+"> 
+<!ENTITY % model.sectionPart.mensural ""> 
+<!ENTITY % model.sectionPart.mensural_sequence ""> 
+<!ENTITY % model.sectionPart.mensural_sequenceOptional ""> 
+<!ENTITY % model.sectionPart.mensural_sequenceOptionalRepeatable ""> 
+<!ENTITY % model.sectionPart.mensural_sequenceRepeatable ""> 
 <!ENTITY % model.staffDefPart.mensural "mensur |proport"> 
 <!ENTITY % model.staffDefPart.mensural_sequence "mensur, proport"> 
 <!ENTITY % model.staffDefPart.mensural_sequenceOptional "mensur?, proport?"> 
 <!ENTITY % model.staffDefPart.mensural_sequenceOptionalRepeatable "mensur*, proport*"> 
-<!ENTITY % model.staffDefPart.mensural_sequenceRepeatable "mensur+, proport+"> <!ENTITY % att.ineume.anl.attributes '%att.common.anl.attributes;'> <!ENTITY % att.ineume.ges.attributes ''> 
+<!ENTITY % model.staffDefPart.mensural_sequenceRepeatable "mensur+, proport+"> 
+<!ENTITY % model.staffPart.mensural ""> 
+<!ENTITY % model.staffPart.mensural_sequence ""> 
+<!ENTITY % model.staffPart.mensural_sequenceOptional ""> 
+<!ENTITY % model.staffPart.mensural_sequenceOptionalRepeatable ""> 
+<!ENTITY % model.staffPart.mensural_sequenceRepeatable ""> <!ENTITY % att.ineume.anl.attributes '%att.common.anl.attributes;'> <!ENTITY % att.ineume.ges.attributes ''> 
 <!ENTITY % att.ineume.log.attribute.form '
 form %data.INEUMEFORM;  #IMPLIED'>
 
@@ -2481,6 +2486,16 @@ name %data.UNEUMENAME;  #IMPLIED'>
 <!ENTITY % model.layerPart.neumes_sequenceOptional "%model.eventLike.neumes;?, %model.syllableLike;?"> 
 <!ENTITY % model.layerPart.neumes_sequenceOptionalRepeatable "%model.eventLike.neumes;*, %model.syllableLike;*"> 
 <!ENTITY % model.layerPart.neumes_sequenceRepeatable "%model.eventLike.neumes;+, %model.syllableLike;+"> 
+<!ENTITY % model.sectionPart.neumes ""> 
+<!ENTITY % model.sectionPart.neumes_sequence ""> 
+<!ENTITY % model.sectionPart.neumes_sequenceOptional ""> 
+<!ENTITY % model.sectionPart.neumes_sequenceOptionalRepeatable ""> 
+<!ENTITY % model.sectionPart.neumes_sequenceRepeatable ""> 
+<!ENTITY % model.staffPart.neumes ""> 
+<!ENTITY % model.staffPart.neumes_sequence ""> 
+<!ENTITY % model.staffPart.neumes_sequenceOptional ""> 
+<!ENTITY % model.staffPart.neumes_sequenceOptionalRepeatable ""> 
+<!ENTITY % model.staffPart.neumes_sequenceRepeatable ""> 
 <!ENTITY % model.syllableLike "syllable"> 
 <!ENTITY % model.syllableLike_sequence "syllable"> 
 <!ENTITY % model.syllableLike_sequenceOptional "syllable?"> 
@@ -2572,11 +2587,6 @@ form (inv|norm) #IMPLIED'>
 <!ENTITY % model.ornamentLike.cmn_sequenceOptional "mordent?, trill?, turn?"> 
 <!ENTITY % model.ornamentLike.cmn_sequenceOptionalRepeatable "mordent*, trill*, turn*"> 
 <!ENTITY % model.ornamentLike.cmn_sequenceRepeatable "mordent+, trill+, turn+"> 
-<!ENTITY % model.startLike.corpus "meiCorpus"> 
-<!ENTITY % model.startLike.corpus_sequence "meiCorpus"> 
-<!ENTITY % model.startLike.corpus_sequenceOptional "meiCorpus?"> 
-<!ENTITY % model.startLike.corpus_sequenceOptionalRepeatable "meiCorpus*"> 
-<!ENTITY % model.startLike.corpus_sequenceRepeatable "meiCorpus+"> 
 <!ENTITY % att.crit.attribute.cause '
 cause NMTOKEN #IMPLIED'>
 <!ENTITY % att.crit.attributes '%att.handident.attributes;%att.responsibility.attributes;%att.sequence.attributes;%att.source.attributes;
@@ -2889,11 +2899,6 @@ tab.strings CDATA #IMPLIED'>
 <!ENTITY % model.quoteLike_sequenceOptional "quote?"> 
 <!ENTITY % model.quoteLike_sequenceOptionalRepeatable "quote*"> 
 <!ENTITY % model.quoteLike_sequenceRepeatable "quote+"> 
-<!ENTITY % model.rdgPart.text "%model.textcomponentLike; |%model.textphraseLike.limited;"> 
-<!ENTITY % model.rdgPart.text_sequence "%model.textcomponentLike;, %model.textphraseLike.limited;"> 
-<!ENTITY % model.rdgPart.text_sequenceOptional "%model.textcomponentLike;?, %model.textphraseLike.limited;?"> 
-<!ENTITY % model.rdgPart.text_sequenceOptionalRepeatable "%model.textcomponentLike;*, %model.textphraseLike.limited;*"> 
-<!ENTITY % model.rdgPart.text_sequenceRepeatable "%model.textcomponentLike;+, %model.textphraseLike.limited;+"> 
 <!ENTITY % model.graphicprimitiveLike "anchoredText |curve |line |symbol"> 
 <!ENTITY % model.graphicprimitiveLike_sequence "anchoredText, curve, line, symbol"> 
 <!ENTITY % model.graphicprimitiveLike_sequenceOptional "anchoredText?, curve?, line?, symbol?"> 
@@ -2923,27 +2928,16 @@ family CDATA #IMPLIED'>
 <!ENTITY % model.instrconfigPart_sequenceOptional "courseTuning?"> 
 <!ENTITY % model.instrconfigPart_sequenceOptionalRepeatable "courseTuning*"> 
 <!ENTITY % model.instrconfigPart_sequenceRepeatable "courseTuning+"> 
-<!ENTITY % att.fingering.attribute.playingHand '
-playingHand (left|right|both) #IMPLIED'>
-
-<!ENTITY % att.fingering.attribute.playingFinger '
-playingFinger %data.FINGER.FRET;  #IMPLIED'>
-
-<!ENTITY % att.fingering.attribute.symbol '
-symbol CDATA #IMPLIED'>
-<!ENTITY % att.fingering.attributes '
- %att.fingering.attribute.playingHand;
- %att.fingering.attribute.playingFinger;
- %att.fingering.attribute.symbol;'> 
 <!ENTITY % model.tabchordPart "fingering |tabNote |rhythmSign |abzug |tabBarre |ensembleLine |separee"> 
 <!ENTITY % model.tabchordPart_sequence "fingering, tabNote, rhythmSign, abzug, tabBarre, ensembleLine, separee"> 
 <!ENTITY % model.tabchordPart_sequenceOptional "fingering?, tabNote?, rhythmSign?, abzug?, tabBarre?, ensembleLine?, separee?"> 
 <!ENTITY % model.tabchordPart_sequenceOptionalRepeatable "fingering*, tabNote*, rhythmSign*, abzug*, tabBarre*, ensembleLine*, separee*"> 
 <!ENTITY % model.tabchordPart_sequenceRepeatable "fingering+, tabNote+, rhythmSign+, abzug+, tabBarre+, ensembleLine+, separee+"> 
-<!-- start predeclared patterns -->
-
-<!-- end predeclared patterns -->
-
+<!ENTITY % model.tabGlyphLike "tabGlyph"> 
+<!ENTITY % model.tabGlyphLike_sequence "tabGlyph"> 
+<!ENTITY % model.tabGlyphLike_sequenceOptional "tabGlyph?"> 
+<!ENTITY % model.tabGlyphLike_sequenceOptionalRepeatable "tabGlyph*"> 
+<!ENTITY % model.tabGlyphLike_sequenceRepeatable "tabGlyph+"> 
 <!-- start rest of patterns -->
 
 <!ENTITY % macro.metaLike.page '(fw)*(pgDesc)?' >
@@ -3516,7 +3510,7 @@ corrlevel (high|medium|low|unknown) #IMPLIED >
 <!ATTLIST courseCount xmlns CDATA "http://www.music-encoding.org/ns/mei">
 <!ATTLIST courseCount
  %att.common.attributes; >
-<!--doc:(tuning of courses) Chile <course> elements should be used to indicate the tuning of each course on a lute. -->
+<!--doc:(tuning of courses) Child <course> elements should be used to indicate the tuning of each course on a lute. -->
 <!ELEMENT courseTuning ((course)+,(bassTuning)*)>
 <!ATTLIST courseTuning xmlns CDATA "http://www.music-encoding.org/ns/mei">
 <!ATTLIST courseTuning
@@ -3843,12 +3837,6 @@ extender %data.BOOLEAN;  #IMPLIED >
 <!--doc:(instrument fingering) Indicates an instrument fingering marking. -->
 <!ELEMENT fingering  EMPTY>
 <!ATTLIST fingering xmlns CDATA "http://www.music-encoding.org/ns/mei">
-<!ATTLIST fingering
- %att.fingering.attributes;
- %att.common.attributes;
- %att.authorized.attributes;
- %att.edit.attributes;
- %att.pointing.attributes; >
 <!--doc:Contains a string that uniquely identifies an item, such as those constructed by combining groups of characters transcribed from specified pages of a printed item or a file's checksum. -->
 <!ELEMENT fingerprint  (#PCDATA)>
 <!ATTLIST fingerprint xmlns CDATA "http://www.music-encoding.org/ns/mei">
@@ -5029,12 +5017,14 @@ desc CDATA  #IMPLIED >
 <!ATTLIST revisionDesc
  %att.common.attributes;
  %att.bibl.attributes; >
-<!--doc:(tablature rhythm sign) The durational sign associated with a tablature chord. -->
-<!ELEMENT rhythmSign  EMPTY>
+<!--doc:(tablature rhythm sign) The durational sign associated with a tablature chord. The intended use of <rhythmSign> is to encode the rhythmic sign found in the source (if any) while the actual duration of the associated tablature chord is encoded using the <tabChord>'s @dur attribute. -->
+<!ELEMENT rhythmSign  (#PCDATA)>
 <!ATTLIST rhythmSign xmlns CDATA "http://www.music-encoding.org/ns/mei">
 <!ATTLIST rhythmSign
  %att.common.attributes;
-symbol %data.DURATION.lutetab;  #REQUIRED
+ %att.facsimile.attributes;
+tabcode %data.DURATION.tabcode;  #IMPLIED
+dur %data.DURATION.additive;  #IMPLIED
 dots CDATA #IMPLIED >
 <!--doc:Name of a dramatic role, as given in a cast list. -->
 <!ELEMENT role (#PCDATA|%model.textphraseLike.limited;)*>
@@ -5351,19 +5341,24 @@ ref %data.URI;  #REQUIRED >
  %att.common.attributes;
  %att.startid.attributes;
  %att.fretlocation.attributes; >
-<!--doc:(tablature chord) Simultaneously played tablature notes, all sharing a rhythm sign. -->
+<!--doc:(tablature chord) Simultaneously played tablature notes, all sharing a (possibly implied) rhythm sign, but requiring an explicit duration attribute. -->
 <!ELEMENT tabChord (%model.tabchordPart;)*>
 <!ATTLIST tabChord xmlns CDATA "http://www.music-encoding.org/ns/mei">
 <!ATTLIST tabChord
- %att.common.attributes; >
+ %att.common.attributes;
+ %att.duration.additive.attributes; >
+<!--doc:(tablature note glyph) Encodes the actual symbol found in the tablature source for a particular note. These are often simple numerals or letters, but may also (in German tablature) be characters such as ꝯ or ꝫ or letters with a bar such as ā. -->
+<!ELEMENT tabGlyph  (#PCDATA)>
+<!ATTLIST tabGlyph xmlns CDATA "http://www.music-encoding.org/ns/mei">
+<!ATTLIST tabGlyph
+ %att.facsimile.attributes; >
 <!--doc:(tablature note) A indication of the string and fret position within a tablature chord. -->
-<!ELEMENT tabNote  (#PCDATA)>
+<!ELEMENT tabNote (%model.tabGlyphLike;)>
 <!ATTLIST tabNote xmlns CDATA "http://www.music-encoding.org/ns/mei">
 <!ATTLIST tabNote
  %att.common.attributes;
 course CDATA #REQUIRED
-fret CDATA #IMPLIED
-symbol CDATA  #IMPLIED >
+fret CDATA #REQUIRED >
 <!--doc:Contains text displayed in tabular form.  -->
 <!ELEMENT table ((%model.captionLike;)?,(tr)+,(%model.captionLike;)?)>
 <!ATTLIST table xmlns CDATA "http://www.music-encoding.org/ns/mei">
