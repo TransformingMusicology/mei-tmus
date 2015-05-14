@@ -26,7 +26,7 @@
           <desc>Marking up of lute tablatures.</desc>
         </moduleSpec>
 
-        <classSpec mode="change" ident="att.duration.additive" module="MEI.shared" type="atts" ns="http://www.music-encoding.org/ns/mei">
+        <classSpec mode="change" ident="att.duration.additive" module="MEI.shared" type="atts">
           <attList>
             <attDef mode="change" ident="dur" usage="req" />
           </attList>
@@ -60,6 +60,9 @@
             <memberOf key="att.common" />
             <memberOf key="model.tabchordPart" />
           </classes>
+          <content>
+            <rng:ref name="model.tabGlyphLike" />
+          </content>
           <attList>
             <attDef ident="course" usage="req">
               <desc>The course on which the note is played.</desc>
@@ -74,9 +77,6 @@
               </datatype>
             </attDef>
           </attList>
-          <content>
-            <rng:ref name="model.tabGlyphLike" />
-          </content>
         </elementSpec>
 
         <classSpec ident="model.tabGlyphLike" module="MEI.lutetab" type="model">
@@ -145,6 +145,9 @@
             <memberOf key="att.facsimile" />
             <memberOf key="model.tabchordPart" />
           </classes>
+          <content>
+            <rng:text />
+          </content>
           <attList>
             <attDef ident="tabcode" usage="opt">
               <desc>The Tabcode duration symbol.</desc>
@@ -165,9 +168,6 @@
               </datatype>
             </attDef>
           </attList>
-          <content>
-            <rng:text />
-          </content>
         </elementSpec>
 
         <elementSpec ident="fingering" module="MEI.instruments" mode="change" ns="http://www.music-encoding.org/ns/mei">
