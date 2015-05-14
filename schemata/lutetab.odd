@@ -19,7 +19,7 @@
   </teiHeader>
   <text>
     <body>
-      <schemaSpec ident="lutetab" start="mei meiHead meiCorpus music" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" ns="http://www.music-encoding.org/ns/mei">
+      <schemaSpec ident="lutetab" start="mei meiHead meiCorpus music" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" ns="http://www.music-encoding.org/ns/mei">
         <specGrp xml:id="lutetab">
 
         <moduleSpec ident="MEI.lutetab">
@@ -61,7 +61,7 @@
             <memberOf key="model.tabchordPart" />
           </classes>
           <content>
-            <rng:ref name="model.tabGlyphLike" />
+            <rng:ref name="model.fretGlyphLike" />
           </content>
           <attList>
             <attDef ident="course" usage="req">
@@ -79,16 +79,16 @@
           </attList>
         </elementSpec>
 
-        <classSpec ident="model.tabGlyphLike" module="MEI.lutetab" type="model">
+        <classSpec ident="model.fretGlyphLike" module="MEI.lutetab" type="model">
           <desc>Groups elements that may used as symbols (or glyphs) for &lt;tabNote&gt;s</desc>
         </classSpec>
 
-        <elementSpec ident="tabGlyph" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+        <elementSpec ident="fretGlyph" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>tablature note glyph</gloss>
           <desc>Encodes the actual symbol found in the tablature source for a particular note. These are often simple numerals or letters, but may also (in German tablature) be characters such as ꝯ or ꝫ or letters with a bar such as ā.</desc>
           <classes>
             <memberOf key="att.facsimile" />
-            <memberOf key="model.tabGlyphLike" />
+            <memberOf key="model.fretGlyphLike" />
           </classes>
           <content>
             <rng:text />
@@ -96,7 +96,7 @@
         </elementSpec>
 
         <macroSpec ident="data.DURATION.tabcode" module="MEI.lutetab" type="dt">
-          <desc>The duration symbols used to encode logical duration of &lt;tabChord&gt; &lt;rhythmSign&gt;s in Tabcode. This is included for backwards compatibility with Tabcode.</desc>
+          <desc>The duration symbols used to encode logical duration of &lt;tabChord&gt; &lt;rhythmGlyph&gt;s in Tabcode. This is included for backwards compatibility with Tabcode.</desc>
           <content>
             <rng:choice>
               <rng:value>F</rng:value>
@@ -137,9 +137,9 @@
           </content>
         </macroSpec>
 
-        <elementSpec ident="rhythmSign" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+        <elementSpec ident="rhythmGlyph" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>tablature rhythm sign</gloss>
-          <desc>The durational sign associated with a tablature chord. The intended use of &lt;rhythmSign&gt; is to encode the rhythmic sign found in the source (if any) while the actual duration of the associated tablature chord is encoded using the &lt;tabChord&gt;'s @dur attribute.</desc>
+          <desc>The durational sign associated with a tablature chord. The intended use of &lt;rhythmGlyph&gt; is to encode the rhythmic sign found in the source (if any) while the actual duration of the associated tablature chord is encoded using the &lt;tabChord&gt;'s @dur attribute.</desc>
           <classes>
             <memberOf key="att.common" />
             <memberOf key="att.facsimile" />
@@ -155,17 +155,42 @@
                 <rng:ref name="data.DURATION.tabcode" />
               </datatype>
             </attDef>
-            <attDef ident="dur" usage="opt">
-              <desc>The logical duration implied by this rhythm sign.</desc>
+            <attDef ident="headed" usage="opt">
+              <desc>Indicates whether the rhythm sign has a note head.</desc>
               <datatype>
-                <rng:ref name="data.DURATION.additive" />
+                <rng:ref name="data.BOOLEAN" />
               </datatype>
+              <defaultVal>false</defaultVal>
+            </attDef>
+            <attDef ident="beams" usage="opt">
+              <desc>The number of beams (or flags) on the rhythm sign.</desc>
+              <datatype>
+                <rng:data type="integer" />
+              </datatype>
+              <constraintSpec ident="beamsNoFermata" scheme="isoschematron">
+                <desc>A rhythm sign must have either a number of @beams or a @fermata, but it must not have both.</desc>
+                <constraint>
+                  <sch:assert test="@beams and (not(@fermata) or @fermata='false')">The @fermata attribute may not be used with @beams on <sch:name /></sch:assert>
+                </constraint>
+              </constraintSpec>
             </attDef>
             <attDef ident="dots" usage="opt">
               <desc>The number of dots on the rhythm sign.</desc>
               <datatype>
                 <rng:data type="integer" />
               </datatype>
+            </attDef>
+            <attDef ident="fermata" usage="opt">
+              <desc>Indicates whether the rhythm sign is a fermata.</desc>
+              <datatype>
+                <rng:ref name="data.BOOLEAN" />
+              </datatype>
+              <constraintSpec ident="fermataNoBeams" scheme="isoschematron">
+                <desc>A rhythm sign must have either a number of @beams or a @fermata, but it must not have both.</desc>
+                <constraint>
+                  <sch:assret test="@fermata='true' and not(@beams)">The @beams attribute may not be used with @fermata on <sch:name /></sch:assret>
+                </constraint>
+              </constraintSpec>
             </attDef>
           </attList>
         </elementSpec>
