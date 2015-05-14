@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.music-encoding.org/ns/mei">
   <!--
-Schema generated from ODD source 2015-02-19T12:50:06Z. .
+Schema generated from ODD source 2015-05-14T17:38:44Z. .
 TEI Edition: 2013 Release
 TEI Edition Location: http://www.tei-c.org/Vault/P5//
   
@@ -4996,6 +4996,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <ref name="expan"/>
       <ref name="instrName"/>
       <ref name="instrConfig"/>
+      <ref name="fingering"/>
     </choice>
   </define>
   <define name="model.editorialLike_alternation">
@@ -5004,6 +5005,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <ref name="expan"/>
       <ref name="instrName"/>
       <ref name="instrConfig"/>
+      <ref name="fingering"/>
     </choice>
   </define>
   <define name="model.editorialLike_sequence">
@@ -5011,6 +5013,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
     <ref name="expan"/>
     <ref name="instrName"/>
     <ref name="instrConfig"/>
+    <ref name="fingering"/>
   </define>
   <define name="model.editorialLike_sequenceOptional">
     <optional>
@@ -5024,6 +5027,9 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
     </optional>
     <optional>
       <ref name="instrConfig"/>
+    </optional>
+    <optional>
+      <ref name="fingering"/>
     </optional>
   </define>
   <define name="model.editorialLike_sequenceOptionalRepeatable">
@@ -5039,6 +5045,9 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
     <zeroOrMore>
       <ref name="instrConfig"/>
     </zeroOrMore>
+    <zeroOrMore>
+      <ref name="fingering"/>
+    </zeroOrMore>
   </define>
   <define name="model.editorialLike_sequenceRepeatable">
     <oneOrMore>
@@ -5052,6 +5061,9 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
     </oneOrMore>
     <oneOrMore>
       <ref name="instrConfig"/>
+    </oneOrMore>
+    <oneOrMore>
+      <ref name="fingering"/>
     </oneOrMore>
   </define>
   <define name="model.endingLike">
@@ -5723,6 +5735,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <ref name="model.layerLike"/>
       <ref name="model.staffPart.mensuralAndNeumes"/>
       <ref name="model.ossiaLike"/>
+      <ref name="fingering"/>
       <ref name="tabChord"/>
       <ref name="tabBarre"/>
       <ref name="connectingLine"/>
@@ -10748,6 +10761,7 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
       <ref name="model.ossiaLike"/>
       <ref name="model.lyricsLike"/>
       <ref name="model.midiLike"/>
+      <ref name="fingering"/>
       <ref name="tabChord"/>
       <ref name="tabBarre"/>
       <ref name="connectingLine"/>
@@ -15386,10 +15400,52 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
       <empty/>
     </element>
   </define>
+  <define name="att.fingering.attributes">
+    <ref name="att.fingering.attribute.playingHand"/>
+    <ref name="att.fingering.attribute.playingFinger"/>
+    <ref name="att.fingering.attribute.symbol"/>
+  </define>
+  <define name="att.fingering.attribute.playingHand">
+    <optional>
+      <attribute name="playingHand">
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The hand (left, right, or both) prescribed by the fingering marking.</a:documentation>
+        <choice>
+          <value>left</value>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Left hand</a:documentation>
+          <value>right</value>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Right hand</a:documentation>
+          <value>both</value>
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Both left and right hands</a:documentation>
+        </choice>
+      </attribute>
+    </optional>
+  </define>
+  <define name="att.fingering.attribute.playingFinger">
+    <optional>
+      <attribute name="playingFinger">
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The finger prescribed by the fingering marking.</a:documentation>
+        <ref name="data.FINGER.FRET"/>
+      </attribute>
+    </optional>
+  </define>
+  <define name="att.fingering.attribute.symbol">
+    <optional>
+      <attribute name="symbol">
+        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The symbol employed in the fingering marking.</a:documentation>
+        <text/>
+      </attribute>
+    </optional>
+  </define>
   <define name="fingering">
     <element name="fingering" ns="http://www.music-encoding.org/ns/mei">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(instrument fingering) Indicates an instrument fingering marking.</a:documentation>
-      <rng:empty xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+      <empty/>
+      <ref name="att.fingering.attributes"/>
+      <ref name="att.common.attributes"/>
+      <ref name="att.authorized.attributes"/>
+      <ref name="att.edit.attributes"/>
+      <ref name="att.pointing.attributes"/>
+      <empty/>
     </element>
   </define>
   <define name="tabChord">
@@ -15405,19 +15461,19 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
   </define>
   <define name="model.tabchordPart">
     <choice>
-      <ref name="fingering"/>
       <ref name="tabNote"/>
-      <ref name="rhythmSign"/>
+      <ref name="rhythmGlyph"/>
       <ref name="abzug"/>
       <ref name="tabBarre"/>
       <ref name="ensembleLine"/>
       <ref name="separee"/>
+      <ref name="fingering"/>
     </choice>
   </define>
   <define name="tabNote">
     <element name="tabNote" ns="http://www.music-encoding.org/ns/mei">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(tablature note) A indication of the string and fret position within a tablature chord.</a:documentation>
-      <ref name="model.tabGlyphLike"/>
+      <ref name="model.fretGlyphLike"/>
       <ref name="att.common.attributes"/>
       <attribute name="course">
         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The course on which the note is played.</a:documentation>
@@ -15430,22 +15486,22 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
       <empty/>
     </element>
   </define>
-  <define name="model.tabGlyphLike">
+  <define name="model.fretGlyphLike">
     <choice>
-      <ref name="tabGlyph"/>
+      <ref name="fretGlyph"/>
     </choice>
   </define>
-  <define name="tabGlyph">
-    <element name="tabGlyph" ns="http://www.music-encoding.org/ns/mei">
+  <define name="fretGlyph">
+    <element name="fretGlyph" ns="http://www.music-encoding.org/ns/mei">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(tablature note glyph) Encodes the actual symbol found in the tablature source for a particular note. These are often simple numerals or letters, but may also (in German tablature) be characters such as ꝯ or ꝫ or letters with a bar such as ā.</a:documentation>
       <text/>
       <ref name="att.facsimile.attributes"/>
       <empty/>
     </element>
   </define>
-  <define name="rhythmSign">
-    <element name="rhythmSign" ns="http://www.music-encoding.org/ns/mei">
-      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(tablature rhythm sign) The durational sign associated with a tablature chord. The intended use of &lt;rhythmSign&gt; is to encode the rhythmic sign found in the source (if any) while the actual duration of the associated tablature chord is encoded using the &lt;tabChord&gt;'s @dur attribute.</a:documentation>
+  <define name="rhythmGlyph">
+    <element name="rhythmGlyph" ns="http://www.music-encoding.org/ns/mei">
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(tablature rhythm sign) The durational sign associated with a tablature chord. The intended use of &lt;rhythmGlyph&gt; is to encode the rhythmic sign found in the source (if any) while the actual duration of the associated tablature chord is encoded using the &lt;tabChord&gt;'s @dur attribute.</a:documentation>
       <text/>
       <ref name="att.common.attributes"/>
       <ref name="att.facsimile.attributes"/>
@@ -15456,17 +15512,37 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
         </attribute>
       </optional>
       <optional>
-        <attribute name="dur">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The logical duration implied by this rhythm sign.</a:documentation>
-          <ref name="data.DURATION.additive"/>
+        <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" name="headed" a:defaultValue="false">
+          <a:documentation>Indicates whether the rhythm sign has a note head.</a:documentation>
+          <ref name="data.BOOLEAN"/>
         </attribute>
       </optional>
+      <optional>
+        <attribute name="beams">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number of beams (or flags) on the rhythm sign.</a:documentation>
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="mei-rhythmGlyph-beams-beamsNoFermata-constraint-67">
+        <rule context="mei:rhythmGlyph/@beams">
+          <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://www.tei-c.org/ns/1.0" test="@beams and (not(@fermata) or @fermata='false')">The @fermata attribute may not be used with @beams on <sch:name/>
+               </sch:assert>
+        </rule>
+      </pattern>
       <optional>
         <attribute name="dots">
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number of dots on the rhythm sign.</a:documentation>
           <data type="integer"/>
         </attribute>
       </optional>
+      <optional>
+        <attribute name="fermata">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indicates whether the rhythm sign is a fermata.</a:documentation>
+          <ref name="data.BOOLEAN"/>
+        </attribute>
+      </optional>
+      <sch:assret xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://www.tei-c.org/ns/1.0" test="@fermata='true' and not(@beams)">The @beams attribute may not be used with @fermata on <sch:name/>
+         </sch:assret>
       <empty/>
     </element>
   </define>
