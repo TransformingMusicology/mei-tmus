@@ -61,7 +61,12 @@
             <memberOf key="model.tabchordPart" />
           </classes>
           <content>
-            <rng:ref name="model.fretGlyphLike" />
+            <rng:zeroOrMore>
+              <rng:ref name="model.tabnotePart" />
+            </rng:zeroOrMore>
+            <rng:zeroOrMore>
+              <rng:ref name="model.fretGlyphLike" />
+            </rng:zeroOrMore>
           </content>
           <attList>
             <attDef ident="course" usage="req">
@@ -78,6 +83,10 @@
             </attDef>
           </attList>
         </elementSpec>
+
+        <classSpec ident="model.tabnotePart" module="MEI.lutetab" type="model">
+          <desc>Groups elements that may appear in a &lt;tabNote&gt;</desc>
+        </classSpec>
 
         <classSpec ident="model.fretGlyphLike" module="MEI.lutetab" type="model">
           <desc>Groups elements that may used as symbols (or glyphs) for &lt;tabNote&gt;s</desc>
@@ -197,7 +206,7 @@
 
         <elementSpec ident="fingering" module="MEI.instruments" mode="change" ns="http://www.music-encoding.org/ns/mei">
           <classes mode="change">
-            <memberOf mode="add" key="model.tabchordPart" />
+            <memberOf mode="add" key="model.tabnotePart" />
           </classes>
         </elementSpec>
 
