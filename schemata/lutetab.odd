@@ -164,24 +164,45 @@
                 <rng:ref name="data.DURATION.tabcode" />
               </datatype>
             </attDef>
-            <attDef ident="headed" usage="opt">
-              <desc>Indicates whether the rhythm sign has a note head.</desc>
+            <attDef ident="head" usage="opt">
+              <desc>Indicates whether the rhythm sign has a note head and if so, what shape.</desc>
               <datatype>
-                <rng:ref name="data.BOOLEAN" />
+                <rng:ref name="data.HEADSHAPE" />
               </datatype>
-              <defaultVal>false</defaultVal>
             </attDef>
-            <attDef ident="beams" usage="opt">
-              <desc>The number of beams (or flags) on the rhythm sign.</desc>
+            <attDef ident="flags" usage="opt">
+              <desc>The number of flags on the rhythm sign.</desc>
               <datatype>
                 <rng:data type="integer" />
               </datatype>
-              <constraintSpec ident="beamsNoFermata" scheme="isoschematron">
-                <desc>A rhythm sign must have either a number of @beams or a @fermata, but it must not have both.</desc>
-                <constraint>
-                  <sch:assert test="@beams and (not(@fermata) or @fermata='false')">The @fermata attribute may not be used with @beams on <sch:name /></sch:assert>
-                </constraint>
-              </constraintSpec>
+            </attDef>
+            <attDef ident="flagDir" usage="opt">
+              <desc>Indicates the direction of the rhythm sign's flag(s)</desc>
+              <valList type="closed">
+                <valItem ident="left">
+                  <desc>Left pointing</desc>
+                </valItem>
+                <valItem ident="right">
+                  <desc>Right pointing</desc>
+                </valItem>
+              </valList>
+            </attDef>
+            <attDef ident="serif" usage="opt">
+              <desc>Indicates that the rhythm sign has a serif</desc>
+              <datatype>
+                <rng:ref name="data.BOOLEAN" />
+              </datatype>
+            </attDef>
+            <attDef ident="serifDir" usage="opt">
+              <desc>Indicates the direction of the rhythm sign's serif when @serif is true</desc>
+              <valList type="closed">
+                <valItem ident="left">
+                  <desc>Left pointing</desc>
+                </valItem>
+                <valItem ident="right">
+                  <desc>Right pointing</desc>
+                </valItem>
+              </valList>
             </attDef>
             <attDef ident="dots" usage="opt">
               <desc>The number of dots on the rhythm sign.</desc>
@@ -189,19 +210,13 @@
                 <rng:data type="integer" />
               </datatype>
             </attDef>
-            <attDef ident="fermata" usage="opt">
-              <desc>Indicates whether the rhythm sign is a fermata.</desc>
-              <datatype>
-                <rng:ref name="data.BOOLEAN" />
-              </datatype>
-              <constraintSpec ident="fermataNoBeams" scheme="isoschematron">
-                <desc>A rhythm sign must have either a number of @beams or a @fermata, but it must not have both.</desc>
-                <constraint>
-                  <sch:assret test="@fermata='true' and not(@beams)">The @beams attribute may not be used with @fermata on <sch:name /></sch:assret>
-                </constraint>
-              </constraintSpec>
-            </attDef>
           </attList>
+        </elementSpec>
+
+        <elementSpec ident="fermata" module="MEI.cmn" mode="change" ns="http://www.music-encoding.org/ns/mei">
+          <classes mode="change">
+            <memberOf mode="add" key="model.tabchordPart" />
+          </classes>
         </elementSpec>
 
         <elementSpec ident="fingering" module="MEI.instruments" mode="change" ns="http://www.music-encoding.org/ns/mei">
