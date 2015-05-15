@@ -30,20 +30,48 @@
             </instrDesc>
             <instrConfig>
               <courseTuning>
-                <course n="1" pname="d" oct="5">
+                <course n="1" pname="f" oct="5">
+                  <string pname="f" oct="5"/>
+                </course>
+                <course n="2" pname="d" oct="5">
                   <string pname="d" oct="5"/>
+                </course>
+                <course n="3" pname="a" oct="5">
+                  <string pname="a" oct="5"/>
+                  <string pname="a" oct="5"/>
+                </course>
+                <course n="4" pname="f" oct="4">
+                  <string pname="f" oct="4"/>
+                  <string pname="f" oct="4"/>
+                </course>
+                <course n="5" pname="d" oct="4">
+                  <string pname="d" oct="4"/>
                   <string pname="d" oct="4"/>
                 </course>
-                <course n="2" pname="a" oct="5" />
-                <course n="3" pname="f" oct="4" />
-                <course n="4" pname="d" oct="4" />
-                <course n="5" pname="a" oct="4" />
-                <course n="6" pname="f" oct="3" />
-                <course n="7" pname="e" oct="3" />
-                <course n="8" pname="d" oct="3" />
-                <course n="9" pname="c" oct="3" />
-                <course n="10" pname="b" accid="b" oct="3" />
-                <course n="11" pname="a" oct="3" />
+                <course n="6" pname="a" oct="4">
+                  <string pname="a" oct="4"/>
+                  <string pname="a" oct="3"/>
+                </course>
+                <course n="7" pname="g" oct="3">
+                  <string pname="g" oct="3"/>
+                  <string pname="g" oct="2"/>
+                </course>
+                <course n="8" pname="f" oct="3">
+                  <string pname="f" oct="3"/>
+                  <string pname="f" oct="2"/>
+                </course>
+                <course n="9" pname="e" oct="3">
+                  <string pname="e" oct="3"/>
+                  <string pname="e" oct="2"/>
+                </course>
+                <course n="10" pname="d" oct="3">
+                  <string pname="d" oct="3"/>
+                  <string pname="d" oct="2"/>
+                </course>
+                <course n="11" pname="c" oct="3">
+                  <string pname="c" oct="3"/>
+                  <string pname="c" oct="2"/>
+                </course>
               </courseTuning>
               <bassTuning pname="c" mode="major"/>
             </instrConfig>
