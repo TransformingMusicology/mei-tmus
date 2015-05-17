@@ -4,7 +4,7 @@ namespace rng = "http://relaxng.org/ns/structure/1.0"
 namespace sch = "http://purl.oclc.org/dsdl/schematron"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2015-05-15T14:28:17Z. .
+# Schema generated from ODD source 2015-05-17T21:53:59Z. .
 # TEI Edition: 2013 Release
 # TEI Edition Location: http://www.tei-c.org/Vault/P5//
 #
@@ -1723,21 +1723,21 @@ sch:pattern [
   id =
     "mei-att.augmentdots-dots-dots_attribute_requires_dur-constraint-1"
   "\x{a}" ~
-  "    "
+  "      "
   sch:rule [
     context = "mei:*[@dots]"
     "\x{a}" ~
-    "      "
+    "                "
     sch:assert [
       test = "@dur"
       "An element with a dots attribute must also have a dur\x{a}" ~
       "                  attribute."
     ]
     "\x{a}" ~
-    "    "
+    "              "
   ]
   "\x{a}" ~
-  "  "
+  "   "
 ]
 att.authorized.attributes =
   att.authorized.attribute.authority, att.authorized.attribute.authURI
@@ -2094,21 +2094,21 @@ sch:pattern [
   id =
     "mei-att.duration.additive-dur-ignore_dots_attribute-constraint-2"
   "\x{a}" ~
-  "    "
+  "      "
   sch:rule [
     context = "mei:*[contains(@dur, '.')]"
     "\x{a}" ~
-    "      "
+    "                "
     sch:assert [
       test = "not(@dots)"
       "An element with a dur attribute that contains dotted\x{a}" ~
       "                  values must not have a dots attribute."
     ]
     "\x{a}" ~
-    "    "
+    "              "
   ]
   "\x{a}" ~
-  "  "
+  "   "
 ]
 att.duration.default.attributes =
   att.duration.default.attribute.dur.default,
@@ -3156,7 +3156,9 @@ att.staffDef.vis.attribute.layerscheme =
 att.staffDef.vis.attribute.lines =
   
   ## indicates the number of staff lines.
-  attribute lines { xsd:positiveInteger }?
+  attribute lines {
+    xsd:integer { minInclusive = "0" }
+  }?
 att.staffDef.vis.attribute.lines.color =
   
   ## captures the colors of the staff lines. The value is structured; that is, it should have the same number of space-separated RGB values as the number of lines indicated by the lines attribute. A line can be made invisible by assigning it the same RGB value as the background, usually white.
@@ -3411,21 +3413,21 @@ att.typed.attribute.subtype =
 sch:pattern [
   id = "mei-att.typed-subtype-When_subtype-constraint-3"
   "\x{a}" ~
-  "    "
+  "      "
   sch:rule [
     context = "mei:*[@subtype]"
     "\x{a}" ~
-    "      "
+    "                "
     sch:assert [
       test = "@type"
       "An element with a subtype attribute must have a type\x{a}" ~
       "                  attribute."
     ]
     "\x{a}" ~
-    "    "
+    "              "
   ]
   "\x{a}" ~
-  "  "
+  "   "
 ]
 att.typography.attributes =
   att.typography.attribute.fontfam,
@@ -3642,17 +3644,15 @@ model.dateLike_sequenceOptional = date?
 model.dateLike_sequenceOptionalRepeatable = date*
 model.dateLike_sequenceRepeatable = date+
 model.editionLike = edition
-model.editorialLike = abbr | expan | instrName | instrConfig | fingering
-model.editorialLike_alternation =
-  abbr | expan | instrName | instrConfig | fingering
-model.editorialLike_sequence =
-  abbr, expan, instrName, instrConfig, fingering
+model.editorialLike = abbr | expan | instrName | instrConfig
+model.editorialLike_alternation = abbr | expan | instrName | instrConfig
+model.editorialLike_sequence = abbr, expan, instrName, instrConfig
 model.editorialLike_sequenceOptional =
-  abbr?, expan?, instrName?, instrConfig?, fingering?
+  abbr?, expan?, instrName?, instrConfig?
 model.editorialLike_sequenceOptionalRepeatable =
-  abbr*, expan*, instrName*, instrConfig*, fingering*
+  abbr*, expan*, instrName*, instrConfig*
 model.editorialLike_sequenceRepeatable =
-  abbr+, expan+, instrName+, instrConfig+, fingering+
+  abbr+, expan+, instrName+, instrConfig+
 model.endingLike = ending
 model.eventLike =
   model.keySigLike
@@ -3838,7 +3838,6 @@ model.staffPart =
   model.layerLike
   | model.staffPart.mensuralAndNeumes
   | model.ossiaLike
-  | fingering
   | tabChord
   | tabBarre
   | connectingLine
@@ -4006,30 +4005,30 @@ barLine =
     >> sch:pattern [
          id = "mei-barLine-Check_barLinetaktplace-constraint-4"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:barLine[@taktplace]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [ name = "staff" value = "ancestor::mei:staff/@n" ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [
              name = "staffpos"
              value =
                "count(ancestor::mei:staff/preceding-sibling::mei:staff)               + 1"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test =
                "number(@taktplace) <= number(2 *               preceding::mei:staffDef[@n=$staff and @lines][1]/@lines)"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -4148,17 +4147,17 @@ clef =
     >> sch:pattern [
          id = "mei-clef-Clef_position_lines-constraint-5"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:clef[ancestor::mei:staffDef[@lines]]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [
              name = "thisstaff"
              value = "ancestor::mei:staffDef/@n"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test =
                "number(@line) <=               number(ancestor::mei:staffDef[@n=$thisstaff and @lines][1]/@lines)"
@@ -4166,25 +4165,25 @@ clef =
              "              must be less than or equal to the number of lines on the staff."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ]
     >> sch:pattern [
          id = "mei-clef-Clef_position_nolines-constraint-6"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:clef[ancestor::mei:staffDef[not(@lines)]]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [
              name = "thisstaff"
              value = "ancestor::mei:staffDef/@n"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test =
                "number(@line) <=               number(preceding::mei:staffDef[@n=$thisstaff and @lines][1]/@lines)"
@@ -4192,10 +4191,10 @@ clef =
              "              must be less than or equal to the number of lines on the staff."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.event.attributes,
@@ -4282,21 +4281,21 @@ dir =
     >> sch:pattern [
          id = "mei-dir-dir_start-type_attributes_required-constraint-7"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:dir[not(ancestor::mei:syllable)]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -4343,21 +4342,21 @@ dynam =
          id =
            "mei-dynam-dynam_start-type_attributes_required-constraint-8"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:dynam"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -4595,21 +4594,21 @@ layer =
     >> sch:pattern [
          id = "mei-layer-Check_layern-constraint-9"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:layer[@n]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "number(@n) = round(number(@n))"
              "The n attribute must be a single\x{a}" ~
              "              integer."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.declaring.attributes,
@@ -4629,21 +4628,21 @@ layerDef =
     >> sch:pattern [
          id = "mei-layerDef-Check_layerDefn-constraint-10"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:layerDef"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "number(@n) = round(number(@n))"
              "An n attribute with a single integer\x{a}" ~
              "              value must be present."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.declaring.attributes,
@@ -4720,11 +4719,11 @@ mei =
     >> sch:pattern [
          id = "mei-mei-Check_staff-constraint-11"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:*[@staff]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test =
                "every $i in tokenize(@staff, '\s+') satisfies               $i=//mei:staffDef/@n"
@@ -4732,10 +4731,10 @@ mei =
              "              staffDef element."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.meiversion.attributes,
     att.id.attributes,
@@ -4961,28 +4960,28 @@ phrase =
          id =
            "mei-phrase-phrase_start-_and_end-type_attributes_required-constraint-12"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:phrase"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@dur or @dur.ges or @endid or @tstamp2"
              "Must have one of the\x{a}" ~
              "              attributes: dur, dur.ges, endid, or tstamp2"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -5160,17 +5159,17 @@ rest =
     >> sch:pattern [
          id = "mei-rest-Check_restline-constraint-13"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:rest[@line]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [
              name = "thisstaff"
              value = "ancestor::mei:staff/@n"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test =
                "number(@line) <=               number(preceding::mei:staffDef[@n=$thisstaff and @lines][1]/@lines)"
@@ -5178,10 +5177,10 @@ rest =
              "              @line must be less than or equal to the number of lines on the staff."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -5284,11 +5283,11 @@ section =
     >> sch:pattern [
          id = "mei-section-Check_sectionexpansion-constraint-14"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:section[mei:expansion]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test =
                "descendant::mei:section|descendant::mei:ending|descendant::mei:rdg"
@@ -5296,10 +5295,10 @@ section =
              "              to."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.declaring.attributes,
@@ -5396,21 +5395,21 @@ staff =
     >> sch:pattern [
          id = "mei-staff-Check_staffn-constraint-15"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:staff[@n]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "number(@n) = round(number(@n))"
              "The n attribute must be a single\x{a}" ~
              "              integer."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.declaring.attributes,
@@ -5430,20 +5429,20 @@ staffDef =
     >> sch:pattern [
          id = "mei-staffDef-Check_staffDefn-constraint-16"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:staffDef"
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [ name = "thisstaff" value = "@n" ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@n"
              "A staffDef must have an n attribute."
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test =
                "@lines or preceding::mei:staffDef[@n=$thisstaff and @lines]"
@@ -5451,133 +5450,133 @@ staffDef =
              "              occurrence of a staff must declare the number of staff lines."
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "count(mei:clef) + count(mei:clefGrp) < 2"
              "Only one clef or clefGrp\x{a}" ~
              "              is permitted."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ]
     >> sch:pattern [
          id = "mei-staffDef-Check_ancestor_staff-constraint-17"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:staffDef[ancestor::mei:staff]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [ name = "thisstaff" value = "@n" ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "ancestor::mei:staff/@n eq $thisstaff"
              "If a staffDef appears in a\x{a}" ~
              "              staff, it must bear the same @n than this staff."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ]
     >> sch:pattern [
          id = "mei-staffDef-Check_clef_position_staffDef-constraint-18"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:staffDef[@clef.line and @lines]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "number(@clef.line) <= number(@lines)"
              "The clef position must be\x{a}" ~
              "              less than or equal to the number of lines on the staff."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ]
     >> sch:pattern [
          id =
            "mei-staffDef-Check_clef_position_staffDef_nolines-constraint-19"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:staffDef[@clef.line and not(@lines)]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [ name = "thisstaff" value = "@n" ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [
              name = "stafflines"
              value =
                "preceding::mei:staffDef[@n=$thisstaff and               @lines][1]/@lines"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "number(@clef.line) <= number($stafflines)"
              "The clef position must\x{a}" ~
              "              be less than or equal to the number of lines on the staff."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ]
     >> sch:pattern [
          id = "mei-staffDef-Check_tab_strings_lines-constraint-20"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:staffDef[@tab.strings and @lines]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [
              name = "countTokens"
              value =
                "count(tokenize(normalize-space(@tab.strings),               '\s'))"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "$countTokens = 1 or $countTokens = @lines"
              "The tab.strings attribute\x{a}" ~
              "              must have the same number of values as there are staff lines."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ]
     >> sch:pattern [
          id = "mei-staffDef-Check_tab_strings_nolines-constraint-21"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:staffDef[@tab.strings and not(@lines)]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [
              name = "countTokens"
              value =
                "count(tokenize(normalize-space(@tab.strings),               '\s'))"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [ name = "thisStaff" value = "@n" ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test =
                "$countTokens = 1 or $countTokens =               preceding::mei:staffDef[@n=$thisStaff and @lines][1]/@lines"
@@ -5585,25 +5584,25 @@ staffDef =
              "              must have the same number of values as there are staff lines."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ]
     >> sch:pattern [
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:staffDef[@lines.color and @lines]"
            "\x{a}" ~
-           "          "
+           "              "
            sch:let [
              name = "countTokens"
              value =
                "count(tokenize(normalize-space(@lines.color),                 '\s'))"
            ]
            "\x{a}" ~
-           "          "
+           "              "
            sch:assert [
              test = "$countTokens = 1 or $countTokens = @lines"
              "The lines.color attribute\x{a}" ~
@@ -5611,24 +5610,24 @@ staffDef =
              "                staff lines."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:staffDef[@lines.color and not(@lines)]"
            "\x{a}" ~
-           "          "
+           "              "
            sch:let [
              name = "countTokens"
              value =
                "count(tokenize(normalize-space(@lines.color),                 '\s'))"
            ]
            "\x{a}" ~
-           "          "
+           "              "
            sch:let [ name = "thisStaff" value = "@n" ]
            "\x{a}" ~
-           "          "
+           "              "
            sch:assert [
              test =
                "$countTokens = 1 or $countTokens =                 preceding::mei:staffDef[@n=$thisStaff and @lines][1]/@lines"
@@ -5637,64 +5636,64 @@ staffDef =
              "                there are staff lines."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "          "
        ]
     >> sch:pattern [
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:staffDef[@ppq][ancestor::mei:scoreDef[@ppq]]"
            "\x{a}" ~
-           "          "
+           "              "
            sch:let [ name = "staffPPQ" value = "@ppq" ]
            "\x{a}" ~
-           "          "
+           "              "
            sch:let [
              name = "scorePPQ"
              value = "ancestor::mei:scoreDef[@ppq][1]/@ppq"
            ]
            "\x{a}" ~
-           "          "
+           "              "
            sch:assert [
              test = "($scorePPQ mod $staffPPQ) = 0"
              "The value of ppq must be a factor of\x{a}" ~
              "                the value of ppq on an ancestor scoreDef."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "          "
        ]
     >> sch:pattern [
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:staffDef[@ppq][preceding::mei:scoreDef[@ppq]]"
            "\x{a}" ~
-           "          "
+           "              "
            sch:let [ name = "staffPPQ" value = "@ppq" ]
            "\x{a}" ~
-           "          "
+           "              "
            sch:let [
              name = "scorePPQ"
              value = "preceding::mei:scoreDef[@ppq][1]/@ppq"
            ]
            "\x{a}" ~
-           "          "
+           "              "
            sch:assert [
              test = "($scorePPQ mod $staffPPQ) = 0"
              "The value of ppq must be a factor of\x{a}" ~
              "                the value of ppq on a preceding scoreDef."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "          "
        ],
     att.common.attributes,
     att.declaring.attributes,
@@ -5717,34 +5716,34 @@ staffGrp =
          id =
            "mei-staffGrp-Check_staffGrp_unique_staff_n_values-constraint-26"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:staffGrp"
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [
              name = "countstaves"
              value = "count(descendant::mei:staffDef)"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:let [
              name = "countuniqstaves"
              value =
                "count(distinct-values(descendant::mei:staffDef/@n))"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "$countstaves eq $countuniqstaves"
              "Each staffDef must have a unique\x{a}" ~
              "              value for the n attribute."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.declaring.attributes,
@@ -5784,11 +5783,11 @@ tempo =
          id =
            "mei-tempo-tempo_in_header_disallow_most_attrs-constraint-27"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:tempo[ancestor::mei:meiHead]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test =
                "not(@*[name() != 'label' and name() != 'n' and name() !=               'xml:base' and name() != 'xml:id' and name() != 'xml:lang'])"
@@ -5797,31 +5796,31 @@ tempo =
              "              header."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ]
     >> sch:pattern [
          id =
            "mei-tempo-tempo_start-type_attributes_required-constraint-28"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context =
              "mei:tempo[not(ancestor::mei:syllable) and not(ancestor::mei:meiHead)]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -6051,28 +6050,28 @@ change =
     >> sch:pattern [
          id = "mei-change-change_requirements-constraint-29"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:change"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@isodate or mei:date"
              "The date of the change must be recorded in an\x{a}" ~
              "              isodate attribute or date element."
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@resp or mei:respStmt"
              "The person responsible for the change must be\x{a}" ~
              "              recorded in a resp attribute or respStmt element."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.bibl.attributes,
@@ -6339,21 +6338,21 @@ incipCode =
          id =
            "mei-incipCode-Check_incipCode_form_mimetype-constraint-30"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:incipCode"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@form or @mimetype"
              "incipCode must have a form or mimetype\x{a}" ~
              "              attribute."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.bibl.attributes,
@@ -7759,7 +7758,6 @@ model.measurePart =
   | model.ossiaLike
   | model.lyricsLike
   | model.midiLike
-  | fingering
   | tabChord
   | tabBarre
   | connectingLine
@@ -7789,11 +7787,11 @@ beam =
     >> sch:pattern [
          id = "mei-beam-When_not_copyof_beam_content-constraint-31"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:beam[not(@copyof)]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test =
                "count(descendant::*[local-name()='note' or local-name()='rest' or               local-name()='chord' or local-name()='space']) > 1"
@@ -7801,10 +7799,10 @@ beam =
              "              attribute must have at least 2 note, rest, chord, or space descendants."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -7823,28 +7821,28 @@ beamSpan =
          id =
            "mei-beamSpan-beamspan_start-_and_end-type_attributes_required-constraint-32"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:beamSpan"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@dur or @dur.ges or @endid or @tstamp2"
              "Must have one of the\x{a}" ~
              "              attributes: dur, dur.ges, endid, or tstamp2"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -7876,28 +7874,28 @@ bend =
          id =
            "mei-bend-bend_start-_and_end-type_attributes_required-constraint-33"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:bend"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@dur or @dur.ges or @endid or @tstamp2"
              "Must have one of the\x{a}" ~
              "              attributes: dur, dur.ges, endid, or tstamp2"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -7916,21 +7914,21 @@ breath =
          id =
            "mei-breath-breath_start-type_attributes_required-constraint-34"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:breath"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -7962,21 +7960,21 @@ fermata =
          id =
            "mei-fermata-fermata_start-type_attributes_required-constraint-35"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:fermata"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -8009,28 +8007,28 @@ gliss =
          id =
            "mei-gliss-gliss_start-_and_end-type_attributes_required-constraint-36"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:gliss"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@dur or @dur.ges or @endid or @tstamp2"
              "Must have one of the\x{a}" ~
              "              attributes: dur, dur.ges, endid, or tstamp2"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -8049,28 +8047,28 @@ hairpin =
          id =
            "mei-hairpin-hairpin_start-_and_end-type_attributes_required-constraint-37"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:hairpin"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@dur or @dur.ges or @endid or @tstamp2"
              "Must have one of the\x{a}" ~
              "              attributes: dur, dur.ges, endid, or tstamp2"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -8102,21 +8100,21 @@ harpPedal =
          id =
            "mei-harpPedal-harpPedal_start-type_attributes_required-constraint-38"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:harpPedal"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -8277,28 +8275,28 @@ octave =
          id =
            "mei-octave-octave_start-_and_end-type_attributes_required-constraint-39"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:octave"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@dur or @dur.ges or @endid or @tstamp2"
              "Must have one of the\x{a}" ~
              "              attributes: dur, dur.ges, endid, or tstamp2"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -8316,35 +8314,35 @@ ossia =
      | (model.layerLike, model.layerLike+))
     >> sch:pattern [
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:measure/mei:ossia"
            "\x{a}" ~
-           "          "
+           "              "
            sch:assert [
              test = "count(mei:*) = count(mei:staff)"
              "Ossia may contain only staff\x{a}" ~
              "                elements in this context."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:staff/mei:ossia"
            "\x{a}" ~
-           "          "
+           "              "
            sch:assert [
              test = "count(mei:*) = count(mei:layer)"
              "Ossia may contain only layer\x{a}" ~
              "                elements in this context."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "          "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -8363,21 +8361,21 @@ pedal =
          id =
            "mei-pedal-pedal_start-type_attributes_required-constraint-42"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:pedal"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -8409,28 +8407,28 @@ slur =
          id =
            "mei-slur-slur_start-_and_end-type_attributes_required-constraint-43"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:slur"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@dur or @dur.ges or @endid or @tstamp2"
              "Must have one of the\x{a}" ~
              "              attributes: dur, dur.ges, endid, or tstamp2"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -8450,28 +8448,28 @@ tie =
          id =
            "mei-tie-tie_start-_and_end-type_attributes_required-constraint-44"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:tie"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@dur or @dur.ges or @endid or @tstamp2"
              "Must have one of the\x{a}" ~
              "              attributes: dur, dur.ges, endid, or tstamp2"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -8493,11 +8491,11 @@ tuplet =
     >> sch:pattern [
          id = "mei-tuplet-When_not_copyof_tuplet_content-constraint-45"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:tuplet[not(@copyof)]"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test =
                "count(descendant::*[local-name()='note' or local-name()='rest' or               local-name()='chord']) > 1"
@@ -8505,10 +8503,10 @@ tuplet =
              "              2 note, rest, or chord descendants."
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -8527,28 +8525,28 @@ tupletSpan =
          id =
            "mei-tupletSpan-tupletSpan_start-_and_end-type_attributes_required-constraint-46"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:tupletSpan"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              "Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@dur or @dur.ges or @endid or @tstamp2"
              "Must have one of the\x{a}" ~
              "              attributes: dur, dur.ges, endid, or tstamp2"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -8944,21 +8942,21 @@ sch:pattern [
   id =
     "mei-att.common.anl-copyof-When_copyof_element_empy-constraint-47"
   "\x{a}" ~
-  "    "
+  "      "
   sch:rule [
     context = "mei:*[@copyof]"
     "\x{a}" ~
-    "      "
+    "                "
     sch:assert [
       test = "count(child::node()) = 0"
       "An element with a copyof attribute\x{a}" ~
       "                  cannot have content."
     ]
     "\x{a}" ~
-    "    "
+    "              "
   ]
   "\x{a}" ~
-  "  "
+  "   "
 ]
 att.common.anl.attribute.corresp =
   
@@ -9114,21 +9112,21 @@ mordent =
          id =
            "mei-mordent-mordent_start-type_attributes_required-constraint-48"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:mordent"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -9147,21 +9145,21 @@ trill =
          id =
            "mei-trill-trill_start-type_attributes_required-constraint-49"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:trill"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -9180,21 +9178,21 @@ turn =
          id =
            "mei-turn-turn_start-type_attributes_required-constraint-50"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:turn"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              "Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -9339,7 +9337,8 @@ model.choicePart =
   | reg
   | sic
   | unclear
-model.editLike = choice | subst | instrName | instrConfig
+model.editLike =
+  choice | subst | instrName | instrConfig | tabChord | tabNote
 model.transcriptionLike =
   add
   | corr
@@ -9353,6 +9352,8 @@ model.transcriptionLike =
   | sic
   | supplied
   | unclear
+  | tabChord
+  | tabNote
 abbr =
   
   ## (abbreviation) – A generic element for 1) a shortened form of a word, including an acronym or 2) a shorthand notation.
@@ -9831,21 +9832,21 @@ graphic =
     >> sch:pattern [
          id = "mei-graphic-graphic_child_of_zone-constraint-51"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:zone/mei:graphic"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "count(mei:*) = 0"
              "graphic child of zone cannot have\x{a}" ~
              "              children"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.declaring.attributes,
@@ -10045,11 +10046,11 @@ componentGrp =
     >> sch:pattern [
          id = "mei-componentGrp-checkComponentGrp-constraint-52"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:componentGrp"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test =
                "every $i in ./child::mei:* satisfies $i/local-name() eq               ./parent::mei:*/local-name()"
@@ -10057,10 +10058,10 @@ componentGrp =
              "              the componentGrp-element are allowed. "
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     empty
@@ -10279,21 +10280,21 @@ harm =
          id =
            "mei-harm-harm_start-type_attributes_required-constraint-53"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:harm"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "@startid or @tstamp or @tstamp.ges or @tstamp.real"
              " Must have one of\x{a}" ~
              "              the attributes: startid, tstamp, tstamp.ges or tstamp.real"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.facsimile.attributes,
@@ -10850,21 +10851,21 @@ avFile =
     >> sch:pattern [
          id = "mei-avFile-avFile_child_of_clip-constraint-54"
          "\x{a}" ~
-         "        "
+         "            "
          sch:rule [
            context = "mei:clip/mei:avFile"
            "\x{a}" ~
-           "          "
+           "               "
            sch:assert [
              test = "count(mei:*) = 0"
              "avFile child of clip cannot have\x{a}" ~
              "              children"
            ]
            "\x{a}" ~
-           "        "
+           "            "
          ]
          "\x{a}" ~
-         "      "
+         "         "
        ],
     att.common.attributes,
     att.declaring.attributes,
@@ -11212,49 +11213,15 @@ instrConfig =
   element instrConfig {
     (text | model.instrconfigPart)*, att.common.attributes, empty
   }
-att.fingering.attributes =
-  att.fingering.attribute.playingHand,
-  att.fingering.attribute.playingFinger,
-  att.fingering.attribute.symbol
-att.fingering.attribute.playingHand =
-  
-  ## The hand (left, right, or both) prescribed by the fingering marking.
-  attribute playingHand {
-    
-    ## Left hand
-    "left"
-    | 
-      ## Right hand
-      "right"
-    | 
-      ## Both left and right hands
-      "both"
-  }?
-att.fingering.attribute.playingFinger =
-  
-  ## The finger prescribed by the fingering marking.
-  attribute playingFinger { data.FINGER.FRET }?
-att.fingering.attribute.symbol =
-  
-  ## The symbol employed in the fingering marking.
-  attribute symbol { text }?
 fingering =
   
   ## (instrument fingering) Indicates an instrument fingering marking.
-  element fingering {
-    empty,
-    att.fingering.attributes,
-    att.common.attributes,
-    att.authorized.attributes,
-    att.edit.attributes,
-    att.pointing.attributes,
-    empty
-  }
+  element fingering { empty }
 tabChord =
   
   ## (tablature chord) Simultaneously played tablature notes, all sharing a (possibly implied) rhythm sign, but requiring an explicit duration attribute.
   element tabChord {
-    model.tabchordPart*,
+    (model.tabchordPart | model.editLike | model.transcriptionLike)*,
     att.common.attributes,
     att.duration.additive.attributes,
     empty
@@ -11271,8 +11238,10 @@ tabNote =
   
   ## (tablature note) A indication of the string and fret position within a tablature chord.
   element tabNote {
-    model.tabnotePart*,
-    model.fretGlyphLike*,
+    (model.tabnotePart
+     | model.fretGlyphLike
+     | model.editLike
+     | model.transcriptionLike)*,
     att.common.attributes,
     
     ## The course on which the note is played.

@@ -1,6 +1,6 @@
 
 <!--
-DTD generated from ODD source 2015-02-19T12:50:12Z. .
+DTD generated from ODD source 2015-05-17T21:54:05Z. .
 TEI Edition: 2013 Release
 TEI Edition Location: http://www.tei-c.org/Vault/P5//
 
@@ -659,16 +659,16 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
 <!ENTITY % model.choicePart_sequenceOptional "%model.editorialLike;?, %model.editLike;?, corr?, orig?, reg?, sic?, unclear?"> 
 <!ENTITY % model.choicePart_sequenceOptionalRepeatable "%model.editorialLike;*, %model.editLike;*, corr*, orig*, reg*, sic*, unclear*"> 
 <!ENTITY % model.choicePart_sequenceRepeatable "%model.editorialLike;+, %model.editLike;+, corr+, orig+, reg+, sic+, unclear+"> 
-<!ENTITY % model.editLike "choice |subst |instrName |instrConfig"> 
-<!ENTITY % model.editLike_sequence "choice, subst, instrName, instrConfig"> 
-<!ENTITY % model.editLike_sequenceOptional "choice?, subst?, instrName?, instrConfig?"> 
-<!ENTITY % model.editLike_sequenceOptionalRepeatable "choice*, subst*, instrName*, instrConfig*"> 
-<!ENTITY % model.editLike_sequenceRepeatable "choice+, subst+, instrName+, instrConfig+"> 
-<!ENTITY % model.transcriptionLike "add |corr |damage |del |gap |handShift |orig |reg |restore |sic |supplied |unclear"> 
-<!ENTITY % model.transcriptionLike_sequence "add, corr, damage, del, gap, handShift, orig, reg, restore, sic, supplied, unclear"> 
-<!ENTITY % model.transcriptionLike_sequenceOptional "add?, corr?, damage?, del?, gap?, handShift?, orig?, reg?, restore?, sic?, supplied?, unclear?"> 
-<!ENTITY % model.transcriptionLike_sequenceOptionalRepeatable "add*, corr*, damage*, del*, gap*, handShift*, orig*, reg*, restore*, sic*, supplied*, unclear*"> 
-<!ENTITY % model.transcriptionLike_sequenceRepeatable "add+, corr+, damage+, del+, gap+, handShift+, orig+, reg+, restore+, sic+, supplied+, unclear+"> 
+<!ENTITY % model.editLike "choice |subst |instrName |instrConfig |tabChord |tabNote"> 
+<!ENTITY % model.editLike_sequence "choice, subst, instrName, instrConfig, tabChord, tabNote"> 
+<!ENTITY % model.editLike_sequenceOptional "choice?, subst?, instrName?, instrConfig?, tabChord?, tabNote?"> 
+<!ENTITY % model.editLike_sequenceOptionalRepeatable "choice*, subst*, instrName*, instrConfig*, tabChord*, tabNote*"> 
+<!ENTITY % model.editLike_sequenceRepeatable "choice+, subst+, instrName+, instrConfig+, tabChord+, tabNote+"> 
+<!ENTITY % model.transcriptionLike "add |corr |damage |del |gap |handShift |orig |reg |restore |sic |supplied |unclear |tabChord |tabNote"> 
+<!ENTITY % model.transcriptionLike_sequence "add, corr, damage, del, gap, handShift, orig, reg, restore, sic, supplied, unclear, tabChord, tabNote"> 
+<!ENTITY % model.transcriptionLike_sequenceOptional "add?, corr?, damage?, del?, gap?, handShift?, orig?, reg?, restore?, sic?, supplied?, unclear?, tabChord?, tabNote?"> 
+<!ENTITY % model.transcriptionLike_sequenceOptionalRepeatable "add*, corr*, damage*, del*, gap*, handShift*, orig*, reg*, restore*, sic*, supplied*, unclear*, tabChord*, tabNote*"> 
+<!ENTITY % model.transcriptionLike_sequenceRepeatable "add+, corr+, damage+, del+, gap+, handShift+, orig+, reg+, restore+, sic+, supplied+, unclear+, tabChord+, tabNote+"> 
 <!ENTITY % model.figDescLike "figDesc"> 
 <!ENTITY % model.figDescLike_sequence "figDesc"> 
 <!ENTITY % model.figDescLike_sequenceOptional "figDesc?"> 
@@ -849,16 +849,21 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
 <!ENTITY % model.instrconfigPart_sequenceOptional "courseTuning?"> 
 <!ENTITY % model.instrconfigPart_sequenceOptionalRepeatable "courseTuning*"> 
 <!ENTITY % model.instrconfigPart_sequenceRepeatable "courseTuning+"> 
-<!ENTITY % model.tabchordPart "fingering |tabNote |rhythmSign |abzug |tabBarre |ensembleLine |separee"> 
-<!ENTITY % model.tabchordPart_sequence "fingering, tabNote, rhythmSign, abzug, tabBarre, ensembleLine, separee"> 
-<!ENTITY % model.tabchordPart_sequenceOptional "fingering?, tabNote?, rhythmSign?, abzug?, tabBarre?, ensembleLine?, separee?"> 
-<!ENTITY % model.tabchordPart_sequenceOptionalRepeatable "fingering*, tabNote*, rhythmSign*, abzug*, tabBarre*, ensembleLine*, separee*"> 
-<!ENTITY % model.tabchordPart_sequenceRepeatable "fingering+, tabNote+, rhythmSign+, abzug+, tabBarre+, ensembleLine+, separee+"> 
-<!ENTITY % model.tabGlyphLike "tabGlyph"> 
-<!ENTITY % model.tabGlyphLike_sequence "tabGlyph"> 
-<!ENTITY % model.tabGlyphLike_sequenceOptional "tabGlyph?"> 
-<!ENTITY % model.tabGlyphLike_sequenceOptionalRepeatable "tabGlyph*"> 
-<!ENTITY % model.tabGlyphLike_sequenceRepeatable "tabGlyph+"> 
+<!ENTITY % model.tabchordPart "fermata |tabNote |rhythmGlyph |abzug |tabBarre |ensembleLine |separee"> 
+<!ENTITY % model.tabchordPart_sequence "fermata, tabNote, rhythmGlyph, abzug, tabBarre, ensembleLine, separee"> 
+<!ENTITY % model.tabchordPart_sequenceOptional "fermata?, tabNote?, rhythmGlyph?, abzug?, tabBarre?, ensembleLine?, separee?"> 
+<!ENTITY % model.tabchordPart_sequenceOptionalRepeatable "fermata*, tabNote*, rhythmGlyph*, abzug*, tabBarre*, ensembleLine*, separee*"> 
+<!ENTITY % model.tabchordPart_sequenceRepeatable "fermata+, tabNote+, rhythmGlyph+, abzug+, tabBarre+, ensembleLine+, separee+"> 
+<!ENTITY % model.tabnotePart "fingering"> 
+<!ENTITY % model.tabnotePart_sequence "fingering"> 
+<!ENTITY % model.tabnotePart_sequenceOptional "fingering?"> 
+<!ENTITY % model.tabnotePart_sequenceOptionalRepeatable "fingering*"> 
+<!ENTITY % model.tabnotePart_sequenceRepeatable "fingering+"> 
+<!ENTITY % model.fretGlyphLike "fretGlyph"> 
+<!ENTITY % model.fretGlyphLike_sequence "fretGlyph"> 
+<!ENTITY % model.fretGlyphLike_sequenceOptional "fretGlyph?"> 
+<!ENTITY % model.fretGlyphLike_sequenceOptionalRepeatable "fretGlyph*"> 
+<!ENTITY % model.fretGlyphLike_sequenceRepeatable "fretGlyph+"> 
 <!-- end of predeclared classes -->
 <!ENTITY % att.accid.anl.attributes '%att.common.anl.attributes;'> <!ENTITY % att.accid.ges.attributes ''> 
 <!ENTITY % att.accid.log.attribute.func '
@@ -2630,16 +2635,16 @@ reason CDATA  #IMPLIED'>
 <!ENTITY % model.choicePart_sequenceOptional "%model.editorialLike;?, %model.editLike;?, corr?, orig?, reg?, sic?, unclear?"> 
 <!ENTITY % model.choicePart_sequenceOptionalRepeatable "%model.editorialLike;*, %model.editLike;*, corr*, orig*, reg*, sic*, unclear*"> 
 <!ENTITY % model.choicePart_sequenceRepeatable "%model.editorialLike;+, %model.editLike;+, corr+, orig+, reg+, sic+, unclear+"> 
-<!ENTITY % model.editLike "choice |subst |instrName |instrConfig"> 
-<!ENTITY % model.editLike_sequence "choice, subst, instrName, instrConfig"> 
-<!ENTITY % model.editLike_sequenceOptional "choice?, subst?, instrName?, instrConfig?"> 
-<!ENTITY % model.editLike_sequenceOptionalRepeatable "choice*, subst*, instrName*, instrConfig*"> 
-<!ENTITY % model.editLike_sequenceRepeatable "choice+, subst+, instrName+, instrConfig+"> 
-<!ENTITY % model.transcriptionLike "add |corr |damage |del |gap |handShift |orig |reg |restore |sic |supplied |unclear"> 
-<!ENTITY % model.transcriptionLike_sequence "add, corr, damage, del, gap, handShift, orig, reg, restore, sic, supplied, unclear"> 
-<!ENTITY % model.transcriptionLike_sequenceOptional "add?, corr?, damage?, del?, gap?, handShift?, orig?, reg?, restore?, sic?, supplied?, unclear?"> 
-<!ENTITY % model.transcriptionLike_sequenceOptionalRepeatable "add*, corr*, damage*, del*, gap*, handShift*, orig*, reg*, restore*, sic*, supplied*, unclear*"> 
-<!ENTITY % model.transcriptionLike_sequenceRepeatable "add+, corr+, damage+, del+, gap+, handShift+, orig+, reg+, restore+, sic+, supplied+, unclear+"> 
+<!ENTITY % model.editLike "choice |subst |instrName |instrConfig |tabChord |tabNote"> 
+<!ENTITY % model.editLike_sequence "choice, subst, instrName, instrConfig, tabChord, tabNote"> 
+<!ENTITY % model.editLike_sequenceOptional "choice?, subst?, instrName?, instrConfig?, tabChord?, tabNote?"> 
+<!ENTITY % model.editLike_sequenceOptionalRepeatable "choice*, subst*, instrName*, instrConfig*, tabChord*, tabNote*"> 
+<!ENTITY % model.editLike_sequenceRepeatable "choice+, subst+, instrName+, instrConfig+, tabChord+, tabNote+"> 
+<!ENTITY % model.transcriptionLike "add |corr |damage |del |gap |handShift |orig |reg |restore |sic |supplied |unclear |tabChord |tabNote"> 
+<!ENTITY % model.transcriptionLike_sequence "add, corr, damage, del, gap, handShift, orig, reg, restore, sic, supplied, unclear, tabChord, tabNote"> 
+<!ENTITY % model.transcriptionLike_sequenceOptional "add?, corr?, damage?, del?, gap?, handShift?, orig?, reg?, restore?, sic?, supplied?, unclear?, tabChord?, tabNote?"> 
+<!ENTITY % model.transcriptionLike_sequenceOptionalRepeatable "add*, corr*, damage*, del*, gap*, handShift*, orig*, reg*, restore*, sic*, supplied*, unclear*, tabChord*, tabNote*"> 
+<!ENTITY % model.transcriptionLike_sequenceRepeatable "add+, corr+, damage+, del+, gap+, handShift+, orig+, reg+, restore+, sic+, supplied+, unclear+, tabChord+, tabNote+"> 
 <!ENTITY % att.facsimile.attribute.facs '
 facs %data.URIS;  #IMPLIED'>
 <!ENTITY % att.facsimile.attributes '
@@ -2928,16 +2933,21 @@ family CDATA #IMPLIED'>
 <!ENTITY % model.instrconfigPart_sequenceOptional "courseTuning?"> 
 <!ENTITY % model.instrconfigPart_sequenceOptionalRepeatable "courseTuning*"> 
 <!ENTITY % model.instrconfigPart_sequenceRepeatable "courseTuning+"> 
-<!ENTITY % model.tabchordPart "fingering |tabNote |rhythmSign |abzug |tabBarre |ensembleLine |separee"> 
-<!ENTITY % model.tabchordPart_sequence "fingering, tabNote, rhythmSign, abzug, tabBarre, ensembleLine, separee"> 
-<!ENTITY % model.tabchordPart_sequenceOptional "fingering?, tabNote?, rhythmSign?, abzug?, tabBarre?, ensembleLine?, separee?"> 
-<!ENTITY % model.tabchordPart_sequenceOptionalRepeatable "fingering*, tabNote*, rhythmSign*, abzug*, tabBarre*, ensembleLine*, separee*"> 
-<!ENTITY % model.tabchordPart_sequenceRepeatable "fingering+, tabNote+, rhythmSign+, abzug+, tabBarre+, ensembleLine+, separee+"> 
-<!ENTITY % model.tabGlyphLike "tabGlyph"> 
-<!ENTITY % model.tabGlyphLike_sequence "tabGlyph"> 
-<!ENTITY % model.tabGlyphLike_sequenceOptional "tabGlyph?"> 
-<!ENTITY % model.tabGlyphLike_sequenceOptionalRepeatable "tabGlyph*"> 
-<!ENTITY % model.tabGlyphLike_sequenceRepeatable "tabGlyph+"> 
+<!ENTITY % model.tabchordPart "fermata |tabNote |rhythmGlyph |abzug |tabBarre |ensembleLine |separee"> 
+<!ENTITY % model.tabchordPart_sequence "fermata, tabNote, rhythmGlyph, abzug, tabBarre, ensembleLine, separee"> 
+<!ENTITY % model.tabchordPart_sequenceOptional "fermata?, tabNote?, rhythmGlyph?, abzug?, tabBarre?, ensembleLine?, separee?"> 
+<!ENTITY % model.tabchordPart_sequenceOptionalRepeatable "fermata*, tabNote*, rhythmGlyph*, abzug*, tabBarre*, ensembleLine*, separee*"> 
+<!ENTITY % model.tabchordPart_sequenceRepeatable "fermata+, tabNote+, rhythmGlyph+, abzug+, tabBarre+, ensembleLine+, separee+"> 
+<!ENTITY % model.tabnotePart "fingering"> 
+<!ENTITY % model.tabnotePart_sequence "fingering"> 
+<!ENTITY % model.tabnotePart_sequenceOptional "fingering?"> 
+<!ENTITY % model.tabnotePart_sequenceOptionalRepeatable "fingering*"> 
+<!ENTITY % model.tabnotePart_sequenceRepeatable "fingering+"> 
+<!ENTITY % model.fretGlyphLike "fretGlyph"> 
+<!ENTITY % model.fretGlyphLike_sequence "fretGlyph"> 
+<!ENTITY % model.fretGlyphLike_sequenceOptional "fretGlyph?"> 
+<!ENTITY % model.fretGlyphLike_sequenceOptionalRepeatable "fretGlyph*"> 
+<!ENTITY % model.fretGlyphLike_sequenceRepeatable "fretGlyph+"> 
 <!-- start rest of patterns -->
 
 <!ENTITY % macro.metaLike.page '(fw)*(pgDesc)?' >
@@ -3844,6 +3854,11 @@ extender %data.BOOLEAN;  #IMPLIED >
  %att.common.attributes;
  %att.authorized.attributes;
  %att.bibl.attributes; >
+<!--doc:(tablature note glyph) Encodes the actual symbol found in the tablature source for a particular note. These are often simple numerals or letters, but may also (in German tablature) be characters such as ꝯ or ꝫ or letters with a bar such as ā. -->
+<!ELEMENT fretGlyph  (#PCDATA)>
+<!ATTLIST fretGlyph xmlns CDATA "http://www.music-encoding.org/ns/mei">
+<!ATTLIST fretGlyph
+ %att.facsimile.attributes; >
 <!--doc:(front matter) – Bundles prefatory text found before the start of the musical text.  -->
 <!ELEMENT front ((%model.milestoneLike.text;)*,(%model.divLike;|%model.frontPart;)+,(%model.milestoneLike.text;)*)>
 <!ATTLIST front xmlns CDATA "http://www.music-encoding.org/ns/mei">
@@ -5017,14 +5032,18 @@ desc CDATA  #IMPLIED >
 <!ATTLIST revisionDesc
  %att.common.attributes;
  %att.bibl.attributes; >
-<!--doc:(tablature rhythm sign) The durational sign associated with a tablature chord. The intended use of <rhythmSign> is to encode the rhythmic sign found in the source (if any) while the actual duration of the associated tablature chord is encoded using the <tabChord>'s @dur attribute. -->
-<!ELEMENT rhythmSign  (#PCDATA)>
-<!ATTLIST rhythmSign xmlns CDATA "http://www.music-encoding.org/ns/mei">
-<!ATTLIST rhythmSign
+<!--doc:(tablature rhythm sign) The durational sign associated with a tablature chord. The intended use of <rhythmGlyph> is to encode the rhythmic sign found in the source (if any) while the actual duration of the associated tablature chord is encoded using the <tabChord>'s @dur attribute. -->
+<!ELEMENT rhythmGlyph  (#PCDATA)>
+<!ATTLIST rhythmGlyph xmlns CDATA "http://www.music-encoding.org/ns/mei">
+<!ATTLIST rhythmGlyph
  %att.common.attributes;
  %att.facsimile.attributes;
 tabcode %data.DURATION.tabcode;  #IMPLIED
-dur %data.DURATION.additive;  #IMPLIED
+head %data.HEADSHAPE;  #IMPLIED
+flags CDATA #IMPLIED
+flagDir (left|right) #IMPLIED
+serif %data.BOOLEAN;  #IMPLIED
+serifDir (left|right) #IMPLIED
 dots CDATA #IMPLIED >
 <!--doc:Name of a dramatic role, as given in a cast list. -->
 <!ELEMENT role (#PCDATA|%model.textphraseLike.limited;)*>
@@ -5342,18 +5361,13 @@ ref %data.URI;  #REQUIRED >
  %att.startid.attributes;
  %att.fretlocation.attributes; >
 <!--doc:(tablature chord) Simultaneously played tablature notes, all sharing a (possibly implied) rhythm sign, but requiring an explicit duration attribute. -->
-<!ELEMENT tabChord (%model.tabchordPart;)*>
+<!ELEMENT tabChord (%model.tabchordPart;|%model.editLike;|%model.transcriptionLike;)*>
 <!ATTLIST tabChord xmlns CDATA "http://www.music-encoding.org/ns/mei">
 <!ATTLIST tabChord
  %att.common.attributes;
  %att.duration.additive.attributes; >
-<!--doc:(tablature note glyph) Encodes the actual symbol found in the tablature source for a particular note. These are often simple numerals or letters, but may also (in German tablature) be characters such as ꝯ or ꝫ or letters with a bar such as ā. -->
-<!ELEMENT tabGlyph  (#PCDATA)>
-<!ATTLIST tabGlyph xmlns CDATA "http://www.music-encoding.org/ns/mei">
-<!ATTLIST tabGlyph
- %att.facsimile.attributes; >
 <!--doc:(tablature note) A indication of the string and fret position within a tablature chord. -->
-<!ELEMENT tabNote (%model.tabGlyphLike;)>
+<!ELEMENT tabNote (%model.tabnotePart;|%model.fretGlyphLike;|%model.editLike;|%model.transcriptionLike;)*>
 <!ATTLIST tabNote xmlns CDATA "http://www.music-encoding.org/ns/mei">
 <!ATTLIST tabNote
  %att.common.attributes;
