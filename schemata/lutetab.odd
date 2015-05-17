@@ -32,6 +32,18 @@
           </attList>
         </classSpec>
 
+        <classSpec mode="change" ident="att.staffDef.vis" module="MEI.shared" type="atts">
+          <attList>
+            <attDef ident="lines" mode="change">
+              <datatype>
+                <rng:data type="integer">
+                  <rng:param name="minInclusive">0</rng:param>
+                </rng:data>
+              </datatype>
+            </attDef>
+          </attList>
+        </classSpec>
+
         <elementSpec ident="tabChord" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>tablature chord</gloss>
           <desc>Simultaneously played tablature notes, all sharing a (possibly implied) rhythm sign, but requiring an explicit duration attribute.</desc>
