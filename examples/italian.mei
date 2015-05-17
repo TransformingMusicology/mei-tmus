@@ -51,20 +51,20 @@
           <part n="1">
             <section n="1">
               <staff n="1" decls="instr-3c36f07a-bd01-11e4-8fe2-0021ccd2abe3">
-                <staffDef n="1" lines="6" tab.strings="g5 d5 a4 g4 d4 a3" />
+                <staffDef n="1" lines="6" tab.strings="g4 d4 a4 f3 c3 g2" />
                 <layer n="1">
                   <rest xml:id="r-a9d98b02-bd05-11e4-b790-0021ccd2abe3" dur="2" />
                   <chord xml:id="c-6a85fc3e-bd04-11e4-b79d-0021ccd2abe3" dur="4">
                     <note xml:id="n-7d5940aa-bd04-11e4-8b54-0021ccd2abe3" tab.string="1" tab.fret="2" />
                     <note xml:id="n-81563f3c-bd04-11e4-99e5-0021ccd2abe3" tab.string="2" tab.fret="3" />
-                    <note xml:id="n-82dc8fe6-bd04-11e4-8d1a-0021ccd2abe3" tab.string="3" tab.fret="4" />
+                    <note xml:id="n-82dc8fe6-bd04-11e4-8d1a-0021ccd2abe3" tab.string="3" tab.fret="3" />
                     <note xml:id="n-8433ea74-bd04-11e4-b1c8-0021ccd2abe3" tab.string="4" tab.fret="o" />
                   </chord>
                   <barLine xml:id="bl-9ed9d74e-bd04-11e4-a124-0021ccd2abe3" rend="single" />
                   <chord xml:id="c-72c5df2c-bd04-11e4-9bad-0021ccd2abe3" dur="4" dots="1">
                     <note xml:id="n-85bfa32e-bd04-11e4-b5f7-0021ccd2abe3" tab.string="1" tab.fret="2" />
                     <note xml:id="n-8777d6be-bd04-11e4-ab85-0021ccd2abe3" tab.string="2" tab.fret="3" />
-                    <note xml:id="n-88c3d25c-bd04-11e4-bc02-0021ccd2abe3" tab.string="3" tab.fret="4" />
+                    <note xml:id="n-88c3d25c-bd04-11e4-bc02-0021ccd2abe3" tab.string="3" tab.fret="3" />
                     <note xml:id="n-8b04d93a-bd04-11e4-bcb8-0021ccd2abe3" tab.string="4" tab.fret="o" />
                   </chord>
                   <chord xml:id="c-996d79e0-bd05-11e4-a04a-0021ccd2abe3" dur="4" dots="1">
