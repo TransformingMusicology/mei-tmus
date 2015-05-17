@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.music-encoding.org/ns/mei">
   <!--
-Schema generated from ODD source 2015-05-14T17:38:44Z. .
+Schema generated from ODD source 2015-05-15T14:28:17Z. .
 TEI Edition: 2013 Release
 TEI Edition Location: http://www.tei-c.org/Vault/P5//
   
@@ -10907,7 +10907,7 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
     </element>
   </define>
   <define name="fermata">
-    <element name="fermata">
+    <element name="fermata" ns="http://www.music-encoding.org/ns/mei">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An indication placed over a note or rest to indicate that it should be held longer than its written value. May also occur over a bar line to indicate the end of a phrase or section. Sometimes called a 'hold' or 'pause'. </a:documentation>
       <empty/>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="mei-fermata-fermata_start-type_attributes_required-constraint-35">
@@ -15461,19 +15461,24 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
   </define>
   <define name="model.tabchordPart">
     <choice>
+      <ref name="fermata"/>
       <ref name="tabNote"/>
       <ref name="rhythmGlyph"/>
       <ref name="abzug"/>
       <ref name="tabBarre"/>
       <ref name="ensembleLine"/>
       <ref name="separee"/>
-      <ref name="fingering"/>
     </choice>
   </define>
   <define name="tabNote">
     <element name="tabNote" ns="http://www.music-encoding.org/ns/mei">
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(tablature note) A indication of the string and fret position within a tablature chord.</a:documentation>
-      <ref name="model.fretGlyphLike"/>
+      <zeroOrMore>
+        <ref name="model.tabnotePart"/>
+      </zeroOrMore>
+      <zeroOrMore>
+        <ref name="model.fretGlyphLike"/>
+      </zeroOrMore>
       <ref name="att.common.attributes"/>
       <attribute name="course">
         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The course on which the note is played.</a:documentation>
@@ -15485,6 +15490,11 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
       </attribute>
       <empty/>
     </element>
+  </define>
+  <define name="model.tabnotePart">
+    <choice>
+      <ref name="fingering" />
+    </choice>
   </define>
   <define name="model.fretGlyphLike">
     <choice>
@@ -15512,37 +15522,51 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
         </attribute>
       </optional>
       <optional>
-        <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" name="headed" a:defaultValue="false">
-          <a:documentation>Indicates whether the rhythm sign has a note head.</a:documentation>
+        <attribute name="head">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indicates whether the rhythm sign has a note head and if so, what shape.</a:documentation>
+          <ref name="data.HEADSHAPE"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="flags">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number of flags on the rhythm sign.</a:documentation>
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="flagDir">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indicates the direction of the rhythm sign's flag(s)</a:documentation>
+          <choice>
+            <value>left</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Left pointing</a:documentation>
+            <value>right</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Right pointing</a:documentation>
+          </choice>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="serif">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indicates that the rhythm sign has a serif</a:documentation>
           <ref name="data.BOOLEAN"/>
         </attribute>
       </optional>
       <optional>
-        <attribute name="beams">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number of beams (or flags) on the rhythm sign.</a:documentation>
-          <data type="integer"/>
+        <attribute name="serifDir">
+          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indicates the direction of the rhythm sign's serif when @serif is true</a:documentation>
+          <choice>
+            <value>left</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Left pointing</a:documentation>
+            <value>right</value>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Right pointing</a:documentation>
+          </choice>
         </attribute>
       </optional>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="mei-rhythmGlyph-beams-beamsNoFermata-constraint-67">
-        <rule context="mei:rhythmGlyph/@beams">
-          <sch:assert xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://www.tei-c.org/ns/1.0" test="@beams and (not(@fermata) or @fermata='false')">The @fermata attribute may not be used with @beams on <sch:name/>
-               </sch:assert>
-        </rule>
-      </pattern>
       <optional>
         <attribute name="dots">
           <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number of dots on the rhythm sign.</a:documentation>
           <data type="integer"/>
         </attribute>
       </optional>
-      <optional>
-        <attribute name="fermata">
-          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indicates whether the rhythm sign is a fermata.</a:documentation>
-          <ref name="data.BOOLEAN"/>
-        </attribute>
-      </optional>
-      <sch:assret xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://www.tei-c.org/ns/1.0" test="@fermata='true' and not(@beams)">The @beams attribute may not be used with @fermata on <sch:name/>
-         </sch:assret>
       <empty/>
     </element>
   </define>

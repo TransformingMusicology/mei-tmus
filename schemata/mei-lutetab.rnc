@@ -4,7 +4,7 @@ namespace rng = "http://relaxng.org/ns/structure/1.0"
 namespace sch = "http://purl.oclc.org/dsdl/schematron"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2015-05-14T17:38:44Z. .
+# Schema generated from ODD source 2015-05-15T14:28:17Z. .
 # TEI Edition: 2013 Release
 # TEI Edition Location: http://www.tei-c.org/Vault/P5//
 #
@@ -11260,18 +11260,19 @@ tabChord =
     empty
   }
 model.tabchordPart =
-  tabNote
+  fermata
+  | tabNote
   | rhythmGlyph
   | abzug
   | tabBarre
   | ensembleLine
   | separee
-  | fingering
 tabNote =
   
   ## (tablature note) A indication of the string and fret position within a tablature chord.
   element tabNote {
-    model.fretGlyphLike,
+    model.tabnotePart*,
+    model.fretGlyphLike*,
     att.common.attributes,
     
     ## The course on which the note is played.
@@ -11281,6 +11282,7 @@ tabNote =
     attribute fret { xsd:integer },
     empty
   }
+model.tabnotePart = fingering
 model.fretGlyphLike = fretGlyph
 fretGlyph =
   
@@ -11297,45 +11299,37 @@ rhythmGlyph =
     ## The Tabcode duration symbol.
     attribute tabcode { data.DURATION.tabcode }?,
     
-    ## Indicates whether the rhythm sign has a note head.
-    [ a:defaultValue = "false" ] attribute headed { data.BOOLEAN }?,
-    (
-     ## The number of beams (or flags) on the rhythm sign.
-     attribute beams { xsd:integer }?)
-    >> sch:pattern [
-         id = "mei-rhythmGlyph-beams-beamsNoFermata-constraint-67"
-         "\x{a}" ~
-         "        "
-         sch:rule [
-           context = "mei:rhythmGlyph/@beams"
-           "\x{a}" ~
-           "          "
-           sch:assert [
-             test = "@beams and (not(@fermata) or @fermata='false')"
-             "The @fermata attribute may not be used with @beams on "
-             sch:name [ ]
-             "\x{a}" ~
-             "               "
-           ]
-           "\x{a}" ~
-           "        "
-         ]
-         "\x{a}" ~
-         "      "
-       ],
+    ## Indicates whether the rhythm sign has a note head and if so, what shape.
+    attribute head { data.HEADSHAPE }?,
+    
+    ## The number of flags on the rhythm sign.
+    attribute flags { xsd:integer }?,
+    
+    ## Indicates the direction of the rhythm sign's flag(s)
+    attribute flagDir {
+      
+      ## Left pointing
+      "left"
+      | 
+        ## Right pointing
+        "right"
+    }?,
+    
+    ## Indicates that the rhythm sign has a serif
+    attribute serif { data.BOOLEAN }?,
+    
+    ## Indicates the direction of the rhythm sign's serif when @serif is true
+    attribute serifDir {
+      
+      ## Left pointing
+      "left"
+      | 
+        ## Right pointing
+        "right"
+    }?,
     
     ## The number of dots on the rhythm sign.
     attribute dots { xsd:integer }?,
-    (
-     ## Indicates whether the rhythm sign is a fermata.
-     attribute fermata { data.BOOLEAN }?)
-    >> sch:assret [
-         test = "@fermata='true' and not(@beams)"
-         "The @beams attribute may not be used with @fermata on "
-         sch:name [ ]
-         "\x{a}" ~
-         "         "
-       ],
     empty
   }
 abzug =
