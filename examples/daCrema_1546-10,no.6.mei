@@ -101,22 +101,22 @@
                 <staffDef lines="6" />
                 <layer n="1">
                   <tabChord xml:id="tc-792c9994-fa32-11e4-ba0d-0021ccd2abe3" dur="2">
-                    <rhythmGlyph xml:id="rg-84e019c6-fa34-11e4-887e-0021ccd2abe3" beams="0" />
+                    <rhythmGlyph xml:id="rg-84e019c6-fa34-11e4-887e-0021ccd2abe3" flags="0" />
                     <tabNote xml:id="tn-c76746c2-fa32-11e4-a617-0021ccd2abe3" course="6" fret="0"><fretGlyph>0</fretGlyph></tabNote>
                     <tabNote xml:id="tn-a972520a-fa33-11e4-b3fa-0021ccd2abe3" course="4" fret="2"><fretGlyph>2</fretGlyph></tabNote>
                   </tabChord>
                   <tabChord xml:id="tc-bd24fa5a-fa33-11e4-9216-0021ccd2abe3" dur="4.">
-                    <rhythmGlyph xml:id="rg-8a44a968-fa34-11e4-9d79-0021ccd2abe3" beams="1" dots="1" />
+                    <rhythmGlyph xml:id="rg-8a44a968-fa34-11e4-9d79-0021ccd2abe3" flags="1" dots="1" />
                     <tabNote xml:id="tn-d3d636ce-fa33-11e4-91c7-0021ccd2abe3" course="6" fret="0"><fretGlyph>0</fretGlyph></tabNote>
                     <tabNote xml:id="tn-e42503a2-fa33-11e4-8d00-0021ccd2abe3" course="4" fret="2"><fretGlyph>2</fretGlyph></tabNote>
                   </tabChord>
                   <tabChord xml:id="tc-101a82ac-fa34-11e4-a3f5-0021ccd2abe3" dur="8">
-                    <rhythmGlyph xml:id="rg-8ee70146-fa34-11e4-a471-0021ccd2abe3" beams="2" />
+                    <rhythmGlyph xml:id="rg-8ee70146-fa34-11e4-a471-0021ccd2abe3" flags="2" />
                     <tabNote xml:id="tn-9af03764-fa34-11e4-9e34-0021ccd2abe3" course="6" fret="2"><fretGlyph>2</fretGlyph></tabNote>
                   </tabChord>
                   <barLine xml:id="bl-b52ee53a-fa34-11e4-9e02-0021ccd2abe3" rend="single" />
                   <tabChord xml:id="tc-16c81d3e-fa35-11e4-a798-0021ccd2abe3" dur="4">
-                    <rhythmGlyph xml:id="rg-2b8e919e-fa35-11e4-89dd-0021ccd2abe3" beams="1" />
+                    <rhythmGlyph xml:id="rg-2b8e919e-fa35-11e4-89dd-0021ccd2abe3" flags="1" />
                     <tabNote xml:id="tn-b07da376-fa36-11e4-905d-0021ccd2abe3" course="6" fret="3"><fretGlyph>3</fretGlyph></tabNote>
                     <tabNote xml:id="tn-c62ade46-fa36-11e4-b703-0021ccd2abe3" course="4" fret="2"><fretGlyph>2</fretGlyph></tabNote>
                   </tabChord>
@@ -142,23 +142,21 @@
                     <tabNote xml:id="tn-9fe852d6-fa3b-11e4-ac13-0021ccd2abe3" course="3" fret="0"><fretGlyph>0</fretGlyph></tabNote>
                   </tabChord>
                   <tabChord xml:id="tc-b30d6a86-fa3b-11e4-be72-0021ccd2abe3" dur="16">
-                    <rhythmGlyph xml:id="rg-07df24c8-fa3c-11e4-a05b-0021ccd2abe3" beams="3" />
+                    <rhythmGlyph xml:id="rg-07df24c8-fa3c-11e4-a05b-0021ccd2abe3" flags="3" />
                     <tabNote xml:id="tn-c5b396e2-fa3b-11e4-88d7-0021ccd2abe3" course="5" fret="2"><fretGlyph>2</fretGlyph></tabNote>
                   </tabChord>
                   <tabChord xml:id="tc-10e106b8-fa3c-11e4-8c89-0021ccd2abe3" dur="16">
-                    <tabNote xml:id="tn-2a79fae4-fa3c-11e4-99eb-0021ccd2abe3" course="5" fret="0"><fretGlyph>0</fretGlyph></tabNote>
-                    <fingering playingHand="right" playingFinger="1" />
+                    <tabNote xml:id="tn-2a79fae4-fa3c-11e4-99eb-0021ccd2abe3" course="5" fret="0"><fingering playingHand="right" playingFinger="1" /><fretGlyph>0</fretGlyph></tabNote>
                   </tabChord>
                   <tabChord xml:id="tc-2120328c-fa4c-11e4-8b82-0021ccd2abe3" dur="16">
                     <tabNote xml:id="tn-2b188db6-fa4c-11e4-925b-0021ccd2abe3" course="6" fret="3"><fretGlyph>3</fretGlyph></tabNote>
                   </tabChord>
                   <tabChord xml:id="tc-3b69dc24-fa4c-11e4-bb00-0021ccd2abe3" dur="16">
-                    <tabNote xml:id="tn-4311232e-fa4c-11e4-ad0e-0021ccd2abe3" course="6" fret="2"><fretGlyph>2</fretGlyph></tabNote>
-                    <fingering playingHand="right" playingFinger="1" />
+                    <tabNote xml:id="tn-4311232e-fa4c-11e4-ad0e-0021ccd2abe3" course="6" fret="2"><fingering playingHand="right" playingFinger="1" /><fretGlyph>2</fretGlyph></tabNote>
                   </tabChord>
                   <barLine xml:id="bl-5c84fc4a-fa4c-11e4-885c-0021ccd2abe3" rend="single" />
                   <tabChord xml:id="tc-cd7c92fc-fa81-11e4-96f4-0021ccd2abe3" dur="4">
-                    <rhythmGlyph xml:id="rg-04959dd8-fa82-11e4-82b0-0021ccd2abe3" beams="1" />
+                    <rhythmGlyph xml:id="rg-04959dd8-fa82-11e4-82b0-0021ccd2abe3" flags="1" />
                     <tabNote xml:id="tn-1fb39430-fa82-11e4-ae53-0021ccd2abe3" course="6" fret="0"><fretGlyph>0</fretGlyph></tabNote>
                     <tabNote xml:id="tn-3d64689c-fa82-11e4-8bbe-0021ccd2abe3" course="3" fret="1"><fretGlyph>1</fretGlyph></tabNote>
                   </tabChord>
@@ -185,16 +183,15 @@
                     <tabNote xml:id="tn-62e52196-fa83-11e4-83f2-0021ccd2abe3" course="4" fret="2"><fretGlyph>2</fretGlyph></tabNote>
                   </tabChord>
                   <tabChord xml:id="tc-7120cc88-fa83-11e4-8d5c-0021ccd2abe3" dur="8">
-                    <rhythmGlyph xml:id="rg-7d69bf54-fa83-11e4-b3b2-0021ccd2abe3" beams="2" />
-                    <tabNote xml:id="tn-8e921736-fa83-11e4-9607-0021ccd2abe3" course="3" fret="1"><fretGlyph>1</fretGlyph></tabNote>
-                    <fingering playingHand="right" playingFinger="1" />
+                    <rhythmGlyph xml:id="rg-7d69bf54-fa83-11e4-b3b2-0021ccd2abe3" flags="2" />
+                    <tabNote xml:id="tn-8e921736-fa83-11e4-9607-0021ccd2abe3" course="3" fret="1"><fingering playingHand="right" playingFinger="1" /><fretGlyph>1</fretGlyph></tabNote>
                   </tabChord>
                   <tabChord xml:id="tc-b6cda936-fa83-11e4-9b47-0021ccd2abe3" dur="8">
                     <tabNote xml:id="tn-c04779b0-fa83-11e4-973b-0021ccd2abe3" course="5" fret="2"><fretGlyph>2</fretGlyph></tabNote>
                   </tabChord>
                   <barLine xml:id="bl-cc28f010-fa83-11e4-952e-0021ccd2abe3" rend="single" />
                   <tabChord xml:id="tc-d77baaf2-fa83-11e4-a157-0021ccd2abe3" dur="4">
-                    <rhythmGlyph xml:id="rg-e23e1de4-fa83-11e4-889e-0021ccd2abe3" beams="1" />
+                    <rhythmGlyph xml:id="rg-e23e1de4-fa83-11e4-889e-0021ccd2abe3" flags="1" />
                     <tabNote xml:id="tn-86c74444-fa84-11e4-b540-0021ccd2abe3" course="5" fret="0"><fretGlyph>0</fretGlyph></tabNote>
                     <tabNote xml:id="tn-9352dfca-fa84-11e4-9dff-0021ccd2abe3" course="3" fret="0"><fretGlyph>0</fretGlyph></tabNote>
                   </tabChord>
@@ -210,17 +207,17 @@
                   </tabChord>
                   <barLine xml:id="bl-f6833d42-fa84-11e4-a10d-0021ccd2abe3" rend="single" />
                   <tabChord xml:id="tc-0687c834-fa85-11e4-a486-0021ccd2abe3" dur="4.">
-                    <rhythmGlyph xml:id="rg-10f70424-fa85-11e4-8c5c-0021ccd2abe3" beams="1" dots="1" />
+                    <rhythmGlyph xml:id="rg-10f70424-fa85-11e4-8c5c-0021ccd2abe3" flags="1" dots="1" />
                     <tabNote xml:id="tn-5496c246-fa85-11e4-a24a-0021ccd2abe3" course="6" fret="0"><fretGlyph>0</fretGlyph></tabNote>
                     <tabNote xml:id="tn-5e79db9a-fa85-11e4-b06a-0021ccd2abe3" course="4" fret="2"><fretGlyph>2</fretGlyph></tabNote>
                     <tabNote xml:id="tn-6a972252-fa85-11e4-8e7e-0021ccd2abe3" course="1" fret="0"><fretGlyph>0</fretGlyph></tabNote>
                   </tabChord>
                   <tabChord xml:id="tc-7ad57290-fa85-11e4-8df3-0021ccd2abe3" dur="8">
-                    <rhythmGlyph xml:id="rg-86c5d9b4-fa85-11e4-8ad1-0021ccd2abe3" beams="2" />
+                    <rhythmGlyph xml:id="rg-86c5d9b4-fa85-11e4-8ad1-0021ccd2abe3" flags="2" />
                     <tabNote xml:id="tn-94af61c6-fa85-11e4-b655-0021ccd2abe3" course="3" fret="0"><fretGlyph>0</fretGlyph></tabNote>
                   </tabChord>
                   <tabChord xml:id="tc-a26107ac-fa85-11e4-880d-0021ccd2abe3" dur="4">
-                    <rhythmGlyph xml:id="rg-abe01be2-fa85-11e4-a78d-0021ccd2abe3" beams="1" />
+                    <rhythmGlyph xml:id="rg-abe01be2-fa85-11e4-a78d-0021ccd2abe3" flags="1" />
                     <tabNote xml:id="tn-b5d03362-fa85-11e4-aac2-0021ccd2abe3" course="3" fret="1"><fretGlyph>1</fretGlyph></tabNote>
                     <tabNote xml:id="tn-c05348ce-fa85-11e4-bfa4-0021ccd2abe3" course="1" fret="0"><fretGlyph>0</fretGlyph></tabNote>
                   </tabChord>
@@ -251,16 +248,14 @@
                     <tabNote xml:id="tn-f52b5202-fa86-11e4-bd92-0021ccd2abe3" course="3" fret="3"><fretGlyph>3</fretGlyph></tabNote>
                   </tabChord>
                   <tabChord xml:id="tc-009e9004-fa87-11e4-80fe-0021ccd2abe3" dur="4">
-                    <tabNote xml:id="tn-0d26830e-fa87-11e4-b634-0021ccd2abe3" course="1" fret="2"><fretGlyph>2</fretGlyph></tabNote>
-                    <fingering playingHand="right" playingFinger="1" />
+                    <tabNote xml:id="tn-0d26830e-fa87-11e4-b634-0021ccd2abe3" course="1" fret="2"><fingering playingHand="right" playingFinger="1" /><fretGlyph>2</fretGlyph></tabNote>
                   </tabChord>
                   <tabChord xml:id="tc-45541a5c-fa87-11e4-adab-0021ccd2abe3" dur="8">
-                    <rhythmGlyph xml:id="rg-4bbc47fc-fa87-11e4-ac9e-0021ccd2abe3" beams="2" />
+                    <rhythmGlyph xml:id="rg-4bbc47fc-fa87-11e4-ac9e-0021ccd2abe3" flags="2" />
                     <tabNote xml:id="tn-5febb0fa-fa87-11e4-b38d-0021ccd2abe3" course="3" fret="1"><fretGlyph>1</fretGlyph></tabNote>
                   </tabChord>
                   <tabChord xml:id="tc-702e06de-fa87-11e4-b2e8-0021ccd2abe3" dur="8">
-                    <tabNote xml:id="tn-810c7882-fa87-11e4-8065-0021ccd2abe3" course="3" fret="0"><fretGlyph>0</fretGlyph></tabNote>
-                    <fingering playingHand="right" playingFinger="1" />
+                    <tabNote xml:id="tn-810c7882-fa87-11e4-8065-0021ccd2abe3" course="3" fret="0"><fingering playingHand="right" playingFinger="1" /><fretGlyph>0</fretGlyph></tabNote>
                   </tabChord>
                 </layer>
               </staff>
