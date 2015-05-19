@@ -1,6 +1,6 @@
 
 <!--
-DTD generated from ODD source 2015-05-17T21:54:05Z. .
+DTD generated from ODD source 2015-05-19T10:13:39Z. .
 TEI Edition: 2013 Release
 TEI Edition Location: http://www.tei-c.org/Vault/P5//
 
@@ -1079,7 +1079,7 @@ form (aug|div) #IMPLIED'>
 <!ENTITY % att.dot.log.attributes '%att.controlevent.attributes;
  %att.dot.log.attribute.form;'> <!ENTITY % att.dot.vis.attributes '%att.color.attributes;%att.staffloc.attributes;%att.visualoffset.ho.attributes;%att.visualoffset.vo.attributes;%att.xy.attributes;%att.dot.vis.mensural.attributes;'> 
 <!ENTITY % att.duration.additive.attribute.dur '
-dur %data.DURATION.additive;  #REQUIRED'>
+dur %data.DURATION.additive;  #IMPLIED'>
 <!ENTITY % att.duration.additive.attributes '
  %att.duration.additive.attribute.dur;'> 
 <!ENTITY % att.duration.default.attribute.dur.default '

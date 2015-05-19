@@ -3,7 +3,7 @@
   <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2004/10/xml.xsd"/>
   <!--
-    Schema generated from ODD source 2015-05-17T21:53:59Z. .
+    Schema generated from ODD source 2015-05-19T10:13:25Z. .
     TEI Edition: 2013 Release
     TEI Edition Location: http://www.tei-c.org/Vault/P5//
     
@@ -3919,7 +3919,7 @@
     <xs:attributeGroup ref="mei:att.duration.additive.attribute.dur"/>
   </xs:attributeGroup>
   <xs:attributeGroup name="att.duration.additive.attribute.dur">
-    <xs:attribute name="dur" use="required" type="mei:data.DURATION.additive">
+    <xs:attribute name="dur" type="mei:data.DURATION.additive">
       <xs:annotation>
         <xs:documentation>records duration using ident dotted, relative durational values provided by the data.DURATION datatype. When the duration is "irrational", as is sometimes the case with tuplets, multiple space-separated values that add up to the total duration may be used. When dotted values are present, the dots attribute must be ignored.</xs:documentation>
       </xs:annotation>
