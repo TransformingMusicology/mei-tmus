@@ -26,12 +26,6 @@
           <desc>Marking up of lute tablatures.</desc>
         </moduleSpec>
 
-        <classSpec mode="change" ident="att.duration.additive" module="MEI.shared" type="atts">
-          <attList>
-            <attDef mode="change" ident="dur" usage="req" />
-          </attList>
-        </classSpec>
-
         <classSpec mode="change" ident="att.staffDef.vis" module="MEI.shared" type="atts">
           <attList>
             <attDef ident="lines" mode="change">
