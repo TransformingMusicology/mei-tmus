@@ -125,6 +125,29 @@
                     <tabNote xml:id="tn-b5aec744-fb0d-11e4-95ab-0021ccd2abe3" course="5" fret="3"><fretGlyph>d</fretGlyph></tabNote>
                   </tabChord>
                   <barLine xml:id="bl-240a8a0c-fb0e-11e4-b8ce-0021ccd2abe3" rend="single" />
+                  <tabChord xml:id="tc-34bb88f8-fdff-11e4-ae29-0021ccd2abe3" dur="4">
+                    <rhythmGlyph xml:id="rg-3f95673a-fdff-11e4-a82e-0021ccd2abe3" flags="1" />
+                    <tabNote xml:id="tn-51916768-fdff-11e4-8b01-0021ccd2abe3" course="3" fret="0"><fretGlyph>a</fretGlyph></tabNote>
+                    <tabNote xml:id="tb-68aa68be-fdff-11e4-959c-0021ccd2abe3" course="5" fret="2"><fretGlyph>c</fretGlyph></tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-807a8afa-fdff-11e4-b500-0021ccd2abe3" dur="4">
+                    <rhythmGlyph xml:id="rg-8c5e5aae-fdff-11e4-ad20-0021ccd2abe3" flags="1" />
+                    <tabNote xml:id="tn-9a5b8dca-fdff-11e4-bbe2-0021ccd2abe3" course="5" fret="0"><fretGlyph>a</fretGlyph></tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-ac18857c-fdff-11e4-8fc9-0021ccd2abe3" dur="4">
+                    <rhythmGlyph xml:id="rg-b3775172-fdff-11e4-b4f6-0021ccd2abe3" flags="1" />
+                    <tabNote xml:id="tn-bd37a112-fdff-11e4-bbc8-0021ccd2abe3" course="3" fret="0"><fretGlyph>a</fretGlyph></tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-d07e2fde-fdff-11e4-916d-0021ccd2abe3" dur="8">
+                    <rhythmGlyph xml:id="rg-dac6f764-fdff-11e4-9ccf-0021ccd2abe3" flags="2" />
+                    <tabNote xml:id="tn-e92e0bb2-fdff-11e4-b7f9-0021ccd2abe3" course="6" fret="3"><fretGlyph>d</fretGlyph></tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-00688820-fe00-11e4-a698-0021ccd2abe3" dur="8">
+                    <rhythmGlyph xml:id="rg-09e7fcfa-fe00-11e4-b6a1-0021ccd2abe3" flags="2" />
+                    <tabNote xml:id="tn-19ab9336-fe00-11e4-814a-0021ccd2abe3" course="6" fret="2"><fretGlyph>c</fretGlyph></tabNote>
+                  </tabChord>
+                  <beamSpan startid="#rg-dac6f764-fdff-11e4-9ccf-0021ccd2abe3" endid="#rg-09e7fcfa-fe00-11e4-b6a1-0021ccd2abe3" />
+                  <barLine xml:id="bl-3f4f7648-fe00-11e4-9240-0021ccd2abe3" rend="single" />
                   
                 </layer>
               </staff>
