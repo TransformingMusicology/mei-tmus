@@ -29,5 +29,5 @@ process goes something like:
     $ ln -s Roma/roma2.sh /path/to/bin/roma   # e.g. /usr/local/bin
     $ git clone https://github.com/TEIC/Stylesheets.git tei-xsl
     $ cd tei-xsl && make
-    $ svn co http://music-encoding.googlecode.com/svn/trunk mei
+    $ git clone https://github.com/music-encoding/music-encoding.git mei
     $ roma --xsl=/path/to/tei-xsl/ --localsource=/path/to/mei/source/driver.xml /absoluate/path/to/mei-tmus/schemata/mei-lutelab.odd
