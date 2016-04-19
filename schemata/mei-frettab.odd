@@ -6,7 +6,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Music Encoding Initiative Guidelines: <title type="sub">Lute Tablature Customisation</title></title>
+        <title>Music Encoding Initiative Guidelines: <title type="sub">Fretted String Instrument Tablature Customisation</title></title>
       </titleStmt>
       <publicationStmt>
         <p>Goldsmiths College</p>
@@ -47,7 +47,7 @@
         <moduleRef key="MEI.text"/>
         <moduleRef key="MEI.usersymbols"/>
         <specGrpRef target="http://tablature.data.t-mus.org/schema/instruments.odd#instruments" />
-        <specGrpRef target="http://tablature.data.t-mus.org/schema/lutetab.odd#lutetab" />
+        <specGrpRef target="http://tablature.data.t-mus.org/schema/frettab.odd#frettab" />
       </schemaSpec>
     </body>
   </text>

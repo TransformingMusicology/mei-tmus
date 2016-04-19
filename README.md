@@ -12,9 +12,9 @@ Currently these comprise just:
 Allows describing `<instrVoice>` instruments in more detail. Adds some
 playing technique marking elements.
 
-`lutetab`
+`frettab`
 
-Allows marking up of lute tablatures.
+Allows marking up of tablatures for fretted string instruments.
 
 ### Using Roma with the ODDs
 
@@ -30,4 +30,4 @@ process goes something like:
     $ git clone https://github.com/TEIC/Stylesheets.git tei-xsl
     $ cd tei-xsl && make
     $ git clone https://github.com/music-encoding/music-encoding.git mei
-    $ roma --xsl=/path/to/tei-xsl/ --localsource=/path/to/mei/source/driver.xml /absoluate/path/to/mei-tmus/schemata/mei-lutelab.odd
+    $ roma --xsl=/path/to/tei-xsl/ --localsource=/path/to/mei/source/driver.xml /absolute/path/to/mei-tmus/schemata/mei-frettab.odd
