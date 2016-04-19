@@ -24,19 +24,19 @@
           <desc>Provides details of instruments and playing techniques.</desc>
         </moduleSpec>
 
-        <classSpec ident="model.instrvoicePart" module="MEI.instruments" type="model" mode="add">
+        <classSpec ident="model.perfResPart" module="MEI.instruments" type="model" mode="add">
           <desc>Groups elements that may be be part of a structured instrument definition.</desc>
         </classSpec>
 
-        <elementSpec ident="instrVoice" module="TEI.header" mode="change" ns="http://www.music-encoding.org/ns/mei">
+        <elementSpec ident="perfRes" module="TEI.header" mode="change" ns="http://www.music-encoding.org/ns/mei">
           <classes mode="change">
-            <memberOf mode="add" key="model.instrvoicePart" />
+            <memberOf mode="add" key="model.perfResPart" />
           </classes>
           <content>
             <rng:zeroOrMore>
               <rng:choice>
                 <rng:text />
-                <rng:ref name="model.instrvoicePart" />
+                <rng:ref name="model.perfResPart" />
               </rng:choice>
             </rng:zeroOrMore>
           </content>
@@ -54,7 +54,7 @@
             <memberOf key="att.authorized" />
             <memberOf key="att.bibl" />
             <memberOf key="att.pointing" />
-            <memberOf key="model.instrvoicePart" />
+            <memberOf key="model.perfResPart" />
           </classes>
           <content>
             <rng:zeroOrMore>
@@ -106,7 +106,7 @@
             <memberOf key="att.common" />
             <memberOf key="model.editLike" />
             <memberOf key="model.editorialLike" />
-            <memberOf key="model.instrvoicePart" />
+            <memberOf key="model.perfResPart" />
           </classes>
           <content>
             <rng:zeroOrMore>

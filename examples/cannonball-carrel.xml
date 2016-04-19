@@ -40,8 +40,8 @@
           </respStmt>
         </titleStmt>
         <perfMedium>
-          <instrumentation>
-            <instrVoice code="guitar" xml:id="instr-b7283991-daff-43ed-b9b3-b348c6eb2750" solo="true">
+          <perfResList>
+            <perfRes label="guitar" xml:id="instr-b7283991-daff-43ed-b9b3-b348c6eb2750" solo="true">
               <instrDesc>
                 <instrName>Guitar</instrName>
               </instrDesc>
@@ -67,8 +67,8 @@
                   </course>
                 </courseTuning>
               </instrConfig>
-            </instrVoice>
-          </instrumentation>
+            </perfRes>
+          </perfResList>
         </perfMedium>
       </work>
     </workDesc>
