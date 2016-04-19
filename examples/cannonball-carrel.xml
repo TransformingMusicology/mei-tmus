@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="2013">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of Breeders' Cannonball ASCII tab</title>
+      </titleStmt>
+      <pubStmt>
+        <respStmt>
+          <persName>Richard Lewis</persName>
+          <resp>Encoding</resp>
+        </respStmt>
+      </pubStmt>
+      <sourceDesc>
+        <source n="1">
+          <titleStmt>
+            <title>Cannonball Tab version 1</title>
+          </titleStmt>
+          <pubStmt>
+            <date>30/5/02</date>
+            <respStmt>
+              <persName>Adam Carrel</persName>
+            </respStmt>
+            <distributor>
+              <corpName>Ultimate Guitar</corpName>
+            </distributor>
+            <identifier type="uri">http://tabs.ultimate-guitar.com/b/breeders/cannonball_tab.htm</identifier>
+          </pubStmt>
+        </source>
+      </sourceDesc>
+    </fileDesc>
+    <workDesc>
+      <work>
+        <titleStmt>
+          <title>Cannonball</title>
+          <respStmt>
+            <corpName>The Breeders</corpName>
+            <resp>composer</resp>
+          </respStmt>
+        </titleStmt>
+        <perfMedium>
+          <instrumentation>
+            <instrVoice code="guitar" xml:id="instr-b7283991-daff-43ed-b9b3-b348c6eb2750" solo="true">
+              <instrDesc>
+                <instrName>Guitar</instrName>
+              </instrDesc>
+              <instrConfig>
+                <courseTuning>
+                  <course n="1" pname="e" oct="4">
+                    <string pname="e" oct="4" />
+                  </course>
+                  <course n="2" pname="b" oct="3">
+                    <string pname="b" oct="3" />
+                  </course>
+                  <course n="3" pname="g" oct="3">
+                    <string pname="g" oct="3" />
+                  </course>
+                  <course n="4" pname="d" oct="3">
+                    <string pname="d" oct="3" />
+                  </course>
+                  <course n="5" pname="a" oct="2">
+                    <string pname="a" oct="2" />
+                  </course>
+                  <course n="6" pname="e" oct="2">
+                    <string pname="e" oct="2" />
+                  </course>
+                </courseTuning>
+              </instrConfig>
+            </instrVoice>
+          </instrumentation>
+        </perfMedium>
+      </work>
+    </workDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="1" label="Intro">
+        <parts>
+          <part n="1">
+            <section n="1">
+              <staff n="1" decls="">
+                <staffDef lines="6" />
+                <layer n="1">
+                  <tabChord xml:id="tc-37aefb92-3ba9-4e85-9275-d3c2b5616e88" dur="">
+                    <tabNote xml:id="tn-f7f60c31-316c-467d-96d8-59a334a578cf" course="6" fret="6">
+                      <slide course="6" fromFret="1" toFret="6" />
+                      <fretGlyph>1/6</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-77eee640-5cd5-4a84-908a-c9a6ea6b8f66" dur="">
+                    <tabNote xml:id="tn-563430b1-3e3e-4488-a4e6-21e6e69a682a" course="6" fret="6">
+                      <fretGlyph>6</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-bbc7f73e-8c4a-408b-af7f-ff5188ec50a2" dur="">
+                    <tabNote xml:id="tn-0ea73dfe-e5e7-4190-8e6b-36c34407d1f1" course="6" fret="6">
+                      <fretGlyph>6</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-0bc7e523-187c-487f-8e08-af16c20fb8da" dur="">
+                    <tabNote xml:id="tn-61894190-bc96-44f3-a7fc-2f6b553632e9" course="6" fret="6">
+                      <fretGlyph>6</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-492bdf99-3b90-414f-9092-3e533d1572df" dur="">
+                    <tabNote xml:id="tn-a43a7759-9389-4464-a5a1-b41fcdb4cdd3" course="6" fret="6">
+                      <slide course="6" fromFret="1" toFret="6" />
+                      <fretGlyph>1/6</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-1d196711-f288-4be1-82be-5d022d28d11e" dur="">
+                    <tabNote xml:id="tn-dd5d89d1-9aea-4d86-9b3e-8f5e9a66e325" course="6" fret="6">
+                      <fretGlyph>6</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-84e28ff7-5dac-4b58-9048-6714d48bea7f" dur="">
+                    <tabNote xml:id="tn-302b9322-cfbe-4024-8322-15893782f8a8" course="6" fret="6">
+                      <fretGlyph>6</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-d927d173-6677-471b-8c78-3edc488d93e3" dur="">
+                    <tabNote xml:id="tn-028d4ec0-2f7f-4328-9894-f4122b5f4b16" course="6" fret="6">
+                      <fretGlyph>6</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-879fbccc-b2b1-4aa9-8e71-11164ff8e73c" dur="">
+                    <tabNote xml:id="tn-c2bafdca-8dd3-4f5b-8769-83dfa386fefd" course="6" fret="7">
+                      <slide course="6" fromFret="1" toFret="7" />
+                      <fretGlyph>1/7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-587599e1-2aa4-4382-a26f-51ad95bc55db" dur="">
+                    <tabNote xml:id="tn-cf8a6109-b455-40a4-9b10-6d078c9e06c5" course="6" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-eda11bf1-a648-40fc-9021-7556429008dd" dur="">
+                    <tabNote xml:id="tn-2c5c14e4-5a10-454d-a2ac-1959065839e0" course="6" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-92b2646b-d398-4d79-94f9-7d5d81cc2512" dur="">
+                    <tabNote xml:id="tn-ef3dcde8-4503-41a9-942b-5f3141d1c7ca" course="6" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-69ece325-07d4-4e35-9ea1-f1a44abc3fbf" dur="">
+                    <tabNote xml:id="tn-c53aaffb-289b-4ad3-9974-7fa7ed1dc10e" course="6" fret="0">
+                      <fretGlyph>1/0</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-7ca16af6-ff71-48eb-a235-f812af0befb0" dur="">
+                    <tabNote xml:id="tn-01bb33e8-1591-41b3-ac46-3405950a368f" course="6" fret="0">
+                      <fretGlyph>0</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-e10d1373-2d7f-49e0-8533-3448d6beed98" dur="">
+                    <tabNote xml:id="tn-597fada2-45eb-4571-bc0b-52c18423a772" course="6" fret="0">
+                      <fretGlyph>0</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-69b3dbfb-258e-4275-8340-9c43ccecfc80" dur="">
+                    <tabNote xml:id="tn-90d13754-c43c-4574-8875-0f4df903dff6" course="6" fret="0">
+                      <fretGlyph>0</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                </layer>
+              </staff>
+            </section>
+          </part>
+        </parts>
+      </mdiv>
+      <mdiv n="2" label="Verse">
+        <parts>
+          <part n="1">
+            <section n="1">
+              <staff n="1" decls="">
+                <staffDef lines="6" />
+                <layer n="1">
+                  <tabChord xml:id="tc-44b0cc36-b6cc-4a4d-b743-78c32a647051" dur="">
+                    <tabNote xml:id="tn-f012a96e-1bbc-45f5-9121-f08b3b3241ca" course="1" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-52c5931d-209d-4dbf-8442-a02dc2fb5654" course="2" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-e2f6c227-edba-45bd-8f66-cc3f689222a5" course="3" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-b8fd299b-3e72-4db1-b093-efd269113d17" course="4" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-4b668348-9d02-4fbe-91bb-42747460b83f" course="5" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-4f32126f-d06a-4471-95e6-1c4159dc149c" course="6" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-9962c56e-03e2-474f-8d03-f958560ce954" dur="">
+                    <tabNote xml:id="tn-be2f21c7-4214-4584-bbec-78c58b8046c0" course="1" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-4db26e9c-db4c-4efd-bc3e-05d3ab1c2d94" course="2" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-3229c307-a378-4696-80f5-7a794fb2f3ed" course="3" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-4e9fd6ca-b5db-4fdb-bc43-c24439044868" course="4" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-3f6c8491-79e2-4812-90db-a37717068fc5" course="5" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-a2124bf2-8e67-4a39-9615-e0ecd1f30945" course="6" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-32885819-5664-4b91-9f16-92cc58345bea" dur="">
+                    <tabNote xml:id="tn-1daa18aa-74cf-4a4f-88e6-e369e862d349" course="1" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-b406e857-6c8d-4b8d-8e6d-37e89fe85cdc" course="2" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-0974b488-9e04-4a94-8dac-a5d98d8c27db" course="3" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-2ac627d9-a67d-478a-bb3c-cf1569190977" course="4" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-9e790a38-5897-496c-a8d8-64b924619e17" course="5" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-c7c064fa-c7c1-42c4-b238-de7c7c6c71e9" course="6" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-5e9ab2ee-c7fd-4eff-972e-82cfcb2cd0d3" dur="">
+                    <tabNote xml:id="tn-e0806d2f-f3ef-465d-bb76-52a80ed34d34" course="1" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-80c50753-2c46-445f-be46-66e7eec63b3f" course="2" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-a0fdb37a-bdb0-4867-b494-80448c1f1279" course="3" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-74c6d8f1-8913-4eea-98f6-648272addfa3" course="4" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-62e22e76-c361-4aca-b726-e6cb60a6359f" course="5" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-10d3e819-076c-46e1-9d7f-418762b4a749" course="6" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-f83b4669-2ec3-45cb-b491-1400b603274c" dur="">
+                    <tabNote xml:id="tn-2316552b-6f3a-410a-8375-2b4cc60178ee" course="2" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-a9db873e-f43c-4dcd-8f7e-a3ffeb10a833" course="3" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-1565484a-2460-4b04-ae21-358385021e95" course="4" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-60b0d13c-87bf-4106-998b-fa78443ba8a5" course="5" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-b49028a5-bb2a-42d6-88e0-8812651a8736" dur="">
+                    <tabNote xml:id="tn-18cc86e2-5562-4d99-b0e0-224b6d653289" course="2" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-04bdb221-7339-4bfb-9767-2a8de1b8f024" course="3" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-d9330a21-1a63-4fa1-9063-031dcb7c91cd" course="4" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-c27632d7-c07a-48e2-ac7c-db6b2f31cbba" course="5" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-c356a7d9-db8e-4a42-a7fc-77f93b916c29" dur="">
+                    <tabNote xml:id="tn-0df82b16-e8d2-4cae-b58b-82c78c94066e" course="2" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-adc2b4c5-46a5-4570-bbf4-0fbbc6927c53" course="3" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-9d3e699d-6d8f-4f0a-8dbc-87d9fab9c7bc" course="4" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-6d22dcce-0a26-4dd7-9021-77976489826d" course="5" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-7390521f-a722-46e0-b2b5-be8a914592cc" dur="">
+                    <tabNote xml:id="tn-2a046b08-d07d-4038-9ae1-638fcc1ccd2d" course="2" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-ee7e58d0-4478-4e33-b80f-4c84aa06a91b" course="3" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-23529b72-0268-44eb-a4e7-df328356b151" course="4" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-9bb153d9-0116-4f9c-91ac-21a511d4399b" course="5" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                </layer>
+              </staff>
+              <!--
+                  they change this riff during the
+	          song sometimes,  with hammer ons
+	          and pull offs instead of slides
+              -->
+              <staff n="2" decls="">
+                <staffDef lines="6" />
+                <layer n="1">
+                  <tabChord xml:id="tc-e0c86b3b-1e14-4dfa-8a71-c2e0202db7ae" dur="">
+                    <tabNote xml:id="tn-9aad021b-370a-47b0-8256-947cbff32a16" course="3" fret="7">
+                      <slide course="3" fromFret="7" toFret="9" />
+                      <slide course="3" fromFret="9" toFret="7" />
+                      <fretGlyph>7/9/7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-8161815e-026d-45c0-bc01-ebbab89296ec" dur="">
+                    <tabNote xml:id="tn-0d330588-042c-4695-9fb9-8189d8fab8d7" course="3" fret="7">
+                      <slide course="3" fromFret="7" toFret="9" />
+                      <slide course="3" fromFret="9" toFret="7" />
+                      <fretGlyph>7/9/7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-85484e58-3d96-48f2-bab6-498eb3efc52b" dur="">
+                    <tabNote xml:id="tn-e588fad4-ad1e-4dd7-ab1a-977ad1ef785f" course="4" fret="7">
+                      <slide course="4" fromFret="7" toFret="9" />
+                      <slide course="4" fromFret="9" toFret="7" />
+                      <fretGlyph>7/9/7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-61a1aab2-bca3-49aa-9009-dde92d3f0ac3" dur="">
+                    <tabNote xml:id="tn-a66fd05e-f42c-4f97-b1f9-5eba2f2edd8b" course="4" fret="7">
+                      <slide course="4" fromFret="7" toFret="9" />
+                      <slide course="4" fromFret="9" toFret="7" />
+                      <fretGlyph>7/9/7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                </layer>
+              </staff>
+            </section>
+          </part>
+        </parts>
+      </mdiv>
+      <mdiv n="3" label="Chorus">
+        <parts>
+          <part n="1">
+            <section n="1">
+              <staff n="1" decls="">
+                <staffDef lines="6" />
+                <layer n="1">
+                  <tabChord xml:id="tc-" dur="">
+                    <tabNote xml:id="tn-" course="1" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="2" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="3" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="4" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="5" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="6" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-" dur="">
+                    <tabNote xml:id="tn-" course="1" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="2" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="3" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="4" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="5" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="6" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-" dur="">
+                    <tabNote xml:id="tn-" course="1" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="2" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="3" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="4" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="5" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="6" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-" dur="">
+                    <tabNote xml:id="tn-" course="1" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="2" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="3" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="4" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="5" fret="9">
+                      <fretGlyph>9</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="6" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-" dur="">
+                    <tabNote xml:id="tn-" course="2" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="3" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="4" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="5" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-" dur="">
+                    <tabNote xml:id="tn-" course="2" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="3" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="4" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="5" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-" dur="">
+                    <tabNote xml:id="tn-" course="2" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="3" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="4" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="5" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-" dur="">
+                    <tabNote xml:id="tn-" course="2" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="3" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="4" fret="8">
+                      <fretGlyph>8</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="5" fret="7">
+                      <fretGlyph>7</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-" dur="">
+                    <tabNote xml:id="tn-" course="2" fret="14">
+                      <fretGlyph>14</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="3" fret="14">
+                      <fretGlyph>14</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="4" fret="14">
+                      <fretGlyph>14</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="5" fret="12">
+                      <fretGlyph>12</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-" dur="">
+                    <tabNote xml:id="tn-" course="2" fret="14">
+                      <fretGlyph>14</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="3" fret="14">
+                      <fretGlyph>14</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="4" fret="14">
+                      <fretGlyph>14</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="5" fret="12">
+                      <fretGlyph>12</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-" dur="">
+                    <tabNote xml:id="tn-" course="2" fret="14">
+                      <fretGlyph>14</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="3" fret="14">
+                      <fretGlyph>14</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="4" fret="14">
+                      <fretGlyph>14</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="5" fret="12">
+                      <fretGlyph>12</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                  <tabChord xml:id="tc-" dur="">
+                    <tabNote xml:id="tn-" course="1" fret="x">
+                      <fretGlyph>x</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="2" fret="x">
+                      <fretGlyph>x</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="3" fret="x">
+                      <fretGlyph>x</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="4" fret="x">
+                      <fretGlyph>x</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="5" fret="x">
+                      <fretGlyph>x</fretGlyph>
+                    </tabNote>
+                    <tabNote xml:id="tn-" course="6" fret="x">
+                      <fretGlyph>x</fretGlyph>
+                    </tabNote>
+                  </tabChord>
+                </layer>
+              </staff>
+              <!--
+                  At the end of the chorus riff you hit 10
+	          muted strokes quickly.
+              -->
+            </section>
+          </part>
+        </parts>
+      </mdiv>
+    </body>
+  </music>
+</mei>
