@@ -79,7 +79,7 @@
         <parts>
           <part n="1">
             <section n="1">
-              <staff n="1" decls="">
+              <staff n="1" decls="instr-b7283991-daff-43ed-b9b3-b348c6eb2750">
                 <staffDef lines="6" />
                 <layer n="1">
                   <tabChord xml:id="tc-37aefb92-3ba9-4e85-9275-d3c2b5616e88" dur="">
@@ -175,7 +175,7 @@
         <parts>
           <part n="1">
             <section n="1">
-              <staff n="1" decls="">
+              <staff n="1" decls="instr-b7283991-daff-43ed-b9b3-b348c6eb2750">
                 <staffDef lines="6" />
                 <layer n="1">
                   <tabChord xml:id="tc-44b0cc36-b6cc-4a4d-b743-78c32a647051" dur="">
@@ -321,7 +321,7 @@
 	          song sometimes,  with hammer ons
 	          and pull offs instead of slides
               -->
-              <staff n="2" decls="">
+              <staff n="2" decls="instr-b7283991-daff-43ed-b9b3-b348c6eb2750">
                 <staffDef lines="6" />
                 <layer n="1">
                   <tabChord xml:id="tc-e0c86b3b-1e14-4dfa-8a71-c2e0202db7ae" dur="">
@@ -362,7 +362,7 @@
         <parts>
           <part n="1">
             <section n="1">
-              <staff n="1" decls="">
+              <staff n="1" decls="instr-b7283991-daff-43ed-b9b3-b348c6eb2750">
                 <staffDef lines="6" />
                 <layer n="1">
                   <tabChord xml:id="tc-" dur="">
