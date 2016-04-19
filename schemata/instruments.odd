@@ -161,6 +161,7 @@
             <memberOf key="att.authorized" />
             <memberOf key="att.edit" />
             <memberOf key="att.pointing" />
+            <memberOf key="model.noteModifierLike" />
             <memberOf key="model.measurePart" />
             <memberOf key="model.staffPart" />
             <memberOf key="model.editorialLike" />
