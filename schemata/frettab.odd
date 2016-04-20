@@ -204,7 +204,7 @@
           </classes>
         </elementSpec>
 
-        <elementSpec ident="abzug" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+        <elementSpec ident="abzug" module="MEI.frettab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>abzug marking</gloss>
           <desc>abzug marking</desc>
           <classes>
@@ -214,7 +214,7 @@
           </classes>
         </elementSpec>
 
-        <elementSpec ident="tabBarre" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+        <elementSpec ident="tabBarre" module="MEI.frettab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>barré marking</gloss>
           <desc>barré marking</desc>
           <classes>
@@ -227,7 +227,7 @@
           </classes>
         </elementSpec>
 
-        <elementSpec ident="ensembleLine" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+        <elementSpec ident="ensembleLine" module="MEI.frettab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>ensemble line</gloss>
           <desc>Indicates that two &lt;tabNote&gt;s are to be played simultaneously.</desc>
           <classes>
@@ -240,7 +240,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ident="connectingLine" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+        <elementSpec ident="connectingLine" module="MEI.frettab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>connecting line</gloss>
           <desc>connecting line</desc>
           <classes>
@@ -254,7 +254,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ident="separee" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+        <elementSpec ident="separee" module="MEI.frettab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>separeé marking</gloss>
           <desc>Indicates that two &lt;note&gt;s in a single tablature &lt;chord&gt; should be played sequentially (rather than simultaneously).</desc>
           <classes>
@@ -267,7 +267,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ident="courseCount" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+        <elementSpec ident="courseCount" module="MEI.frettab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>number of courses</gloss>
           <desc>The number of courses on a lute.</desc>
           <classes>
@@ -279,7 +279,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ident="courseTuning" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+        <elementSpec ident="courseTuning" module="MEI.frettab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>tuning of courses</gloss>
           <desc>Child &lt;course&gt; elements should be used to indicate the tuning of each course on a lute.</desc>
           <classes>
@@ -296,7 +296,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ident="course" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+        <elementSpec ident="course" module="MEI.frettab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>course tuning information</gloss>
           <desc>Describes the tuning of a course on a lute.</desc>
           <classes>
@@ -310,7 +310,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ident="string" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+        <elementSpec ident="string" module="MEI.frettab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>a string of a course</gloss>
           <desc>Describes the tuning of a single string of a course on a lute.</desc>
           <classes>
@@ -322,7 +322,7 @@
           </content>
         </elementSpec>
 
-        <elementSpec ident="bassTuning" module="MEI.lutetab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+        <elementSpec ident="bassTuning" module="MEI.frettab" mode="add" ns="http://www.music-encoding.org/ns/mei">
           <gloss>bass course tuning</gloss>
           <desc>Describes the tuning of the bass course of a lute.</desc>
           <classes>
