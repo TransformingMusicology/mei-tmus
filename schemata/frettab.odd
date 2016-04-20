@@ -69,6 +69,9 @@
 
         <classSpec ident="model.fretGlyphLike" module="MEI.frettab" type="model" mode="add">
           <desc>Groups elements that may used as symbols (or glyphs) for a &lt;note&gt; in a tablature staff.</desc>
+          <classes>
+            <memberOf key="model.noteModifierLike" />
+          </classes>
         </classSpec>
 
         <elementSpec ident="fretGlyph" module="MEI.frettab" mode="add" ns="http://www.music-encoding.org/ns/mei">
@@ -82,12 +85,6 @@
             <rng:text />
           </content>
         </elementSpec>
-
-        <classSpec ident="model.noteModifierLike" module="MEI.shared" type="model" mode="change">
-          <classes mode="change">
-            <memberOf key="model.fretGlyphLike" />
-          </classes>
-        </classSpec>
 
         <macroSpec ident="data.DURATION.tablature" module="MEI.frettab" type="dt">
           <desc>The duration symbols used to encode logical duration of &lt;rhythmGlyph&gt;s in tablature. This is included for compatibility with common ASCII tab conventions and with Tabcode.</desc>
