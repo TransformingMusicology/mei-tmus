@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="2013">
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
   <meiHead>
     <fileDesc>
       <titleStmt>
@@ -21,14 +21,14 @@
           <pubStmt>
             <date>1552</date>
           </pubStmt>
-          <physDesc>
+          <physLoc>
             <provenance>
               <repository>
                 <name>Österreichische Nationalbibliothek</name>
                 <identifier authURI="http://data.onb.ac.at/rec/AC09176648">SA.76.c.24 18</identifier>
               </repository>
             </provenance>
-          </physDesc>
+          </physLoc>
         </source>
       </sourceDesc>
     </fileDesc>
@@ -41,8 +41,8 @@
           </composer>
         </titleStmt>
         <perfMedium>
-          <instrumentation>
-            <instrVoice code="lute" xml:id="instr-e41ed5fc-fb16-11e4-ae70-0021ccd2abe3" solo="true">
+          <perfResList>
+            <perfRes label="lute" xml:id="instr-e41ed5fc-fb16-11e4-ae70-0021ccd2abe3" solo="true">
               <instrConfig label="renaissance">
                 <courseTuning>
                   <course n="1" pname="g" oct="4">
@@ -69,8 +69,8 @@
                   </course>
                 </courseTuning>
               </instrConfig>
-            </instrVoice>
-          </instrumentation>
+            </perfRes>
+          </perfResList>
         </perfMedium>
       </work>
     </workDesc>
@@ -84,164 +84,164 @@
               <staff n="1" decls="instr-e41ed5fc-fb16-11e4-ae70-0021ccd2abe3">
                 <staffDef lines="0" />
                 <layer n="1">
-                  <tabChord xml:id="tc-e4638f36-fcd7-11e4-93fb-0021ccd2abe3" dur="2">
+                  <chord xml:id="tc-e4638f36-fcd7-11e4-93fb-0021ccd2abe3" dur="2">
                     <rhythmGlyph xml:id="rg-e6de01e2-fcd7-11e4-aa7c-0021ccd2abe3" flags="0" />
-                    <tabNote xml:id="tn-e8f5b89e-fcd7-11e4-8a5d-0021ccd2abe3" course="4" fret="2"><fretGlyph>g</fretGlyph></tabNote>
-                    <tabNote xml:id="tn-ec13a09a-fcd7-11e4-9402-0021ccd2abe3" course="6" fret="0"><fretGlyph>1̄</fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-f6a8d08e-fcd7-11e4-be90-0021ccd2abe3" dur="4."><
+                    <note xml:id="tn-e8f5b89e-fcd7-11e4-8a5d-0021ccd2abe3" tab.course="4" tab.fret="2"><fretGlyph>g</fretGlyph></note>
+                    <note xml:id="tn-ec13a09a-fcd7-11e4-9402-0021ccd2abe3" tab.course="6" tab.fret="0"><fretGlyph>1̄</fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-f6a8d08e-fcd7-11e4-be90-0021ccd2abe3" dur="4" dots="1">
                     <rhythmGlyph xml:id="rg-f94e20c8-fcd7-11e4-aa60-0021ccd2abe3" flags="1" dots="1" />
-                    <tabNote xml:id="tn-f9d796c8-fcd7-11e4-b698-0021ccd2abe3" course="4" fret="2"><fretGlyph>g</fretGlyph></tabNote>
-                    <corr><tabNote xml:id="tn-fa601bc4-fcd7-11e4-917c-0021ccd2abe3" course="6" fret="0"><fretGlyph>1̄</fretGlyph></tabNote></corr>
-                  </tabChord>
-                  <tabChord xml:id="tc-fac79cfe-fcd7-11e4-af05-0021ccd2abe3" dur="8">
+                    <note xml:id="tn-f9d796c8-fcd7-11e4-b698-0021ccd2abe3" tab.course="4" tab.fret="2"><fretGlyph>g</fretGlyph></note>
+                    <corr><note xml:id="tn-fa601bc4-fcd7-11e4-917c-0021ccd2abe3" tab.course="6" tab.fret="0"><fretGlyph>1̄</fretGlyph></note></corr>
+                  </chord>
+                  <chord xml:id="tc-fac79cfe-fcd7-11e4-af05-0021ccd2abe3" dur="8">
                     <rhythmGlyph xml:id="rg-fb24c4ba-fcd7-11e4-a88d-0021ccd2abe3" flags="2" />
-                    <sic><tabNote xml:id="tn-fb622328-fcd7-11e4-aa6b-0021ccd2abe3" course="6" fret="0"><fretGlyph>1̄</fretGlyph></tabNote></sic>
-                    <tabNote xml:id="tn-fbe47936-fcd7-11e4-b6c0-0021ccd2abe3" course="6" fret="2"><fretGlyph>3̄</fretGlyph></tabNote>
-                  </tabChord>
-                  <barLine xml:id="bl-fc9291f6-fcd7-11e4-8a05-0021ccd2abe3" rend="single" />
-                  <tabChord xml:id="tc-fcd2aa98-fcd7-11e4-b76d-0021ccd2abe3" dur="4">
+                    <sic><note xml:id="tn-fb622328-fcd7-11e4-aa6b-0021ccd2abe3" tab.course="6" tab.fret="0"><fretGlyph>1̄</fretGlyph></note></sic>
+                    <note xml:id="tn-fbe47936-fcd7-11e4-b6c0-0021ccd2abe3" tab.course="6" tab.fret="2"><fretGlyph>3̄</fretGlyph></note>
+                  </chord>
+                  <barLine xml:id="bl-fc9291f6-fcd7-11e4-8a05-0021ccd2abe3" form="single" />
+                  <chord xml:id="tc-fcd2aa98-fcd7-11e4-b76d-0021ccd2abe3" dur="4">
                     <rhythmGlyph xml:id="rg-fd109740-fcd7-11e4-8271-0021ccd2abe3" flags="1" />
-                    <tabNote xml:id="tn-fd5463bc-fcd7-11e4-bc6c-0021ccd2abe3" course="4" fret="2"><fretGlyph>g</fretGlyph></tabNote>
-                    <tabNote xml:id="tn-fdb15586-fcd7-11e4-a55e-0021ccd2abe3" course="6" fret="3"><fretGlyph>4̄</fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-fe130a2e-fcd7-11e4-9937-0021ccd2abe3" dur="4">
-                    <tabNote xml:id="tn-fea78dca-fcd7-11e4-b498-0021ccd2abe3" course="5" fret="0"><fretGlyph>1</fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-fed60f60-fcd7-11e4-a578-0021ccd2abe3" dur="4">
-                    <tabNote xml:id="tn-ff07bec0-fcd7-11e4-a75f-0021ccd2abe3" course="4" fret="2"><fretGlyph>g</fretGlyph></tabNote>
-                    <tabNote xml:id="tn-ff365b4a-fcd7-11e4-913c-0021ccd2abe3" course="6" fret="3"><fretGlyph>4̄</fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-ff60675a-fcd7-11e4-ab34-0021ccd2abe3" dur="4">
-                    <tabNote xml:id="tn-ff8cf9c8-fcd7-11e4-9922-0021ccd2abe3" course="5" fret="3"><fretGlyph>1</fretGlyph></tabNote>
-                  </tabChord>
-                  <barLine xml:id="bl-ffb5dc58-fcd7-11e4-836c-0021ccd2abe3" rend="single" />
-                  <tabChord xml:id="tc-ffe0d53e-fcd7-11e4-8d39-0021ccd2abe3" dur="4">
-                    <tabNote xml:id="tn-001162a8-fcd8-11e4-a874-0021ccd2abe3" course="3" fret="0"><fretGlyph>3</fretGlyph></tabNote>
-                    <tabNote xml:id="tn-00477d48-fcd8-11e4-b295-0021ccd2abe3" course="5" fret="2"><fretGlyph>f</fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-008a06a4-fcd8-11e4-afef-0021ccd2abe3" dur="4">
-                    <tabNote xml:id="tn-01608364-fcd8-11e4-b612-0021ccd2abe3" course="5" fret="0"><fretGlyph>1</fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-0186446e-fcd8-11e4-a020-0021ccd2abe3" dur="4">
-                    <tabNote xml:id="tn-01a6c784-fcd8-11e4-a077-0021ccd2abe3" course="3" fret="0"><fretGlyph>3</fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-01ca25f8-fcd8-11e4-b3e9-0021ccd2abe3" dur="16">
+                    <note xml:id="tn-fd5463bc-fcd7-11e4-bc6c-0021ccd2abe3" tab.course="4" tab.fret="2"><fretGlyph>g</fretGlyph></note>
+                    <note xml:id="tn-fdb15586-fcd7-11e4-a55e-0021ccd2abe3" tab.course="6" tab.fret="3"><fretGlyph>4̄</fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-fe130a2e-fcd7-11e4-9937-0021ccd2abe3" dur="4">
+                    <note xml:id="tn-fea78dca-fcd7-11e4-b498-0021ccd2abe3" tab.course="5" tab.fret="0"><fretGlyph>1</fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-fed60f60-fcd7-11e4-a578-0021ccd2abe3" dur="4">
+                    <note xml:id="tn-ff07bec0-fcd7-11e4-a75f-0021ccd2abe3" tab.course="4" tab.fret="2"><fretGlyph>g</fretGlyph></note>
+                    <note xml:id="tn-ff365b4a-fcd7-11e4-913c-0021ccd2abe3" tab.course="6" tab.fret="3"><fretGlyph>4̄</fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-ff60675a-fcd7-11e4-ab34-0021ccd2abe3" dur="4">
+                    <note xml:id="tn-ff8cf9c8-fcd7-11e4-9922-0021ccd2abe3" tab.course="5" tab.fret="3"><fretGlyph>1</fretGlyph></note>
+                  </chord>
+                  <barLine xml:id="bl-ffb5dc58-fcd7-11e4-836c-0021ccd2abe3" form="single" />
+                  <chord xml:id="tc-ffe0d53e-fcd7-11e4-8d39-0021ccd2abe3" dur="4">
+                    <note xml:id="tn-001162a8-fcd8-11e4-a874-0021ccd2abe3" tab.course="3" tab.fret="0"><fretGlyph>3</fretGlyph></note>
+                    <note xml:id="tn-00477d48-fcd8-11e4-b295-0021ccd2abe3" tab.course="5" tab.fret="2"><fretGlyph>f</fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-008a06a4-fcd8-11e4-afef-0021ccd2abe3" dur="4">
+                    <note xml:id="tn-01608364-fcd8-11e4-b612-0021ccd2abe3" tab.course="5" tab.fret="0"><fretGlyph>1</fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-0186446e-fcd8-11e4-a020-0021ccd2abe3" dur="4">
+                    <note xml:id="tn-01a6c784-fcd8-11e4-a077-0021ccd2abe3" tab.course="3" tab.fret="0"><fretGlyph>3</fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-01ca25f8-fcd8-11e4-b3e9-0021ccd2abe3" dur="16">
                     <rhythmGlyph xml:id="rg-01ed5690-fcd8-11e4-ab17-0021ccd2abe3" flags="3" />
-                    <tabNote xml:id="tn-021160a8-fcd8-11e4-b441-0021ccd2abe3" course="5" fret="2"><fretGlyph>f</fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-0235826c-fcd8-11e4-8667-0021ccd2abe3" dur="16">
-                    <tabNote xml:id="tn-026322b2-fcd8-11e4-8aec-0021ccd2abe3" course="5" fret="0"><fretGlyph>1</fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-029800ae-fcd8-11e4-80c4-0021ccd2abe3" dur="16">
-                    <tabNote xml:id="tn-02da1304-fcd8-11e4-bf7d-0021ccd2abe3" course="6" fret="3"><fretGlyph>4̄</fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-036ca00c-fcd8-11e4-a3db-0021ccd2abe3" dur="16">
-                    <tabNote xml:id="tn-062ee53e-fcd8-11e4-9dbc-0021ccd2abe3" course="6" fret="2"><fretGlyph>3̄</fretGlyph></tabNote>
-                  </tabChord>
-                  <barLine xml:id="bl-065c2ad0-fcd8-11e4-af09-0021ccd2abe3" rend="single" />
-                  <tabChord xml:id="tc-06756b58-fcd8-11e4-b97e-0021ccd2abe3" dur="4">
+                    <note xml:id="tn-021160a8-fcd8-11e4-b441-0021ccd2abe3" tab.course="5" tab.fret="2"><fretGlyph>f</fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-0235826c-fcd8-11e4-8667-0021ccd2abe3" dur="16">
+                    <note xml:id="tn-026322b2-fcd8-11e4-8aec-0021ccd2abe3" tab.course="5" tab.fret="0"><fretGlyph>1</fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-029800ae-fcd8-11e4-80c4-0021ccd2abe3" dur="16">
+                    <note xml:id="tn-02da1304-fcd8-11e4-bf7d-0021ccd2abe3" tab.course="6" tab.fret="3"><fretGlyph>4̄</fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-036ca00c-fcd8-11e4-a3db-0021ccd2abe3" dur="16">
+                    <note xml:id="tn-062ee53e-fcd8-11e4-9dbc-0021ccd2abe3" tab.course="6" tab.fret="2"><fretGlyph>3̄</fretGlyph></note>
+                  </chord>
+                  <barLine xml:id="bl-065c2ad0-fcd8-11e4-af09-0021ccd2abe3" form="single" />
+                  <chord xml:id="tc-06756b58-fcd8-11e4-b97e-0021ccd2abe3" dur="4">
                     <rhythmGlyph xml:id="rg-068fee9c-fcd8-11e4-97f0-0021ccd2abe3" flags="1" />
-                    <tabNote xml:id="tn-06adbea4-fcd8-11e4-8d54-0021ccd2abe3" course="3" fret="1"><fretGlyph>c</fretGlyph></tabNote>
-                    <tabNote xml:id="tn-06ce153c-fcd8-11e4-ab85-0021ccd2abe3" course="6" fret="0"><fretGlyph>1̄</fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-06e9e834-fcd8-11e4-8706-0021ccd2abe3" dur="4">
-                    <tabNote xml:id="tn-070b848a-fcd8-11e4-b1a6-0021ccd2abe3" course="5" fret="3"><fretGlyph>l</fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-072dc05e-fcd8-11e4-a31e-0021ccd2abe3" dur="4">
-                    <tabNote xml:id="tn-07549b70-fcd8-11e4-b6db-0021ccd2abe3" course="3" fret="1"><fretGlyph>c</fretGlyph></tabNote>
-                    <tabNote xml:id="tn-077ea12c-fcd8-11e4-8cf1-0021ccd2abe3" course="5" fret="2"><fretGlyph>f</fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-09a55e64-fcd8-11e4-9ac2-0021ccd2abe3" dur="4">
-                    <tabNote xml:id="tn-09e9a3e4-fcd8-11e4-9f28-0021ccd2abe3" course="6" fret="3"><fretGlyph>4̄</fretGlyph></tabNote>
-                  </tabChord>
-                  <barLine xml:id="bl-0b08636e-fcd8-11e4-adcd-0021ccd2abe3" rend="single" />
-                  <tabChord xml:id="tc-" dur="4">
-                    <tabNote xml:id="tn-" course="6" fret="0"><fretGlyph></fretGlyph></tabNote>
-                    <tabNote xml:id="tn-" course="3" fret="0"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="4">
-                    <tabNote xml:id="tn-" course="5" fret="2"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="2">
-                    <tabNote xml:id="tn-" course="5" fret="3"><fretGlyph></fretGlyph></tabNote>
-                    <tabNote xml:id="tn-" course="4" fret="2"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="8">
+                    <note xml:id="tn-06adbea4-fcd8-11e4-8d54-0021ccd2abe3" tab.course="3" tab.fret="1"><fretGlyph>c</fretGlyph></note>
+                    <note xml:id="tn-06ce153c-fcd8-11e4-ab85-0021ccd2abe3" tab.course="6" tab.fret="0"><fretGlyph>1̄</fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-06e9e834-fcd8-11e4-8706-0021ccd2abe3" dur="4">
+                    <note xml:id="tn-070b848a-fcd8-11e4-b1a6-0021ccd2abe3" tab.course="5" tab.fret="3"><fretGlyph>l</fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-072dc05e-fcd8-11e4-a31e-0021ccd2abe3" dur="4">
+                    <note xml:id="tn-07549b70-fcd8-11e4-b6db-0021ccd2abe3" tab.course="3" tab.fret="1"><fretGlyph>c</fretGlyph></note>
+                    <note xml:id="tn-077ea12c-fcd8-11e4-8cf1-0021ccd2abe3" tab.course="5" tab.fret="2"><fretGlyph>f</fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-09a55e64-fcd8-11e4-9ac2-0021ccd2abe3" dur="4">
+                    <note xml:id="tn-09e9a3e4-fcd8-11e4-9f28-0021ccd2abe3" tab.course="6" tab.fret="3"><fretGlyph>4̄</fretGlyph></note>
+                  </chord>
+                  <barLine xml:id="bl-0b08636e-fcd8-11e4-adcd-0021ccd2abe3" form="single" />
+                  <chord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="6" tab.fret="0"><fretGlyph></fretGlyph></note>
+                    <note xml:id="tn-" tab.course="3" tab.fret="0"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="5" tab.fret="2"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="2">
+                    <note xml:id="tn-" tab.course="5" tab.fret="3"><fretGlyph></fretGlyph></note>
+                    <note xml:id="tn-" tab.course="4" tab.fret="2"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="8">
                     <rhythmGlyph xml:id="rg-" flags="2" />
-                    <tabNote xml:id="tn-" course="3" fret="1"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="8">
-                    <tabNote xml:id="tn-" course="5" fret="2"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <barLine xml:id="bl-" rend="single" />
-                  <tabChord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="3" tab.fret="1"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="8">
+                    <note xml:id="tn-" tab.course="5" tab.fret="2"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <barLine xml:id="bl-" form="single" />
+                  <chord xml:id="tc-" dur="4">
                     <rhythmGlyph xml:id="rg-" flags="1" />
-                    <tabNote xml:id="tn-" course="5" fret="0"><fretGlyph></fretGlyph></tabNote>
-                    <tabNote xml:id="tn-" course="3" fret="0"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="4">
-                    <tabNote xml:id="tn-" course="6" fret="3"><fretGlyph></fretGlyph></tabNote>
-                    <tabNote xml:id="tn-" course="4" fret="2"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="4">
-                    <tabNote xml:id="tn-" course="6" fret="2"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="4">
-                    <tabNote xml:id="tn-" course="4" fret="1"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <barLine xml:id="bl-" rend="single" />
-                  <tabChord xml:id="tc-" dur="4.">
+                    <note xml:id="tn-" tab.course="5" tab.fret="0"><fretGlyph></fretGlyph></note>
+                    <note xml:id="tn-" tab.course="3" tab.fret="0"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="6" tab.fret="3"><fretGlyph></fretGlyph></note>
+                    <note xml:id="tn-" tab.course="4" tab.fret="2"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="6" tab.fret="2"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="4" tab.fret="1"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <barLine xml:id="bl-" form="single" />
+                  <chord xml:id="tc-" dur="4" dots="1">
                     <rhythmGlyph xml:id="rg-" flags="1" dots="1" />
-                    <tabNote xml:id="tn-" course="6" fret="0"><fretGlyph></fretGlyph></tabNote>
-                    <tabNote xml:id="tn-" course="4" fret="2"><fretGlyph></fretGlyph></tabNote>
-                    <tabNote xml:id="tn-" course="1" fret="0"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="8">
+                    <note xml:id="tn-" tab.course="6" tab.fret="0"><fretGlyph></fretGlyph></note>
+                    <note xml:id="tn-" tab.course="4" tab.fret="2"><fretGlyph></fretGlyph></note>
+                    <note xml:id="tn-" tab.course="1" tab.fret="0"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="8">
                     <rhythmGlyph xml:id="rg-" flags="2" />
-                    <tabNote xml:id="tn-" course="3" fret="0"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="3" tab.fret="0"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="4">
                     <rhythmGlyph xml:id="rg-" flags="1" />
-                    <tabNote xml:id="tn-" course="3" fret="1"><fretGlyph></fretGlyph></tabNote>
-                    <tabNote xml:id="tn-" course="1" fret="0"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="4">
-                    <tabNote xml:id="tn-" course="3" fret="3"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <barLine xml:id="bl-" rend="single" />
-                  <tabChord xml:id="tc-" dur="4">
-                    <tabNote xml:id="tn-" course="3" fret="1"><fretGlyph></fretGlyph></tabNote>
-                    <tabNote xml:id="tn-" course="1" fret="0"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="4">
-                    <tabNote xml:id="tn-" course="4" fret="2"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="4">
-                    <tabNote xml:id="tn-" course="3" fret="1"><fretGlyph></fretGlyph></tabNote>
-                    <tabNote xml:id="tn-" course="1" fret="0"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="4">
-                    <tabNote xml:id="tn-" course="2" fret="1"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <barLine xml:id="bl-" rend="single" />
-                  <tabChord xml:id="tc-" dur="4">
-                    <tabNote xml:id="tn-" course="2" fret="0"><fretGlyph></fretGlyph></tabNote>
-                    <tabNote xml:id="tn-" course="1" fret="2"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="4">
-                    <tabNote xml:id="tn-" course="3" fret="3"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="4">
-                    <tabNote xml:id="tn-" course="1" fret="2"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="8">
+                    <note xml:id="tn-" tab.course="3" tab.fret="1"><fretGlyph></fretGlyph></note>
+                    <note xml:id="tn-" tab.course="1" tab.fret="0"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="3" tab.fret="3"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <barLine xml:id="bl-" form="single" />
+                  <chord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="3" tab.fret="1"><fretGlyph></fretGlyph></note>
+                    <note xml:id="tn-" tab.course="1" tab.fret="0"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="4" tab.fret="2"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="3" tab.fret="1"><fretGlyph></fretGlyph></note>
+                    <note xml:id="tn-" tab.course="1" tab.fret="0"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="2" tab.fret="1"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <barLine xml:id="bl-" form="single" />
+                  <chord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="2" tab.fret="0"><fretGlyph></fretGlyph></note>
+                    <note xml:id="tn-" tab.course="1" tab.fret="2"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="3" tab.fret="3"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="4">
+                    <note xml:id="tn-" tab.course="1" tab.fret="2"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="8">
                     <rhythmGlyph xml:id="rg-" flags="2" />
-                    <tabNote xml:id="tn-" course="3" fret="1"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
-                  <tabChord xml:id="tc-" dur="8">
-                    <tabNote xml:id="tn-" course="3" fret="0"><fretGlyph></fretGlyph></tabNote>
-                  </tabChord>
+                    <note xml:id="tn-" tab.course="3" tab.fret="1"><fretGlyph></fretGlyph></note>
+                  </chord>
+                  <chord xml:id="tc-" dur="8">
+                    <note xml:id="tn-" tab.course="3" tab.fret="0"><fretGlyph></fretGlyph></note>
+                  </chord>
                 </layer>
               </staff>
             </section>
