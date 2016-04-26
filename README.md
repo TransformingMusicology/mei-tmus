@@ -9,7 +9,7 @@ Currently these comprise just:
 
 `instruments`
 
-Allows describing `<instrVoice>` instruments in more detail. Adds some
+Allows describing `<perfRes>` instruments in more detail. Adds some
 playing technique marking elements.
 
 `frettab`
