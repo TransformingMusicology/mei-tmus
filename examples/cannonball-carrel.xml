@@ -84,7 +84,7 @@
                 <layer n="1">
                   <chord xml:id="tc-37aefb92-3ba9-4e85-9275-d3c2b5616e88" dur="">
                     <note xml:id="tn-f7f60c31-316c-467d-96d8-59a334a578cf" tab.course="6" tab.fret="6">
-                      <slide tab.course="6" fromFret="1" toFret="6" />
+                      <slide tab.course="6" tab.fromFret="1" tab.toFret="6" />
                       <fretGlyph>1/6</fretGlyph>
                     </note>
                   </chord>
@@ -105,7 +105,7 @@
                   </chord>
                   <chord xml:id="tc-492bdf99-3b90-414f-9092-3e533d1572df" dur="">
                     <note xml:id="tn-a43a7759-9389-4464-a5a1-b41fcdb4cdd3" tab.course="6" tab.fret="6">
-                      <slide tab.course="6" fromFret="1" toFret="6" />
+                      <slide tab.course="6" tab.fromFret="1" tab.toFret="6" />
                       <fretGlyph>1/6</fretGlyph>
                     </note>
                   </chord>
@@ -126,7 +126,7 @@
                   </chord>
                   <chord xml:id="tc-879fbccc-b2b1-4aa9-8e71-11164ff8e73c" dur="">
                     <note xml:id="tn-c2bafdca-8dd3-4f5b-8769-83dfa386fefd" tab.course="6" tab.fret="7">
-                      <slide tab.course="6" fromFret="1" toFret="7" />
+                      <slide tab.course="6" tab.fromFret="1" tab.toFret="7" />
                       <fretGlyph>1/7</fretGlyph>
                     </note>
                   </chord>
@@ -326,29 +326,29 @@
                 <layer n="1">
                   <chord xml:id="tc-e0c86b3b-1e14-4dfa-8a71-c2e0202db7ae" dur="">
                     <note xml:id="tn-9aad021b-370a-47b0-8256-947cbff32a16" tab.course="3" tab.fret="7">
-                      <slide tab.course="3" fromFret="7" toFret="9" />
-                      <slide tab.course="3" fromFret="9" toFret="7" />
+                      <slide tab.course="3" tab.fromFret="7" tab.toFret="9" />
+                      <slide tab.course="3" tab.fromFret="9" tab.toFret="7" />
                       <fretGlyph>7/9/7</fretGlyph>
                     </note>
                   </chord>
                   <chord xml:id="tc-8161815e-026d-45c0-bc01-ebbab89296ec" dur="">
                     <note xml:id="tn-0d330588-042c-4695-9fb9-8189d8fab8d7" tab.course="3" tab.fret="7">
-                      <slide tab.course="3" fromFret="7" toFret="9" />
-                      <slide tab.course="3" fromFret="9" toFret="7" />
+                      <slide tab.course="3" tab.fromFret="7" tab.toFret="9" />
+                      <slide tab.course="3" tab.fromFret="9" tab.toFret="7" />
                       <fretGlyph>7/9/7</fretGlyph>
                     </note>
                   </chord>
                   <chord xml:id="tc-85484e58-3d96-48f2-bab6-498eb3efc52b" dur="">
                     <note xml:id="tn-e588fad4-ad1e-4dd7-ab1a-977ad1ef785f" tab.course="4" tab.fret="7">
-                      <slide tab.course="4" fromFret="7" toFret="9" />
-                      <slide tab.course="4" fromFret="9" toFret="7" />
+                      <slide tab.course="4" tab.fromFret="7" tab.toFret="9" />
+                      <slide tab.course="4" tab.fromFret="9" tab.toFret="7" />
                       <fretGlyph>7/9/7</fretGlyph>
                     </note>
                   </chord>
                   <chord xml:id="tc-61a1aab2-bca3-49aa-9009-dde92d3f0ac3" dur="">
                     <note xml:id="tn-a66fd05e-f42c-4f97-b1f9-5eba2f2edd8b" tab.course="4" tab.fret="7">
-                      <slide tab.course="4" fromFret="7" toFret="9" />
-                      <slide tab.course="4" fromFret="9" toFret="7" />
+                      <slide tab.course="4" tab.fromFret="7" tab.toFret="9" />
+                      <slide tab.course="4" tab.fromFret="9" tab.toFret="7" />
                       <fretGlyph>7/9/7</fretGlyph>
                     </note>
                   </chord>

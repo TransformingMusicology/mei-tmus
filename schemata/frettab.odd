@@ -67,6 +67,24 @@
           </attList>
         </classSpec>
 
+        <classSpec ident="att.note.ges.tablature.mod" module="MEI.frettab" type="atts" mode="add">
+          <gloss>Attributes shared by elements which indicate some sort of modification to a note in tablature.</gloss>
+          <attList>
+            <attDef ident="tab.fromFret" usage="opt" mode="add">
+              <desc>Indicates a starting fret of a multi-fret gesture.</desc>
+              <datatype>
+                <rng:ref name="data.FRETNUMBER" />
+              </datatype>
+            </attDef>
+            <attDef ident="tab.toFret" usage="opt" mode="add">
+              <desc>Indicates an ending fret of a multi-fret gesture.</desc>
+              <datatype>
+                <rng:ref name="data.FRETNUMBER" />
+              </datatype>
+            </attDef>
+          </attList>
+        </classSpec>
+
         <classSpec ident="model.fretGlyphLike" module="MEI.frettab" type="model" mode="add">
           <desc>Groups elements that may used as symbols (or glyphs) for a &lt;note&gt; in a tablature staff.</desc>
           <classes>
@@ -258,6 +276,20 @@
             <memberOf key="att.common" />
             <memberOf key="att.startendid" />
             <memberOf key="model.chordPart" />
+          </classes>
+          <content>
+            <rng:empty />
+          </content>
+        </elementSpec>
+
+        <elementSpec ident="slide" module="MEI.frettab" mode="add" ns="http://www.music-encoding.org/ns/mei">
+          <gloss>slide marking</gloss>
+          <desc>Indicates a slide up or down the course between two frets.</desc>
+          <classes>
+            <memberOf key="att.common" />
+            <memberOf key="model.noteModifierLike" />
+            <memberOf key="att.note.ges.tablature" />
+            <memberOf key="att.note.ges.tablature.mod" />
           </classes>
           <content>
             <rng:empty />
