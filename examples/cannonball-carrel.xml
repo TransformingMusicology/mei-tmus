@@ -316,11 +316,10 @@
                   </chord>
                 </layer>
               </staff>
-              <!--
-                  they change this riff during the
-	          song sometimes,  with hammer ons
-	          and pull offs instead of slides
-              -->
+              <textInstruct>
+                they change this riff during the song sometimes, with
+                hammer ons and pull offs instead of slides
+              </textInstruct>
               <staff n="2" decls="instr-b7283991-daff-43ed-b9b3-b348c6eb2750">
                 <staffDef lines="6" />
                 <layer n="1">
@@ -565,10 +564,10 @@
                   </chord>
                 </layer>
               </staff>
-              <!--
-                  At the end of the chorus riff you hit 10
-	          muted strokes quickly.
-              -->
+              <textInstruct>
+                At the end of the chorus riff you hit 10 muted strokes
+                quickly.
+              </textInstruct>
             </section>
           </part>
         </parts>
