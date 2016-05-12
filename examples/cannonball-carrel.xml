@@ -113,6 +113,9 @@
                       <fretGlyph>6</fretGlyph>
                     </note>
                   </chord>
+                  <supplied>
+                    <rest xml:id="tr-6c8cf725-50a2-47dc-9aab-94c462815b0c" dur="" />
+                  </supplied>
                   <chord xml:id="tc-492bdf99-3b90-414f-9092-3e533d1572df" dur="">
                     <note xml:id="tn-a43a7759-9389-4464-a5a1-b41fcdb4cdd3" tab.course="6" tab.fret="6">
                       <slide tab.course="6" tab.fromFret="1" tab.toFret="6" />
@@ -134,6 +137,9 @@
                       <fretGlyph>6</fretGlyph>
                     </note>
                   </chord>
+                  <supplied>
+                    <rest xml:id="tr-58e04d7a-bd29-402d-8bd2-6799ca8b3105" dur="" />
+                  </supplied>
                   <chord xml:id="tc-879fbccc-b2b1-4aa9-8e71-11164ff8e73c" dur="">
                     <note xml:id="tn-c2bafdca-8dd3-4f5b-8769-83dfa386fefd" tab.course="6" tab.fret="7">
                       <slide tab.course="6" tab.fromFret="1" tab.toFret="7" />
