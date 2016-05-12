@@ -87,7 +87,6 @@
             <memberOf key="att.common" />
             <memberOf key="att.instrdesc" />
             <memberOf key="model.instrdescPart" />
-            <memberOf key="model.editLike" />
             <memberOf key="model.editorialLike" />
           </classes>
           <content>
@@ -104,7 +103,6 @@
           <desc>Specifies how an instrument is required to be configured by this score.</desc>
           <classes>
             <memberOf key="att.common" />
-            <memberOf key="model.editLike" />
             <memberOf key="model.editorialLike" />
             <memberOf key="model.perfResPart" />
           </classes>
