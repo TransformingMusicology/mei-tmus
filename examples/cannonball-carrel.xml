@@ -380,201 +380,201 @@
               <staff n="1" decls="instr-b7283991-daff-43ed-b9b3-b348c6eb2750">
                 <staffDef lines="6" />
                 <layer n="1">
-                  <chord xml:id="tc-" dur="">
-                    <note xml:id="tn-" tab.course="1" tab.fret="7">
+                  <chord xml:id="tc-5fa04581-6eb4-4759-ad2d-2510bbb41e14" dur="">
+                    <note xml:id="tn-441b59ef-9d04-4956-aa93-a7d005698aef" tab.course="1" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="2" tab.fret="7">
+                    <note xml:id="tn-92736e61-e9af-4723-86fe-fc037011deab" tab.course="2" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="3" tab.fret="8">
+                    <note xml:id="tn-660b6bc8-301f-453c-8dd5-7467a8375781" tab.course="3" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="4" tab.fret="9">
+                    <note xml:id="tn-ba3a58ef-a83e-4c52-9673-797ecaaf0137" tab.course="4" tab.fret="9">
                       <fretGlyph>9</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="5" tab.fret="9">
+                    <note xml:id="tn-6deff3dd-a1d9-40e2-9066-848272b97543" tab.course="5" tab.fret="9">
                       <fretGlyph>9</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="6" tab.fret="7">
+                    <note xml:id="tn-80584493-66b9-49ea-9cd5-8cc37a092eec" tab.course="6" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
                   </chord>
-                  <chord xml:id="tc-" dur="">
-                    <note xml:id="tn-" tab.course="1" tab.fret="7">
+                  <chord xml:id="tc-e1e38ae9-66f4-4de3-bf24-7fbb4ecc1a57" dur="">
+                    <note xml:id="tn-6741c428-1b77-416e-be1e-414d8a503874" tab.course="1" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="2" tab.fret="7">
+                    <note xml:id="tn-570eb68b-e748-451c-8dbc-af8597b6e298" tab.course="2" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="3" tab.fret="8">
+                    <note xml:id="tn-59b2adf1-da5e-4b6a-918b-5959a69dfe98" tab.course="3" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="4" tab.fret="9">
+                    <note xml:id="tn-0d14d00f-a4f0-425a-a3df-4036f0f594f1" tab.course="4" tab.fret="9">
                       <fretGlyph>9</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="5" tab.fret="9">
+                    <note xml:id="tn-3e4c1a93-6bd5-4af5-92bd-6e70aa6eccba" tab.course="5" tab.fret="9">
                       <fretGlyph>9</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="6" tab.fret="7">
+                    <note xml:id="tn-ad8a45dc-2426-4932-a7c1-458ab44af1fa" tab.course="6" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
                   </chord>
-                  <chord xml:id="tc-" dur="">
-                    <note xml:id="tn-" tab.course="1" tab.fret="7">
+                  <chord xml:id="tc-df4a7344-aa46-428e-a7a8-d8fd242870c9" dur="">
+                    <note xml:id="tn-0193c746-3892-442b-9bb0-c57d1f0c53c1" tab.course="1" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="2" tab.fret="7">
+                    <note xml:id="tn-8935eac0-bbd1-47a0-b55e-4c25e2576b18" tab.course="2" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="3" tab.fret="8">
+                    <note xml:id="tn-805afac9-d540-4767-9d6c-8e2025e33f6b" tab.course="3" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="4" tab.fret="9">
+                    <note xml:id="tn-29ae2001-1bc4-4516-8701-530693e26e10" tab.course="4" tab.fret="9">
                       <fretGlyph>9</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="5" tab.fret="9">
+                    <note xml:id="tn-555b8034-22a5-4bcf-9e14-ea63e2abc325" tab.course="5" tab.fret="9">
                       <fretGlyph>9</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="6" tab.fret="7">
+                    <note xml:id="tn-5a3eb1b0-51e4-43b7-a33e-f447580e906a" tab.course="6" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
                   </chord>
-                  <chord xml:id="tc-" dur="">
-                    <note xml:id="tn-" tab.course="1" tab.fret="7">
+                  <chord xml:id="tc-563f8854-4967-4c2a-bb36-ed1959001c30" dur="">
+                    <note xml:id="tn-22346b7c-08a0-4865-a207-c2e5fc8c52d4" tab.course="1" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="2" tab.fret="7">
+                    <note xml:id="tn-63ec6a27-c562-4c2a-87a8-b7ca868ef99a" tab.course="2" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="3" tab.fret="8">
+                    <note xml:id="tn-0740bdd9-e31a-47c0-af16-0d0805c973ee" tab.course="3" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="4" tab.fret="9">
+                    <note xml:id="tn-e6b683f9-cdcd-4c3b-a7d9-0c3609cfc955" tab.course="4" tab.fret="9">
                       <fretGlyph>9</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="5" tab.fret="9">
+                    <note xml:id="tn-e8517b87-9b63-45c7-a09a-84c8e52d45ea" tab.course="5" tab.fret="9">
                       <fretGlyph>9</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="6" tab.fret="7">
+                    <note xml:id="tn-3c2b5545-f57f-4e62-b213-4002a02879d2" tab.course="6" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
                   </chord>
-                  <chord xml:id="tc-" dur="">
-                    <note xml:id="tn-" tab.course="2" tab.fret="8">
+                  <chord xml:id="tc-35ed73c5-4af2-412f-b9e0-5f60d13a09e6" dur="">
+                    <note xml:id="tn-314bbabf-46e8-4075-b84c-cb1b99a5ff2c" tab.course="2" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="3" tab.fret="8">
+                    <note xml:id="tn-d3482ef6-6f6a-4ee2-8f62-75d8a623c675" tab.course="3" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="4" tab.fret="8">
+                    <note xml:id="tn-be39873b-af51-40f5-8608-32ade444aa33" tab.course="4" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="5" tab.fret="7">
+                    <note xml:id="tn-482c1746-ff37-42b6-bbf5-130014c43ec8" tab.course="5" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
                   </chord>
-                  <chord xml:id="tc-" dur="">
-                    <note xml:id="tn-" tab.course="2" tab.fret="8">
+                  <chord xml:id="tc-06715e79-4773-44ad-993a-ebe6b5cd27c4" dur="">
+                    <note xml:id="tn-ad0e920f-b634-4190-9337-fd7b3338908a" tab.course="2" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="3" tab.fret="8">
+                    <note xml:id="tn-6680ac71-daaf-4a08-bc62-c0c79809af8e" tab.course="3" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="4" tab.fret="8">
+                    <note xml:id="tn-f0527f22-00f3-40df-ad20-49a8e5d6100a" tab.course="4" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="5" tab.fret="7">
+                    <note xml:id="tn-8c540437-0f5f-4e81-87e1-a88e5996243c" tab.course="5" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
                   </chord>
-                  <chord xml:id="tc-" dur="">
-                    <note xml:id="tn-" tab.course="2" tab.fret="8">
+                  <chord xml:id="tc-68465d4e-fcf0-4672-b4be-522edde214f7" dur="">
+                    <note xml:id="tn-0419e8a2-8ed2-4193-bd2a-b3ab911e7954" tab.course="2" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="3" tab.fret="8">
+                    <note xml:id="tn-f0a229c8-2d23-4093-b3d9-58c7a636c913" tab.course="3" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="4" tab.fret="8">
+                    <note xml:id="tn-d428cd7d-feb0-4c08-bd9a-01801fe53646" tab.course="4" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="5" tab.fret="7">
+                    <note xml:id="tn-214304a0-29ae-42b7-abf0-e0ab797ac172" tab.course="5" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
                   </chord>
-                  <chord xml:id="tc-" dur="">
-                    <note xml:id="tn-" tab.course="2" tab.fret="8">
+                  <chord xml:id="tc-8204b471-2d98-478b-b944-caaeedcca367" dur="">
+                    <note xml:id="tn-1dd5f11f-4a51-485c-83e8-e38123204d41" tab.course="2" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="3" tab.fret="8">
+                    <note xml:id="tn-7ddc2ee3-83b3-4475-bc0d-7430cd396863" tab.course="3" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="4" tab.fret="8">
+                    <note xml:id="tn-033eca31-b685-4731-b8bd-8d8ba7a4be50" tab.course="4" tab.fret="8">
                       <fretGlyph>8</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="5" tab.fret="7">
+                    <note xml:id="tn-09050bbb-fd23-4a55-ac66-b9db5f18c0d3" tab.course="5" tab.fret="7">
                       <fretGlyph>7</fretGlyph>
                     </note>
                   </chord>
-                  <chord xml:id="tc-" dur="">
-                    <note xml:id="tn-" tab.course="2" tab.fret="14">
+                  <chord xml:id="tc-22f65458-37e8-4ec7-8fd3-7e78eb2b1f5f" dur="">
+                    <note xml:id="tn-d1df96bf-ceae-410d-9a21-e1c1debfc95a" tab.course="2" tab.fret="14">
                       <fretGlyph>14</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="3" tab.fret="14">
+                    <note xml:id="tn-8e7909c1-abf5-4fcf-a721-6378cf208643" tab.course="3" tab.fret="14">
                       <fretGlyph>14</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="4" tab.fret="14">
+                    <note xml:id="tn-ad1d3efa-2c9c-42d1-a076-3943309a9c02" tab.course="4" tab.fret="14">
                       <fretGlyph>14</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="5" tab.fret="12">
+                    <note xml:id="tn-3b246699-3d60-4d21-bdb9-34640c85df55" tab.course="5" tab.fret="12">
                       <fretGlyph>12</fretGlyph>
                     </note>
                   </chord>
-                  <chord xml:id="tc-" dur="">
-                    <note xml:id="tn-" tab.course="2" tab.fret="14">
+                  <chord xml:id="tc-d149f011-cc40-46b7-acdf-b093006de2ce" dur="">
+                    <note xml:id="tn-a21acd82-daae-4752-af0c-c1543ae597b1" tab.course="2" tab.fret="14">
                       <fretGlyph>14</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="3" tab.fret="14">
+                    <note xml:id="tn-5f814a1e-6eea-4c42-a5f5-db08cddb7eef" tab.course="3" tab.fret="14">
                       <fretGlyph>14</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="4" tab.fret="14">
+                    <note xml:id="tn-74cc92ea-2d80-4f86-8a7d-b465c3cc4368" tab.course="4" tab.fret="14">
                       <fretGlyph>14</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="5" tab.fret="12">
+                    <note xml:id="tn-713e3453-72d3-4624-a24e-60135411d084" tab.course="5" tab.fret="12">
                       <fretGlyph>12</fretGlyph>
                     </note>
                   </chord>
-                  <chord xml:id="tc-" dur="">
-                    <note xml:id="tn-" tab.course="2" tab.fret="14">
+                  <chord xml:id="tc-9a4e19e0-f1a0-4024-b510-aa7bb00a12a5" dur="">
+                    <note xml:id="tn-ca04b4a7-74f7-4e94-8e17-348c3f0fe67e" tab.course="2" tab.fret="14">
                       <fretGlyph>14</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="3" tab.fret="14">
+                    <note xml:id="tn-5acb9046-a156-49e1-989a-ba45f81d3898" tab.course="3" tab.fret="14">
                       <fretGlyph>14</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="4" tab.fret="14">
+                    <note xml:id="tn-50ff9a10-c5f0-45a1-a6d4-2463686e0353" tab.course="4" tab.fret="14">
                       <fretGlyph>14</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="5" tab.fret="12">
+                    <note xml:id="tn-7a38d6fb-c3fa-4284-bc6d-3c10bac8a835" tab.course="5" tab.fret="12">
                       <fretGlyph>12</fretGlyph>
                     </note>
                   </chord>
-                  <chord xml:id="tc-" dur="">
-                    <note xml:id="tn-" tab.course="1" tab.fret="x">
+                  <chord xml:id="tc-4aefdd69-4fc8-4b45-b801-047c2c94bc94" dur="">
+                    <note xml:id="tn-df234b78-aa8d-48ef-b683-a0f4b63ad6d1" tab.course="1" tab.fret="x">
                       <fretGlyph>x</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="2" tab.fret="x">
+                    <note xml:id="tn-8caa7ecd-7135-4790-906d-5919b5d7782b" tab.course="2" tab.fret="x">
                       <fretGlyph>x</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="3" tab.fret="x">
+                    <note xml:id="tn-d13c4756-d756-461f-b6af-ce99c8bbec44" tab.course="3" tab.fret="x">
                       <fretGlyph>x</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="4" tab.fret="x">
+                    <note xml:id="tn-83b1ca37-871c-4013-ace5-d97eda368d1a" tab.course="4" tab.fret="x">
                       <fretGlyph>x</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="5" tab.fret="x">
+                    <note xml:id="tn-ffe7f86e-1cda-4f88-beb2-49ad9f1a30ba" tab.course="5" tab.fret="x">
                       <fretGlyph>x</fretGlyph>
                     </note>
-                    <note xml:id="tn-" tab.course="6" tab.fret="x">
+                    <note xml:id="tn-271a0513-f17c-4b90-ada4-e8607667a5f0" tab.course="6" tab.fret="x">
                       <fretGlyph>x</fretGlyph>
                     </note>
                   </chord>
