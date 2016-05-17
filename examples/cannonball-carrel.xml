@@ -332,13 +332,13 @@
                   </chord>
                 </layer>
               </staff>
-              <textInstruct>
-                they change this riff during the song sometimes, with
-                hammer ons and pull offs instead of slides
-              </textInstruct>
               <staff n="2" decls="instr-b7283991-daff-43ed-b9b3-b348c6eb2750">
                 <staffDef lines="6" />
                 <layer n="1">
+                  <dir startid="tc-e0c86b3b-1e14-4dfa-8a71-c2e0202db7ae" endid="tc-61a1aab2-bca3-49aa-9009-dde92d3f0ac3">
+                    they change this riff during the song sometimes, with
+                    hammer ons and pull offs instead of slides
+                  </dir>
                   <chord xml:id="tc-e0c86b3b-1e14-4dfa-8a71-c2e0202db7ae" dur="">
                     <note xml:id="tn-9aad021b-370a-47b0-8256-947cbff32a16" tab.course="3" tab.fret="7">
                       <slide tab.course="3" tab.fromFret="7" tab.toFret="9" />
@@ -578,12 +578,12 @@
                       <fretGlyph>x</fretGlyph>
                     </note>
                   </chord>
+                  <dir startid="tc-4aefdd69-4fc8-4b45-b801-047c2c94bc94" endid="tc-4aefdd69-4fc8-4b45-b801-047c2c94bc94">
+                    At the end of the chorus riff you hit 10 muted strokes
+                    quickly.
+                  </dir>
                 </layer>
               </staff>
-              <textInstruct>
-                At the end of the chorus riff you hit 10 muted strokes
-                quickly.
-              </textInstruct>
             </section>
           </part>
         </parts>
