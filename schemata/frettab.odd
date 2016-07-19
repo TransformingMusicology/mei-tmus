@@ -158,7 +158,7 @@
             <rng:text />
           </content>
           <attList>
-            <attDef ident="symol" usage="opt">
+            <attDef ident="symbol" usage="opt">
               <desc>The duration symbol.</desc>
               <datatype>
                 <rng:ref name="data.DURATION.tablature" />
