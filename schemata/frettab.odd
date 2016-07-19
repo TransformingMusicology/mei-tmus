@@ -213,6 +213,20 @@
           </attList>
         </elementSpec>
 
+        <elementSpec ident="rest" module="MEI.shared" mode="change" ns="http://www.music-encoding.org/ns/mei">
+          <content>
+            <rng:zeroOrMore>
+              <rng:choice>
+                <rng:ref name="dot" />
+                <rng:ref name="rhythmGlyph" />
+                <rng:ref name="model.appLike" />
+                <rng:ref name="model.editLike" />
+                <rng:ref name="model.transcriptionLike" />
+              </rng:choice>
+            </rng:zeroOrMore>
+          </content>
+        </elementSpec>
+
         <elementSpec ident="fermata" module="MEI.cmn" mode="change" ns="http://www.music-encoding.org/ns/mei">
           <classes mode="change">
             <memberOf mode="add" key="model.chordPart" />
