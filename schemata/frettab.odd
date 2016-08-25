@@ -114,6 +114,8 @@
               <a:documentation>Breve</a:documentation>
               <rng:value>W</rng:value>
               <a:documentation>Semibreve (whole note)</a:documentation>
+              <rng:value>W.</rng:value>
+              <a:documentation>Dotted semibreve (whole note)</a:documentation>
               <rng:value>H</rng:value>
               <a:documentation>Minim (half note)</a:documentation>
               <rng:value>H.</rng:value>
