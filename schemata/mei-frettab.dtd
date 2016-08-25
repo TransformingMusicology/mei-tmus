@@ -1,6 +1,6 @@
 
 <!--
-DTD generated from ODD source 2016-07-19T15:30:00Z. .
+DTD generated from ODD source 2016-08-25T14:42:00Z. .
 TEI Edition: Version 3.0.0
 TEI Edition Location: http://www.tei-c.org/Vault/P5//
 
@@ -252,7 +252,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
 
 <!ENTITY % data.COURSENUMBER ' CDATA ' >
 
-<!ENTITY % data.DURATION.tablature '(F|B|W|H|H.|Q|Q.|E|E.|S|S.|T|T.|Y|Y.|Z|Z.)' >
+<!ENTITY % data.DURATION.tablature '(F|B|B3|B3.|W|W.|W3|W3.|H|H.|H3|H3.|Q|Q.|Q3|Q3.|E|E.|E3|E3.|S|S.|S3|S3.|T|T.|T3|T3.|Y|Y.|Y3|Y3.|Z|Z.|Z3|Z3.)' >
 
 <!-- end datatypes -->
 

@@ -7,7 +7,7 @@ namespace tei = "http://www.tei-c.org/ns/1.0"
 namespace teix = "http://www.tei-c.org/ns/Examples"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2016-07-19T15:29:51Z. .
+# Schema generated from ODD source 2016-08-25T14:41:51Z. .
 # TEI Edition: Version 3.0.0
 # TEI Edition Location: http://www.tei-c.org/Vault/P5//
 #
@@ -247,8 +247,23 @@ data.DURATION.tablature =
     ## Breve
     "B"
   | 
+    ## Triplet breve
+    "B3"
+  | 
+    ## Dotted triplet breve
+    "B3."
+  | 
     ## Semibreve (whole note)
     "W"
+  | 
+    ## Dotted semibreve (whole note)
+    "W."
+  | 
+    ## Triplet semibreve (whole note)
+    "W3"
+  | 
+    ## Dotted triplet semibreve (whole note)
+    "W3."
   | 
     ## Minim (half note)
     "H"
@@ -256,11 +271,23 @@ data.DURATION.tablature =
     ## Dotted minim (half note)
     "H."
   | 
+    ## Triplet minim (half note)
+    "H3"
+  | 
+    ## Dotted triplet minim (half note)
+    "H3."
+  | 
     ## Crotchet (quarter note)
     "Q"
   | 
     ## Dotted crotchet (quarter note)
     "Q."
+  | 
+    ## Triplet crotchet (quarter note)
+    "Q3"
+  | 
+    ## Dotted triplet crotchet (quarter note)
+    "Q3."
   | 
     ## Quaver (eight note)
     "E"
@@ -268,11 +295,23 @@ data.DURATION.tablature =
     ## Dotted quaver (eight note)
     "E."
   | 
+    ## Triplet quaver (eighth note)
+    "E3"
+  | 
+    ## Dotted triplet quaver (eighth note)
+    "E3."
+  | 
     ## Semiquaver (sixteenth note)
     "S"
   | 
     ## Dotted semiquaver (sixteenth note)
     "S."
+  | 
+    ## Triplet semiquaver (sixteenth note)
+    "S3"
+  | 
+    ## Dotted triplet semiquaver (sixteenth note)
+    "S3."
   | 
     ## Demisemiquaver (thirtysecond note)
     "T"
@@ -280,17 +319,35 @@ data.DURATION.tablature =
     ## Dotted demisemiquaver (thirtysecond note)
     "T."
   | 
+    ## Triplet demisemiquaver (thirtysecond note)
+    "T3"
+  | 
+    ## Dotted triplet demisemiquaver (thirtysecond note)
+    "T3."
+  | 
     ## Hemidemisemiquaver (sixtyfourth note)
     "Y"
   | 
     ## Dotted hemidemisemiquaver (sixtyfourth note)
     "Y."
   | 
+    ## Triplet hemidemisemiquaver (sixtyfourth note)
+    "Y3"
+  | 
+    ## Dotted triplet hemidemisemiquaver (sixtyfourth note)
+    "Y3."
+  | 
     ## Semihemidemisemiquaver (one hundred and twentyeighth note)
     "Z"
   | 
     ## Dotted semihemidemisemiquaver (one hundred and twentyeighth note)
     "Z."
+  | 
+    ## Triplet semihemidemisemiquaver (one hundred and twentyeighth note)
+    "Z3"
+  | 
+    ## Dotted triplet semihemidemisemiquaver (one hundred and twentyeighth note)
+    "Z3."
 att.notationType.attributes =
   att.notationType.attribute.notationtype,
   att.notationType.attribute.notationsubtype

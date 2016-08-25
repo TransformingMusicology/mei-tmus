@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:teix="http://www.tei-c.org/ns/Examples" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.music-encoding.org/ns/mei">
   <!--
-Schema generated from ODD source 2016-07-19T15:29:51Z. .
+Schema generated from ODD source 2016-08-25T14:41:51Z. .
 TEI Edition: Version 3.0.0
 TEI Edition Location: http://www.tei-c.org/Vault/P5//
   
@@ -674,36 +674,74 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Fermata</a:documentation>
       <value>B</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Breve</a:documentation>
+      <value>B3</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Triplet breve</a:documentation>
+      <value>B3.</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted triplet breve</a:documentation>
       <value>W</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Semibreve (whole note)</a:documentation>
+      <value>W.</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted semibreve (whole note)</a:documentation>
+      <value>W3</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Triplet semibreve (whole note)</a:documentation>
+      <value>W3.</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted triplet semibreve (whole note)</a:documentation>
       <value>H</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Minim (half note)</a:documentation>
       <value>H.</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted minim (half note)</a:documentation>
+      <value>H3</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Triplet minim (half note)</a:documentation>
+      <value>H3.</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted triplet minim (half note)</a:documentation>
       <value>Q</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Crotchet (quarter note)</a:documentation>
       <value>Q.</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted crotchet (quarter note)</a:documentation>
+      <value>Q3</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Triplet crotchet (quarter note)</a:documentation>
+      <value>Q3.</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted triplet crotchet (quarter note)</a:documentation>
       <value>E</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Quaver (eight note)</a:documentation>
       <value>E.</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted quaver (eight note)</a:documentation>
+      <value>E3</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Triplet quaver (eighth note)</a:documentation>
+      <value>E3.</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted triplet quaver (eighth note)</a:documentation>
       <value>S</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Semiquaver (sixteenth note)</a:documentation>
       <value>S.</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted semiquaver (sixteenth note)</a:documentation>
+      <value>S3</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Triplet semiquaver (sixteenth note)</a:documentation>
+      <value>S3.</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted triplet semiquaver (sixteenth note)</a:documentation>
       <value>T</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Demisemiquaver (thirtysecond note)</a:documentation>
       <value>T.</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted demisemiquaver (thirtysecond note)</a:documentation>
+      <value>T3</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Triplet demisemiquaver (thirtysecond note)</a:documentation>
+      <value>T3.</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted triplet demisemiquaver (thirtysecond note)</a:documentation>
       <value>Y</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Hemidemisemiquaver (sixtyfourth note)</a:documentation>
       <value>Y.</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted hemidemisemiquaver (sixtyfourth note)</a:documentation>
+      <value>Y3</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Triplet hemidemisemiquaver (sixtyfourth note)</a:documentation>
+      <value>Y3.</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted triplet hemidemisemiquaver (sixtyfourth note)</a:documentation>
       <value>Z</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Semihemidemisemiquaver (one hundred and twentyeighth note)</a:documentation>
       <value>Z.</value>
       <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted semihemidemisemiquaver (one hundred and twentyeighth note)</a:documentation>
+      <value>Z3</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Triplet semihemidemisemiquaver (one hundred and twentyeighth note)</a:documentation>
+      <value>Z3.</value>
+      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dotted triplet semihemidemisemiquaver (one hundred and twentyeighth note)</a:documentation>
     </choice>
   </define>
   <define name="att.notationType.attributes">
