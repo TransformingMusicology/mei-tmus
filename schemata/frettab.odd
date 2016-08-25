@@ -112,38 +112,74 @@
               <a:documentation>Fermata</a:documentation>
               <rng:value>B</rng:value>
               <a:documentation>Breve</a:documentation>
+              <rng:value>B3</rng:value>
+              <a:documentation>Triplet breve</a:documentation>
+              <rng:value>B3.</rng:value>
+              <a:documentation>Dotted triplet breve</a:documentation>
               <rng:value>W</rng:value>
               <a:documentation>Semibreve (whole note)</a:documentation>
               <rng:value>W.</rng:value>
               <a:documentation>Dotted semibreve (whole note)</a:documentation>
+              <rng:value>W3</rng:value>
+              <a:documentation>Triplet semibreve (whole note)</a:documentation>
+              <rng:value>W3.</rng:value>
+              <a:documentation>Dotted triplet semibreve (whole note)</a:documentation>
               <rng:value>H</rng:value>
               <a:documentation>Minim (half note)</a:documentation>
               <rng:value>H.</rng:value>
               <a:documentation>Dotted minim (half note)</a:documentation>
+              <rng:value>H3</rng:value>
+              <a:documentation>Triplet minim (half note)</a:documentation>
+              <rng:value>H3.</rng:value>
+              <a:documentation>Dotted triplet minim (half note)</a:documentation>
               <rng:value>Q</rng:value>
               <a:documentation>Crotchet (quarter note)</a:documentation>
               <rng:value>Q.</rng:value>
               <a:documentation>Dotted crotchet (quarter note)</a:documentation>
+              <rng:value>Q3</rng:value>
+              <a:documentation>Triplet crotchet (quarter note)</a:documentation>
+              <rng:value>Q3.</rng:value>
+              <a:documentation>Dotted triplet crotchet (quarter note)</a:documentation>
               <rng:value>E</rng:value>
               <a:documentation>Quaver (eight note)</a:documentation>
               <rng:value>E.</rng:value>
               <a:documentation>Dotted quaver (eight note)</a:documentation>
+              <rng:value>E3</rng:value>
+              <a:documentation>Triplet quaver (eighth note)</a:documentation>
+              <rng:value>E3.</rng:value>
+              <a:documentation>Dotted triplet quaver (eighth note)</a:documentation>
               <rng:value>S</rng:value>
               <a:documentation>Semiquaver (sixteenth note)</a:documentation>
               <rng:value>S.</rng:value>
               <a:documentation>Dotted semiquaver (sixteenth note)</a:documentation>
+              <rng:value>S3</rng:value>
+              <a:documentation>Triplet semiquaver (sixteenth note)</a:documentation>
+              <rng:value>S3.</rng:value>
+              <a:documentation>Dotted triplet semiquaver (sixteenth note)</a:documentation>
               <rng:value>T</rng:value>
               <a:documentation>Demisemiquaver (thirtysecond note)</a:documentation>
               <rng:value>T.</rng:value>
               <a:documentation>Dotted demisemiquaver (thirtysecond note)</a:documentation>
+              <rng:value>T3</rng:value>
+              <a:documentation>Triplet demisemiquaver (thirtysecond note)</a:documentation>
+              <rng:value>T3.</rng:value>
+              <a:documentation>Dotted triplet demisemiquaver (thirtysecond note)</a:documentation>
               <rng:value>Y</rng:value>
               <a:documentation>Hemidemisemiquaver (sixtyfourth note)</a:documentation>
               <rng:value>Y.</rng:value>
               <a:documentation>Dotted hemidemisemiquaver (sixtyfourth note)</a:documentation>
+              <rng:value>Y3</rng:value>
+              <a:documentation>Triplet hemidemisemiquaver (sixtyfourth note)</a:documentation>
+              <rng:value>Y3.</rng:value>
+              <a:documentation>Dotted triplet hemidemisemiquaver (sixtyfourth note)</a:documentation>
               <rng:value>Z</rng:value>
               <a:documentation>Semihemidemisemiquaver (one hundred and twentyeighth note)</a:documentation>
               <rng:value>Z.</rng:value>
               <a:documentation>Dotted semihemidemisemiquaver (one hundred and twentyeighth note)</a:documentation>
+              <rng:value>Z3</rng:value>
+              <a:documentation>Triplet semihemidemisemiquaver (one hundred and twentyeighth note)</a:documentation>
+              <rng:value>Z3.</rng:value>
+              <a:documentation>Dotted triplet semihemidemisemiquaver (one hundred and twentyeighth note)</a:documentation>
             </rng:choice>
           </content>
         </macroSpec>
