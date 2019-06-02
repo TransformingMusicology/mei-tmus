@@ -75,23 +75,23 @@
                   <layer n="1">
                     <measure>
                       <tabGrp xml:id="tc-792c9994-fa32-11e4-ba0d-0021ccd2abe3" dur="2">
-                        <rhythmGlyph xml:id="rg-84e019c6-fa34-11e4-887e-0021ccd2abe3" />
+                        <tabRhythm xml:id="rg-84e019c6-fa34-11e4-887e-0021ccd2abe3" />
                         <note xml:id="tn-c76746c2-fa32-11e4-a617-0021ccd2abe3" tab.course="6" tab.fret="0"/>
                         <note xml:id="tn-a972520a-fa33-11e4-b3fa-0021ccd2abe3" tab.course="4" tab.fret="2"/>
                       </tabGrp>
                       <tabGrp xml:id="tc-bd24fa5a-fa33-11e4-9216-0021ccd2abe3" dur="4" dots="1">
-                        <rhythmGlyph xml:id="rg-8a44a968-fa34-11e4-9d79-0021ccd2abe3" dots="1" />
+                        <tabRhythm xml:id="rg-8a44a968-fa34-11e4-9d79-0021ccd2abe3" dots="1" />
                         <note xml:id="tn-d3d636ce-fa33-11e4-91c7-0021ccd2abe3" tab.course="6" tab.fret="0"/>
                         <note xml:id="tn-e42503a2-fa33-11e4-8d00-0021ccd2abe3" tab.course="4" tab.fret="2"/>
                       </tabGrp>
                       <tabGrp xml:id="tc-101a82ac-fa34-11e4-a3f5-0021ccd2abe3" dur="8">
-                        <rhythmGlyph xml:id="rg-8ee70146-fa34-11e4-a471-0021ccd2abe3" />
+                        <tabRhythm xml:id="rg-8ee70146-fa34-11e4-a471-0021ccd2abe3" />
                         <note xml:id="tn-9af03764-fa34-11e4-9e34-0021ccd2abe3" tab.course="6" tab.fret="2"/>
                       </tabGrp>
                     </measure>
                     <measure>
                       <tabGrp xml:id="tc-16c81d3e-fa35-11e4-a798-0021ccd2abe3" dur="4">
-                        <rhythmGlyph xml:id="rg-2b8e919e-fa35-11e4-89dd-0021ccd2abe3" />
+                        <tabRhythm xml:id="rg-2b8e919e-fa35-11e4-89dd-0021ccd2abe3" />
                         <note xml:id="tn-b07da376-fa36-11e4-905d-0021ccd2abe3" tab.course="6" tab.fret="3"/>
                         <note xml:id="tn-c62ade46-fa36-11e4-b703-0021ccd2abe3" tab.course="4" tab.fret="2"/>
                       </tabGrp>
@@ -135,7 +135,7 @@
                     </measure>
                     <measure>
                       <tabGrp xml:id="tc-cd7c92fc-fa81-11e4-96f4-0021ccd2abe3" dur="4">
-                        <rhythmGlyph xml:id="rg-04959dd8-fa82-11e4-82b0-0021ccd2abe3" />
+                        <tabRhythm xml:id="rg-04959dd8-fa82-11e4-82b0-0021ccd2abe3" />
                         <note xml:id="tn-1fb39430-fa82-11e4-ae53-0021ccd2abe3" tab.course="6" tab.fret="0"/>
                         <note xml:id="tn-3d64689c-fa82-11e4-8bbe-0021ccd2abe3" tab.course="3" tab.fret="1"/>
                       </tabGrp>
@@ -162,7 +162,7 @@
                         <note xml:id="tn-62e52196-fa83-11e4-83f2-0021ccd2abe3" tab.course="4" tab.fret="2"/>
                       </tabGrp>
                       <tabGrp xml:id="tc-7120cc88-fa83-11e4-8d5c-0021ccd2abe3" dur="8">
-                        <rhythmGlyph xml:id="rg-7d69bf54-fa83-11e4-b3b2-0021ccd2abe3" />
+                        <tabRhythm xml:id="rg-7d69bf54-fa83-11e4-b3b2-0021ccd2abe3" />
                         <note xml:id="tn-8e921736-fa83-11e4-9607-0021ccd2abe3" tab.course="3" tab.fret="1" />
                         <fing playingHand="right" playingFinger="1" startid="tn-8e921736-fa83-11e4-9607-0021ccd2abe3"/>
                       </tabGrp>
@@ -172,7 +172,7 @@
                     </measure>
                     <measure>
                       <tabGrp xml:id="tc-d77baaf2-fa83-11e4-a157-0021ccd2abe3" dur="4">
-                        <rhythmGlyph xml:id="rg-e23e1de4-fa83-11e4-889e-0021ccd2abe3" />
+                        <tabRhythm xml:id="rg-e23e1de4-fa83-11e4-889e-0021ccd2abe3" />
                         <note xml:id="tn-86c74444-fa84-11e4-b540-0021ccd2abe3" tab.course="5" tab.fret="0"/>
                         <note xml:id="tn-9352dfca-fa84-11e4-9dff-0021ccd2abe3" tab.course="3" tab.fret="0"/>
                       </tabGrp>
@@ -189,17 +189,17 @@
                     </measure>
                     <measure>
                       <tabGrp xml:id="tc-0687c834-fa85-11e4-a486-0021ccd2abe3" dur="4.">
-                        <rhythmGlyph xml:id="rg-10f70424-fa85-11e4-8c5c-0021ccd2abe3" dots="1" />
+                        <tabRhythm xml:id="rg-10f70424-fa85-11e4-8c5c-0021ccd2abe3" dots="1" />
                         <note xml:id="tn-5496c246-fa85-11e4-a24a-0021ccd2abe3" tab.course="6" tab.fret="0"/>
                         <note xml:id="tn-5e79db9a-fa85-11e4-b06a-0021ccd2abe3" tab.course="4" tab.fret="2"/>
                         <note xml:id="tn-6a972252-fa85-11e4-8e7e-0021ccd2abe3" tab.course="1" tab.fret="0"/>
                       </tabGrp>
                       <tabGrp xml:id="tc-7ad57290-fa85-11e4-8df3-0021ccd2abe3" dur="8">
-                        <rhythmGlyph xml:id="rg-86c5d9b4-fa85-11e4-8ad1-0021ccd2abe3" />
+                        <tabRhythm xml:id="rg-86c5d9b4-fa85-11e4-8ad1-0021ccd2abe3" />
                         <note xml:id="tn-94af61c6-fa85-11e4-b655-0021ccd2abe3" tab.course="3" tab.fret="0"/>
                       </tabGrp>
                       <tabGrp xml:id="tc-a26107ac-fa85-11e4-880d-0021ccd2abe3" dur="4">
-                        <rhythmGlyph xml:id="rg-abe01be2-fa85-11e4-a78d-0021ccd2abe3" />
+                        <tabRhythm xml:id="rg-abe01be2-fa85-11e4-a78d-0021ccd2abe3" />
                         <note xml:id="tn-b5d03362-fa85-11e4-aac2-0021ccd2abe3" tab.course="3" tab.fret="1"/>
                         <note xml:id="tn-c05348ce-fa85-11e4-bfa4-0021ccd2abe3" tab.course="1" tab.fret="0"/>
                       </tabGrp>
