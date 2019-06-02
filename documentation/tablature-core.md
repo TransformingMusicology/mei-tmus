@@ -141,7 +141,7 @@ In lute tablatures, a rhythm indication may be present or absent in any
 given `<tabGrp>`.
 ```
 <tabGrp dur.ges="4">
-  <rhythmGlyph />
+  <tabRhythm />
   <note tab.course="2" tab.fret="3">
   <note tab.course="3" tab.fret="0">
   <note tab.course="5" tab.fret="2">
@@ -151,7 +151,7 @@ given `<tabGrp>`.
 Where the rhythm sign is absent, it is usually played as if
 the previous indication had been repeated. Where there is no preceding
 indication or the music requires a different interpretation of rhythm,
-editorial markup should be used to add a rhythmGlyph.
+editorial markup should be used to add a tabRhythm (replaces **rhythmGlyph**).
 
 Where a rhythm indicator is the only element of `<tabGrp>`, the result has the
 same effect as a rest in CMN.
