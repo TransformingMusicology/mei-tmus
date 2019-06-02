@@ -11,13 +11,13 @@ Gestossen.<br><img height="100px" src="NurTab_06.png"> | `c2a3(E)d6 a2a3c6  {not
 Ausgeschreine Abzug.<br><img height="100px" src="NurTab_07.png"> | `c1(C) a1 c2(C) a2`  | [MEI here]
 Derselbe nicht aus geschreiben.<br><img height="100px" src="NurTab_08.png"> | `a1, a2,`  | [MEI here]
 Doppelter Abzug<br><img height="100px" src="NurTab_09.png"> | `c1(C)c3(C) a1a3 c2(C)c4(C) a2a4`  | [MEI here]
-Dopp. Abzug unausgeschreiben.<br><img height="100px" src="NurTab_10.png"> | `a1,a3, a2,a4, {a5 cancelled} `
+Dopp. Abzug unausgeschreiben.<br><img height="100px" src="NurTab_10.png"> | `a1,a3, a2,a4, {a5 cancelled}`
 Einfall.<br><img height="100px" src="NurTab_11.png"> | `c2(C) d2 a2(C) c2`  | [MEI here]
 Selbige unausgeschreiben.<br><img height="100px" src="NurTab_12.png"> | `d2u c2u`  | [MEI here]
 Doppelter Einfall.<br><img height="100px" src="NurTab_13.png"> | `a2(S)a4(S) c2c4 a1(C)a3(C)c3 c1b3 `  | [MEI here]
 oder [i.e. an alternative notation for Doppelter Einfall]<br><img height="100px" src="NurTab_14.png"> | `c2uc4u c1ub3u`  | [MEI here]
 Beyderley Abzug.<br><img height="100px" src="NurTab_15.png"> | `c4,(C) a4 c3,(C)a3 `  | [MEI here]
-Einfall auf 3 Noten.<br><img height="100px" src="NurTab_16.png"> | `a5(C1:7) c5 d5(C-1:7) a4(C2:7) c4 e4(C-2:7) `  | [MEI here]
+Einfall auf 3 Noten.<br><img height="100px" src="NurTab_16.png"> | 			`a5(C1:7) c5 d5(C-1:7) a4(C2:7) c4 e4(C-2:7) `  | [MEI here]
 Dergleichen Abzug.<br><img height="100px" src="NurTab_17.png"> | `d2(C1:-7) c2 a2(C-1:7) d3(C2:-7) c3 a3(C-2:7)`  | [MEI here]
 Bebung.<br><img height="100px" src="NurTab_18.png"> |  `h1# f2# h3# h4#`  | [MEI here]
 Mordant.<br><img height="100px" src="NurTab_19.png"> | `d2(Og:5) c1(Og:5)`  | [MEI here]
