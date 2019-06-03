@@ -216,7 +216,7 @@
             <measure n="7">
               <staff n="1">
                 <layer n="1">
-                  <tabGrp xml:id="tc-0687c834-fa85-11e4-a486-0021ccd2abe3" dur="4.">
+                  <tabGrp xml:id="tc-0687c834-fa85-11e4-a486-0021ccd2abe3" dur="4" dots="1">
                     <tabRhythm xml:id="rg-10f70424-fa85-11e4-8c5c-0021ccd2abe3" dots="1"/>
                     <note xml:id="tn-5496c246-fa85-11e4-a24a-0021ccd2abe3" tab.course="6" tab.fret="0"/>
                     <note xml:id="tn-5e79db9a-fa85-11e4-b06a-0021ccd2abe3" tab.course="4" tab.fret="2"/>
