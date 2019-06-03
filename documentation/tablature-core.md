@@ -44,11 +44,11 @@ course tunings on their own, or string tunings as well.
 In the simplest cases, the tuning can be named from a controlled list of tuning
 types.
 ```
-<tuning tuningStandard="Guitar.Drop-D"/>
+<tuning tuning.standard="guitar.drop.D"/>
 ```
 or
 ```
-<tuning tuningStandard="Lute.Renaissance-6"/>
+<tuning tuning.standard="lute.renaissance.6"/>
 ```
 If individual course tunings are to be named, `<tuning>` can take multiple
 `<course>` elements as children. For example, a standard classical guitar
