@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title></title>
+      </titleStmt>
+      <pubStmt>
+        <respStmt>
+          <persName></persName>
+          <resp></resp>
+          <resp></resp>
+        </respStmt>
+      </pubStmt>
+      <sourceDesc>
+        <source>
+          <titleStmt>
+            <title></title>
+          </titleStmt>
+          <pubStmt>
+            <pubPlace></pubPlace>
+            <respStmt>
+              <persName></persName>
+              <resp></resp>
+            </respStmt>
+            <respStmt>
+              <persName></persName>
+              <resp></resp>
+            </respStmt>
+            <date></date>
+          </pubStmt>
+          <physDesc>
+            <physMedium></physMedium>
+            <dimensions></dimensions>
+          </physDesc>
+          <physLoc>
+            <provenance>
+              <repository>
+                <name></name>
+                <identifier></identifier>
+              </repository>
+            </provenance>
+          </physLoc>
+        </source>
+      </sourceDesc>
+    </fileDesc>
+    <workDesc>
+      <work>
+        <titleStmt>
+          <title></title>
+          <composer>
+            <name>
+              <persName></persName>
+            </name>
+          </composer>
+        </titleStmt>
+      </work>
+    </workDesc>
+  </meiHead>
+  <music>
+    <facsimile>
+      <surface>
+        <graphic/>
+      </surface>
+    </facsimile>
+    <body>
+      <mdiv n='1'>
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef lines='6' notationtype='tab.guitar' n='1'>
+                <tuning tuning.standard='guitar'/>
+                <meterSig count='4' unit='4' />
+              </staffDef>
+            </staffGrp>
+          </scoreDef>
+          <section n='1'>
+            <measure n='1'>
+              <staff n='1'>
+                <layer n='1'>
+                  <tabGrp dur='8' grace='acc'>
+                    <note tab.string='2' tab.fret='11' pullOff='t' slide='i' />
+                  </tabGrp>
+                  <beam>  
+                    <tuplet dur='8' num='3' numbase='2' >
+                      <tabGrp dur='16'>
+                        <note tab.string='2' tab.fret='10' slide='t i'/>
+                      </tabGrp>
+                      <tabGrp dur='16'>
+                        <note tab.string='2' tab.fret='11' slide='t' hammerOn='i' />
+                      </tabGrp>
+                      <tabGrp dur='16'>
+                        <note tab.string='2' tab.fret='14' hammerOn='t' pullOff='i'/>
+                      </tabGrp>
+                    </tuplet>
+                    <tuplet dur='8' num='6' numbase='2' >
+                      <tabGrp dur='32'>
+                        <note tab.string='2' tab.fret='13' pullOff='t' hammerOn='i' />
+                      </tabGrp>
+                      <tabGrp dur='32'>
+                        <note tab.string='2' tab.fret='14' hammerOn='t' />
+                      </tabGrp>
+                      <tabGrp dur='32'>
+                        <note tab.string='1' tab.fret='11' hammerOn='i' />
+                      </tabGrp>
+                      <tabGrp dur='32'>
+                        <note tab.string='1' tab.fret='14' hammerOn='t'/>
+                      </tabGrp>
+                      <tabGrp dur='16'>
+                        <note tab.string='1' tab.fret='11' />
+                      </tabGrp>
+                    </tuplet>
+                  </beam>
+                  <beam>  
+                    <tuplet dur='8' num='3' numbase='2' >
+                      <tabGrp dur='16'>
+                        <note tab.string='2' tab.fret='14' pullOff='i' />
+                      </tabGrp>
+                      <tabGrp dur='16'>
+                        <note tab.string='2' tab.fret='9' pullOff='t' hammerOn='i'/>
+                      </tabGrp>
+                      <tabGrp dur='16'>
+                        <note tab.string='2' tab.fret='11' hammerOn='t i'/>
+                      </tabGrp>
+                    </tuplet>  
+                    <tabGrp dur='64'>
+                      <note tab.string='2' tab.fret='14' hammerOn='t' slide='i'/>
+                    </tabGrp>
+                    <tabGrp dur='64'>
+                      <note tab.string='2' tab.fret='13' slide='t' pullOff='i'/>
+                    </tabGrp>
+                    <tabGrp dur='32'>
+                      <note tab.string='2' tab.fret='9' pullOff='t' hammerOn='i'/>
+                    </tabGrp>
+                    <tabGrp dur='32'>
+                      <note tab.string='2' tab.fret='11' hammerOn='t i'/>
+                    </tabGrp>
+                    <tabGrp dur='32'>
+                      <note tab.string='2' tab.fret='13' hammerOn='t' pullOff='i'/>
+                    </tabGrp>
+                  </beam>
+                  <beam>  
+                    <tabGrp dur='32'>
+                      <note tab.string='2' tab.fret='11' pullOff='t i'/>
+                    </tabGrp>
+                    <tabGrp dur='32'>
+                      <note tab.string='2' tab.fret='9' pullOff='t'/>
+                    </tabGrp >
+                    <tabGrp dur='32'>
+                      <note tab.string='3' tab.fret='13' />
+                    </tabGrp>
+                    <tabGrp dur='32'>
+                      <note tab.string='3' tab.fret='11' hammerOn='i'/>
+                    </tabGrp>
+                    <tabGrp dur='16'>
+                      <note tab.string='3' tab.fret='13' hammerOn='t' pullOff='i'/>
+                    </tabGrp>
+                    <tuplet dur='16' num='3' numbase='2'>
+                    <tabGrp dur='32'>
+                      <note tab.string='3' tab.fret='11' pullOff='t i' />
+                    </tabGrp>
+                    <tabGrp dur='32'>
+                      <note tab.string='3' tab.fret='10' pullOff='t' slide='i'/>
+                    </tabGrp>
+                    <tabGrp dur='32'>
+                      <note tab.string='3' tab.fret='8' slide='t'/>
+                    </tabGrp>
+                  </beam>
+                  <beam>  
+                    <tabGrp dur='32'>
+                      <note tab.string='3' tab.fret='10' hammerOn='i'/>
+                    </tabGrp>
+                    <tabGrp dur='32'>
+                      <note tab.string='3' tab.fret='11' hammerOn='t'/>
+                    </tabGrp >
+                    <tabGrp dur='32'>
+                      <note tab.string='4' tab.fret='10' />
+                    </tabGrp>
+                    <tabGrp dur='32'>
+                      <note tab.string='3' tab.fret='8' />
+                    </tabGrp>
+                    <tabGrp dur='32'>
+                      <note tab.string='3' tab.fret='x' />
+                    </tabGrp>
+                    <tabGrp dur='32'>
+                      <slide from='below'>
+                        <note tab.string='3' tab.fret='8' />
+                      </slide>
+                    </tabGrp>
+                    <tabGrp dur='32'>
+                      <note tab.string='3' tab.fret='10' hammerOn='i'/>
+                    </tabGrp>
+                    <tabGrp dur='32'>
+                      <note tab.string='3' tab.fret='11' hammerOn='t' pullOff='i'/>
+                    </tabGrp>
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Excerpt from: Intabolatura de lauto di Francesco da Milano, Libro primo</title>
+      </titleStmt>
+      <pubStmt>
+        <respStmt>
+          <persName>Reinier de Valk</persName>
+          <resp>Transcription</resp>
+          <resp>Encoding</resp>
+        </respStmt>
+      </pubStmt>
+      <sourceDesc>
+        <source>
+          <titleStmt>
+            <title>Intabolatura de lauto di Francesco da Milano, Libro primo</title>
+          </titleStmt>
+          <pubStmt>
+            <pubPlace>Venice</pubPlace>
+            <respStmt>
+              <persName>Antonio Gardane</persName>
+              <resp>Printer</resp>
+            </respStmt>
+            <respStmt>
+              <persName>Francesco da Milano</persName>
+              <resp>Compiler</resp>
+            </respStmt>
+            <date>1546</date>
+          </pubStmt>
+          <physDesc>
+            <physMedium>Paper</physMedium>
+            <dimensions unit='mm'>145x210</dimensions>
+          </physDesc>
+          <physLoc>
+            <provenance>
+              <repository>
+                <name>British Library</name>
+                <identifier authURI='http://access.bl.uk/item/viewer/ark:/81055/vdc_100050806535.0x000001#?c=0&m=0&s=0&cv=0&xywh=-137%2C-747%2C2727%2C3092'>K.1.c.12</identifier>
+              </repository>
+            </provenance>
+          </physLoc>
+        </source>
+      </sourceDesc>
+    </fileDesc>
+    <workDesc>
+      <work>
+        <titleStmt>
+          <title>Fantesia di F. da Milano</title>
+          <composer>
+            <name>
+              <persName>Francesco da Milano</persName>
+            </name>
+          </composer>
+        </titleStmt>
+      </work>
+    </workDesc>
+  </meiHead>
+  <music>
+    <facsimile>
+      <surface>
+        <graphic target='phalese-1546_20-no_2.png' />
+      </surface>
+    </facsimile>
+    <body>
+      <mdiv n='1'>
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef lines='6' notationtype='tab.lute.french' n='1'>
+                <tuning tuning.standard='lute-renaissance-6'/>
+                <mensur sign='C' />
+              </staffDef>
+            </staffGrp>
+          </scoreDef>
+          <section n='1'>
+            <measure n='1'>
+              <staff n='1'>
+                <layer n='1'>
+                  <tabGrp dur='2'>
+                    <tabRhythm />
+                    <note tab.course='1' tab.fret='5'><fretGlyph>f</fretGlyph></note>
+                  </tabGrp>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='1' tab.fret='7'><fretGlyph>h</fretGlyph></note>
+                  </tabGrp>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='1' tab.fret='5'><fretGlyph>f</fretGlyph></note>
+                  </tabGrp>
+                </layer>
+              </staff>
+            </measure>
+            <measure n='2'>
+              <staff n='1'>
+                <layer n='1'>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='2' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                  </tabGrp>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='1' tab.fret='2'><fretGlyph>c</fretGlyph></note>
+                  </tabGrp>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='2' tab.fret='5'><fretGlyph>f</fretGlyph></note>
+                    <note tab.course='1' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                  </tabGrp>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='2' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                    <note tab.course='1' tab.fret='5'><fretGlyph>f</fretGlyph></note>
+                  </tabGrp>
+                </layer>
+              </staff>
+            </measure>
+            <measure n='3'>
+              <staff n='1'>
+                <layer n='1'>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='1' tab.fret='7'><fretGlyph>h</fretGlyph></note>
+                  </tabGrp>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='2' tab.fret='0'><fretGlyph>a</fretGlyph></note>
+                  </tabGrp>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='2' tab.fret='2'><fretGlyph>c</fretGlyph></note>
+                    <note tab.course='1' tab.fret='5'><fretGlyph>f</fretGlyph></note>
+                  </tabGrp>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='2' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                    <note tab.course='1' tab.fret='2'><fretGlyph>c</fretGlyph></note>
+                  </tabGrp>
+                </layer>
+              </staff>
+            </measure>
+            <measure n='4'>
+              <staff n='1'>
+                <layer n='1'>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='2' tab.fret='5'><fretGlyph>f</fretGlyph></note>
+                    <note tab.course='1' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                  </tabGrp>
+                  <beam>
+                    <tabGrp dur='8'>
+                      <tabRhythm />
+                      <note tab.course='1' tab.fret='2'><fretGlyph>c</fretGlyph></note>
+                    </tabGrp>
+                    <tabGrp dur='8'>
+                      <tabRhythm />
+                      <note tab.course='1' tab.fret='0'><fretGlyph>a</fretGlyph></note>
+                    </tabGrp>
+                  </beam>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='2' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                    <note tab.course='1' tab.fret='2'><fretGlyph>c</fretGlyph></note>
+                  </tabGrp>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='2' tab.fret='0'><fretGlyph>a</fretGlyph></note>
+                    <note tab.course='1' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                  </tabGrp>
+                </layer>
+              </staff>
+            </measure>
+            <measure n='5'>
+              <staff n='1'>
+                <layer n='1'>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='2' tab.fret='2'><fretGlyph>c</fretGlyph></note>
+                    <note tab.course='1' tab.fret='0'><fretGlyph>a</fretGlyph></note>
+                  </tabGrp>
+                  <beam>
+                    <tabGrp dur='8'>
+                      <tabRhythm />
+                      <note tab.course='2' tab.fret='0'><fretGlyph>a</fretGlyph></note>
+                      <note tab.course='1' tab.fret='5'><fretGlyph>f</fretGlyph></note>
+                    </tabGrp>
+                    <tabGrp dur='8'>
+                      <tabRhythm />
+                      <note tab.course='3' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                    </tabGrp>
+                    <tabGrp dur='8'>
+                      <tabRhythm />
+                      <note tab.course='2' tab.fret='0'><fretGlyph>a</fretGlyph></note>
+                    </tabGrp>
+                    <tabGrp dur='8'>
+                      <tabRhythm />
+                      <note tab.course='1' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                    </tabGrp>
+                  </beam>
+                  <tabGrp dur='4'>
+                    <tabRhythm />
+                    <note tab.course='2' tab.fret='2'><fretGlyph>c</fretGlyph></note>
+                    <note tab.course='1' tab.fret='0'><fretGlyph>a</fretGlyph></note>
+                  </tabGrp>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>
