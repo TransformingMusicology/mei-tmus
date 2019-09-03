@@ -180,12 +180,10 @@
                       <note tab.string='3' tab.fret='8' />
                     </tabGrp>
                     <tabGrp dur='32'>
-                      <note tab.string='3' tab.fret='x' />
+                      <note tab.string='3' tab.fret='x' slideFrom='up' />
                     </tabGrp>
                     <tabGrp dur='32'>
-                      <slide from='below'>
-                        <note tab.string='3' tab.fret='8' />
-                      </slide>
+                      <note tab.string='3' tab.fret='8' />
                     </tabGrp>
                     <tabGrp dur='32'>
                       <note tab.string='3' tab.fret='10' hammerOn='i'/>
