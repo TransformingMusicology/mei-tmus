@@ -20,7 +20,8 @@ Hammer on and pull off are notated in a similar way – a slur over notes on the
 
 
 ### Bends
-Much of the core semantics of bends can be provided by `<bend>`. Currently, notes participating in a bend have explicit pitch. This is not the case in guitar tablature bends, where displacement from non-bent pitch must be specified.
+Much of the core semantics of bends can be provided by `<bend>`. Currently, notes participating in a bend have explicit pitch. This is not the case in guitar tablature bends, where displacement from non-bent pitch must be specified. 
+**All notes that participate in a bend (apart from the first) must have `@bend.startid` to point to the first (pitched) note that is included in the bend gesture. Those subsequent notes must not provide differing `@tab.course` or `@tab.fret` information. **
 
 Bend displacements (`@dis`) are specified in number of semitones, and the textual content of the element indicates how the bend is specified in the source.
 
@@ -32,7 +33,7 @@ The simplest bends involve two explicit notes:
       <note tab.course="2" tab.fret="14" xml:id="note1" />
     </tabGrp>
     <tabGrp dur="16">
-      <note xml:id="note2"/>
+      <note xml:id="note2" bend.startid="#note1"/>
     </tabGrp>
     <tie startid="#note1" endid="#note2" />
     <bend startid="#note1" endid="#note2" dis="2">Full</bend>
@@ -52,6 +53,24 @@ Prebends use another new attribute `@prebend`:
       <note tab.course="2" tab.fret="14" xml:id="note1" />
     </tabGrp>
     <bend startid="#note1" dis="1" prebend="true">1/2</bend>
+```
+A release may involve an explicit (parenthetical) repeat of the fret symbol. `@show.fret` may be provided on `bend`, which then refers back to the original fret symbol, or text content may be included if a different symbol is required.
+
+#### Two-note, whole-tone bend
+```
+    <tabGrp dur="16">
+      <note tab.course="2" tab.fret="14" xml:id="note1" />
+    </tabGrp>
+    <tabGrp dur="16">
+      <note xml:id="note2" bend.startid="#note1"/>
+    </tabGrp>
+    <tabGrp dur="16">
+      <note xml:id="note3" bend.startid="#note1"/>
+    </tabGrp>
+    <tie startid="#note1" endid="#note2" />
+    <tie startid="#note2" endid="#note3" />
+    <bend startid="#note1" endid="#note2" dis="2">Full</bend>
+    <bend startid="#note2" endid="#note3" dis="0" show.fret="true" show.fret.enclose="paren"/>
 ```
 
 
