@@ -167,12 +167,12 @@
                 <layer n='1'>
                   
                   <tabGrp dur='8' grace='acc'>
-                    <note tab.string='5' tab.fret='7' slide='i' />
+                    <note tab.string='5' tab.fret='7' xml:id="panama-fragment-3-1-1" />
                   </tabGrp>
                   
                   <beam>
                     <tabGrp dur='8'>
-                      <note tab.string='5' tab.fret='5' slide='t'/>
+                      <note tab.string='5' tab.fret='5' xml:id="panama-fragment-3-1-2" />
                     </tabGrp>
                     <tabGrp dur='8'>
                       <note tab.string='4' tab.fret='7' />
@@ -208,6 +208,9 @@
 
                 </layer>
               </staff>
+              <gliss startid="panama-fragment-3-1-1" 
+                     endid="panama-fragment-3-1-2" 
+                     slide="legato" /> 
             </measure>
 
             <sb>
