@@ -96,19 +96,19 @@
                 <layer n='1'>
                   <tabGrp dur='2'>
                     <tabRhythm />
-                    <note tab.course='6' tab.fret='0' /><fretGlyph>1-</fretGlyph></note>
-                    <note tab.course='4' tab.fret='2' /><fretGlyph>g</fretGlyph></note>
+                    <note tab.course='6' tab.fret='0' /><fretGlyph symbol="1" symbol.mod="strikethrough"/></note>
+                    <note tab.course='4' tab.fret='2' /><fretGlyph symbol="g"/></note>
                   </tabGrp>
                   <tabGrp dur='4' dots='1'>
                     <tabRhythm dots='1'/>
-                    <note tab.course='4' tab.fret='2' /><fretGlyph>g</fretGlyph></note>
+                    <note tab.course='4' tab.fret='2' /><fretGlyph symbol="g"/></note>
                   </tabGrp>
                   <tabGrp dur='8'>
                     <tabRhythm />
                     <sic> <!-- should go to previous tabGrp -->
-                      <note tab.course='6' tab.fret='0' /><fretGlyph>1-</fretGlyph></note>
+                      <note tab.course='6' tab.fret='0' /><fretGlyph symbol="1" symbol.mod="strikethrough"/></note>
                     </sic>
-                    <note tab.course='6' tab.fret='2' /><fretGlyph>3-</fretGlyph></note>
+                    <note tab.course='6' tab.fret='2' /><fretGlyph symbol="3" symbol.mod="strikethrough"/></note>
                   </tabGrp>
                 </layer>
               </staff>
@@ -118,21 +118,21 @@
                 <layer n='1'>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='6' tab.fret='3' /><fretGlyph>4-</fretGlyph></note>
-                    <note tab.course='4' tab.fret='2' /><fretGlyph>g</fretGlyph></note>
+                    <note tab.course='6' tab.fret='3' /><fretGlyph symbol="4" symbol.mod="strikethrough" /></note>
+                    <note tab.course='4' tab.fret='2' /><fretGlyph symbol="g" /></note>
                   </tabGrp>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='5' tab.fret='0' /><fretGlyph>1</fretGlyph></note>
+                    <note tab.course='5' tab.fret='0' /><fretGlyph symbol="1" /></note>
                   </tabGrp>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='6' tab.fret='3' /><fretGlyph>4-</fretGlyph></note>
-                    <note tab.course='4' tab.fret='2' /><fretGlyph>g</fretGlyph></note>
+                    <note tab.course='6' tab.fret='3' /><fretGlyph symbol="4" symbol.mod="strikethrough" /></note>
+                    <note tab.course='4' tab.fret='2' /><fretGlyph symbol="g" /></note>
                   </tabGrp>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='5' tab.fret='3' /><fretGlyph>l</fretGlyph></note>
+                    <note tab.course='5' tab.fret='3' /><fretGlyph symbol="l" /></note>
                   </tabGrp>
                 </layer>
               </staff>
@@ -142,32 +142,32 @@
                 <layer n='1'>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='5' tab.fret='2' /><fretGlyph>f</fretGlyph></note>
-                    <note tab.course='3' tab.fret='0' /><fretGlyph>3</fretGlyph></note>
+                    <note tab.course='5' tab.fret='2' /><fretGlyph symbol="f" /></note>
+                    <note tab.course='3' tab.fret='0' /><fretGlyph symbol="3" /></note>
                   </tabGrp>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='5' tab.fret='0' /><fretGlyph>1</fretGlyph></note>
+                    <note tab.course='5' tab.fret='0' /><fretGlyph symbol="1" /></note>
                   </tabGrp>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='3' tab.fret='0' /><fretGlyph>3</fretGlyph></note>
+                    <note tab.course='3' tab.fret='0' /><fretGlyph symbol="3" /></note>
                   </tabGrp>
                   <tabGrp dur='16'>
                     <tabRhythm />
-                    <note tab.course='5' tab.fret='2' /><fretGlyph>f</fretGlyph></note>
+                    <note tab.course='5' tab.fret='2' /><fretGlyph symbol="f" /></note>
                   </tabGrp>
                   <tabGrp dur='16'>
                     <tabRhythm />
-                    <note tab.course='5' tab.fret='0' /><fretGlyph>1</fretGlyph></note>
+                    <note tab.course='5' tab.fret='0' /><fretGlyph symbol="1" /></note>
                   </tabGrp>
                   <tabGrp dur='16'>
                     <tabRhythm />
-                    <note tab.course='6' tab.fret='3' /><fretGlyph>4-</fretGlyph></note>
+                    <note tab.course='6' tab.fret='3' /><fretGlyph symbol="4" symbol.mod="strikethrough" /></note>
                   </tabGrp>
                   <tabGrp dur='16'>
                     <tabRhythm />
-                    <note tab.course='6' tab.fret='2' /><fretGlyph>3-</fretGlyph></note>
+                    <note tab.course='6' tab.fret='2' /><fretGlyph symbol="3" symbol.mod="strikethrough" /></note>
                   </tabGrp>
                 </layer>
               </staff>
@@ -177,21 +177,21 @@
                 <layer n='1'>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='6' tab.fret='0' /><fretGlyph>1-</fretGlyph></note>
-                    <note tab.course='3' tab.fret='1' tenuto='true' /><fretGlyph>c</fretGlyph></note>
+                    <note tab.course='6' tab.fret='0' /><fretGlyph symbol="1" symbol.mod="strikethrough" /></note>
+                    <note tab.course='3' tab.fret='1' tenuto='true' /><fretGlyph symbol="1" /></note>
                   </tabGrp>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='5' tab.fret='3' /><fretGlyph>l</fretGlyph></note>
+                    <note tab.course='5' tab.fret='3' /><fretGlyph symbol="l" /></note>
                   </tabGrp>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='5' tab.fret='2' /><fretGlyph>f</fretGlyph></note>
-                    <note tab.course='3' tab.fret='1' tenuto='true' /><fretGlyph>c</fretGlyph></note>
+                    <note tab.course='5' tab.fret='2' /><fretGlyph symbol="f" /></note>
+                    <note tab.course='3' tab.fret='1' tenuto='true' /><fretGlyph symbol="c" /></note>
                   </tabGrp>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='6' tab.fret='3' /><fretGlyph>4-</fretGlyph></note>
+                    <note tab.course='6' tab.fret='3' /><fretGlyph symbol="4" symbol.mod="strikethrough" /></note>
                   </tabGrp>
                 </layer>
               </staff>
@@ -201,25 +201,25 @@
                 <layer n='1'>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='5' tab.fret='0' /><fretGlyph>1</fretGlyph></note>
-                    <note tab.course='3' tab.fret='0' /><fretGlyph>3</fretGlyph></note>
+                    <note tab.course='5' tab.fret='0' /><fretGlyph symbol="1" /></note>
+                    <note tab.course='3' tab.fret='0' /><fretGlyph symbol="3" /></note>
                   </tabGrp>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='5' tab.fret='2' /><fretGlyph>f</fretGlyph></note>
+                    <note tab.course='5' tab.fret='2' /><fretGlyph symbol="f" /></note>
                   </tabGrp>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='5' tab.fret='3' /><fretGlyph>l</fretGlyph></note>
-                    <note tab.course='4' tab.fret='2' /><fretGlyph>g</fretGlyph></note>
+                    <note tab.course='5' tab.fret='3' /><fretGlyph symbol="l" /></note>
+                    <note tab.course='4' tab.fret='2' /><fretGlyph symbol="g" /></note>
                   </tabGrp>
                   <tabGrp dur='8'>
                     <tabRhythm />
-                    <note tab.course='3' tab.fret='1' /><fretGlyph>c</fretGlyph></note>
+                    <note tab.course='3' tab.fret='1' /><fretGlyph symbol="c" /></note>
                   </tabGrp>
                   <tabGrp dur='8'>
                     <tabRhythm />
-                    <note tab.course='5' tab.fret='2' /><fretGlyph>f</fretGlyph></note>
+                    <note tab.course='5' tab.fret='2' /><fretGlyph symbol="f" />f</fretGlyph></note>
                   </tabGrp>
                 </layer>
               </staff>
@@ -229,22 +229,22 @@
                 <layer n='1'>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='5' tab.fret='0' /><fretGlyph>1</fretGlyph></note>
-                    <note tab.course='3' tab.fret='0' /><fretGlyph>3</fretGlyph></note>
+                    <note tab.course='5' tab.fret='0' /><fretGlyph symbol="1" /></note>
+                    <note tab.course='3' tab.fret='0' /><fretGlyph symbol="3" /></note>
                   </tabGrp>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='6' tab.fret='3' /><fretGlyph>4-</fretGlyph></note>
-                    <note tab.course='4' tab.fret='2' /><fretGlyph>g</fretGlyph></note>
+                    <note tab.course='6' tab.fret='3' /><fretGlyph symbol="4" symbol.mod="strikethrough" /></note>
+                    <note tab.course='4' tab.fret='2' /><fretGlyph symbol="g" /></note>
                   </tabGrp>
                   <tabGrp dur='4'>
                     <tabRhythm />
-                    <note tab.course='6' tab.fret='2' tenuto='true' /><fretGlyph>3-</fretGlyph></note>
+                    <note tab.course='6' tab.fret='2' tenuto='true' /><fretGlyph symbol="3" symbol.mod="strikethrough" /></note>
                   </tabGrp>
                   <sic> <!-- dur should be 4 -->
                     <tabGrp dur='2'> 
                       <tabRhythm />
-                      <note tab.course='4' tab.fret='1' /><fretGlyph>b</fretGlyph></note>
+                      <note tab.course='4' tab.fret='1' /><fretGlyph symbol="b" /></note>
                     </tabGrp>
                   </sic>
                 </layer>
