@@ -77,23 +77,6 @@ disambiguated.
 
 The tuning declaration should be placed in the staffDef element.
 
-## Notes
-The primary rhythm and pitch information in guitar and lute tablature
-is contained in vertically-aligned stacks of symbols. The main
-components of these stacks are rhythm symbols, which indicate the time
-gap between the current and the next stack, and fret/course symbols
-which indicate what, if anything, should be sounded.
-
-In ascii tab, rhythmic indications are usually omitted. In lute
-tablature, zero or one rhythmic indicator can appear in each stack.
-Some guitar tablatures support multiple rhythm signs.
-
-We use `<tabGrp>` to indicate such a stack. It is chord-like in
-behaviour, and normally takes `@dur.ges` to indicate what the
-effective duration of that stack is (that is, the
- inter-onset-interval between this and the next stack, not the
- duration of members of the chord).
-
 ## Declarations
 `@notationType` in `<staffDef>` is used to specify the tablature type.
 Permitted values are:
@@ -116,6 +99,23 @@ notation not the instrument – other instruments also use these notations.
 
 **This replaces the existing `tab` value for this attribute (which
 would probably map to `tab.guitar` here).**
+
+## Notes
+The primary rhythm and pitch information in guitar and lute tablature
+is contained in vertically-aligned stacks of symbols. The main
+components of these stacks are rhythm symbols, which indicate the time
+gap between the current and the next stack, and fret/course symbols
+which indicate what, if anything, should be sounded.
+
+In ascii tab, rhythmic indications are usually omitted. In lute
+tablature, zero or one rhythmic indicator can appear in each stack.
+Some guitar tablatures support multiple rhythm signs.
+
+We use `<tabGrp>` to indicate such a stack. It is chord-like in
+behaviour, and normally takes `@dur.ges` to indicate what the
+effective duration of that stack is (that is, the
+ inter-onset-interval between this and the next stack, not the
+ duration of members of the chord).
 
 ### Fret/course symbols
 A `<note>` in lute and guitar tablature indicates (by different
