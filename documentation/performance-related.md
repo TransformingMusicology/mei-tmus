@@ -1,4 +1,11 @@
 # Performance-related notations
+
+## Slides
+
+Slides are to be encoded with the `<gliss>` element. The element has a tablature specific attribute `@slide` with possible values `legato` and `shift`.
+
+`@slide.to` and `@slide.from` attributes can take values `upwards` and `downwards` for slides with only on note (e.g., with only `@stardid`)
+
 ## Fingerings
 
 
