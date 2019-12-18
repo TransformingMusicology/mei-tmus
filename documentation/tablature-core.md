@@ -1,33 +1,10 @@
 # Tablature documentation
 *EARLY DRAFT*
- * [Declarations](#Declarations)
  * [Tuning and instrumental setup](#Tuning-and-instrumental-setup)
+ * [Declarations](#Declarations)
  * [Notes](#Notes)
    * [Fret/Course symbols](#Fret/course-symbols)
    * [Rhythm flags for lute tablatures](#Rhythm-flags-for-lute-tablatures)
-## Declarations
-`@notationType` in `<staffDef>` is used to specify the tablature type.
-Permitted values are:
- * tab.lute.french
-   * letters for frets
-   * courses closest to the ground when playing are at the top of the stave
- * tab.lute.italian
-   * numbers for frets
-   * courses closest to the ground when playing are at the bottom of the stave
- * tab.lute.german
-   * No staff lines, although vertical position may imply voicing
-   * Symbols (based on letters) for fret *and* course
- * tab.guitar
-   * numbers for frets
-   * courses closest to the ground when playing are at the top of the stave
-
-Organ and other instrumental tablatures would be expected to be added
-as needed. The names ‘lute’ and ‘guitar’ in these are the names of the
-notation not the instrument – other instruments also use these notations.
-
-**This replaces the existing `tab` value for this attribute (which
-would probably map to `tab.guitar` here).**
-
 ## Tuning and instrumental setup
 Guitar-like instruments can be described in terms of the number of
 strings they have, but often the strings are grouped and notated as if those
@@ -98,7 +75,7 @@ In the (rare) cases where strings are indicated as being sounded separately
 within a course, `@n` may be used on `<string>` to allow them to be
 disambiguated.
 
-**Where does this attach to the mei structure? staffDef?**
+The tuning declaration should be placed in the staffDef element.
 
 ## Notes
 The primary rhythm and pitch information in guitar and lute tablature
@@ -116,6 +93,29 @@ behaviour, and normally takes `@dur.ges` to indicate what the
 effective duration of that stack is (that is, the
  inter-onset-interval between this and the next stack, not the
  duration of members of the chord).
+
+## Declarations
+`@notationType` in `<staffDef>` is used to specify the tablature type.
+Permitted values are:
+ * tab.lute.french
+   * letters for frets
+   * courses closest to the ground when playing are at the top of the stave
+ * tab.lute.italian
+   * numbers for frets
+   * courses closest to the ground when playing are at the bottom of the stave
+ * tab.lute.german
+   * No staff lines, although vertical position may imply voicing
+   * Symbols (based on letters) for fret *and* course
+ * tab.guitar
+   * numbers for frets
+   * courses closest to the ground when playing are at the top of the stave
+
+Organ and other instrumental tablatures would be expected to be added
+as needed. The names ‘lute’ and ‘guitar’ in these are the names of the
+notation not the instrument – other instruments also use these notations.
+
+**This replaces the existing `tab` value for this attribute (which
+would probably map to `tab.guitar` here).**
 
 ### Fret/course symbols
 A `<note>` in lute and guitar tablature indicates (by different
