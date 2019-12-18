@@ -21,7 +21,8 @@ Hammer on and pull off are notated in a similar way – a slur over notes on the
 
 ### Bends
 Much of the core semantics of bends can be provided by `<bend>`. Currently, notes participating in a bend have explicit pitch. This is not the case in guitar tablature bends, where displacement from non-bent pitch must be specified. 
-**All notes that participate in a bend (apart from the first) must have `@bend.startid` to point to the first (pitched) note that is included in the bend gesture. Those subsequent notes must not provide differing `@tab.course` or `@tab.fret` information. **
+
+**All notes that participate in a bend (apart from the first) must have `@bend.startid` to point to the first (pitched) note that is included in the bend gesture. Those subsequent notes must not provide differing `@tab.course` or `@tab.fret` information.**
 
 Bend displacements (`@dis`) are specified in number of semitones, and the textual content of the element indicates how the bend is specified in the source.
 
