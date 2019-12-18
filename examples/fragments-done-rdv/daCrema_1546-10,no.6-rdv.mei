@@ -134,17 +134,17 @@
                   </tabGrp>
                   <tabGrp dur='16'>
                     <note xml:id='tn-2a79fae4-fa3c-11e4-99eb-0021ccd2abe3' tab.course='5' tab.fret='0'/>
-                    <fing playingHand='right' playingFinger='1' startid='tn-2a79fae4-fa3c-11e4-99eb-0021ccd2abe3'/>
                   </tabGrp>
                   <tabGrp dur='16'>
                     <note tab.course='6' tab.fret='3'/>
                   </tabGrp>
                   <tabGrp dur='16'>
                     <note xml:id='tn-4311232e-fa4c-11e4-ad0e-0021ccd2abe3' tab.course='6' tab.fret='2'/>
-                    <fing playingHand='right' playingFinger='1' startid='tn-4311232e-fa4c-11e4-ad0e-0021ccd2abe3'/>
                   </tabGrp>
                 </layer>
               </staff>
+              <fing playingHand='right' playingFinger='1' startid='tn-2a79fae4-fa3c-11e4-99eb-0021ccd2abe3'/>
+              <fing playingHand='right' playingFinger='1' startid='tn-4311232e-fa4c-11e4-ad0e-0021ccd2abe3'/>
             </measure>
             <measure n='4'>
               <staff n='1'>
@@ -184,13 +184,13 @@
                   <tabGrp dur='8'>
                     <tabRhythm />
                     <note xml:id='tn-8e921736-fa83-11e4-9607-0021ccd2abe3' tab.course='3' tab.fret='1'/>
-                    <fing playingHand='right' playingFinger='1' startid='tn-8e921736-fa83-11e4-9607-0021ccd2abe3'/>
                   </tabGrp>
                   <tabGrp dur='8'>
                     <note tab.course='5' tab.fret='2'/>
                   </tabGrp>
                 </layer>
               </staff>
+              <fing playingHand='right' playingFinger='1' startid='tn-8e921736-fa83-11e4-9607-0021ccd2abe3'/>
             </measure>
             <measure n="6">
               <staff n="1">
@@ -277,10 +277,10 @@
                   </tabGrp>
                   <tabGrp xml:id="tc-702e06de-fa87-11e4-b2e8-0021ccd2abe3" dur="8">
                     <note xml:id="tn-810c7882-fa87-11e4-8065-0021ccd2abe3" tab.course="3" tab.fret="0"/>
-                    <fing playingHand="right" playingFinger="1" startid="tn-810c7882-fa87-11e4-8065-0021ccd2abe3"/>
                   </tabGrp>
                 </layer>
               </staff>
+              <fing playingHand="right" playingFinger="1" startid="tn-810c7882-fa87-11e4-8065-0021ccd2abe3"/>
             </measure>
           </section>
         </score>
