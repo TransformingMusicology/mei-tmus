@@ -11,7 +11,7 @@ strings they have, but often the strings are grouped and notated as if those
 groups were a single string. Examples include mandolins and 12-string guitars.
 To make this distinction explicit, we use the *string* exclusively to refer to
 physical strings. To refer to the notated version, which may consist of one or
-more physical strings, we use the historical term of *course*. Thus, both a
+more physical strings, we use the historical term, "*course*". Thus, both a
 6-string and a 12-string guitar are 6-course instruments.
 
 The course tuning for 6- and 12-string guitars are the same – so they can both
