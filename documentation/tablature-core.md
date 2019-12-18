@@ -132,7 +132,7 @@ German notation symbols or alternatives for frets above 9 in Italian tabs.
 
 ```
 <note tab.course="6" tab.fret="0">
-  <fretGlyph>1̄</fretGlyph>
+  <fretGlyph symbol="1" symbol.mod="strikethrough"/>
 </note>
 ```
 
