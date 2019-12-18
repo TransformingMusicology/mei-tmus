@@ -479,12 +479,12 @@
                     <tabGrp dur='8'>
                       <note tab.string='4' tab.fret='4' tie='i' />
                       <note tab.string='3' tab.fret='4' tie='i' />
-                      <note tab.string='2' tab.fret='5' pullOff='i' />
+                      <note tab.string='2' tab.fret='5' xml:id="panama-fragment-10-1-6" />
                     </tabGrp>
                     <tabGrp dur='8'>
                       <note tab.string='4' tab.fret='4' tie='t' />
                       <note tab.string='3' tab.fret='4' tie='t' />
-                      <note tab.string='2' tab.fret='4' pullOff='t' />
+                      <note tab.string='2' tab.fret='4' xml:id="panama-fragment-10-1-9" />
                     </tabGrp>
                     <tabGrp dur='8'>
                       <note tab.string='5' tab.fret='0' />
@@ -492,6 +492,7 @@
                   </beam>  
                 </layer>
               </staff>
+              <tabLegato startid="panama-fragment-10-1-6" endid="panama-fragment-10-1-9" symbols="true" />
             </measure>
 
             <measure n='11'>
