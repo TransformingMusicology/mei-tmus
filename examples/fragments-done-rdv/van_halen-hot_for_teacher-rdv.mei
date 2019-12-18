@@ -86,17 +86,18 @@
                   <rest dur='8' />
                   <beam>
                     <tabGrp dur='8'>
-                      <note tab.string='1' tab.fret='12' tap='fing' pullOff='i' />
+                      <note tab.string='1' tab.fret='12' xml:id="hot-for-1-4" tap='fing' />
                     </tabGrp>
                     <tabGrp dur='8'>
-                      <note tab.string='1' tab.fret='5' pullOff='t i' />
+                      <note tab.string='1' tab.fret='5' xml:id="hot-for-1-5" />
                     </tabGrp>
                     <tabGrp dur='8'>
-                      <note tab.string='1' tab.fret='3' pullOff='t' />
+                      <note tab.string='1' tab.fret='3' xml:id="hot-for-1-6" />
                     </tabGrp>
                   </beam>
                 </layer>
               </staff>
+              <slur startid="#hot-for-1-4" endid="#hot-for-1-6" show.dirmark="true" />
             </measure>
             <measure n='2'>
               <staff n='1'>
