@@ -208,8 +208,8 @@
 
                 </layer>
               </staff>
-              <gliss startid="panama-fragment-3-1-1" 
-                     endid="panama-fragment-3-1-2" 
+              <gliss startid="#panama-fragment-3-1-1" 
+                     endid="#panama-fragment-3-1-2" 
                      slide="legato" /> 
             </measure>
 
@@ -492,7 +492,7 @@
                   </beam>  
                 </layer>
               </staff>
-              <tabLegato startid="panama-fragment-10-1-6" endid="panama-fragment-10-1-9" symbols="true" />
+              <tabLegato startid="#panama-fragment-10-1-6" endid="#panama-fragment-10-1-9" symbols="true" />
             </measure>
 
             <measure n='11'>
