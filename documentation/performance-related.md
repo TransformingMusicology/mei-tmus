@@ -13,7 +13,7 @@ Slides are to be encoded with the `<gliss>` element. The element has a tablature
 ### Legato techniques -- hammer on & pull off 
 
 Hammer on and pull off are notated in a similar way – a slur over notes on the same course. Additional letters (H and P respectively) may optionally indicate which is involved, but this can be deduced from the direction – `hammer on` is up the finger board, `pull off` is down.
-A new element  `<tabLegato>` indicates the set of notes covered, using `@startid` and `@endid`. The element can contain `<tabDirection>` subelements whose text content indicates the letters used. On
+A new element  `<tabLegato>` indicates the set of notes covered, using `@startid` and `@endid`. `@symbols` indicates whether letters are present. For more complex cases, the element can contain `<tabDirection>` subelements whose text content indicates the letters used.
 
 ### and tapping
 
