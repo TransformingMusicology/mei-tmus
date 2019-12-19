@@ -19,10 +19,15 @@ Hammer on and pull off are notated in a similar way – a slur over notes on the
 ### and tapping
 
 
-### Bends
+### Pitch inflection: bends and vibrato arm techniques 
+
+TODO: names 
+
 Much of the core semantics of bends can be provided by `<bend>`. Currently, notes participating in a bend have explicit pitch. This is not the case in guitar tablature bends, where displacement from non-bent pitch must be specified. 
 
-**All notes that participate in a bend (apart from the first) must have `@bend.startid` to point to the first (pitched) note that is included in the bend gesture. Those subsequent notes must not provide differing `@tab.course` or `@tab.fret` information.**
+Because bends and 'negative' bends (as achieved using the vibrato arm) follow the same principle (pitch displacement in either upward or downward direction), we introduce the `<pitchInflection>` element. 
+
+**All notes that participate in a bend (apart from the first) must have `@inflection.startid` to point to the first (pitched) note that is included in the bend gesture. Those subsequent notes must not provide differing `@tab.course` or `@tab.fret` information.**
 
 Bend displacements (`@dis`) are specified in number of semitones, and the textual content of the element indicates how the bend is specified in the source.
 
@@ -34,7 +39,7 @@ The simplest bends involve two explicit notes:
       <note tab.course="2" tab.fret="14" xml:id="note1" />
     </tabGrp>
     <tabGrp dur="16">
-      <note xml:id="note2" bend.startid="#note1"/>
+      <note xml:id="note2" inflection.startid="#note1"/>
     </tabGrp>
     <tie startid="#note1" endid="#note2" />
     <bend startid="#note1" endid="#note2" dis="2">Full</bend>
@@ -74,9 +79,8 @@ A release may involve an explicit (parenthetical) repeat of the fret symbol. `@s
     <bend startid="#note2" endid="#note3" dis="0" show.fret="true" show.fret.enclose="paren"/>
 ```
 
-
 ### Sounding/striking techniques
 
-### Tremolo bar techniques
+
 
 ### More-generic techniques
