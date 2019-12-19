@@ -79,6 +79,18 @@ A release may involve an explicit (parenthetical) repeat of the fret symbol. `@s
     <bend startid="#note2" endid="#note3" dis="0" show.fret="true" show.fret.enclose="paren"/>
 ```
 
+### Multi-note techniques
+
+#### Palm muting (P.M.) and Let ring
+
+We can use `<dir>`, which needs a new attribute `@technique`, and which will contain a semi-open list of techniques to choose from. The proposed value for this list are:
+
+* palm-muting
+* let-ring
+
+
+
+
 ### Sounding/striking techniques
 
 
