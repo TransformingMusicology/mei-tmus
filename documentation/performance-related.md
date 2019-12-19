@@ -110,4 +110,4 @@ See https://docs.google.com/document/d/1bi2G2mNB_3BLJa-frBLrJX7wBbkkSw9UrsOtixvM
 
 See also https://docs.google.com/document/d/1nln0yr5ZxkBeVf2A_e46xyblDXI4ud036nuTYNmT1n0/edit#
 
-## Fingerings
+## TODO Fingerings
