@@ -20,17 +20,17 @@ course tunings on their own, or string tunings as well.
 
 In the simplest cases, the tuning can be named from a controlled list of tuning
 types.
-```
+```xml
 <tuning tuning.standard="guitar.drop.D"/>
 ```
 or
-```
+```xml
 <tuning tuning.standard="lute.renaissance.6"/>
 ```
 If individual course tunings are to be named, `<tuning>` can take multiple
 `<course>` elements as children. For example, a standard classical guitar
 tuning could be specified like this:
-```
+```xml
 <tuning>
   <course n="1" pname="e" oct="4" />
   <course n="2" pname="b" oct="3" />
@@ -45,7 +45,7 @@ instrument can also be specified. The example is a common way to strings
 and tune a 6-course renaissance lute. The `course` pitch indicates how the
 resulting note would normally be transcribed in score, and would often be
 derived from the lowest sounding pitch.
-```
+```xml
 <tuning>
   <course n="1" pname="g" oct="4">
     <string pname="g" oct="4"/>
@@ -122,7 +122,7 @@ A `<note>` in lute and guitar tablature indicates (by different
 means) the fret and course being sounded. From this, and given a
 tuning, pitch can be calculated. We use `@tab.fret` and
 `@tab.course` to indicate this information:
-```
+```xml
 <note tab.course="2" tab.fret="3"/>
 ```
 In normal cases, this will be enough, given the `@notationType`. On
@@ -130,7 +130,7 @@ occasions where the symbol is not the expected one, it can be indicated using
 the new element `<fretGlyph>`. Likely examples of this might be variant
 German notation symbols or alternatives for frets above 9 in Italian tabs.
 
-```
+```xml
 <note tab.course="6" tab.fret="0">
   <fretGlyph symbol="1" symbol.mod="strikethrough"/>
 </note>
@@ -139,7 +139,7 @@ German notation symbols or alternatives for frets above 9 in Italian tabs.
 ### Rhythm flags for lute tablatures
 In lute tablatures, a rhythm indication may be present or absent in any
 given `<tabGrp>`.
-```
+```xml
 <tabGrp dur.ges="4">
   <tabRhythm />
   <note tab.course="2" tab.fret="3">
