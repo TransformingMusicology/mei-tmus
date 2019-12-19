@@ -88,8 +88,13 @@ We can use `<dir>`, which needs a new attribute `@technique`, and which will con
 * palm-muting
 * let-ring
 
+### Vibrato
 
+We distinguish between vibrato using the left hand or the (guitar) vibrato arm. We introduce a new element `<vibrato>`, which will be a regular control event plus an extra attribute `@wide=true`. The method of generating the vibrato is specified through a technique attribute `@technique` with a semi-open list of techniques to choose from. The proposed value for this list are:
 
+* left-hand
+* vibrato-arm
+* bend-neck
 
 ### Sounding/striking techniques
 
