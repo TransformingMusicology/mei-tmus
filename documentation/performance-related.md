@@ -87,6 +87,7 @@ We can use `<dir>`, which needs a new attribute `@technique`, and which will con
 * let-ring
 * tap-fing
 * tap-pick
+* rake
 
 ### Vibrato
 
