@@ -19,18 +19,15 @@ Hammer on and pull off are notated in a similar way – a slur over notes on the
 
 ### Pitch inflection: bends and vibrato arm techniques 
 
-TODO: names 
-
 Much of the core semantics of bends can be provided by `<bend>`. Currently, notes participating in a bend have explicit pitch. This is not the case in guitar tablature bends, where displacement from non-bent pitch must be specified. 
 
-Because bends and 'negative' bends (as achieved using the vibrato arm) follow the same principle (pitch displacement in either upward or downward direction), we introduce the `<pitchInflection>` element. 
+Because bends can be both upwards and downwards in pitch (the latter achieved using the vibrato arm), and because both follow the same principle (pitch displacement in either upward or downward direction), we introduce the `<pitchInflection>` element. 
 
 **All notes that participate in a bend (apart from the first) must have `@inflection.startid` to point to the first (pitched) note that is included in the bend gesture. Those subsequent notes must not provide differing `@tab.course` or `@tab.fret` information.**
 
-Bend displacements (`@dis`) are specified in number of semitones, and the textual content of the element indicates how the bend is specified in the source.
+Bend displacements (`@dis`) are specified in number of semitones, and the textual content of the element indicates how the bend is specified in the source. Negative displacements indicate vibrato arm bends.
 
 The simplest bends involve two explicit notes:
-
 #### Two-note, whole-tone bend
 ```
     <tabGrp dur="16">
@@ -40,7 +37,7 @@ The simplest bends involve two explicit notes:
       <note xml:id="note2" inflection.startid="#note1"/>
     </tabGrp>
     <tie startid="#note1" endid="#note2" />
-    <bend startid="#note1" endid="#note2" dis="2">Full</bend>
+    <pitchInflection startid="#note1" endid="#note2" dis="2">Full</pitchInflection>
 ```
 Grace-note bends can be shown with `@startid` and no `@endid`:
 #### Quick, unmeasured bend
@@ -48,7 +45,7 @@ Grace-note bends can be shown with `@startid` and no `@endid`:
     <tabGrp dur="16">
       <note tab.course="2" tab.fret="14" xml:id="note1" />
     </tabGrp>
-    <bend startid="#note1" dis="2">1</bend>
+    <pitchInflection startid="#note1" dis="2">1</pitchInflection>
 ```
 Prebends use another new attribute `@prebend`:
 #### Simple prebend
@@ -56,9 +53,9 @@ Prebends use another new attribute `@prebend`:
     <tabGrp dur="16">
       <note tab.course="2" tab.fret="14" xml:id="note1" />
     </tabGrp>
-    <bend startid="#note1" dis="1" prebend="true">1/2</bend>
+    <pitchInflection startid="#note1" dis="1" prebend="true">1/2</pitchInflection>
 ```
-A release may involve an explicit (parenthetical) repeat of the fret symbol. `@show.fret` may be provided on `bend`, which then refers back to the original fret symbol, or text content may be included if a different symbol is required.
+A release may involve an explicit (parenthetical) repeat of the fret symbol. `@show.fret` may be provided on `<pitchInflection>`, which then refers back to the original fret symbol, or text content may be included if a different symbol is required. In the case of a multi-note bend, the notes after the first must refer to the initial note of the bend using `@pitchInflection.startid`.   
 
 #### Two-note, whole-tone bend
 ```
@@ -66,16 +63,17 @@ A release may involve an explicit (parenthetical) repeat of the fret symbol. `@s
       <note tab.course="2" tab.fret="14" xml:id="note1" />
     </tabGrp>
     <tabGrp dur="16">
-      <note xml:id="note2" bend.startid="#note1"/>
+      <note xml:id="note2" pitchInflection.startid="#note1"/>
     </tabGrp>
     <tabGrp dur="16">
-      <note xml:id="note3" bend.startid="#note1"/>
+      <note xml:id="note3" pitchInflection.startid="#note1"/>
     </tabGrp>
     <tie startid="#note1" endid="#note2" />
     <tie startid="#note2" endid="#note3" />
-    <bend startid="#note1" endid="#note2" dis="2">Full</bend>
-    <bend startid="#note2" endid="#note3" dis="0" show.fret="true" show.fret.enclose="paren"/>
+    <pitchInflection startid="#note1" endid="#note2" dis="2">Full</pitchInflection>
+    <pitchInflection startid="#note2" endid="#note3" dis="0" show.fret="true" show.fret.enclose="paren"/>
 ```
+TODO: add vibrato arm examples (downward pitch inflections)
 
 ### Miscellaneous performance techniques
 
