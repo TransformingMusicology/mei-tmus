@@ -96,6 +96,11 @@ We distinguish between vibrato using the left hand or the (guitar) vibrato arm. 
 * vibrato-arm
 * bend-neck
 
+
+### Muted strings
+
+Strings muted with the left hand (to achieve a percussive effect) can be indicated by means of the attribute `@tab.muted`. 
+
 ### Sounding/striking techniques
 
 
