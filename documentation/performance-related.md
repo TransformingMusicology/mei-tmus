@@ -7,7 +7,7 @@ Slides are to be encoded with the `<gliss>` element. The element has a tablature
 
 `@slide.to` and `@slide.from` attributes can take values `upwards` and `downwards` for slides with only one note (e.g., with only `@startid`)
 
-### Legato techniques -- hammer on & pull off 
+### Legato techniques: hammer on & pull off 
 
 Hammer on and pull off are notated in a similar way – a slur over notes on the same course. Additional letters (H and P respectively) may optionally indicate which is involved, but this can be deduced from the direction – `hammer on` is up the finger board, `pull off` is down.
 
@@ -100,8 +100,14 @@ We can use `<dir>`, which needs a new attribute `@technique`, which itself will 
 * tap-pick
 * rake
 
-### TODO
+#### TODO
 * pick slide
 * feedback?
+
+### TODO: harmonics, various performance
+
+See https://docs.google.com/document/d/1bi2G2mNB_3BLJa-frBLrJX7wBbkkSw9UrsOtixvMd38/edit#heading=h.s3cxvjo07bt1
+
+See also https://docs.google.com/document/d/1nln0yr5ZxkBeVf2A_e46xyblDXI4ud036nuTYNmT1n0/edit#
 
 ## Fingerings
