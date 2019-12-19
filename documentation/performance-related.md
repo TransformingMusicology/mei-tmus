@@ -79,7 +79,7 @@ TODO: add vibrato arm examples (downward pitch inflections)
 
 #### Various 
 
-We can use `<dir>`, which needs a new attribute `@technique`, and which will contain a semi-open list of techniques to choose from. The proposed value for this list are:
+We can use `<dir>`, which needs a new attribute `@technique`, which itself will contain a semi-open list of techniques to choose from. The proposed values for this list are:
 
 * palm-muting
 * let-ring
@@ -87,15 +87,15 @@ We can use `<dir>`, which needs a new attribute `@technique`, and which will con
 * tap-pick
 * rake
 
-### Vibrato
+#### Vibrato
 
-We distinguish between vibrato using the left hand or the (guitar) vibrato arm. We introduce a new element `<vibrato>`, which will be a regular control event plus an extra attribute `@wide=true`. The method of generating the vibrato is specified through a technique attribute `@technique` with a semi-open list of techniques to choose from. The proposed value for this list are:
+We distinguish between vibrato using the left hand or the (guitar) vibrato arm. We introduce a new element `<vibrato>`, which will be a regular control event plus an extra attribute `@wide=true`. The method of generating the vibrato is specified through an attribute `@technique`, containing a semi-open list of techniques to choose from. The proposed values for this list are:
 
 * left-hand
 * vibrato-arm
 * bend-neck
 
-### Muted strings
+#### Muted strings
 
 Strings muted with the left hand (to achieve a percussive effect) can be indicated by means of the attribute `@tab.muted`. 
 
