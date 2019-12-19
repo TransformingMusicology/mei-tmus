@@ -16,8 +16,6 @@ Hammer on and pull off are notated in a similar way – a slur over notes on the
 
 `<slur>` indicates the set of notes covered (see guidelines option 2 for meaning 'performance technique'), using `@startid` and `@endid`. `@show.dirmark` indicates whether letters are present. For more complex cases, the element can contain `<dirMark>` subelements whose text content indicates the letters used and whose startid *must* give the first note of the gesture.
 
-### and tapping
-
 
 ### Pitch inflection: bends and vibrato arm techniques 
 
@@ -79,14 +77,16 @@ A release may involve an explicit (parenthetical) repeat of the fret symbol. `@s
     <bend startid="#note2" endid="#note3" dis="0" show.fret="true" show.fret.enclose="paren"/>
 ```
 
-### Multi-note techniques
+### Miscellaneous performance techniques
 
-#### Palm muting (P.M.) and Let ring
+#### Various 
 
 We can use `<dir>`, which needs a new attribute `@technique`, and which will contain a semi-open list of techniques to choose from. The proposed value for this list are:
 
 * palm-muting
 * let-ring
+* tap-fing
+* tap-pick
 
 ### Vibrato
 
@@ -95,7 +95,6 @@ We distinguish between vibrato using the left hand or the (guitar) vibrato arm. 
 * left-hand
 * vibrato-arm
 * bend-neck
-
 
 ### Muted strings
 
