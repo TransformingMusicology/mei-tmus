@@ -29,7 +29,7 @@ Bend displacements (`@dis`) are specified in number of semitones, and the textua
 The simplest bends involve two explicit notes:
 
 #### Two-note, whole-tone bend
-```
+```xml
     <tabGrp dur="16">
       <note tab.course="2" tab.fret="14" xml:id="note1" />
     </tabGrp>
@@ -41,7 +41,7 @@ The simplest bends involve two explicit notes:
 ```
 Grace-note bends can be shown with `@startid` and no `@endid`:
 #### Quick, unmeasured bend
-```
+```xml
     <tabGrp dur="16">
       <note tab.course="2" tab.fret="14" xml:id="note1" />
     </tabGrp>
@@ -49,7 +49,7 @@ Grace-note bends can be shown with `@startid` and no `@endid`:
 ```
 Prebends use another new attribute `@prebend`:
 #### Simple prebend
-```
+```xml
     <tabGrp dur="16">
       <note tab.course="2" tab.fret="14" xml:id="note1" />
     </tabGrp>
@@ -58,7 +58,7 @@ Prebends use another new attribute `@prebend`:
 A release may involve an explicit (parenthetical) repeat of the fret symbol. `@show.fret` may be provided on `bend`, which then refers back to the original fret symbol, or text content may be included if a different symbol is required.
 
 #### Two-note, whole-tone bend
-```
+```xml
     <tabGrp dur="16">
       <note tab.course="2" tab.fret="14" xml:id="note1" />
     </tabGrp>
