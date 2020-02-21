@@ -88,10 +88,10 @@
                       <note tab.string='2' tab.fret='9' />
                     </tabGrp>
                     <tabGrp dur='8'>
-                      <note tab.string='5' tab.fret='7' />
+                      <note tab.string='5' tab.fret='7' xml:id='note1' />
                     </tabGrp>
                     <tabGrp dur='8'>
-                      <note tab.string='5' tab.fret='7' />
+                      <note tab.string='5' tab.fret='7' xml:id='note2'/>
                     </tabGrp>
                   </beam>
                   
@@ -116,6 +116,8 @@
                 
                 </layer>
               </staff>
+              <dir technique='palm-muting' startid='#note1' endid='#note2'>P.M.</dir>
+
             </measure>
 
             <measure n='2'>
