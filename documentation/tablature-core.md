@@ -156,9 +156,9 @@ editorial markup should be used to add a tabRhythm (replaces **rhythmGlyph**).
 Where a rhythm indicator is the only element of `<tabGrp>`, the result has the
 same effect as a rest in CMN.
 
-Given the presence of a rhythmGlyph, the form can be inferred from '@dur' or
+Given the presence of a tabRhythm, the form can be inferred from '@dur' or
 '@dur.ges' (*which?*) on `<tabGrp>`. Where the editor wishes to specify the
-form of the rhythmGlyph, the following attributes can be used:
+form of the tabRhythm, the following attributes can be used:
 
 att | description
 ---|---

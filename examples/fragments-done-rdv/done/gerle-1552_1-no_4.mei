@@ -103,8 +103,8 @@
                       <fretGlyph symbol='g'/>
                     </note>
                   </tabGrp>
-                  <tabGrp xml:id='' dur.ges='4' dots='1'> 
-                    <tabRhythm xml:id=''/> <!-- rdv: the tabRhythm also contained dots='1' - should it? -->
+                  <tabGrp xml:id='' dur.ges='4' dots='1'> <!-- rdv: not sure if the dots='1' should go to the tabGrp, the tabRhathm, or both -->
+                    <tabRhythm xml:id=''/>
                     <note xml:id='' tab.course='4' tab.fret='2'>
                       <fretGlyph symbol='g'/>
                     </note>
