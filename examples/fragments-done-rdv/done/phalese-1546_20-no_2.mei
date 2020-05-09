@@ -60,7 +60,7 @@
   <music>
     <facsimile>
       <surface>
-        <graphic target='phalese-1546_20-no_2.png' />
+        <graphic target='phalese-1546_20-no_2.png'/>
       </surface>
     </facsimile>
     <body>
@@ -68,9 +68,9 @@
         <score>
           <scoreDef>
             <staffGrp>
-              <staffDef n='1' lines='6' notationtype='tab.lute.french'>
-                <tuning tuning.standard='lute.renaissance.6'/>
-                <mensur sign='C' slash='1'/> <!-- rdv: not sure if this is correct --> 
+              <staffDef n='1' lines='6' notationtype='tab.lute.french'> <!-- rdv: Phalèse uses a five-line staff -->
+                <tuning tuning.standard='lute.renaissance.6'/> 
+                <mensur sign='C' slash='1'/> <!-- rdv: I'm not sure if this is correct --> 
               </staffDef>
             </staffGrp>
           </scoreDef>
@@ -78,17 +78,17 @@
             <measure n='1'>
               <staff n='1'>
                 <layer n='1'>
-                  <tabGrp xml:id='' dur='2'>
+                  <tabGrp xml:id='' dur.ges='2'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='1' tab.fret='5'><fretGlyph>f</fretGlyph></note>
+                    <note xml:id='' tab.course='1' tab.fret='5'/>
                   </tabGrp>
-                  <tabGrp xml:id='' dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='1' tab.fret='7'><fretGlyph>h</fretGlyph></note>
+                    <note xml:id='' tab.course='1' tab.fret='7'/>
                   </tabGrp>
-                  <tabGrp xml:id='' dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='1' tab.fret='5'><fretGlyph>f</fretGlyph></note>
+                    <note xml:id='' tab.course='1' tab.fret='5'/>
                   </tabGrp>
                 </layer>
               </staff>
@@ -96,23 +96,23 @@
             <measure n='2'>
               <staff n='1'>
                 <layer n='1'>
-                  <tabGrp xml:id='' dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='2' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                    <note xml:id='' tab.course='2' tab.fret='3'/>
                   </tabGrp>
-                  <tabGrp xml:id='' dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='1' tab.fret='2'><fretGlyph>c</fretGlyph></note>
+                    <note xml:id='' tab.course='1' tab.fret='2'/>
                   </tabGrp>
-                  <tabGrp xml:id='' dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='2' tab.fret='5'><fretGlyph>f</fretGlyph></note>
-                    <note xml:id='' tab.course='1' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                    <note xml:id='' tab.course='2' tab.fret='5'/>
+                    <note xml:id='' tab.course='1' tab.fret='3'/>
                   </tabGrp>
-                  <tabGrp xml:id='' dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='2' tab.fret='3'><fretGlyph>d</fretGlyph></note>
-                    <note xml:id='' tab.course='1' tab.fret='5'><fretGlyph>f</fretGlyph></note>
+                    <note xml:id='' tab.course='2' tab.fret='3'/>
+                    <note xml:id='' tab.course='1' tab.fret='5'/>
                   </tabGrp>
                 </layer>
               </staff>
@@ -120,23 +120,23 @@
             <measure n='3'>
               <staff n='1'>
                 <layer n='1'>
-                  <tabGrp dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='1' tab.fret='7'><fretGlyph>h</fretGlyph></note>
+                    <note xml:id='' tab.course='1' tab.fret='7'/>
                   </tabGrp>
-                  <tabGrp xml:id='' dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='2' tab.fret='0'><fretGlyph>a</fretGlyph></note>
+                    <note xml:id='' tab.course='2' tab.fret='0'/>
                   </tabGrp>
-                  <tabGrp xml:id='' dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='2' tab.fret='2'><fretGlyph>c</fretGlyph></note>
-                    <note xml:id='' tab.course='1' tab.fret='5'><fretGlyph>f</fretGlyph></note>
+                    <note xml:id='' tab.course='2' tab.fret='2'/>
+                    <note xml:id='' tab.course='1' tab.fret='5'/>
                   </tabGrp>
-                  <tabGrp xml:id='' dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='2' tab.fret='3'><fretGlyph>d</fretGlyph></note>
-                    <note xml:id='' tab.course='1' tab.fret='2'><fretGlyph>c</fretGlyph></note>
+                    <note xml:id='' tab.course='2' tab.fret='3'/>
+                    <note xml:id='' tab.course='1' tab.fret='2'/>
                   </tabGrp>
                 </layer> 
               </staff>
@@ -144,30 +144,30 @@
             <measure n='4'>
               <staff n='1'>
                 <layer n='1'>
-                  <tabGrp xml:id=''dur='4'>
+                  <tabGrp xml:id=''dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='2' tab.fret='5'><fretGlyph>f</fretGlyph></note>
-                    <note xml:id='' tab.course='1' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                    <note xml:id='' tab.course='2' tab.fret='5'/>
+                    <note xml:id='' tab.course='1' tab.fret='3'/>
                   </tabGrp>
                   <beam>
-                    <tabGrp xml:id='' dur='8'>
+                    <tabGrp xml:id='' dur.ges='8'>
                       <tabRhythm xml:id=''/>
-                      <note xml:id='' tab.course='1' tab.fret='2'><fretGlyph>c</fretGlyph></note>
+                      <note xml:id='' tab.course='1' tab.fret='2'/>
                     </tabGrp>
-                    <tabGrp xml:id='' dur='8'>
+                    <tabGrp xml:id='' dur.ges='8'>
                       <tabRhythm xml:id=''/>
-                      <note xml:id='' tab.course='1' tab.fret='0'><fretGlyph>a</fretGlyph></note>
+                      <note xml:id='' tab.course='1' tab.fret='0'/>
                     </tabGrp>
                   </beam>
-                  <tabGrp xml:id='' dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='2' tab.fret='3'><fretGlyph>d</fretGlyph></note>
-                    <note xml:id='' tab.course='1' tab.fret='2'><fretGlyph>c</fretGlyph></note>
+                    <note xml:id='' tab.course='2' tab.fret='3'/>
+                    <note xml:id='' tab.course='1' tab.fret='2'/>
                   </tabGrp>
-                  <tabGrp xml:id='' dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='2' tab.fret='0'><fretGlyph>a</fretGlyph></note>
-                    <note xml:id='' tab.course='1' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                    <note xml:id='' tab.course='2' tab.fret='0'/>
+                    <note xml:id='' tab.course='1' tab.fret='3'/>
                   </tabGrp>
                 </layer>
               </staff>
@@ -175,34 +175,34 @@
             <measure n='5'>
               <staff n='1'>
                 <layer n='1'>
-                  <tabGrp xml:id='' dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='2' tab.fret='2'><fretGlyph>c</fretGlyph></note>
-                    <note xml:id='' tab.course='1' tab.fret='0'><fretGlyph>a</fretGlyph></note>
+                    <note xml:id='' tab.course='2' tab.fret='2'/>
+                    <note xml:id='' tab.course='1' tab.fret='0'/>
                   </tabGrp>
                   <beam>
-                    <tabGrp xml:id='' dur='8'>
+                    <tabGrp xml:id='' dur.ges='8'>
                       <tabRhythm xml:id=''/>
-                      <note xml:id='' tab.course='2' tab.fret='0'><fretGlyph>a</fretGlyph></note>
-                      <note xml:id='' tab.course='1' tab.fret='5'><fretGlyph>f</fretGlyph></note>
+                      <note xml:id='' tab.course='2' tab.fret='0'/>
+                      <note xml:id='' tab.course='1' tab.fret='5'/>
                     </tabGrp>
-                    <tabGrp xml:id='' dur='8'>
+                    <tabGrp xml:id='' dur.ges='8'>
                       <tabRhythm xml:id=''/>
-                      <note xml:id='' tab.course='3' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                      <note xml:id='' tab.course='3' tab.fret='3'/>
                     </tabGrp>
-                    <tabGrp xml:id='' dur='8'>
+                    <tabGrp xml:id='' dur.ges='8'>
                       <tabRhythm xml:id=''/>
-                      <note xml:id='' tab.course='2' tab.fret='0'><fretGlyph>a</fretGlyph></note>
+                      <note xml:id='' tab.course='2' tab.fret='0'/>
                     </tabGrp>
-                    <tabGrp xml:id='' dur='8'>
+                    <tabGrp xml:id='' dur.ges='8'>
                       <tabRhythm xml:id=''/>
-                      <note xml:id='' tab.course='1' tab.fret='3'><fretGlyph>d</fretGlyph></note>
+                      <note xml:id='' tab.course='1' tab.fret='3'/>
                     </tabGrp>
                   </beam>
-                  <tabGrp xml:id='' dur='4'>
+                  <tabGrp xml:id='' dur.ges='4'>
                     <tabRhythm xml:id=''/>
-                    <note xml:id='' tab.course='2' tab.fret='2'><fretGlyph>c</fretGlyph></note>
-                    <note xml:id='' tab.course='1' tab.fret='0'><fretGlyph>a</fretGlyph></note>
+                    <note xml:id='' tab.course='2' tab.fret='2'/>
+                    <note xml:id='' tab.course='1' tab.fret='0'/>
                   </tabGrp>
                 </layer>
               </staff>

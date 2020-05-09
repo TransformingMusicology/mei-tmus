@@ -160,7 +160,7 @@ Given the presence of a rhythmGlyph, the form can be inferred from '@dur' or
 '@dur.ges' (*which?*) on `<tabGrp>`. Where the editor wishes to specify the
 form of the rhythmGlyph, the following attributes can be used:
 
-att | descripiton
+att | description
 ---|---
  `symbol` | The duration symbol.
 `head` | Indicates whether the rhythm sign has a note head and if so, what shape.
