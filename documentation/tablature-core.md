@@ -78,7 +78,7 @@ disambiguated.
 The tuning declaration should be placed in the staffDef element.
 
 ## Declarations
-`@notationType` in `<staffDef>` is used to specify the tablature type.
+`@notationtype` in `<staffDef>` is used to specify the tablature type.
 Permitted values are:
  * tab.lute.french
    * letters for frets
@@ -125,7 +125,7 @@ tuning, pitch can be calculated. We use `@tab.fret` and
 ```xml
 <note tab.course="2" tab.fret="3"/>
 ```
-In normal cases, this will be enough, given the `@notationType`. On
+In normal cases, this will be enough, given the `@notationtype`. On
 occasions where the symbol is not the expected one, it can be indicated using
 the new element `<fretGlyph>`. Likely examples of this might be variant
 German notation symbols or alternatives for frets above 9 in Italian tabs.
