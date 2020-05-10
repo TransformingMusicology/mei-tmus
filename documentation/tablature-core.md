@@ -1,7 +1,7 @@
 # Tablature documentation
 *EARLY DRAFT*
  * [Tuning and instrumental setup](#Tuning-and-instrumental-setup)
- * [Declarations](#Declarations)
+ * [Tablature types](#Tablature-types)
  * [Notes](#Notes)
    * [Fret/Course symbols](#Fret/course-symbols)
    * [Rhythm flags for lute tablatures](#Rhythm-flags-for-lute-tablatures)
