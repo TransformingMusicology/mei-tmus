@@ -68,7 +68,7 @@
         <score>
           <scoreDef>
             <staffGrp>
-              <staffDef n='1' lines='6' notationtype='tab.lute.french'> <!-- rdv: Phalèse uses a five-line staff -->
+              <staffDef xml:id='' n='1' lines='6' notationtype='tab.lute.french'> <!-- rdv: Phalèse uses a five-line staff -->
                 <tuning tuning.standard='lute.renaissance.6'/> 
                 <mensur sign='C' slash='1'/> <!-- rdv: I'm not sure if this is correct --> 
               </staffDef>

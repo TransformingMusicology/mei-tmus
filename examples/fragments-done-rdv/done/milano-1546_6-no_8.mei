@@ -68,7 +68,7 @@
         <score>
           <scoreDef>
             <staffGrp>
-              <staffDef n='1' lines='6' notationtype='tab.lute.italian'>
+              <staffDef xml:id='' n='1' lines='6' notationtype='tab.lute.italian'>
                 <tuning tuning.standard='lute.renaissance.6'/>
               </staffDef>
             </staffGrp>
