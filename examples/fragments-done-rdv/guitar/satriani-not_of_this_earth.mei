@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mei xmlns='http://www.music-encoding.org/ns/mei' meiversion='3.0.0'>
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title></title>
+      </titleStmt>
+      <pubStmt>
+        <respStmt>
+          <persName></persName>
+          <resp></resp>
+          <resp></resp>
+        </respStmt>
+      </pubStmt>
+      <sourceDesc>
+        <source>
+          <titleStmt>
+            <title></title>
+          </titleStmt>
+          <pubStmt>
+            <pubPlace></pubPlace>
+            <respStmt>
+              <persName></persName>
+              <resp></resp>
+            </respStmt>
+            <respStmt>
+              <persName></persName>
+              <resp></resp>
+            </respStmt>
+            <date></date>
+          </pubStmt>
+          <physDesc>
+            <physMedium></physMedium>
+            <dimensions></dimensions>
+          </physDesc>
+          <physLoc>
+            <provenance>
+              <repository>
+                <name></name>
+                <identifier></identifier>
+              </repository>
+            </provenance>
+          </physLoc>
+        </source>
+      </sourceDesc>
+    </fileDesc>
+    <workDesc>
+      <work>
+        <titleStmt>
+          <title></title>
+          <composer>
+            <name>
+              <persName></persName>
+            </name>
+          </composer>
+        </titleStmt>
+      </work>
+    </workDesc>
+  </meiHead>
+  <music>
+    <facsimile>
+      <surface>
+        <graphic/>
+      </surface>
+    </facsimile>
+    <body>
+      <mdiv n='1'>
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef n='1' lines='6' notationtype='tab.guitar' xml:id=''>
+                <tuning tuning.standard='guitar' xml:id=''/>
+              </staffDef>
+            </staffGrp>
+          </scoreDef>
+          <section n='1'>
+            <measure n='1'>
+              <staff n='1'>
+                <layer n='1'>
+                  <!-- omitted from encoding -->
+                </layer>
+              </staff>
+            </measure>
+            <measure n='2'>
+              <staff n='1'>
+                <layer n='1'>
+                  <!-- rdv: tab.fret values deduced from the CMN staff above -->
+                  <tabGrp dur='4' xml:id=''>
+                    <note tab.course='1' tab.fret='12' tab.muted='true' xml:id='m2.n1'/>
+                  </tabGrp>
+                  <tabGrp dur='4' xml:id=''>
+                    <note tab.course='2' tab.fret='13' tab.muted='true' xml:id='m2.n2'/>
+                  </tabGrp>
+                  <tabGrp dur='8' xml:id=''>
+                    <note tab.course='3' tab.fret='16' tab.muted='true' xml:id='m2.n3'/>
+                  </tabGrp>
+                  <tabGrp dur='4' xml:id=''>
+                    <note tab.course='4' tab.fret='16' tab.muted='true' xml:id='m2.n4'/>
+                  </tabGrp>
+                  <tabGrp dur='8' xml:id=''>
+                    <note tab.course='5' tab.fret='19' tab.muted='true' xml:id='m2.n5'/>
+                  </tabGrp>
+                </layer>
+              </staff>
+              <!-- all five notes below are slid using the LH hammering/RH tapping finger. wrapping <gliss> in <slur>/<dir> should reflect that -->
+              <!-- all <slur> notes below have no @endid because they are single-note hammer-ons; in these cases, dirmark must be 'H' by default -->
+              <slur startid='m2.n1' show.dirmark='true' xml:id=''>
+                <gliss startid='m2.n1' slide.from='upwards' show.dirmark='true' xml:id=''/>
+              </slur>
+              <!-- rdv: not sure if the indication of the 'T' (for 'tap') is done correctly here -->
+              <dir technique='tap-fing' startid='m2.n2' xml:id=''>
+                T<gliss startid='m2.n2' slide.from='upwards' show.dirmark='true' xml:id=''/>
+              </dir>
+              <slur startid='m2.n3' show.dirmark='true' xml:id=''>
+                <gliss startid='m2.n3' slide.from='upwards' show.dirmark='true' xml:id=''/>
+              </slur>
+              <dir technique='tap-fing' startid='m2.n4' xml:id=''>
+                T<gliss startid='m2.n4' slide.from='upwards' show.dirmark='true' xml:id=''/>
+              </dir>
+              <slur startid='m2.n5' show.dirmark='true' xml:id=''>
+                <gliss startid='m2.n5' slide.from='downwards' show.dirmark='true' xml:id=''/>
+              </slur>
+            </measure>
+            <measure n='3'>
+              <staff n='1'>
+                <layer n='1'>
+                  <beam xml:id=''>
+                    <tabGrp dur='8' dot='1' xml:id=''>
+                      <note tab.course='3' tab.fret='8' xml:id='m3.n1'/>
+                    </tabGrp>
+                    <tabGrp dur='16' xml:id=''>
+                      <note tab.course='3' tab.fret='9' xml:id='m3.n2'/>
+                    </tabGrp>
+                  </beam>
+                  <!-- rdv: is this how we would do a rest? -->
+                  <tabGrp dur='8' xml:id=''/>
+                  <tabGrp dur='8' xml:id=''>
+                    <note tab.course='3' tab.fret='11' xml:id='m3.n3'/>
+                  </tabGrp>
+                  <tabGrp dur='4' xml:id=''>
+                    <note tab.course='3' tab.fret='9' tie='i' xml:id='m3.n4'/>
+                  </tabGrp>
+                  <tabGrp dur='4' xml:id=''>
+                    <note tab.course='3' tab.fret='9' tie='t' xml:id='m3.n5'/>
+                  </tabGrp>
+                </layer>
+              </staff>
+              <gliss startid='m3.n3' slide.to='upwards' show.dirmark='true' xml:id=''/>
+              <vibrato startid='m3.n5' technique='vibrato-arm' show.dirmark='true' xml:id=''/>
+            </measure>
+            <measure n='4'>
+              <staff n='1'>
+                <layer n='1'>
+                  <beam xml:id=''>
+                    <tabGrp dur='8' dot='1' xml:id=''>
+                      <note tab.course='2' tab.fret='7' xml:id='m4.n1'/>
+                    </tabGrp>
+                    <tabGrp dur='16' xml:id=''>
+                      <note tab.course='2' tab.fret='8' xml:id='m4.n2'/>
+                    </tabGrp>
+                  </beam>
+                  <!-- rdv: is this how we would do a rest? -->
+                  <tabGrp dur='8' xml:id=''/>
+                  <tabGrp dur='8' xml:id=''>
+                    <note tab.course='2' tab.fret='10' xml:id='m4.n3'/>
+                  </tabGrp>
+                  <tabGrp dur='4' xml:id=''>
+                    <note tab.course='2' tab.fret='8' tie='i' xml:id='m4.n4'/>
+                  </tabGrp>
+                  <tabGrp dur='4' xml:id=''>
+                    <note tab.course='2' tab.fret='8' tie='t' xml:id='m4.n5'/>
+                  </tabGrp>
+                </layer>
+              </staff>
+              <gliss startid='m4.n1' slide.to='downwards' show.dirmark='true' xml:id=''/>
+              <gliss startid='m4.n3' slide.to='upwards' show.dirmark='true' xml:id=''/>
+              <!-- rdv: note also has 'Fdbk.' (feedback) annotation -->
+              <vibrato startid='m5.n5' technique='vibrato-arm' show.dirmark='true' xml:id=''/>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>
