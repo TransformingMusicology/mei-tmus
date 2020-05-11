@@ -60,7 +60,7 @@
   <music>
     <facsimile>
       <surface>
-        <graphic target='milano-1546_6-no_8.png'/>
+        <graphic target='phalese-1546_20-no_2.png'/>
       </surface>
     </facsimile>
     <body>
@@ -68,8 +68,9 @@
         <score>
           <scoreDef>
             <staffGrp>
-              <staffDef n='1' lines='6' notationtype='tab.lute.italian' xml:id=''>
+              <staffDef n='1' lines='6' notationtype='tab.lute.french' xml:id=''>
                 <tuning tuning.standard='lute.renaissance.6' xml:id=''/>
+                <mensur sign='C' slash='1'/>
               </staffDef>
             </staffGrp>
           </scoreDef>
@@ -86,50 +87,54 @@
                     <note tab.course='1' tab.fret='7' xml:id='m1.n2'/>
                   </tabGrp>
                   <tabGrp dur.ges='4' xml:id=''>
+                    <tabRhythm xml:id=''/>
                     <note tab.course='1' tab.fret='5' xml:id='m1.n3'/>
                   </tabGrp>
                 </layer>
               </staff>
-              <fing playingHand='right' playingFinger='1' startid='m1.n3' xml:id=''/>
             </measure>
             <measure n='2'>
               <staff n='1'>
                 <layer n='1'>
                   <tabGrp dur.ges='4' xml:id=''>
+                    <tabRhythm xml:id=''/>
                     <note tab.course='2' tab.fret='3' xml:id='m2.n1'/>
                   </tabGrp>
                   <tabGrp dur.ges='4' xml:id=''>
+                    <tabRhythm xml:id=''/>
                     <note tab.course='1' tab.fret='2' xml:id='m2.n2'/>
                   </tabGrp>
                   <tabGrp dur.ges='4' xml:id=''>
+                    <tabRhythm xml:id=''/>
                     <note tab.course='2' tab.fret='5' xml:id='m2.n3'/>
                     <note tab.course='1' tab.fret='3' xml:id='m2.n4'/>
                   </tabGrp>
                   <tabGrp dur.ges='4' xml:id=''>
+                    <tabRhythm xml:id=''/>
                     <note tab.course='2' tab.fret='3' xml:id='m2.n5'/>
                     <note tab.course='1' tab.fret='5' xml:id='m2.n6'/>
                   </tabGrp>
                 </layer>
               </staff>
-              <fing playingHand='right' playingFinger='1' startid='m2.n2' xml:id=''/>
             </measure>
             <measure n='3'>
               <staff n='1'>
                 <layer n='1'>
                   <tabGrp dur.ges='4' xml:id=''>
+                    <tabRhythm xml:id=''/>
                     <note tab.course='1' tab.fret='7' xml:id='m3.n1'/>
                   </tabGrp>
                   <tabGrp dur.ges='4' xml:id=''>
+                    <tabRhythm xml:id=''/>
                     <note tab.course='2' tab.fret='0' xml:id='m3.n2'/>
                   </tabGrp>
                   <tabGrp dur.ges='4' xml:id=''>
-                    <!-- rdv: I think this should be tab.fret='2' -->
-                    <sic>
-                      <note tab.course='2' tab.fret='3' xml:id='m3.n3'/>
-                    </sic>
+                    <tabRhythm xml:id=''/>
+                    <note tab.course='2' tab.fret='2' xml:id='m3.n3'/>
                     <note tab.course='1' tab.fret='5' xml:id='m3.n4'/>
                   </tabGrp>
                   <tabGrp dur.ges='4' xml:id=''>
+                    <tabRhythm xml:id=''/>
                     <note tab.course='2' tab.fret='3' xml:id='m3.n5'/>
                     <note tab.course='1' tab.fret='2' xml:id='m3.n6'/>
                   </tabGrp>
@@ -140,53 +145,60 @@
               <staff n='1'>
                 <layer n='1'>
                   <tabGrp dur.ges='4' xml:id=''>
+                    <tabRhythm xml:id=''/>
                     <note tab.course='2' tab.fret='5' xml:id='m4.n1'/>
                     <note tab.course='1' tab.fret='3' xml:id='m4.n2'/>
                   </tabGrp>
-                  <tabGrp dur.ges='8' xml:id=''>
-                    <tabRhythm xml:id=''/>
-                    <note tab.course='1' tab.fret='2' xml:id='m4.n3'/>
-                  </tabGrp>
-                  <tabGrp dur.ges='8' xml:id=''>
-                    <note tab.course='1' tab.fret='0' xml:id='m4.n4'/>
-                  </tabGrp>
+                  <beam>
+                    <tabGrp dur.ges='8' xml:id=''>
+                      <tabRhythm xml:id=''/>
+                      <note tab.course='1' tab.fret='2' xml:id='m4.n3'/>
+                    </tabGrp>
+                    <tabGrp dur.ges='8' xml:id=''>
+                      <tabRhythm xml:id=''/>
+                      <note tab.course='1' tab.fret='0' xml:id='m4.n4'/>
+                    </tabGrp>
+                  </beam>
                   <tabGrp dur.ges='4' xml:id=''>
                     <tabRhythm xml:id=''/>
                     <note tab.course='2' tab.fret='3' xml:id='m4.n5'/>
                     <note tab.course='1' tab.fret='2' xml:id='m4.n6'/>
                   </tabGrp>
                   <tabGrp dur.ges='4' xml:id=''>
+                    <tabRhythm xml:id=''/>
                     <note tab.course='2' tab.fret='0' xml:id='m4.n7'/>
                     <note tab.course='1' tab.fret='3' xml:id='m4.n8'/>
                   </tabGrp>
                 </layer>
               </staff>
-              <fing playingHand='right' playingFinger='1' startid='m4.n4' xml:id=''/>
             </measure>
             <measure n='5'>
               <staff n='1'>
                 <layer n='1'>
                   <tabGrp dur.ges='4' xml:id=''>
+                    <tabRhythm xml:id=''/>
                     <note tab.course='2' tab.fret='2' xml:id='m5.n1'/>
                     <note tab.course='1' tab.fret='0' xml:id='m5.n2'/>
                   </tabGrp>
-                  <tabGrp dur.ges='8' xml:id=''>
-                    <tabRhythm xml:id=''/>
-                    <!-- rdv: should be tab.fret='0' -->
-                    <sic>
-                      <note tab.course='2' tab.fret='4' xml:id='m5.n3'/>
-                    </sic>
-                    <note tab.course='1' tab.fret='5' xml:id='m5.n4'/>
-                  </tabGrp>
-                  <tabGrp dur.ges='8' xml:id=''>
-                    <note tab.course='3' tab.fret='3' xml:id='m5.n5'/>
-                  </tabGrp>
-                  <tabGrp dur.ges='8' xml:id=''>
-                    <note tab.course='2' tab.fret='0' xml:id='m5.n6'/>
-                  </tabGrp>
-                  <tabGrp dur.ges='8' xml:id=''>
-                    <note tab.course='1' tab.fret='3' xml:id='m5.n7'/>
-                  </tabGrp>
+                  <beam>
+                    <tabGrp dur.ges='8' xml:id=''>
+                      <tabRhythm xml:id=''/>
+                      <note tab.course='2' tab.fret='0' xml:id='m5.n3'/>
+                      <note tab.course='1' tab.fret='5' xml:id='m5.n4'/>
+                    </tabGrp>
+                    <tabGrp dur.ges='8' xml:id=''>
+                      <tabRhythm xml:id=''/>
+                      <note tab.course='3' tab.fret='3' xml:id='m5.n5'/>
+                    </tabGrp>
+                    <tabGrp dur.ges='8' xml:id=''>
+                      <tabRhythm xml:id=''/>
+                      <note tab.course='2' tab.fret='0' xml:id='m5.n6'/>
+                    </tabGrp>
+                    <tabGrp dur.ges='8' xml:id=''>
+                      <tabRhythm xml:id=''/>
+                      <note tab.course='1' tab.fret='3' xml:id='m5.n7'/>
+                    </tabGrp>
+                  </beam>
                   <tabGrp dur.ges='4' xml:id=''>
                     <tabRhythm xml:id=''/>
                     <note tab.course='2' tab.fret='2' xml:id='m5.n8'/>
@@ -194,8 +206,6 @@
                   </tabGrp>
                 </layer>
               </staff>
-              <fing playingHand='right' playingFinger='1' startid='m5.n5' xml:id=''/>
-              <fing playingHand='right' playingFinger='1' startid='m5.n7' xml:id=''/>
             </measure>
           </section>
         </score>

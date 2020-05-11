@@ -47,10 +47,10 @@
     <workDesc>
       <work>
         <titleStmt>
-          <title></title>
+          <title>Ice 9</title>
           <composer>
             <name>
-              <persName></persName>
+              <persName>Joe Satriani</persName>
             </name>
           </composer>
         </titleStmt>
@@ -179,7 +179,6 @@
                       <note tab.course='3' tab.fret='8' xml:id='m1.n29'/>
                     </tabGrp>
                     <tabGrp dur='32' xml:id=''>
-                      <!-- rdv: tab.fret value deduced from the CMN staff above -->
                       <note tab.course='3' tab.fret='8' tab.muted='true' xml:id='m1.n30'/>
                     </tabGrp>
                     <tabGrp dur='32' xml:id=''>
@@ -194,7 +193,6 @@
                   </beam>
                 </layer>
               </staff>
-              <!-- rdv: n1-2 means 'two notes before this note' -->
               <slur startid='m1.n1-2' endid='m1.n1' show.dirmark='true' xml:id=''/>
               <gliss startid='m1.n1' endid='m1.n2' slide='legato' show.dirmark='true' xml:id=''/>
               <slur startid='m1.n2' endid='m1.n6' show.dirmark='true' xml:id=''>
@@ -209,7 +207,6 @@
               </slur>
               <slur startid='m1.n26' endid='m1.n27' show.dirmark='true' xml:id=''/>
               <gliss startid='m1.n30' endid='m1.n31' slide='shift' show.dirmark='true' xml:id=''/>
-              <!-- rdv: n33+2 means 'two notes after this note' -->
               <slur startid='m1.n32' endid='m1.n33+2' show.dirmark='true' xml:id=''/>
             </measure>
           </section>

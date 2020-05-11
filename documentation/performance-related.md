@@ -99,10 +99,10 @@ We can use `<dir>`, which needs a new attribute `@technique`, which itself will 
 * tap-fing
 * tap-pick
 * rake
+* feedback
 
 #### TODO
 * pick slide
-* feedback?
 
 ### TODO: harmonics, various performance
 

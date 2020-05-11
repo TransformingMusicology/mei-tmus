@@ -97,32 +97,48 @@
                   <tabGrp dur.ges='2' xml:id=''>
                     <tabRhythm xml:id=''/>
                     <note tab.course='6' tab.fret='0' xml:id='m1.n1'>
-                      <!-- rdv: actually not strikethrough, but line above (applies throughout this file) -->
                       <fretGlyph symbol='1' symbol.mod='strikethrough' xml:id=''/>
                     </note>
                     <note tab.course='4' tab.fret='2' xml:id='m1.n2'>
                       <fretGlyph symbol='g' xml:id=''/>
                     </note>
-                  </tabGrp>
-                  <!-- rdv: not sure if the dots='1' should go to the tabGrp, the tabRhythm, or both -->
-                  <tabGrp dur.ges='4' dots='1' xml:id=''>
-                    <tabRhythm xml:id=''/>
-                    <note tab.course='4' tab.fret='2' xml:id='m1.n3'>
-                      <fretGlyph symbol='g' xml:id=''/>
-                    </note>
-                  </tabGrp>
-                  <tabGrp dur.ges='8' xml:id=''>
-                    <tabRhythm xml:id=''/>
-                    <!-- rdv: should be in previous tabGrp (is that what the vertical line in the facsimile is for?) -->
+                  </tabGrp> 
+                  <choice>
                     <sic>
-                      <note tab.course='6' tab.fret='0' xml:id='m1.n4'>
-                        <fretGlyph symbol='1' symbol.mod='strikethrough' xml:id=''/>
-                      </note>
+                      <tabGrp dur.ges='4' dots='1' xml:id=''>
+                        <tabRhythm xml:id=''/>
+                        <note tab.course='4' tab.fret='2' xml:id='m1.n3'>
+                          <fretGlyph symbol='g' xml:id=''/>
+                        </note>
+                      </tabGrp>
+                      <tabGrp dur.ges='8' xml:id=''>
+                        <tabRhythm xml:id=''/>
+                        <note tab.course='6' tab.fret='0' xml:id='m1.n4'>
+                          <fretGlyph symbol='1' symbol.mod='strikethrough' xml:id=''/>
+                        </note>
+                        <note tab.course='6' tab.fret='2' xml:id='m1.n5'>
+                          <fretGlyph symbol='3' symbol.mod='strikethrough' xml:id=''/>
+                        </note>
+                      </tabGrp>
                     </sic>
-                    <note tab.course='6' tab.fret='2' xml:id='m1.n5'>
-                      <fretGlyph symbol='3' symbol.mod='strikethrough' xml:id=''/>
-                    </note>
-                  </tabGrp>
+                    <corr>
+                      <tabGrp dur.ges='4' dots='1' xml:id=''>
+                        <tabRhythm xml:id=''/>
+                        <note tab.course='6' tab.fret='0' xml:id='m1.n3'>
+                          <fretGlyph symbol='1' symbol.mod='strikethrough' xml:id=''/>
+                        </note>
+                        <note tab.course='4' tab.fret='2' xml:id='m1.n4'>
+                          <fretGlyph symbol='g' xml:id=''/>
+                        </note>
+                      </tabGrp>
+                      <tabGrp dur.ges='8' xml:id=''>
+                        <tabRhythm xml:id=''/>
+                        <note tab.course='6' tab.fret='2' xml:id='m1.n5'>
+                          <fretGlyph symbol='3' symbol.mod='strikethrough' xml:id=''/>
+                        </note>
+                      </tabGrp>
+                    </corr>
+                  </choice>
                 </layer>
               </staff>
             </measure>
@@ -221,7 +237,6 @@
                     <note tab.course='6' tab.fret='0' xml:id='m4.n1'>
                       <fretGlyph symbol='1' symbol.mod='strikethrough' xml:id=''/>
                     </note>
-                    <!-- rdv: how to indicate tenuto sign preceding the glyph? -->
                     <note tab.course='3' tab.fret='1' tenuto='true' xml:id='m4.n2'>
                       <fretGlyph symbol='c' xml:id='' />
                     </note>
@@ -237,7 +252,6 @@
                     <note tab.course='5' tab.fret='2' xml:id='m4.n4'>
                       <fretGlyph symbol='f' xml:id=''/>
                     </note>
-                    <!-- rdv: how to indicate tenuto sign preceding the glyph? -->
                     <note tab.course='3' tab.fret='1' tenuto='true' xml:id='m4.n5'>
                       <fretGlyph symbol='c' xml:id=''/>
                     </note>
@@ -316,20 +330,28 @@
                   </tabGrp>
                   <tabGrp dur.ges='4' xml:id=''>
                     <tabRhythm xml:id=''/>
-                    <!-- rdv: how to indicate tenuto sign preceding the glyph? -->
                     <note tab.course='6' tab.fret='2' tenuto='true' xml:id='m6.n5'>
                       <fretGlyph symbol='3' symbol.mod='strikethrough' xml:id=''/>
                     </note>
                   </tabGrp>
-                  <!-- rdv: should be dur.ges='4' -->
-                  <sic>
-                    <tabGrp dur.ges='2' xml:id=''>
-                      <tabRhythm xml:id=''/>
-                      <note tab.course='4' tab.fret='1' xml:id='m6.n6'>
-                        <fretGlyph symbol='b' xml:id=''/>
-                      </note>
-                    </tabGrp>
-                  </sic>
+                  <choice>
+                    <sic>
+                      <tabGrp dur.ges='2' xml:id=''>
+                        <tabRhythm xml:id=''/>
+                        <note tab.course='4' tab.fret='1' xml:id='m6.n6'>
+                          <fretGlyph symbol='b' xml:id=''/>
+                        </note>
+                      </tabGrp>
+                    </sic>
+                    <corr>
+                      <tabGrp dur.ges='4' xml:id=''>
+                        <tabRhythm xml:id=''/>
+                        <note tab.course='4' tab.fret='1' xml:id='m6.n6'>
+                          <fretGlyph symbol='b' xml:id=''/>
+                        </note>
+                      </tabGrp>
+                    </corr>
+                  </choice>
                 </layer>
               </staff>
             </measure>
