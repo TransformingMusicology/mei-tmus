@@ -167,7 +167,7 @@
               <slur startid='m2.n11' endid='m2.n14' show.dirmark='true'/>
               <slur startid='m2.n15' show.dirmark='true'/>
             </measure>
-            <measure n='3'>
+            <measure n='3' right='dbl'>
               <staff n='1'>
                 <layer n='1'>
                   <beam>
@@ -214,7 +214,7 @@
                       <note tab.course='5' tab.fret='0' tie='t' xml:id='m3.n12'/>
                     </tabGrp>
                     <tabGrp dur='8'>
-                      <note tab.course='3' tab.fret='4' xml:id='m3.n13'/>
+                      <note tab.course='3' tab.fret='4' tie='i' xml:id='m3.n13'/>
                     </tabGrp>
                   </beam>
                 </layer>
