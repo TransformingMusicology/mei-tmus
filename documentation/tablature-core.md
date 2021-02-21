@@ -1,7 +1,7 @@
 # Tablature documentation
 *EARLY DRAFT*
  * [Tuning and instrumental setup](#Tuning-and-instrumental-setup)
- * [Declarations](#Declarations)
+ * [Tablature types](#Tablature-types)
  * [Notes](#Notes)
    * [Fret/Course symbols](#Fret/course-symbols)
    * [Rhythm flags for lute tablatures](#Rhythm-flags-for-lute-tablatures)
@@ -32,16 +32,16 @@ If individual course tunings are to be named, `<tuning>` can take multiple
 tuning could be specified like this:
 ```xml
 <tuning>
-  <course n="1" pname="e" oct="4" />
-  <course n="2" pname="b" oct="3" />
-  <course n="3" pname="g" oct="3" />
-  <course n="4" pname="d" oct="3" />
-  <course n="5" pname="a" oct="2" />
-  <course n="6" pname="e" oct="2" />
+  <course n="1" pname="e" oct="4"/>
+  <course n="2" pname="b" oct="3"/>
+  <course n="3" pname="g" oct="3"/>
+  <course n="4" pname="d" oct="3"/>
+  <course n="5" pname="a" oct="2"/>
+  <course n="6" pname="e" oct="2"/>
 </tuning>
 ```
 Where the specific instrumental setup is important, the stringing of the
-instrument can also be specified. The example is a common way to strings
+instrument can also be specified. The example is a common way to string
 and tune a 6-course renaissance lute. The `course` pitch indicates how the
 resulting note would normally be transcribed in score, and would often be
 derived from the lowest sounding pitch.
@@ -51,23 +51,23 @@ derived from the lowest sounding pitch.
     <string pname="g" oct="4"/>
   </course>
   <course n="2" pname="d" oct="4">
-    <string pname="d" oct="4" />
+    <string pname="d" oct="4"/>
   </course>
   <course n="3" pname="a" oct="4">
-    <string pname="a" oct="4" />
-    <string pname="a" oct="4" />
+    <string pname="a" oct="4"/>
+    <string pname="a" oct="4"/>
   </course>
   <course n="4" pname="f" oct="3">
-    <string pname="f" oct="3" />
-    <string pname="f" oct="4" />
+    <string pname="f" oct="3"/>
+    <string pname="f" oct="4"/>
   </course>
   <course n="5" pname="c" oct="3">
-    <string pname="c" oct="4" />
-    <string pname="c" oct="3" />
+    <string pname="c" oct="4"/>
+    <string pname="c" oct="3"/>
   </course>
   <course n="6" pname="g" oct="2">
-    <string pname="g" oct="3" />
-    <string pname="g" oct="2" />
+    <string pname="g" oct="3"/>
+    <string pname="g" oct="2"/>
   </course>
 </tuning>
 ```
@@ -75,10 +75,10 @@ In the (rare) cases where strings are indicated as being sounded separately
 within a course, `@n` may be used on `<string>` to allow them to be
 disambiguated.
 
-The tuning declaration should be placed in the staffDef element.
+The tuning declaration should be placed in the `<staffDef>` element.
 
-## Declarations
-`@notationType` in `<staffDef>` is used to specify the tablature type.
+## Tablature types
+`@notationtype` in `<staffDef>` is used to specify the tablature type.
 Permitted values are:
  * tab.lute.french
    * letters for frets
@@ -88,34 +88,38 @@ Permitted values are:
    * courses closest to the ground when playing are at the bottom of the stave
  * tab.lute.german
    * No staff lines, although vertical position may imply voicing
-   * Symbols (based on letters) for fret *and* course
+   * Symbols (based on letters) for combinations of fret *and* course
  * tab.guitar
    * numbers for frets
    * courses closest to the ground when playing are at the top of the stave
 
 Organ and other instrumental tablatures would be expected to be added
 as needed. The names ‘lute’ and ‘guitar’ in these are the names of the
-notation not the instrument – other instruments also use these notations.
+notation, not the instrument – other instruments also use these notations.
 
 **This replaces the existing `tab` value for this attribute (which
 would probably map to `tab.guitar` here).**
 
+A `<staffDef>` with both tuning and tablature type specified could look like this:
+```xml
+<staffDef lines="6" notationtype="tab.lute.italian">
+  <tuning tuning.standard="lute.renaissance.6"/>
+</staffDef>
+```
+
 ## Notes
 The primary rhythm and pitch information in guitar and lute tablature
 is contained in vertically-aligned stacks of symbols. The main
-components of these stacks are rhythm symbols, which indicate the time
-gap between the current and the next stack, and fret/course symbols
+components of these stacks are rhythm symbols, which indicate the inter-onset time between the current and the next stack, and fret/course symbols
 which indicate what, if anything, should be sounded.
 
-In ascii tab, rhythmic indications are usually omitted. In lute
-tablature, zero or one rhythmic indicator can appear in each stack.
+In ASCII tab, rhythmic indications are usually omitted. In lute
+tablature, one rhythmic indicator or no rhythmic indicator (indicating that the duration is the same as that of the last rhythm indicator shown) can appear in each stack.
 Some guitar tablatures support multiple rhythm signs.
 
 We use `<tabGrp>` to indicate such a stack. It is chord-like in
 behaviour, and normally takes `@dur.ges` to indicate what the
-effective duration of that stack is (that is, the
- inter-onset-interval between this and the next stack, not the
- duration of members of the chord).
+effective (minimum) duration of that stack is (that is, the inter-onset interval between this and the next stack, not the duration of members of the chord).
 
 ### Fret/course symbols
 A `<note>` in lute and guitar tablature indicates (by different
@@ -125,7 +129,7 @@ tuning, pitch can be calculated. We use `@tab.fret` and
 ```xml
 <note tab.course="2" tab.fret="3"/>
 ```
-In normal cases, this will be enough, given the `@notationType`. On
+In normal cases, this will be enough, given the `@notationtype`. On
 occasions where the symbol is not the expected one, it can be indicated using
 the new element `<fretGlyph>`. Likely examples of this might be variant
 German notation symbols or alternatives for frets above 9 in Italian tabs.
@@ -138,10 +142,10 @@ German notation symbols or alternatives for frets above 9 in Italian tabs.
 
 ### Rhythm flags for lute tablatures
 In lute tablatures, a rhythm indication may be present or absent in any
-given `<tabGrp>`.
+given `<tabGrp>`. This can be reflected using the `<tabRhythm>' element:
 ```xml
 <tabGrp dur.ges="4">
-  <tabRhythm />
+  <tabRhythm/>
   <note tab.course="2" tab.fret="3">
   <note tab.course="3" tab.fret="0">
   <note tab.course="5" tab.fret="2">
@@ -153,14 +157,14 @@ the previous indication had been repeated. Where there is no preceding
 indication or the music requires a different interpretation of rhythm,
 editorial markup should be used to add a tabRhythm (replaces **rhythmGlyph**).
 
-Where a rhythm indicator is the only element of `<tabGrp>`, the result has the
+Where a `<tabRhythm>` is the only element of `<tabGrp>`, the result has the
 same effect as a rest in CMN.
 
-Given the presence of a rhythmGlyph, the form can be inferred from '@dur' or
+Given the presence of a rhythm symbol, the form can be inferred from '@dur' or
 '@dur.ges' (*which?*) on `<tabGrp>`. Where the editor wishes to specify the
-form of the rhythmGlyph, the following attributes can be used:
+form of the rhythm symbol, the following attributes can be used on `<tabRhythm>`:
 
-att | descripiton
+att | description
 ---|---
  `symbol` | The duration symbol.
 `head` | Indicates whether the rhythm sign has a note head and if so, what shape.

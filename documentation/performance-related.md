@@ -5,7 +5,7 @@
 
 Slides are to be encoded with the `<gliss>` element. The element has a tablature specific attribute `@slide` with possible values `legato` and `shift`. `@show.dirmark` indicates whether the `sl.` direction should be shown.
 
-`@slide.to` and `@slide.from` attributes can take values `upwards` and `downwards` for slides with only one note (e.g., with only `@startid`)
+`@slide.to` and `@slide.from` attributes can take values `upwards` and `downwards` for slides with only one note (e.g., with only `@startid`).
 
 ### Legato techniques: hammer on & pull off 
 
@@ -99,10 +99,10 @@ We can use `<dir>`, which needs a new attribute `@technique`, which itself will 
 * tap-fing
 * tap-pick
 * rake
+* feedback
 
 #### TODO
 * pick slide
-* feedback?
 
 ### TODO: harmonics, various performance
 
